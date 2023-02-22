@@ -6,12 +6,11 @@ import Domoticz
 
 
 
-def importDeviceConfV2(self):
-
+def importDeviceConfV2(self, path_name):
 
     # Read DeviceConf for backward compatibility 
     self.DeviceConf = {}
-    model_certified =  os.path.dirname( z4d_certified_devices.__file__ ) + "Certified"
+    model_certified =  path_name + "Certified"
 
     if os.path.isdir(model_certified):
         model_brand_list = [f for f in listdir(model_certified) if isdir(join(model_certified, f))]
@@ -62,9 +61,8 @@ def importDeviceConfV2(self):
     self.log.logging("Database", "Status", "DeviceConf loaded - %s confs loaded" %len(self.DeviceConf))
 
 
-def load_zcl_cluster(self):
-    # zcl_cluster_path = self.pluginconf.pluginConf["pluginConfig"] + "ZclDefinitions"
-    zcl_cluster_path = os.path.dirname( z4d_certified_devices.__file__ ) + "ZclDefinitions"
+def load_zcl_cluster(self, path_name):
+    zcl_cluster_path = path_name + "ZclDefinitions"
     if not isdir(zcl_cluster_path):
         return
 
