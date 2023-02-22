@@ -11,7 +11,7 @@ def importDeviceConfV2(self):
 
     # Read DeviceConf for backward compatibility 
     self.DeviceConf = {}
-    model_certified = self.pluginconf.pluginConf["pluginConfig"] + "Certified"
+    model_certified =  os.path.dirname( z4d_certified_devices.__file__ ) + "Certified"
 
     if os.path.isdir(model_certified):
         model_brand_list = [f for f in listdir(model_certified) if isdir(join(model_certified, f))]
@@ -63,7 +63,8 @@ def importDeviceConfV2(self):
 
 
 def load_zcl_cluster(self):
-    zcl_cluster_path = self.pluginconf.pluginConf["pluginConfig"] + "ZclDefinitions"
+    # zcl_cluster_path = self.pluginconf.pluginConf["pluginConfig"] + "ZclDefinitions"
+    zcl_cluster_path = os.path.dirname( z4d_certified_devices.__file__ ) + "ZclDefinitions"
     if not isdir(zcl_cluster_path):
         return
 
