@@ -1,0 +1,15 @@
+{
+	"Ep": {
+		"01": {
+			"0000": "",
+			"0003": "",
+			"0500": "",
+			"ffff": "",
+			"0001": "",
+			"Type": "Smoke"
+		}
+	},
+	"Type": "",
+	"BatteryDevice": 1,
+	"BatteryPercentageConverter": 2
+}
