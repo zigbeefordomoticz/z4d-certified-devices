@@ -6,7 +6,7 @@ import Domoticz
 
 
 
-def importDeviceConfV2(self, path_name):
+def z4d_import_device_configuration(self, path_name):
 
     # Read DeviceConf for backward compatibility 
     self.DeviceConf = {}
@@ -58,4 +58,4 @@ def importDeviceConfV2(self, path_name):
                     Domoticz.Error("--> Unexpected error when loading a configuration file")
 
     self.log.logging("Database", "Debug", "--> Config loaded: %s" % self.DeviceConf.keys())
-    self.log.logging("Database", "Status", "DeviceConf loaded - %s confs loaded" %len(self.DeviceConf))
+    self.log.logging("Database", "Status", "Certified Devices loaded - %s confs loaded" %len(self.DeviceConf))
