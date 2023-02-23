@@ -5,6 +5,12 @@ from os.path import isdir, isfile, join
 import Domoticz
 
 
+MAJOR_VERSION = 0
+MINOR_VERSION = 0
+PATCH_VERSION = 5
+__short_version__ = f"{MAJOR_VERSION}.{MINOR_VERSION}"
+__version__ = f"{__short_version__}.{PATCH_VERSION}"
+
 
 def z4d_import_device_configuration(self, path_name):
 
