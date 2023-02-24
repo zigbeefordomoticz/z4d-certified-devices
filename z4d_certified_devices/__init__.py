@@ -4,19 +4,15 @@ from os import listdir
 from os.path import isdir, isfile, join
 import Domoticz
 
-
-MAJOR_VERSION = 0
-MINOR_VERSION = 0
-PATCH_VERSION = 5
-__short_version__ = f"{MAJOR_VERSION}.{MINOR_VERSION}"
-__version__ = f"{__short_version__}.{PATCH_VERSION}"
+from .version import __version__
 
 
 def z4d_import_device_configuration(self, path_name):
 
     # Read DeviceConf for backward compatibility 
     self.DeviceConf = {}
-    model_certified =  path_name + "Certified"
+    model_certified = path_name + "Certified"
+    plugin_version = self.pluginParameters["PluginVersion"]
 
     if os.path.isdir(model_certified):
         model_brand_list = [f for f in listdir(model_certified) if isdir(join(model_certified, f))]
@@ -48,20 +44,19 @@ def z4d_import_device_configuration(self, path_name):
 
                 try:
                     device_model_name = model_device.rsplit(".", 1)[0]
+                    if device_model_name in self.DeviceConf:
+                        self.log.logging( "z4dCertifiedDevices", "Debug", "--> Config for %s/%s not loaded as already defined" % (str(brand), str(device_model_name)),)
+                        continue
 
-                    if device_model_name not in self.DeviceConf:
-                        self.log.logging(
-                            "Database", "Debug", "--> Config for %s/%s" % (str(brand), str(device_model_name))
-                        )
-                        self.DeviceConf[device_model_name] = dict(model_definition)
-                    else:
-                        self.log.logging(
-                            "Database",
-                            "Debug",
-                            "--> Config for %s/%s not loaded as already defined" % (str(brand), str(device_model_name)),
-                        )
+                    self.log.logging( "z4dCertifiedDevices", "Debug", "--> Config for %s/%s" % (str(brand), str(device_model_name)))
+                    if "MinPluginVersion" in model_definition and plugin_version < model_definition["MinPluginVersion"]:
+                        self.log.logging( "z4dCertifiedDevices", "Log", "Skip this Certified device %s-%s requires Plugin version %s" % (
+                            str(brand), str(device_model_name), model_definition["MinPluginVersion"] ),)
+                        continue
+
+                    self.DeviceConf[device_model_name] = dict(model_definition)
                 except Exception:
                     Domoticz.Error("--> Unexpected error when loading a configuration file")
 
-    self.log.logging("Database", "Debug", "--> Config loaded: %s" % self.DeviceConf.keys())
-    self.log.logging("Database", "Status", "Certified Devices loaded - %s confs loaded" %len(self.DeviceConf))
+    self.log.logging("z4dCertifiedDevices", "Debug", "--> Config loaded: %s" % self.DeviceConf.keys())
+    self.log.logging("z4dCertifiedDevices", "Status", "Certified Devices loaded - %s confs loaded" %len(self.DeviceConf))
