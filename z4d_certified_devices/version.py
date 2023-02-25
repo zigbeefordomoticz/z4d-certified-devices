@@ -1,5 +1,3 @@
 MAJOR_VERSION = 0
-MINOR_VERSION = 1
-PATCH_VERSION = 0
-__short_version__ = f"{MAJOR_VERSION}.{MINOR_VERSION}"
-__version__ = f"{__short_version__}.{PATCH_VERSION}"
+MINOR_VERSION = 2
+__version__ = f"{MAJOR_VERSION}.{MINOR_VERSION}"
