@@ -30,7 +30,7 @@ def z4d_import_device_configuration(self, path_name):
                     continue
 
                 filename = str(model_directory + "/" + model_device)
-                with open(filename, "rt") as handle:
+                with open(filename, "rt", encoding='utf-8') as handle:
                     try:
                         model_definition = json.load(handle)
                     except ValueError as e:
