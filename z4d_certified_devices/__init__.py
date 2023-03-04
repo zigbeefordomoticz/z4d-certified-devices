@@ -62,5 +62,5 @@ def z4d_import_device_configuration(self, path_name):
                     Domoticz.Error("--> Unexpected error when loading a configuration file")
 
     self.log.logging("z4dCertifiedDevices", "Debug", "--> Config loaded: %s" % self.DeviceConf.keys())
-    self.log.logging("z4dCertifiedDevices", "Status", "Certified Devices ModelManufMapping loaded - %s" %self.ModelManufMapping.keys())
+    self.log.logging("z4dCertifiedDevices", "Debug", "Certified Devices ModelManufMapping loaded - %s" %self.ModelManufMapping.keys())
     self.log.logging("z4dCertifiedDevices", "Status", "Certified Devices loaded - %s confs loaded" %len(self.DeviceConf))
