@@ -41,5 +41,5 @@ jobs:
 
     - uses: pypa/gh-action-pypi-publish@v1.5.0
       with:
-        password: ${{ secrets.PYPI_PASSWORD }}
+        password: ${{ secrets.PYPI_API_TOKEN }}
         print_hash: true
