@@ -33,13 +33,15 @@
     },
     "TS0601_DP": {
         "01": { "sensor_type": "motion", "DomoDeviceFormat": "str"},
-        "09": { "sensor_type": "distance", "EvalExp": "int((value//10)*10)"}, 
-        "68": { "sensor_type": "illuminance"},
         "02": { "store_tuya_attribute": "sensitivity"},
         "03": { "store_tuya_attribute": "radar_min_range"},
         "04": { "store_tuya_attribute": "radar_max_range"},
+        "06": { "store_tuya_attribute": "dp_06"},
+        "09": { "sensor_type": "distance", "EvalExp": "int((value//10)*10)"}, 
         "65": { "store_tuya_attribute": "radar_detection_delay"},
-        "66": { "store_tuya_attribute": "radar_fading_time"}
+        "66": { "store_tuya_attribute": "radar_fading_time"},
+        "67": { "store_tuya_attribute": "dp_67"},
+        "68": { "sensor_type": "illuminance"}
         
     },
     "TUYA_REGISTRATION": 13,
