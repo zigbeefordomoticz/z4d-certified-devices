@@ -1,26 +1,43 @@
-name: Publish distributions to PyPI and TestPyPI
+# This workflow will upload a Python Package using Twine when a release is created
+# See https://scikit-hep.org/developer/gha_pure
+
+name: Upload Python Package
+
 on:
+  workflow_dispatch:
   release:
     types:
-      - released
+    - published
 
 jobs:
-  build-and-publish:
-    name: Build and publish distributions to PyPI
+  dist:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v4
+
+    - name: Build SDist and wheel
+      run: pipx run build
+
+    - uses: actions/upload-artifact@v3
       with:
-        python-version: 3.9
-    - name: Install wheel
-      run: >-
-        pip install wheel
-    - name: Build
-      run: >-
-        python3 setup.py sdist bdist_wheel
-    - name: Publish distribution to PyPI
-      uses: pypa/gh-action-pypi-publish@master
+        path: dist/*
+
+    - name: Check metadata
+      run: pipx run twine check dist/*
+
+  publish:
+    needs: [dist]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release' && github.event.action == 'published'
+
+    steps:
+    - uses: actions/download-artifact@v3
       with:
-        password: ${{ secrets.PYPI_TOKEN }}
+        name: artifact
+        path: dist
+
+    - uses: pypa/gh-action-pypi-publish@v1.5.0
+      with:
+        password: ${{ secrets.PYPI_PASSWORD }}
+        print_hash: true
