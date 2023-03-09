@@ -1,6 +1,6 @@
 {
-	"Ep": {
-		"01": {
+    "Ep": {
+        "01": {
             "0000": { 
                 "Attributes": {
                     "fff0": { "Enabled": true, "Name": "Aqara_0000_fff0", "DataType": "42" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
@@ -9,18 +9,18 @@
                 }
             },
 
-			"0006": "",
-			"Type": "Door"
-		}
-	},
-	"Type": "",
-	"ClusterToBind": [],
-	"ConfigureReporting": {},
-	"ReadAttributes": {
-		"0000": [
-			"0004",
-			"0005"
-		],
-		"0006": []
-	}
+            "0006": "",
+            "Type": "Door"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [
+            "0004",
+            "0005"
+        ],
+        "0006": []
+    }
 }
