@@ -1,5 +1,14 @@
 {
-    "_comment": "Tuya Temp/Humi sensor with LCD",
+    "_comment": "Tuya Temp/Humi sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_ZG227C.html",
+    "Identifier": [
+        [ "TS0601", "_TZE200_qyflbnbj"],
+        [ "TS0601", "_TZE200_bjawzodf"],
+        [ "TS0601", "_TZE200_bq5c8xfe"],
+        [ "TS0601", "_TZE200_whkgqxse"],
+        [ "TS0601", "_TZE200_zl1kmjqx"]
+    ],
+
     "Ep": {
         "01": {
             "0000": "",
