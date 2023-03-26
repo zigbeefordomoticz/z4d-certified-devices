@@ -84,6 +84,7 @@
     "MeteringUnit": "Unitless",
     "SummationMeteringMultiplier": 10,
     "SummationMeteringDivisor": 1,
+    "PowerOnOffStateAttribute8002": true,
     "Param": {
         "PowerOnAfterOffOn": 2,
         "TuyaBackLight": 1,

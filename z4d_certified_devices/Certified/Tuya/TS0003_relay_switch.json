@@ -35,6 +35,7 @@
         "0006": [ "0000", "4001", "4002", "8001", "8002" ],
         "0019": [ ]
     },
+    "PowerOnOffStateAttribute8002": true,
     "Param": {
         "TuyaSwitchMode": 2,
         "ReadAttributeChunk": 6,
