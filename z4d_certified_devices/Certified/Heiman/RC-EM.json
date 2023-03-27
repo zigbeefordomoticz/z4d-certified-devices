@@ -2,7 +2,7 @@
 	"Ep": {
 		"01": {
 			"0000": "",
-			"0001": "",
+			"0001": { "Attributes": { "0021": { "Enabled": true, "Name": "Heiman_BatteryPercentage", "DataType": "20" , "ActionList": [ "check_store_value"]}}},
 			"0003": "",
 			"0500": "",
 			"0501": "",
