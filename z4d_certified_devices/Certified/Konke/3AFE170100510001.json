@@ -12,7 +12,7 @@
                         "Enabled": true, 
                         "Name": "Konke Switch", 
                         "DomoClusterType": "Switch", 
-                        "EvalExp": "konke_onoff",
+                        "EvalFunc": "konke_onoff",
                         "ActionList": [ "check_store_value", "upd_domo_device"] } } },
             "Type":"SwitchAQ2"}
     },

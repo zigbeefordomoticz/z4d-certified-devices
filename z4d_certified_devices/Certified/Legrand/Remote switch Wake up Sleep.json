@@ -3,7 +3,7 @@
     "_version": "0.1",
     "Ep": {
         "01": {
-            "0000": { "Attributes": { "f000": { "Enabled": true, "Name": "Legrand Operating time", "EvalExp": "legrand_operating_time", "ActionList": [ "check_store_value"] }}},
+            "0000": { "Attributes": { "f000": { "Enabled": true, "Name": "Legrand Operating time", "EvalFunc": "legrand_operating_time", "ActionList": [ "check_store_value"] }}},
             "0001": "",
             "0003": "",
             "0005": "",
