@@ -3,7 +3,7 @@
     "_version": "1.0",
     "Ep": {
         "01": {
-            "0000": { "Attributes": { "f000": { "Enabled": true, "Name": "Legrand Operating time", "EvalFunc": "legrand_operating_time", "SpecifStoragelvl1": "Legrand", "SpecifStoragelvl2": "OperatingTime", "ActionList": [ "check_store_raw_value"] }}},
+            "0000": { "Attributes": { "f000": { "Enabled": true, "Name": "Legrand Operating time", "EvalFunc": "legrand_operating_time", "SpecifStoragelvl1": "Legrand", "SpecifStoragelvl2": "OperatingTime", "ActionList": [ "store_specif_attribute", "check_store_raw_value"] }}},
             "0001": "",
             "0003": "",
             "0006": "",
