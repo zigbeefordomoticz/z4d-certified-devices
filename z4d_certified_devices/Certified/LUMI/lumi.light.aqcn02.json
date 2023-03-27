@@ -1,6 +1,6 @@
 {
     "Ep":{
-        "0b": {
+        "01": {
             "0000": { 
                 "Attributes": {
                     "fff0": { "Enabled": true, "Name": "Aqara_0000_fff0", "DataType": "42" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
