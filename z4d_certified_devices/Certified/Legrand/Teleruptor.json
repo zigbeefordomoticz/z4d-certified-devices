@@ -3,7 +3,7 @@
     "_version": "0.1",
     "Ep": {
         "01": {
-            "0000": "",
+            "0000": { "Attributes": { "f000": { "Enabled": true, "Name": "Legrand Operating time", "EvalExp": "legrand_operating_time", "ActionList": [ "check_store_value"] }}},
             "0003": "",
             "0004": "",
             "0005": "",
@@ -16,69 +16,16 @@
         }
     },
     "Type": "",
-    "ClusterToBind": [
-        "0006",
-        "0b04",
-        "0003"
-    ],
+    "ClusterToBind": [ "0006", "0b04", "0003" ],
     "ConfigureReporting": {
-        "0b04": {
-            "Attributes": {
-                "050b": {
-                    "DataType": "29",
-                    "MinInterval": "0001",
-                    "MaxInterval": "012C",
-                    "TimeOut": "0000",
-                    "Change": "0002"
-                }
-            }
-        },
-        "0006": {
-            "Attributes": {
-                "0000": {
-                    "DataType": "10",
-                    "MinInterval": "0001",
-                    "MaxInterval": "012C",
-                    "TimeOut": "0000",
-                    "Change": "01"
-                }
-            }
-        }
+        "0b04": { "Attributes": { "050b": { "DataType": "29", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0000", "Change": "0002" } } },
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0000", "Change": "01" } } }
     },
     "ReadAttributes": {
-        "0000": [
-            "0000",
-            "0001",
-            "0002",
-            "0003",
-            "0004",
-            "0005",
-            "0007",
-            "000a",
-            "4000",
-            "f000"
-        ],
-        "0006": [
-            "0000",
-            "4003"
-        ],
-        "0b04": [
-            "0000",
-            "0505",
-            "0508",
-            "050b",
-            "0600",
-            "0601",
-            "0602",
-            "0603",
-            "0604",
-            "0605"
-        ],
-        "fc01": [
-            "0000",
-            "0001",
-            "0002"
-        ]
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007", "000a", "4000", "f000" ],
+        "0006": [ "0000", "4003" ],
+        "0b04": [ "0000", "0505", "0508", "050b", "0600", "0601", "0602", "0603", "0604", "0605" ],
+        "fc01": [ "0000", "0001", "0002" ]
     },
     "Param": {
         "PowerOnAfterOffOn": 255
