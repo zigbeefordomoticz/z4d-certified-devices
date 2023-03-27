@@ -14,7 +14,9 @@
             "0005": "", 
             "0006": "", 
             "0008": "", 
-            "0300": "", 
+            "0300": {
+                "Attributes": {
+                    "f000": { "Enabled": true, "Name": "Aqara_0300_f000", "DataType": "23" , "ActionList": [ "check_store_value"]}}},
             "1000": "", 
             "0019": "", 
             "Type": "ColorControlWW"
