@@ -1,5 +1,6 @@
 import json
 import os.path
+from pathlib import Path
 from os import listdir
 from os.path import isdir, isfile, join
 import Domoticz
@@ -10,7 +11,7 @@ from .version import __version__
 def z4d_import_device_configuration(self, path_name):
 
     # Read DeviceConf for backward compatibility 
-    model_certified = path_name + "Certified"
+    model_certified = Path(path_name) / "Certified"
     plugin_version = self.pluginParameters["PluginVersion"]
 
     if os.path.isdir(model_certified):
@@ -20,7 +21,7 @@ def z4d_import_device_configuration(self, path_name):
             if brand in ("README.md", ".PRECIOUS"):
                 continue
 
-            model_directory = model_certified + "/" + brand
+            model_directory = model_certified / brand
 
             model_list = [f for f in listdir(model_directory) if isfile(join(model_directory, f))]
 
@@ -28,7 +29,7 @@ def z4d_import_device_configuration(self, path_name):
                 if model_device in ("README.md", ".PRECIOUS"):
                     continue
 
-                filename = str(model_directory + "/" + model_device)
+                filename = model_directory / model_device
                 with open(filename, "rt", encoding='utf-8') as handle:
                     try:
                         model_definition = json.load(handle)
