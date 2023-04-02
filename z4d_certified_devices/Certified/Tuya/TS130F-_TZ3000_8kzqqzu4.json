@@ -7,7 +7,13 @@
             "0004": "",
             "0005": "",
             "0006": "",
-            "0102": "",
+      
+            "0102": {
+                "Attributes": { 
+                    "f002": { "Enabled": true, "Name": "Tuya_0102_f002", "DataType": "20" , "ActionList": [ "check_store_value"]},
+                    "f003": { "Enabled": true, "Name": "Tuya_0102_f002", "DataType": "21" , "ActionList": [ "check_store_value"]}
+                }
+            },
             "0019": "",
             "ee00": "",
             "f001": "",
