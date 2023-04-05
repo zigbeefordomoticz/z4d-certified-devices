@@ -1,29 +1,32 @@
 {
-	"_comment": "Tuya Smart Dimmer Switch",
-	"_version": "0.10",
-	"Ep": {
-		"01": {
-			"0000": "",
-			"0004": "",
-			"ef00": "",
-			"000a": "",
-			"0019": "",
-			"Type": "LvlControl"
-		}
-	},
-	"Type": "",
-	"ClusterToBind": [
-		"0000",
-		"ef00"
-	],
-	"ConfigureReporting": {},
-	"ReadAttributes": {
-		"0000": [
-			"0004",
-			"0000",
-			"0001",
-			"0005",
-			"0007"
-		]
-	}
+    "_blakadder": "https://zigbee.blakadder.com/Eardatek_EDM-1ZBB-EU.html",
+    "_comment": "Tuya Smart Dimmer Switch",
+    "_version": "0.10",
+    "Identifier": [
+        [ "TS0601", "_TZE200_whpb9yts" ],
+        [ "TS0601", "_TZE200_ebwgzdqq" ],
+        [ "TS0601", "_TZE200_ctq0k47x" ],
+        [ "TS0601", "_TZE200_9i9dt8is" ],
+        [ "TS0601", "_TZE200_dfxkcots" ],
+        [ "TS0601", "_TZE200_w4cryh2i" ],
+        [ "TS0601", "_TZE200_ojzhk75b" ],
+        [ "TS0601", "_TZE200_swaamsoy" ],
+        [ "TS0601", "_TZE200_3p5ydos3" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "LvlControl"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007" ]
+    }
 }
