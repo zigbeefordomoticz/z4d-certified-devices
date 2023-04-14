@@ -1,0 +1,26 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1578",
+    "_comment": "AOETEC Range Extender",
+    "_blakadder": "https://zigbee.blakadder.com/Aeotec_ZAG001-C15.html",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0019": "",
+            "Type": ""
+        },
+        "02": {
+            "0000": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "CreateWidgetDomoticz": false,
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0004", "0005" ],
+        "0019": [ ]
+    }
+}
