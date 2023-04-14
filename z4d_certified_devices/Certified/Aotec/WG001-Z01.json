@@ -20,7 +20,7 @@
     "ClusterToBind": [],
     "ConfigureReporting": {},
     "ReadAttributes": {
-        "0000": [ "0000", "0004", "0005" ],
+        "0000": [ "0004", "0005" ],
         "0019": [ ]
     }
 }
