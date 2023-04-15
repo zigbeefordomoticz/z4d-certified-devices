@@ -10,7 +10,20 @@
             "0006": "",
             "0019": "",
             "0405": "",
-            "fcc0": "",
+            "fcc0": {
+                "Attributes": {
+                    "0112": {
+                        "Enabled": true,
+                        "ManufRawData": true,
+                        "Name": "MotionLux",
+                        "DataType": "23",
+                        "Acc": "R",
+                        "Mandatory": false,
+                        "ManufSpecificFunc": "Lumi_lumi_motion_ac02",
+                        "ActionList": [ "check_store_value" ]
+                    }
+                }
+            },
             "Type": "Motion/Lux"
         }
     },
@@ -22,7 +35,7 @@
         "0001": [ "0020" ],
         "0405": [ "0000" ],
         "0006": [ "0000" ],
-        "fcc0": [ "0112", "00f7"],
+        "fcc0": [ "0102", "010c", "0152"],
         "0019": [ ]
     },
     "Param": {
