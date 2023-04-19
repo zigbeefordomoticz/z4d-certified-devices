@@ -1,0 +1,31 @@
+{
+    "_comment": "AC Phase-Cut Dimmer",
+    "_blakadder": "https://zigbee.blakadder.com/Sunricher_SR-ZG9101SAC-HP.html",
+    "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1583",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0008": "",
+            "0019": "",
+            "0b05": "",
+            "Type": "LvlControl"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": ["0001", "0003"],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "Change": "01", "DataType": "10", "MaxInterval": "0258", "MinInterval": "0000", "TimeOut": "0FFF" }}},
+        "0008": { "Attributes": { "0000": {"DataType": "20", "MinInterval":"0005", "MaxInterval":"012C", "TimeOut":"0000","Change":"05"}}}
+    },
+    "ReadAttributes": {
+        "0000": ["0000", "0001", "0002", "0003", "0004", "0005", "0007", "000a", "4000"],
+        "0001": ["0020", "0021", "0033"],
+        "0006": ["0000"],
+        "0008": ["0000"]
+    }
+}
