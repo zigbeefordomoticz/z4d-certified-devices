@@ -1,0 +1,29 @@
+{
+    "_comment": "D1 Wall Switch (No Neutral, Double Rocker) ( 2 Gang) ",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_QBKG22LM.html",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "Type": ""
+        },
+        "02": {
+            "0006": "",
+            "Type": "Switch"
+        },
+        "03": {
+            "0006": "",
+            "Type": "Switch"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0032", "0033", "ff01" ],
+        "0006": [ "0000" ],
+        "0019": []
+    },
+    "Param": {
+    }
+}
