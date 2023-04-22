@@ -14,7 +14,7 @@
             "1000": "",
             "fc82": "",
             "0019": "",
-            "Type": "ColorControlFull"
+            "Type": "ColorControlWW"
         },
         "f2": {
             "0000": "",
@@ -33,5 +33,9 @@
         "0008": [ "0000" ]
     },
     "Param": {
+        "fadingOff": 0,
+        "moveToColourTemp": 0,
+        "moveToLevel": 0,
+        "PowerOnAfterOffOn": 1
     }
 }

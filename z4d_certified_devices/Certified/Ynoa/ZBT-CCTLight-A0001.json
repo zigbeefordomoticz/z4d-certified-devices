@@ -34,5 +34,9 @@
         "0019": []
     },
     "Param": {
+        "fadingOff": 0,
+        "moveToColourTemp": 0,
+        "moveToLevel": 0,
+        "PowerOnAfterOffOn": 1
     }
 }
