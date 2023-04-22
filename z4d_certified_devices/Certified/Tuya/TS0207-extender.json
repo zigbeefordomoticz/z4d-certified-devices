@@ -1,27 +1,27 @@
 {
-	"_comment": "Tuya repeater",
-	"_version": "1.0",
-	"Ep": {
-		"01": {
-			"0000": "",
-			"000a": "",
-			"0019": "",
-			"Type": ""
-		}
-	},
-	"Type": "",
-	"CreateWidgetDomoticz": false,
-	"ClusterToBind": [],
-	"ConfigureReporting": {},
-	"ReadAttributes": {
-		"0000": [
-			"0000",
-			"0001",
-			"0002",
-			"0003",
-			"0004",
-			"0005",
-			"0007"
-		]
-	}
+    "_comment": "Tuya repeater",
+    "_version": "1.0",
+    "Identifier": [
+        [ "TS0207", "_TZ3000_m0vaazab" ],
+        [ "TS0207", "_TZ3000_ufttklsz" ],
+        [ "TS0207", "_TZ3000_nkkl7uzv" ],
+        [ "TS0207", "_TZ3000_misw04hq" ],
+        [ "TS0207", "_TZ3000_gszjt2xx" ],
+        [ "TS0207", "_TZ3000_5k5vh43t" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "000a": "",
+            "0019": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "CreateWidgetDomoticz": false,
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
+    }
 }
