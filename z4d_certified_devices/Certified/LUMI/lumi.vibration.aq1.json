@@ -8,7 +8,6 @@
                     "ff02": { "Enabled": true, "Name": "Aqara_0000_ff02", "DataType": "4c" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}  
                 }
             },
-
 			"0003": "",
 			"0005": "",
 			"0019": "",
