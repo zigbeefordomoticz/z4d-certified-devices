@@ -27,7 +27,7 @@
         "12": { "store_tuya_attribute": "Current", "sensor_type": "current", "EvalExp": "value / 1000", "domo_round": 2},
         "13": { "store_tuya_attribute": "Power", "sensor_type": "power", "EvalExp": "value / 10", "domo_round": 2 },
         "14": { "store_tuya_attribute": "Voltage", "sensor_type": "voltage", "EvalExp": "value / 10", "domo_round": 2},
-        "65": { "store_tuya_attribute": "Meter", "sensor_type": "metering", "EvalExp": "value / 1000", "domo_round": 2}
+        "65": { "store_tuya_attribute": "Meter", "sensor_type": "metering", "EvalExp": "value"}
     },
     "Param": {
     }
