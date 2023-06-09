@@ -11,6 +11,7 @@
                         "Enabled": true, 
                         "Name": "CPR412-E OnOff", 
                         "ValidValuesDomoDevices": "value != '00' and value != '01'", 
+                        "DataType": "10",
                         "DomoClusterType": "Switch",
                         "ActionList": [ "check_store_value", "upd_domo_device"]}}},
             "0008": "",
