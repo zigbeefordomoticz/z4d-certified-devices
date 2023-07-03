@@ -1,4 +1,6 @@
 {
+    "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1624",
+    "_blakadder": "https://zigbee.blakadder.com/Philips_RWL022.html",
     "_comment": "Philips Hue Remote",
     "_version": "1.0",
     "Ep":{
@@ -23,9 +25,9 @@
         "000f": [ ],
         "fc00": [ "0000" ] 
     },
+    "HUE_RWL": true,
     "BatteryDevice": 1,
     "BatteryPercentageConverter": 2,
-    "HUE_RWL": true,
     "Param": {
         "RWL021_Dimmer_step": 1
     }
