@@ -16,4 +16,4 @@ sudo python3 -m pip install git+https://github.com/zigbeefordomoticz/z4d-certifi
 
 ## how to install from PyPi
 
-sudo python3 -m pip install z4d-certified-devices
+sudo python3 -m pip install z4d-certified-devices --upgrade
