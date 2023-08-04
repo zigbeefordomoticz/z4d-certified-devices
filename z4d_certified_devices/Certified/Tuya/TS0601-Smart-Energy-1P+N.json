@@ -1,0 +1,37 @@
+{
+    "_comment": "Tuya Zigbee Smart energy monitor for 1P+N system",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13439",
+    "_blakadder": "",
+    "_version": "1",
+    "Identifier": [
+        [ "TS0601", "_TZE200_bcusnqt8" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Meter/Power/Voltage/Ampere"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0019", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
+    },
+    "TUYA_REGISTRATION": 19,
+    "TS0601_DP": { 
+        "12": { "store_tuya_attribute": "Current", "sensor_type": "current", "EvalExp": "value / 1000", "domo_round": 2},
+        "13": { "store_tuya_attribute": "Power", "sensor_type": "power", "EvalExp": "value / 10", "domo_round": 2 },
+        "14": { "store_tuya_attribute": "Voltage", "sensor_type": "voltage", "EvalExp": "value / 10", "domo_round": 2},
+        "01": { "store_tuya_attribute": "Meter", "sensor_type": "metering", "EvalExp": "value * 10"},
+        "02": { "store_tuya_attribute": "ProducedEnergy", "EvalExp": "value" },
+        "06": { "store_tuya_attribute": "VoltageCurrentPower", "EvalExp": "value" },
+        "09": { "store_tuya_attribute": "Unknown", "EvalExp": "value" }
+    },
+    "Param": {
+    }
+}
