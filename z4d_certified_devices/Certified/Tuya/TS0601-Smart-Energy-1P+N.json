@@ -3,6 +3,7 @@
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13439",
     "_blakadder": "",
     "_version": "1",
+    "MinPluginVersion": "7.1.002",
     "Identifier": [
         [ "TS0601", "_TZE200_bcusnqt8" ]
     ],
@@ -24,13 +25,15 @@
     },
     "TUYA_REGISTRATION": 19,
     "TS0601_DP": { 
-        "12": { "store_tuya_attribute": "Current", "sensor_type": "current", "EvalExp": "value / 1000", "domo_round": 2},
-        "13": { "store_tuya_attribute": "Power", "sensor_type": "power", "EvalExp": "value / 10", "domo_round": 2 },
-        "14": { "store_tuya_attribute": "Voltage", "sensor_type": "voltage", "EvalExp": "value / 10", "domo_round": 2},
-        "01": { "store_tuya_attribute": "Meter", "sensor_type": "metering", "EvalExp": "value * 10"},
+        "01": { "store_tuya_attribute": "Meter", "sensor_type": "metering", "EvalExp": "value / 1000"},
         "02": { "store_tuya_attribute": "ProducedEnergy", "EvalExp": "value" },
-        "06": { "store_tuya_attribute": "VoltageCurrentPower", "EvalExp": "value" },
-        "09": { "store_tuya_attribute": "Unknown", "EvalExp": "value" }
+        "06": [ 
+            { "store_tuya_attribute": "Voltage", "EvalExp": "((value & 0xFFFF000000000000) >> 48)/10", "sensor_type": "voltage", "domo_round": 2}, 
+            { "store_tuya_attribute": "Current", "EvalExp": "((value & 0x0000FFFFFF000000) >> 24)/1000", "sensor_type": "current", "domo_round": 2 },
+            { "store_tuya_attribute": "Power", "EvalExp": "(value & 0x0000000000FFFFFF)", "sensor_type": "power", "domo_round": 2 }
+        ],
+        "0d": { "store_tuya_attribute": "Unknown0D_02"},
+        "11": { "store_tuya_attribute": "Unknown11_00"}
     },
     "Param": {
     }
