@@ -10,7 +10,7 @@
     ],
     "Ep": {
         "01": { "0000": "", "0004": "", "0005": "", "0006": "", "0008": "", "Type": "LvlControl" },
-        "02": { "0004": "", "0005": "", "0006": "", "0008": "", "ef00": "", "Type": "LvlControl" }
+        "02": { "0000": "", "0004": "", "0005": "", "0006": "", "0008": "", "Type": "LvlControl" }
     },
     "Type": "",
     "ClusterToBind": [ "0006", "0008"],
@@ -23,8 +23,7 @@
         "0006": [ "0000", "4001", "8002" ],
         "0008": [ "0000" ]
     },
-    "PowerOnOffStateAttribute8002": true,
+    "ForceSwitchOnformoveToLevel": true,
     "Param": {
-        "PowerOnAfterOffOn": 2
     }
 }
