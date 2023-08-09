@@ -1,0 +1,30 @@
+{
+    "blakadder": "https://zigbee.blakadder.com/Tuya_SMD-02Z.html",
+    "_comment": "Dimmer Module 2 Channel",
+    "_source": "https://www.domoticz.com/forum/viewtopic.php?t=40643&sid=c736e17cae2a3a987408282db5bea504",
+    "_version": "1.0",
+    "Identifier": [
+        [ "TS1101", "_TZ3000_7ysdnebc" ],
+        [ "TS110E", "_TZ3210_3mpwqzuu" ],
+        [ "TS110E", "_TZ3210_3mpwqzuu" ]
+    ],
+    "Ep": {
+        "01": { "0000": "", "0004": "", "0005": "", "0006": "", "0008": "", "Type": "LvlControl" },
+        "02": { "0004": "", "0005": "", "0006": "", "0008": "", "ef00": "", "Type": "LvlControl" }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0008"],
+    "ConfigureReporting": {
+        "0006": {"Attributes": { "0000": {"DataType": "10", "MinInterval":"0001", "MaxInterval":"012C", "TimeOut":"0000","Change":"01"}}},
+        "0008": {"Attributes": { "0000": {"DataType": "20", "MinInterval":"0005", "MaxInterval":"012C", "TimeOut":"0000","Change":"05"}}}
+        },
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe"],
+        "0006": [ "0000", "4001", "8002" ],
+        "0008": [ "0000" ]
+    },
+    "PowerOnOffStateAttribute8002": true,
+    "Param": {
+        "PowerOnAfterOffOn": 2
+    }
+}
