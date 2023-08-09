@@ -21,9 +21,10 @@
     "ReadAttributes": {
         "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe"],
         "0006": [ "0000", "4001", "8002" ],
-        "0008": [ "0000" ]
+        "0008": [ "0000", "fc02" ]
     },
     "ForceSwitchOnformoveToLevel": true,
     "Param": {
+        "TS110ESwitchType": 2
     }
 }
