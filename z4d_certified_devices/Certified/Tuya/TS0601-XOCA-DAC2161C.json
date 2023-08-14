@@ -1,0 +1,42 @@
+{
+    "_comment": "Energy Meter DAC2161C ",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/9",
+    "_blakadder": "https://zigbee.blakadder.com/DAC2161C.html",
+    "_version": "1",
+    "MinPluginVersion": "7.1.002",
+    "Identifier": [
+        [ "TS0601", "_TZE200_rhblgy0z" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Switch/Meter/Power/Voltage/Ampere"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0019", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0003", "0005", "0007", "fffe" ]
+    },
+    "TUYA_REGISTRATION": 19,
+    "TS0601_DP": { 
+        "01": { "store_tuya_attribute": "Meter", "sensor_type": "metering", "EvalExp": "value / 100"},
+        "02": { "store_tuya_attribute": "ProducedEnergy", "EvalExp": "value / 100"},
+        "03": { "store_tuya_attribute": "MonthlyEnergy" },
+        "04": { "store_tuya_attribute": "DailyEnergy" },
+        "06": [
+            { "store_tuya_attribute": "Voltage", "EvalExp": "((value & 0xFFFF000000000000) >> 48)/10", "sensor_type": "voltage", "domo_round": 2},
+            { "store_tuya_attribute": "Current", "EvalExp": "((value & 0x0000FFFFFF000000) >> 24)/1000", "sensor_type": "current", "domo_round": 2 },
+            { "store_tuya_attribute": "Power", "EvalExp": "(value & 0x0000000000FFFFFF)", "sensor_type": "power", "domo_round": 2 }
+        ],
+        "10": { "store_tuya_attribute": "State", "sensor_type": "switch", "action_type": "switch" },
+        "12": { "store_tuya_attribute": "MeterId" }
+    },
+    "Param": {
+    }
+}
