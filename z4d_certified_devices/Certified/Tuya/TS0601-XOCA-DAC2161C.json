@@ -5,7 +5,9 @@
     "_version": "1",
     "MinPluginVersion": "7.1.002",
     "Identifier": [
-        [ "TS0601", "_TZE200_rhblgy0z" ]
+        [ "TS0601", "_TZE200_rhblgy0z" ],
+        [ "TS0601", "_TZE200_lsanae15" ],
+        [ "TS0601", "_TZE200_eaac7dkw" ]
     ],
     "Ep": {
         "01": {
@@ -25,7 +27,7 @@
     },
     "TUYA_REGISTRATION": 19,
     "TS0601_DP": { 
-        "01": { "store_tuya_attribute": "Meter", "sensor_type": "metering", "EvalExp": "value / 100"},
+        "01": { "store_tuya_attribute": "Meter", "sensor_type": "metering", "EvalExp": "value / 1000"},
         "02": { "store_tuya_attribute": "ProducedEnergy", "EvalExp": "value / 100"},
         "03": { "store_tuya_attribute": "MonthlyEnergy" },
         "04": { "store_tuya_attribute": "DailyEnergy" },
@@ -35,7 +37,7 @@
             { "store_tuya_attribute": "Power", "EvalExp": "(value & 0x0000000000FFFFFF)", "sensor_type": "power", "domo_round": 2 }
         ],
         "10": { "store_tuya_attribute": "State", "sensor_type": "switch", "action_type": "switch" },
-        "12": { "store_tuya_attribute": "MeterId" }
+        "12": { "store_tuya_attribute": "MeterId", "EvalExp": "bytes.fromhex(value )" }
     },
     "Param": {
     }
