@@ -20,7 +20,11 @@
             "0003": "",
             "0004": "",
             "0005": "",
-            "0102": "",
+            "0102": { "Attributes": {
+                "e010": { "Enabled": true, "Name": "Schneider e010", "DataType": "18" , "ActionList": [ "check_store_value"] },
+                "e013": { "Enabled": true, "Name": "Schneider e013", "DataType": "18" , "ActionList": [ "check_store_value"] } 
+                }
+            },
             "0b05": "",
             "0019": "",
             "Type": "Curtain"
