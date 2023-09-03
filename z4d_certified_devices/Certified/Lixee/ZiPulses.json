@@ -32,6 +32,7 @@
     },
     "SummationMeteringMultiplier": 1,
     "SummationMeteringDivisor": 1,
+    "MeteringUnit": "Unitless",
     "Param": {
         "ConfigurationReportChunk": 1
     }
