@@ -30,6 +30,8 @@
         "0702": [ "0000", "0300", "0301", "0302" ],
         "0019": []
     },
+    "SummationMeteringMultiplier": 1,
+    "SummationMeteringDivisor": 1,
     "Param": {
         "ConfigurationReportChunk": 1
     }
