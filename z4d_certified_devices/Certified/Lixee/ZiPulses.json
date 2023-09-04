@@ -11,7 +11,7 @@
             "0402": "",
             "0019": "",
             "0702": "",
-            "Type": "Counter/Temp"
+            "Type": "Counter/Temp/Voltage"
         }
     },
     "Type": "",
