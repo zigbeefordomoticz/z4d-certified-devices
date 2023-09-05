@@ -21,6 +21,8 @@
         "0008": [ "f000", "fc04", "fc03", "fc02" ]
     },
     "TUYA_REGISTRATION": 19,
+    "DisableOnOffPolling": true,
+    "DisableLevelControlPolling": true,
     "ForceSwitchOnformoveToLevel": true,
     "Param": {
         "TS110ESwitch01Type": 2,
