@@ -37,7 +37,7 @@
             { "store_tuya_attribute": "Power", "EvalExp": "(value & 0x0000000000FFFFFF)", "sensor_type": "power", "domo_round": 2 }
         ],
         "10": { "store_tuya_attribute": "State", "sensor_type": "switch", "action_type": "switch" },
-        "12": { "store_tuya_attribute": "MeterId", "EvalExp": "bytes.fromhex(value )" }
+        "12": { "store_tuya_attribute": "MeterId", "EvalExp": "bytes.fromhex('%x' %value )" }
     },
     "Param": {
     }
