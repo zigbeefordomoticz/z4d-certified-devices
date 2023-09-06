@@ -3,7 +3,7 @@
     "_version": "1.0",
     "Ep": {
         "01": {
-            "0000": "",
+            "0000": { "Attributes": { "ffde": { "Enabled": true, "Name": "Tuya_0000_ffde", "DataType": "20" , "ActionList": [ "check_store_value"]} } },
             "0004": "",
             "0005": "",
             "0006": "",
