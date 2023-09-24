@@ -20,7 +20,7 @@
     "ConfigureReporting": {
         "0001": { "Attributes": { "0020": { "DataType": "20", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "01" } } },
         "0402": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" } } },
-        "0702": { "Attributes": { "0000": { "DataType": "25", "MinInterval": "0708", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "00000000000A" } } }
+        "0702": { "Attributes": { "0000": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" } } }
     },
     "ReadAttributes": {
         "0001": [ "0020" ],
