@@ -5,24 +5,23 @@
             "0003": "",
             "0004": "",
             "0005": "",
-            "0006": { 
-                "Attributes": {
-                    "0000": { 
-                        "Enabled": true, 
-                        "Name": "CPR412-E OnOff", 
-                        "ValidValuesDomoDevices": "value != '00' and value != '01'", 
-                        "DataType": "10",
-                        "DomoClusterType": "Switch",
-                        "ActionList": [ "check_store_value", "upd_domo_device"]}}},
-            "0008": "",
+            "0006": { "Attributes": {
+                "0000": { 
+                    "Enabled": true, 
+                    "Name": "PR412 OnOff", 
+                    "ValidValuesDomoDevices": "value == '00' or value == '01' or value == 'f0'", 
+                    "DomoClusterType": "Switch",
+                    "ActionList": [ "check_store_value", "upd_domo_device"]}}},
+            "0008": { "Attributes": {
+                "0000": { 
+                    "Enabled": true, 
+                    "Name": "PR412 LevelControl", 
+                    "ActionList": [ "check_store_value"]}}},
             "Type": "VenetianInverted"
         }
     },
     "Type": "",
-    "ClusterToBind": [
-        "0006",
-        "0008"
-    ],
+    "ClusterToBind": [ "0006", "0008" ],
     "ConfigureReporting": {
         "0006": {
             "Attributes": {
@@ -48,19 +47,9 @@
         }
     },
     "ReadAttributes": {
-        "0000": [
-            "0000",
-            "0004",
-            "0005",
-            "0006",
-            "0007"
-        ],
+        "0000": [ "0000", "0004", "0005", "0006", "0007" ],
         "0003": [],
-        "0006": [
-            "0000"
-        ],
-        "0008": [
-            "0000"
-        ]
+        "0006": [ "0000" ],
+        "0008": [ "0000" ]
     }
 }
