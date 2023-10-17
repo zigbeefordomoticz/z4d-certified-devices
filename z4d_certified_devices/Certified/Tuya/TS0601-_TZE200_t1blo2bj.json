@@ -1,6 +1,10 @@
 {
     "_comment": "Tuya Siren Alarm - without any Temp/humi sensors",
     "_version": "0.10",
+    "Identifier" : [
+        [ "TS0601", "_TZE200_t1blo2bj" ],
+        [ "TS0601", "_TZE204_t1blo2bj" ]
+    ],
     "Ep": {
         "01": {
             "0000": "",
