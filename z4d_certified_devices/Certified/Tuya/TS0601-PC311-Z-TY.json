@@ -1,0 +1,36 @@
+{
+    "_comment": "Tuya Zigbee PC311-Z-TY",
+    "_source": "",
+    "_blakadder": "",
+    "_version": "1",
+    "MinPluginVersion": "7.1.004",
+    "Identifier": [
+        [ "TS0601", "_TZE200_rks0sgb7" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Switch/Power/Voltage/Ampere/ConsoMeter/ProdPower/ProdMeter"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0019", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
+    },
+    "TUYA_REGISTRATION": 19,
+    "TS0601_DP": { 
+        "65": { "store_tuya_attribute": "Power", "EvalExp": "value / 10", "sensor_type": "power", "domo_round": 2 },
+        "70": { "store_tuya_attribute": "Voltage", "EvalExp": "value / 10", "sensor_type": "voltage", "domo_round": 2}, 
+        "71": { "store_tuya_attribute": "Current", "EvalExp": "value / 1000", "sensor_type": "current", "domo_round": 2 },
+        "6a": { "store_tuya_attribute": "Meter", "sensor_type": "cons_metering", "EvalExp": "value / 100", "domo_round": 3},
+        "6b": { "store_tuya_attribute": "ProducedEnergy", "sensor_type": "prod_metering", "EvalExp": "value / 100", "domo_round": 3}
+    },
+    "Param": {
+    }
+}
