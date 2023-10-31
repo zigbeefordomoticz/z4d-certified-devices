@@ -30,6 +30,7 @@
         "0702": [ "0000", "0300", "0301", "0302" ],
         "0019": []
     },
+    "BatteryPercentageConverter": 2,
     "SummationMeteringMultiplier": 1,
     "SummationMeteringDivisor": 1,
     "MeteringUnit": "Unitless",
