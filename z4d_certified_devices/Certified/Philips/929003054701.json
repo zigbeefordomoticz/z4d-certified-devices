@@ -4,7 +4,9 @@
     "_version": "1.0",
     "Ep":{
         "0b": {
-            "0000": "", 
+            "0000": { "Attributes": {
+                "0020": { "Enabled": true, "Name": "0000_0020", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "0021": { "Enabled": true, "Name": "0000_0021", "DataType": "23", "ActionList": [ "check_store_value" ] } }},
             "0003": "", 
             "0004": "",
             "0005": "", 
