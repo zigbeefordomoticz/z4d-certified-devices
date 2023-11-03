@@ -1,0 +1,39 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/19",
+    "_blakadder": "",
+    "_comment": "Zigbee 3.0 smart plug 13A (UK version)",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0b04": "",
+            "0019": "",
+            "fc57": "",
+            "fc11": { "Attributes": {
+                "7004": { "Enabled": true, "Name": "0000_0020", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "7005": { "Enabled": true, "Name": "0000_0020", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "7006": { "Enabled": true, "Name": "0000_0020", "DataType": "42", "ActionList": [ "check_store_value" ] } }
+            },
+            "1000": "",
+            "Type": "Plug/Power/Meter/Ampere"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006" ],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0000", "Change": "01" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "4000" ],
+        "0006": [ "0000", "4001", "4002", "4003" ],
+        "0019": []
+    }
+}
