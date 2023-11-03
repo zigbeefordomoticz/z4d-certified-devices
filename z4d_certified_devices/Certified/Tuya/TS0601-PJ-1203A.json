@@ -14,10 +14,10 @@
             "ef00": "",
             "000a": "",
             "0019": "",
-            "Type": "Power/Voltage/Ampere/ConsoMeter/ProdPower/ProdMeter"
+            "Type": "Power/Voltage/Ampere/ConsoMeter/ProdPower/ProdMeter/PowerFactor"
         },
         "f1": {
-            "Type": "Power/Ampere/ConsoMeter/ProdPower/ProdMeter"
+            "Type": "Power/Ampere/ConsoMeter/ProdPower/ProdMeter/PowerFactor"
         }
     },
     "FakeEp": [ "f1" ],
@@ -40,11 +40,11 @@
 
         "71": { "store_tuya_attribute": "Current A", "EvalExp": "value/1000", "sensor_type": "current", "domo_round": 2 },
         "65": { "store_tuya_attribute": "Power A", "EvalExp": "value/10", "sensor_type": "power", "domo_round": 2 },
-        "6e": { "store_tuya_attribute": "Power Factor A", "EvalExp": "value" },
+        "6e": { "store_tuya_attribute": "Power Factor A", "EvalExp": "value", "sensor_type": "power_factor", "domo_round": 2 },
 
         "72": { "store_tuya_attribute": "Current B", "EvalExp": "value/1000", "sensor_type": "current", "domo_round": 2, "domo_ep": "f1" },
         "69": { "store_tuya_attribute": "Power B", "EvalExp": "value/10", "sensor_type": "power", "domo_round": 2, "domo_ep": "f1" },
-        "79": { "store_tuya_attribute": "Power Factor B", "EvalExp": "value" },
+        "79": { "store_tuya_attribute": "Power Factor B", "EvalExp": "value", "sensor_type": "power_factor", "domo_round": 2, "domo_ep": "f1" },
 
         "73": { "store_tuya_attribute": "Power A+B", "EvalExp": "value/10"},
 
