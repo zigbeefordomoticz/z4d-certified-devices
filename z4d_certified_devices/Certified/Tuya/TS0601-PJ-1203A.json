@@ -1,6 +1,6 @@
 {
-    "_comment": "Tuya Zigbee PC311-Z-TY",
-    "_source": "",
+    "_comment": "Tuya Zigbee PJ-1203A Dongguan Pnija Technology",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/17",
     "_blakadder": "",
     "_version": "1",
     "MinPluginVersion": "7.1.004",
@@ -38,17 +38,17 @@
 
         "70": { "store_tuya_attribute": "Voltage", "EvalExp": "value/10", "sensor_type": "voltage", "domo_round": 2}, 
 
-        "71": { "store_tuya_attribute": "Current A", "EvalExp": "value", "sensor_type": "current", "domo_round": 2 },
-        "65": { "store_tuya_attribute": "Power A", "EvalExp": "value", "sensor_type": "power", "domo_round": 2 },
+        "71": { "store_tuya_attribute": "Current A", "EvalExp": "value/1000", "sensor_type": "current", "domo_round": 2 },
+        "65": { "store_tuya_attribute": "Power A", "EvalExp": "value/10", "sensor_type": "power", "domo_round": 2 },
         "6e": { "store_tuya_attribute": "Power Factor A", "EvalExp": "value" },
 
-        "72": { "store_tuya_attribute": "Current B", "EvalExp": "value", "sensor_type": "current", "domo_round": 2, "domo_ep": "f1" },
-        "69": { "store_tuya_attribute": "Power B", "EvalExp": "value", "sensor_type": "power", "domo_round": 2, "domo_ep": "f1" },
+        "72": { "store_tuya_attribute": "Current B", "EvalExp": "value/1000", "sensor_type": "current", "domo_round": 2, "domo_ep": "f1" },
+        "69": { "store_tuya_attribute": "Power B", "EvalExp": "value/10", "sensor_type": "power", "domo_round": 2, "domo_ep": "f1" },
         "79": { "store_tuya_attribute": "Power Factor B", "EvalExp": "value" },
 
-        "73": { "store_tuya_attribute": "Power A+B", "EvalExp": "value"},
+        "73": { "store_tuya_attribute": "Power A+B", "EvalExp": "value/10"},
 
-        "6f": { "store_tuya_attribute": "AC_Frequency", "EvalExp": "value"}, 
+        "6f": { "store_tuya_attribute": "AC_Frequency", "EvalExp": "value/10"}, 
 
         "66": { "store_tuya_attribute": "Power Direction A", "EvalExp": "value"}, 
         "68": { "store_tuya_attribute": "Power Direction B", "EvalExp": "value"}, 
