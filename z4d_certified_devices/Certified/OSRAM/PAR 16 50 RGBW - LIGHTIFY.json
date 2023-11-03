@@ -1,0 +1,35 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/18",
+    "_description": "Smart+ Spot GU10 Multicolor",
+    "_blakadder": "https://zigbee.blakadder.com/OSRAM_AB35996.html",
+    "_comment": "",
+    "_version": "1.0",
+    "Ep": {
+        "03": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0008": "",
+            "0300": "",
+            "0019": "",
+            "1000": "",
+            "fc0f": "",
+            "Type": "ColorControlRGBWW"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0008", "0300" ],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "Change": "01", "DataType": "10", "MaxInterval": "0258", "MinInterval": "0001", "TimeOut": "0FFF" } } },
+        "0008": { "Attributes": { "0000": { "Change": "05", "DataType": "20", "MaxInterval": "0258", "MinInterval": "0005", "TimeOut": "0FFF" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0012", "4000" ],
+        "0006": [ "0000", "4000", "4001", "4002" ],
+        "0008": [ "0000" ],
+        "0300": [ "4000", "4001", "4002", "4003", "4004", "4005", "4006", "0001", "0002", "0003", "0004", "0007", "0008", "400a", "400b", "400c" ],
+        "0019": []
+    }
+}
