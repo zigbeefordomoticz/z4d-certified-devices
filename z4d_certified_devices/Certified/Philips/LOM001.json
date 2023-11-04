@@ -1,0 +1,37 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/20",
+    "_blakadder": "https://zigbee.blakadder.com/Philips_LOM001.html",
+    "_description": "Hue Smart Plug EU",
+    "Ep":{
+        "0b": {
+            "0000": { "Attributes": {
+                "0020": { "Enabled": true, "Name": "0000_0020", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "0021": { "Enabled": true, "Name": "0000_0021", "DataType": "23", "ActionList": [ "check_store_value" ] } }},
+            "0003": "", 
+            "0004": "",
+            "0005": "", 
+            "0006": "", 
+            "0008": "", 
+            "1000": "", 
+            "0019": "", 
+            "fc02": "",
+            "Type": "Plug"
+        },
+        "f2": {
+            "0021": "", 
+            "Type": ""
+        }
+    },
+    "Type":"",
+    "NickName":"",
+    "ClusterToBind": [ "0006" ],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0FFF", "Change": "01" }}}
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "4000" ] ,
+        "0006": [ "0000" , "4001", "4002", "4003" ],
+        "0008": [],
+        "0019": []
+    }
+}
