@@ -8,7 +8,10 @@
             "0003": "",
             "0006": "",
             "0008": "",
-            "000f": { "Attributes": { "0055": { "Enabled": true, "Name": "PresentValue", "DataType": "10", "UpdDomoDeviceWithCluster": "0006", "ActionList": [ "check_store_value","upd_domo_device"] }}},
+            "000f": { "Attributes": { 
+                "0055": { "Enabled": true, "Name": "PresentValue", "DataType": "10", "UpdDomoDeviceWithCluster": "0006", "ActionList": [ "check_store_value","upd_domo_device"] },
+                "f000": { "Enabled": true, "Name": "LegrandOnOff", "DataType": "21", "UpdDomoDeviceWithCluster": "0006", "ActionList": [ "check_store_value","upd_domo_device"] }}
+            },
             "0019": "",
             "0020": "",
             "fc01": "",
