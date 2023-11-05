@@ -1,0 +1,31 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/20",
+    "_blakadder": "https://zigbee.blakadder.com/Innr_PL_115.html",
+    "_description": "Puck Light White",
+    "Ep": {
+        "01": {
+            "0000": "", 
+            "0003": "", 
+            "0004": "", 
+            "0005": "", 
+            "0006": "", 
+            "0008": "", 
+            "0019": "",
+            "Type": "LvlControl"
+        },
+        "02": {
+            "1000":"",
+            "Type":""
+        }
+    },
+    "Type":"",
+    "ClusterToBind": [ ],
+    "ConfigureReporting": {
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "4000" ],
+        "0006": [ "0000", "4001", "4002" ],
+        "0008": [ "0000" ],
+        "0019": []
+    }
+}
