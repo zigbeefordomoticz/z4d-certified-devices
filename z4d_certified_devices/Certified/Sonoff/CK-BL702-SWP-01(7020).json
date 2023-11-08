@@ -14,9 +14,9 @@
             "0019": "",
             "fc57": "",
             "fc11": { "Attributes": {
-                "7004": { "Enabled": true, "Name": "Current", "EvalFunc": "(value/1000)", "UpdDomoDeviceWithCluster": "0b04", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "upd_domo_device" ] },
-                "7005": { "Enabled": true, "Name": "Voltage", "EvalFunc": "(value/1000)", "UpdDomoDeviceWithCluster": "0001", "ActionList": [ "check_store_value", "upd_domo_device" ] },
-                "7006": { "Enabled": true, "Name": "Power", "EvalFunc": "(value/1000)", "UpdDomoDeviceWithCluster": "0702", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value", "upd_domo_device" ] } }
+                "7004": { "Enabled": true, "Name": "Current", "EvalExp": "(value/1000)", "UpdDomoDeviceWithCluster": "0b04", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                "7005": { "Enabled": true, "Name": "Voltage", "EvalExp": "(value/1000)", "UpdDomoDeviceWithCluster": "0001", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                "7006": { "Enabled": true, "Name": "Power", "EvalExp": "(value/1000)", "UpdDomoDeviceWithCluster": "0702", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value", "upd_domo_device" ] } }
             },
             "1000": "",
             "Type": "Plug/Power/Meter/Ampere"
