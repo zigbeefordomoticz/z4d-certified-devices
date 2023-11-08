@@ -28,33 +28,33 @@
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
     },
     "TUYA_REGISTRATION": 19,
+    "TWO_COMPLEMENT_VAL": "0x100000000",
+    "TWO_COMPLEMENT_TST": "0x80000000",
     "TS0601_DP": { 
 
-        "01": { "store_tuya_attribute": "Unknow 01_02", "EvalExp": "value"},
+        "71": { "store_tuya_attribute": "AC_Frequency", "EvalExp": "(value)"}, 
+        "6a": { "store_tuya_attribute": "Voltage", "EvalExp": "(value/10)", "sensor_type": "voltage", "domo_round": 0}, 
 
-        "65": { "store_tuya_attribute": "Meter A", "EvalExp": "value * 10", "sensor_type": "cons_metering", "domo_round": 3 },
-        "66": { "store_tuya_attribute": "ProducedEnergy A", "EvalExp": "value * 10", "sensor_type": "prod_metering", "domo_round": 3},
+        "65": { "store_tuya_attribute": "Meter A", "EvalExp": "(value*10)", "sensor_type": "cons_metering", "domo_round": 3 },
+        "66": { "store_tuya_attribute": "ProducedEnergy A", "EvalExp": "(value*10)", "sensor_type": "prod_metering", "domo_round": 3},
+        "6b": { "store_tuya_attribute": "Current A", "EvalExp": "(value/1000)", "sensor_type": "current", "domo_round": 2 },
+        "6c": { "store_tuya_attribute": "Power A", "EvalExp": "(value)", "sensor_type": "power", "domo_round": 2 },
+        "6d": { "store_tuya_attribute": "Power Factor A", "EvalExp": "(value)", "sensor_type": "power_factor", "domo_round": 2 },
 
-        "67": { "store_tuya_attribute": "Meter B", "EvalExp": "value * 10", "sensor_type": "cons_metering", "domo_round": 3, "domo_ep": "f1"},
-        "68": { "store_tuya_attribute": "ProducedEnergy B", "EvalExp": "value * 10", "sensor_type": "prod_metering", "domo_round": 3, "domo_ep": "f1"},
+        "67": { "store_tuya_attribute": "Meter B", "EvalExp": "(value*10)", "sensor_type": "cons_metering", "domo_round": 3, "domo_ep": "f1"},
+        "68": { "store_tuya_attribute": "ProducedEnergy B", "EvalExp": "(value*10)", "sensor_type": "prod_metering", "domo_round": 3, "domo_ep": "f1"},
+        "6e": { "store_tuya_attribute": "Current B", "EvalExp": "(value/1000)", "sensor_type": "current", "domo_round": 2, "domo_ep": "f1" },
+        "6f": { "store_tuya_attribute": "Power B", "EvalExp": "(value)", "sensor_type": "power", "domo_round": 2, "domo_ep": "f1" },
+        "70": { "store_tuya_attribute": "Power Factor B", "EvalExp": "(value)", "sensor_type": "power_factor", "domo_round": 2, "domo_ep": "f1" },
 
-        "69": { "store_tuya_attribute": "Energy A+B", "EvalExp": "value * 10"},
+        "01": { "store_tuya_attribute": "Energy A+B", "EvalExp": "(value*10)"},
+        "02": { "store_tuya_attribute": "ProducedEnergy A+B", "EvalExp": "(value*10)"},
+        "09": { "store_tuya_attribute": "Power A+B", "EvalExp": "(value)" },
+        "69": { "store_tuya_attribute": "Current A+B", "EvalExp": "(value/1000)" },
 
-        "6a": { "store_tuya_attribute": "Voltage", "EvalExp": "value/10", "sensor_type": "voltage", "domo_round": 2}, 
-
-        "6b": { "store_tuya_attribute": "Current A", "EvalExp": "value", "sensor_type": "current", "domo_round": 2 },
-        "6c": { "store_tuya_attribute": "Power A", "EvalExp": "value", "sensor_type": "power", "domo_round": 2 },
-        "6d": { "store_tuya_attribute": "Power Factor A", "EvalExp": "value", "sensor_type": "power_factor", "domo_round": 2 },
-
-        "6e": { "store_tuya_attribute": "Current B", "EvalExp": "value", "sensor_type": "current", "domo_round": 2, "domo_ep": "f1" },
-        "6f": { "store_tuya_attribute": "Power B", "EvalExp": "value", "sensor_type": "power", "domo_round": 2, "domo_ep": "f1" },
-        "70": { "store_tuya_attribute": "Power Factor B", "EvalExp": "value", "sensor_type": "power_factor", "domo_round": 2, "domo_ep": "f1" },
-
-        "71": { "store_tuya_attribute": "AC_Frequency", "EvalExp": "value"}, 
-
-        "72": { "store_tuya_attribute": "Power Direction A", "EvalExp": "value"}, 
-        "73": { "store_tuya_attribute": "Power Direction B", "EvalExp": "value"}, 
-        "74": { "store_tuya_attribute": "Update Frequency", "EvalExp": "value"}
+        "72": { "store_tuya_attribute": "Power Direction A", "EvalExp": "(value)"}, 
+        "73": { "store_tuya_attribute": "Power Direction B", "EvalExp": "(value)"}, 
+        "74": { "store_tuya_attribute": "Update Frequency", "EvalExp": "(value)"}
     },
     "Param": {
     }
