@@ -29,5 +29,4 @@ We warmly invite Manufacturers and sellers to contribute by sending us samples o
 
 We extend our heartfelt gratitude to our generous donors whose contributions enable us to acquire additional equipment for rigorous testing and seamless integration. With your support, we can further enhance the plugin's capabilities and deliver an even more powerful and versatile experience for our users.
 
-* <img src="https://www.pipiche.fr//pp.svg" width="24" height="24" alt="Donate via Paypal"/> <a href="https://paypal.me/pipiche">Donate via PayPal</a>
-<br/>
+Donate via PayPal https://paypal.me/pipiche
