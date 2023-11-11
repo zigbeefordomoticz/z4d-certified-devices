@@ -1,0 +1,50 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/11",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_ZY-M100-24G.html",
+    "_description": "Smart Human Presence Sensor with Luminance Detection",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "0500": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Motion/Lux/TuyaRadarSensor"
+        }
+    },
+    "Identifier": [
+        [ "TS0601", "_TZE204_ijxvkhd0" ]
+    ],
+    "Type": "",
+    "ClusterToBind": [ ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [  "0004", "0000", "0001", "0005", "0007", "fffe" ],
+        "0001": [],
+        "0019": [],
+        "0500": [  "0000", "0001", "0002", "0010", "0011"],
+        "ef00": []
+    },
+    "TS0601_DP": {
+        "01": { "store_tuya_attribute": "Unknow_01_01"},
+        "02": { "store_tuya_attribute": "Unknow_02_01"},
+        "66": { "store_tuya_attribute": "Unknow_66_02"},
+        "68": { "sensor_type": "illuminance"},
+        "69": { "sensor_type": "presence_state"},
+        "6a": { "store_tuya_attribute": "Sensitivity"},
+        "6b": { "store_tuya_attribute": "max_range"},
+        "6c": { "store_tuya_attribute": "min_range"},
+        "6d": { "store_tuya_attribute": "target_distace"},
+        "6e": { "store_tuya_attribute": "fading_time"},
+        "6f": { "store_tuya_attribute": "presence_sensitivity"},
+        "70": { "sensor_type": "motion", "EvalExp": "int(value != 0)", "DomoDeviceFormat": "str"}
+    },
+    "Param": {
+        "RadarMotionSensitivity": 7,
+        "RadarMotionMinRange": 60,
+        "RadarMotionMaxRange": 690,
+        "RadarMotionDelay": 1,
+        "RadarMotionFading": 150
+    }
+}
