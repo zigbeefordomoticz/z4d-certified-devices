@@ -24,6 +24,8 @@
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
     },
     "TUYA_REGISTRATION": 19,
+    "TWO_COMPLEMENT_VAL": "0x01000000",
+    "TWO_COMPLEMENT_TST": "0x00800000",
     "TS0601_DP": { 
         "01": { "store_tuya_attribute": "Meter", "sensor_type": "cons_metering", "EvalExp": "value * 10", "domo_round": 3},
         "02": { "store_tuya_attribute": "ProducedEnergy", "sensor_type": "prod_metering", "EvalExp": "value * 10", "domo_round": 3},
