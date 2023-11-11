@@ -1,7 +1,7 @@
 {
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/11",
-    "_blakadder": "https://zigbee.blakadder.com/Tuya_ZY-M100-24G.html",
-    "_description": "uya Human Presence Detector 5.8GHz Ceiling Mount ZY-M100-2",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_ZY-M100-S_1.html",
+    "_description": "Mini human breathe sensor",
     "Ep": {
         "01": {
             "0000": "",
@@ -14,10 +14,8 @@
         }
     },
     "Identifier": [
-        [ "TS0601", "_TZE200_bh3n6gk8" ],
-        [ "TS0601", "_TZE200_3towulqd" ], 
-        [ "TS0601", "_TZE200_1ibpyhdc" ],
-        [ "TS0601", "_TZE204_e5m9c5hl" ]
+        [ "TS0601", "_TZE204_e5m9c5hl" ],
+        [ "TS0601", "_TZE204_sxm7l9xa" ]
     ],
     "Type": "",
     "ClusterToBind": [ ],
