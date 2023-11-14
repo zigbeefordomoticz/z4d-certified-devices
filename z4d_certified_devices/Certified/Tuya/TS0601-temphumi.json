@@ -23,6 +23,8 @@
     "ClusterToBind": [ "0000"],
     "ConfigureReporting": {
     },
+    "TUYA_REGISTRATION": 19,
+    "TY_DATA_QUERY": true,
     "ReadAttributes": {
         "0000": [ "0004", "0005", "0000", "0001", "0007", "ffe2", "ffe4", "ffdf", "fffe" ],
         "0019": [],
