@@ -9,7 +9,8 @@
             "0000": { "Attributes": { 
                 "e000": { "Enabled": true, "Name": "Wiser_0000_e000", "DataType": "42", "ActionList": [ "check_store_value" ] },
                 "e001": { "Enabled": true, "Name": "Wiser_0000_e001", "DataType": "42", "ActionList": [ "check_store_value" ] },
-                "e002": { "Enabled": true, "Name": "Wiser_0000_e002", "DataType": "42", "ActionList": [ "check_store_value" ] }}
+                "e002": { "Enabled": true, "Name": "Wiser_0000_e002", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "e004": { "Enabled": true, "Name": "Wiser_0000_e004", "DataType": "42", "ActionList": [ "check_store_value" ] }}
             },
             "0001": { "Attributes": { "0100": { "Enabled": true, "Name": "Wiser_0001_0100", "DataType": "20", "ActionList": [ "check_store_value" ] }  }  },
             "0003": "",
