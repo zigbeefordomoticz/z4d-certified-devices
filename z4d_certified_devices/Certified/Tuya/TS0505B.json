@@ -13,6 +13,7 @@
             "0300": { 
                 "Attributes": { 
                     "f000": {"Enabled": true, "Name": "Tuya0300_f000", "DataType": "20", "ActionList": [ "check_store_value"] },
+                    "e100": {"Enabled": true, "Name": "Tuya0300_e100", "DataType": "25", "ActionList": [ "check_store_value"] },
                     "f003": {"Enabled": true, "Name": "Tuya0300_f003", "DataType": "48", "ActionList": [ "check_store_value"] }
                 }
             },
