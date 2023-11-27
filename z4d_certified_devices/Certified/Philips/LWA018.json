@@ -1,0 +1,34 @@
+{
+    "_source" : "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/29",
+    "_blakadder": "https://zigbee.blakadder.com/Philips_LWA018.html",
+    "_description": "Hue White 1100 B22 Smart Bulb - 75 W",
+    "Ep":{
+        "0b": {
+            "0000": "", 
+            "0003": "", 
+            "0004": "",
+            "0005": "", 
+            "0006": "", 
+            "0008": "", 
+            "1000": "", 
+            "fc02": "",
+            "0019": "", 
+            "Type": "LvlControl"
+        },
+        "f2": {
+            "0021": "", 
+            "Type": ""
+        }
+    },
+    "Type":"",
+    "ClusterToBind": [ ],
+    "ConfigureReporting": {
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "000a", "4000" ] ,
+        "0006": [ "0000" , "4000", "4001", "4002", "4003" ],
+        "0008": [ "0000" ]
+    },
+    "Param": {
+    }
+}
