@@ -12,16 +12,10 @@
             "0405": "",
             "fcc0": {
                 "Attributes": {
-                    "0112": {
-                        "Enabled": true,
-                        "ManufRawData": true,
-                        "Name": "MotionLux",
-                        "DataType": "23",
-                        "Acc": "R",
-                        "Mandatory": false,
-                        "ManufSpecificFunc": "Lumi_lumi_motion_ac02",
-                        "ActionList": [ "check_store_value" ]
-                    }
+                    "010c": { "Enabled": true, "ManufRawData": true, "Name": "MotionLux_102", "DataType": "20", "Acc": "R", "Mandatory": false, "ActionList": [ "check_store_value" ] },
+                    "0102": { "Enabled": true, "ManufRawData": true, "Name": "MotionLux_10c", "DataType": "20", "Acc": "R", "Mandatory": false, "ActionList": [ "check_store_value" ] },
+                    "0152": { "Enabled": true, "ManufRawData": true, "Name": "MotionLux_152", "DataType": "20", "Acc": "R", "Mandatory": false, "ActionList": [ "check_store_value" ] },
+                    "0112": { "Enabled": true, "ManufRawData": true, "Name": "MotionLux", "DataType": "23", "Acc": "R", "Mandatory": false, "ManufSpecificFunc": "Lumi_lumi_motion_ac02", "ActionList": [ "check_store_value" ] }
                 }
             },
             "Type": "Motion/Lux"
