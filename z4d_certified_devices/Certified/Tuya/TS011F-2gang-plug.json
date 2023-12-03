@@ -3,8 +3,9 @@
     "_comment": "Tuya Smart 2 Plug with Power measurement",
     "_version": "1.0",
     "Identifier": [
-        [ "TS011F", "_TZ3000_jak16dll" ]
-
+        [ "TS011F", "_TZ3000_jak16dll" ],
+        [ "TS011F", "_TZ3000_uwkja6z1" ],
+        [ "TS011F", "_TZ3000_rqbjepe8" ]
     ],
     "Ep" : {
         "01": {
@@ -25,8 +26,6 @@
             "0006": "",
             "e001": "",
             "Type": "Plug"
-
-
         },
         "f2": {
             "0000": "",
