@@ -39,8 +39,10 @@
         "0006": [ "0000" , "4000", "4001", "4002", "4003" ],
         "0008": [ "0000" ],
         "0300": [ "0000", "0002", "0003", "0004", "0007", "0008" ],
-	"0019": []
+        "0019": []
     },
+    "BatteryDevice": false,
+    "MainPoweredDevice": true,
     "Param": {
         "PowerOnAfterOffOn": 255,
         "OnOffPollingFreq": 300,
