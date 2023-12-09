@@ -8,10 +8,10 @@
             "0004": "",
             "0005": "",
             "0102": { "Attributes": { 
-                "f001": { "Enabled": true, "Name": "Legrand Shutter f001", "ActionList": [ "check_store_raw_value"] },
-                "f002": { "Enabled": true, "Name": "Legrand Shutter f002", "ActionList": [ "check_store_raw_value"] },
-                "f003": { "Enabled": true, "Name": "Legrand Shutter f003", "ActionList": [ "check_store_raw_value"] },
-                "f004": { "Enabled": true, "Name": "Legrand Shutter f004", "ActionList": [ "check_store_raw_value"] }} 
+                "f001": { "Enabled": true, "Name": "Legrand Shutter f001", "ActionList": [ "check_store_value"] },
+                "f002": { "Enabled": true, "Name": "Legrand Shutter f002", "ActionList": [ "check_store_value"] },
+                "f003": { "Enabled": true, "Name": "Legrand Shutter f003", "ActionList": [ "check_store_value"] },
+                "f004": { "Enabled": true, "Name": "Legrand Shutter f004", "ActionList": [ "check_store_value"] }} 
                 },
             "000f": { "Attributes": { "0055": { "Enabled": true, "Name": "PresentValue", "DataType": "10", "EvalFunc": "((value ^1) * 100)", "UpdDomoDeviceWithCluster": "0102", "ActionList": [ "check_store_value","upd_domo_device"] }}},
             "fc01": "",
