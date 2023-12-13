@@ -47,6 +47,7 @@
     "TuyaCommandF0": true,
     "FORCE_COLOR_COMMAND": "TuyaMovetoHueandSaturation",
     "TUYAColorControlRgbMode": true,
+    "NO_READ_ATTRIBUTE_RSP": true,
     "Param": {
         "moveToColourTemp": "0010",
         "moveToColourRGB": "0010",
