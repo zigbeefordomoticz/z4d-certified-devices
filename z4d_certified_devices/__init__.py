@@ -3,7 +3,6 @@ import os.path
 from pathlib import Path
 from os import listdir
 from os.path import isdir, isfile, join
-import Domoticz
 
 from .version import __version__
 
@@ -34,10 +33,10 @@ def z4d_import_device_configuration(self, path_name):
                     try:
                         model_definition = json.load(handle)
                     except ValueError as e:
-                        Domoticz.Error("--> JSON ConfFile: %s load failed with error: %s" % (filename, str(e)))
+                        self.log.logging("z4dCertifiedDevices", "Error", "--> JSON ConfFile: %s load failed with error: %s" % (filename, str(e)))
                         continue
                     except Exception as e:
-                        Domoticz.Error("--> JSON ConfFile: %s load general error: %s" % (filename, str(e)))
+                        self.log.logging("z4dCertifiedDevices", "Error", "--> JSON ConfFile: %s load general error: %s" % (filename, str(e)))
                         continue
 
                 try:
@@ -60,7 +59,7 @@ def z4d_import_device_configuration(self, path_name):
                             self.ModelManufMapping[ (x[0], x[1] )] = device_model_name
 
                 except Exception:
-                    Domoticz.Error("--> Unexpected error when loading a configuration file")
+                    self.log.logging("z4dCertifiedDevices", "Error", "--> Unexpected error when loading a configuration file")
 
     self.log.logging("z4dCertifiedDevices", "Debug", "--> Config loaded: %s" % self.DeviceConf.keys())
     self.log.logging("z4dCertifiedDevices", "Debug", "Certified Devices ModelManufMapping loaded - %s" %self.ModelManufMapping.keys())
