@@ -1,5 +1,5 @@
 {
-    "_description": "Multifunction Relay Switch",
+    "_description": "Multifunction Relay Switch ",
     "_blakadder": "https://zigbee.blakadder.com/NodOn_SIN-4-1-20.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/37",
     "Ep": {
