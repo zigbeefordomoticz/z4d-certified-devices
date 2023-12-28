@@ -4,11 +4,16 @@
 			"0000": "",
 			"0001": "",
 			"0003": "",
-			"0402": "",
+			"0402": {
+				 "Attributes": { 
+                    			"003e": {"Enabled": true, "Name": "Tuya_0402_003e", "DataType": "18", "ActionList": [ "check_store_value"] }}},
 			"0405": "",
+			"e002": {
+                "Attributes": { 
+                    "e00b": {"Enabled": true, "Name": "Tuya_e002_e00b", "DataType": "30", "ActionList": [ "check_store_value"] }}},
 			"Type": "Temp/Humi"
 		}
-	},
+	},	
 	"Type": "",
 	"ClusterToBind": [
 		"0405",
