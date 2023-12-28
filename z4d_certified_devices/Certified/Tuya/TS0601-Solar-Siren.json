@@ -3,7 +3,8 @@
     "_comment": "NEO - Sirène intelligente extérieure Zigbee Tuya (alimentation 5V/1A ou batterie + panneau solaire)",
     "_version": "1.0",
     "Identifier": [
-        [ "TS0601", "_TZE200_nlrfgpny"]
+        [ "TS0601", "_TZE200_nlrfgpny"],
+        [ "TS0601", "_TZE204_nlrfgpny"]
     ],
     "Ep": {
         "01": {
@@ -29,10 +30,10 @@
         "07": { "store_tuya_attribute": "TuyaAlarmDuration", "action_type": "TuyaAlarmDuration"},
         "0d": { "store_tuya_attribute": "TuyaAlarmSwitch", "action_type": "TuyaAlarmSwitch"},
         "0e": { "store_tuya_attribute": "Battery", "sensor_type": "battery"},
-	    "14": { "store_tuya_attribute": "TamperAlarmState", "sensor_type": "tamper"},
+        "14": { "store_tuya_attribute": "TamperAlarmState", "sensor_type": "tamper"},
         "15": { "store_tuya_attribute": "TuyaAlarmMelody", "action_type": "TuyaAlarmMelody"},
-	    "65": { "store_tuya_attribute": "TuyaTamperSwitch", "action_type": "TuyaTamperSwitch"},
-	    "66": { "store_tuya_attribute": "TuyaAlarmMode", "action_type": "TuyaAlarmMode"} 
+        "65": { "store_tuya_attribute": "TuyaTamperSwitch", "action_type": "TuyaTamperSwitch"},
+        "66": { "store_tuya_attribute": "TuyaAlarmMode", "action_type": "TuyaAlarmMode"} 
     },
     "BatteryDevice": 1,
     "Param": {
