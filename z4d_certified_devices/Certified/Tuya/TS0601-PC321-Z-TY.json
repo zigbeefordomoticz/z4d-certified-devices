@@ -1,0 +1,63 @@
+{
+    "_comment": "Tuya Zigbee PC321-Z-TY, 3-phase clamp power meter",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/38",
+    "_blakadder": "",
+    "_version": "1",
+    "MinPluginVersion": "7.1.004",
+    "Identifier": [
+        [ "TS0601", "_TZE200_nslr42tt" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Power/Voltage/Ampere/Meter/PowerFactor"
+        },
+        "f1": {
+            "Type": "Power/Ampere/Meter/PowerFactor"
+        },
+        "f2": {
+            "Type": "Power/Ampere/Meter/PowerFactor"
+        }
+    },
+    "FakeEp": [ "f1", "f2" ],
+    "Type": "",
+    "ClusterToBind": [ "0019", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
+    },
+    "TUYA_REGISTRATION": 19,
+    "TWO_COMPLEMENT_VAL": "0x100000000",
+    "TWO_COMPLEMENT_TST": "0x80000000",
+    "TS0601_DP": { 
+
+        "84": { "store_tuya_attribute": "AC_Frequency", "EvalExp": "(value)"}, 
+        "85": { "store_tuya_attribute": "Temperature", "EvalExp": "(value)"},
+        "86": { "store_tuya_attribute": "DeviceStatus", "EvalExp": "(value)"},
+
+        "6a": { "store_tuya_attribute": "Voltage", "EvalExp": "(value/10)", "sensor_type": "voltage", "domo_round": 0}, 
+
+        "65": { "store_tuya_attribute": "Meter A", "EvalExp": "(value*10)", "sensor_type": "cons_metering", "domo_round": 3 },
+        "66": { "store_tuya_attribute": "Power Factor A", "EvalExp": "(value)", "sensor_type": "power_factor", "domo_round": 2 },
+
+        "6f": { "store_tuya_attribute": "Meter B", "EvalExp": "(value*10)", "sensor_type": "cons_metering", "domo_round": 3, "domo_ep": "f1"},
+        "70": { "store_tuya_attribute": "Power Factor B", "EvalExp": "(value)", "sensor_type": "power_factor", "domo_round": 2, "domo_ep": "f1" },
+
+        "79": { "store_tuya_attribute": "Meter C", "EvalExp": "(value*10)", "sensor_type": "cons_metering", "domo_round": 3, "domo_ep": "f2"},
+        "7a": { "store_tuya_attribute": "Power Factor C", "EvalExp": "(value)", "sensor_type": "power_factor", "domo_round": 2, "domo_ep": "f2" },
+
+        "01": { "store_tuya_attribute": "Energy A+B+C", "EvalExp": "(value*10)"},
+        "09": { "store_tuya_attribute": "Power A+B+C", "EvalExp": "(value)" },
+        "83": { "store_tuya_attribute": "Current A+B+C", "EvalExp": "(value/1000)" },
+
+        "72": { "store_tuya_attribute": "Power Direction A", "EvalExp": "(value)"}, 
+        "73": { "store_tuya_attribute": "Power Direction B", "EvalExp": "(value)"}, 
+        "74": { "store_tuya_attribute": "Update Frequency", "EvalExp": "(value)"}
+    },
+    "Param": {
+    }
+}
