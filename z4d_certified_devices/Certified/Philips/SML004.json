@@ -17,6 +17,7 @@
             "0402": "",
             "0406": { "Attributes": { 
                 "0030": {"Enabled": true, "Name": "PhilipsSensitivity" , "DataType": "20", "ActionList": [ "check_store_value"] },
+                "0040": {"Enabled": true, "Name": "Philips0040" , "DataType": "20", "ActionList": [ "check_store_value"] },
                 "0041": {"Enabled": true, "Name": "Philips0041" , "DataType": "23", "ActionList": [ "check_store_value"] },
                 "0042": {"Enabled": true, "Name": "Philips0042" , "DataType": "23", "ActionList": [ "check_store_value"] },
                 "0043": {"Enabled": true, "Name": "Philips0043" , "DataType": "23", "ActionList": [ "check_store_value"] },
