@@ -14,7 +14,7 @@
             "ef00": "",
             "000a": "",
             "0019": "",
-            "Type": "Power/Ampere/Meter/Temperature"
+            "Type": "Power/Ampere/Meter/Temp"
         },
         "f1": {
             "Type": "Power/Ampere/Meter/PowerFactor/Voltage"
@@ -43,27 +43,27 @@
         "86": { "store_tuya_attribute": "DeviceStatus", "EvalExp": "(value)"},
 
         "01": { "store_tuya_attribute": "Energy A+B+C", "EvalExp": "(value * 10)", "sensor_type": "cons_metering", "domo_round": 3},
-        "09": { "store_tuya_attribute": "Power A+B+C", "EvalExp": "(value & 0x0000ffff)", "sensor_type": "power", "domo_round": 2 },
+        "09": { "store_tuya_attribute": "Power A+B+C", "EvalExp": "(value )", "sensor_type": "power", "domo_round": 2 },
         "83": { "store_tuya_attribute": "Current A+B+C", "EvalExp": "(value/1000)", "sensor_type": "current", "domo_round": 2 },
 
         "65": { "store_tuya_attribute": "Meter A", "EvalExp": "(value*10)", "sensor_type": "cons_metering", "domo_round": 3, "domo_ep": "f1" },
         "66": { "store_tuya_attribute": "Power Factor A", "EvalExp": "(value)", "sensor_type": "power_factor", "domo_round": 2 , "domo_ep": "f1"},
         "06": [ { "store_tuya_attribute": "Voltage A", "EvalExp": "((value & 0xffff000000000000) >> 48) / 10", "sensor_type": "voltage", "domo_round": 2 , "domo_ep": "f1"},
-                { "store_tuya_attribute": "Current A", "EvalExp": "((value & 0x0000ffffffff0000) >> 24) / 100 ", "sensor_type": "current", "domo_round": 2 , "domo_ep": "f1"},
-                { "store_tuya_attribute": "Power A", "EvalExp": "((value & 0x0000000000000ffff) >> 16) / 100", "sensor_type": "power", "domo_round": 2 ,"domo_ep": "f1" }],
+                { "store_tuya_attribute": "Current A", "EvalExp": "((value & 0x0000ffffffff0000) >> 24) / 1000 ", "sensor_type": "current", "domo_round": 2 , "domo_ep": "f1"},
+                { "store_tuya_attribute": "Power A", "EvalExp": "(value & 0x0000000000000ffff) / 100", "sensor_type": "power", "domo_round": 2 ,"domo_ep": "f1" }],
 
         "6f": { "store_tuya_attribute": "Meter B", "EvalExp": "(value * 10)", "sensor_type": "cons_metering", "domo_round": 3, "domo_ep": "f2"},
         "70": { "store_tuya_attribute": "Power Factor B", "EvalExp": "(value)", "sensor_type": "power_factor", "domo_round": 2, "domo_ep": "f2" },
         "07": [ { "store_tuya_attribute": "Voltage B", "EvalExp": "((value & 0xffff000000000000) >> 48) / 10", "sensor_type": "voltage", "domo_round": 2, "domo_ep": "f2" },
-                { "store_tuya_attribute": "Current B", "EvalExp": "((value & 0x0000ffffffff0000) >> 24) / 100", "sensor_type": "current", "domo_round": 2, "domo_ep": "f2" },
-                { "store_tuya_attribute": "Power B", "EvalExp": "((value & 0x0000000000000ffff) >> 16) / 100", "sensor_type": "power", "domo_round": 2, "domo_ep": "f2" }],
+                { "store_tuya_attribute": "Current B", "EvalExp": "((value & 0x0000ffffffff0000) >> 24) / 1000", "sensor_type": "current", "domo_round": 2, "domo_ep": "f2" },
+                { "store_tuya_attribute": "Power B", "EvalExp": "(value & 0x0000000000000ffff) / 100", "sensor_type": "power", "domo_round": 2, "domo_ep": "f2" }],
                 
 
         "79": { "store_tuya_attribute": "Meter C", "EvalExp": "(value * 10)", "sensor_type": "cons_metering", "domo_round": 3, "domo_ep": "f3"},
         "7a": { "store_tuya_attribute": "Power Factor C", "EvalExp": "(value)", "sensor_type": "power_factor", "domo_round": 2, "domo_ep": "f3" },
         "08": [ { "store_tuya_attribute": "Voltage C", "EvalExp": "((value & 0xffff000000000000) >> 48) / 10", "sensor_type": "voltage", "domo_round": 2, "domo_ep": "f3" },
-                { "store_tuya_attribute": "Current C", "EvalExp": "((value & 0x0000ffffffff0000) >> 24) / 100", "sensor_type": "current", "domo_round": 2, "domo_ep": "f3" },
-                { "store_tuya_attribute": "Power C", "EvalExp": "((value & 0x0000000000000ffff) >> 16) / 100", "sensor_type": "power", "domo_round": 2, "domo_ep": "f3" }]
+                { "store_tuya_attribute": "Current C", "EvalExp": "((value & 0x0000ffffffff0000) >> 24) / 1000", "sensor_type": "current", "domo_round": 2, "domo_ep": "f3" },
+                { "store_tuya_attribute": "Power C", "EvalExp": "(value & 0x0000000000000ffff) / 100", "sensor_type": "power", "domo_round": 2, "domo_ep": "f3" }]
     },
     "Param": {
     }
