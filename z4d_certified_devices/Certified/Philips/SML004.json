@@ -4,13 +4,19 @@
     "Ep": {
         "02": {
             "0000": { "Attributes": {
+                "0020": {"Enabled": true, "Name": "Hue Specific 0020", "DataType": "42", "ActionList": [ "check_store_value"] },
+                "0021": {"Enabled": true, "Name": "Hue Specific 0021", "DataType": "23", "ActionList": [ "check_store_value"] },
                 "0030": {"Enabled": true, "Name": "Hue Specific", "DataType": "30", "ActionList": [ "check_store_value"] },
                 "0031": {"Enabled": true, "Name": "Configuration", "DataType": "19", "ActionList": [ "check_store_value"] },
                 "0032": {"Enabled": true, "Name": "UserTest", "DataType": "10", "ActionList": [ "check_store_value"] },
                 "0033": {"Enabled": true, "Name": "LedIndication", "DataType": "10", "ActionList": [ "check_store_value"] },
                 "0034": {"Enabled": true, "Name": "Device Mode", "DataType": "30", "ActionList": [ "check_store_value"] }}
             },
-            "0001": "",
+            "0001": { "Attributes": {
+                "f001": {"Enabled": true, "Name": "Hue Specific f001", "DataType": "21", "ActionList": [ "check_store_value"] },
+                "f002": {"Enabled": true, "Name": "Hue Specific f002", "DataType": "21", "ActionList": [ "check_store_value"] },
+                "f003": {"Enabled": true, "Name": "Hue Specific f003", "DataType": "21", "ActionList": [ "check_store_value"] }}},
+
             "0003": "",
             "0019": "",
             "0400": "",

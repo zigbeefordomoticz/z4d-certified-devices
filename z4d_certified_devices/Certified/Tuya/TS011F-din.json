@@ -1,6 +1,11 @@
 {
     "_comment": "Tuya DIN",
     "_version": "1.0",
+    "Identifier": [
+        [ "TS011F", "_TZ3000_cayepv1a" ],
+        [ "TS011F", "_TZ3000_lepzuhto" ],
+        [ "TS011F", "_TZ3000_qystbcjg" ]
+    ],
     "Ep": {
         "01": {
             "0000": { "Attributes": { "ffde": { "Enabled": true, "Name": "Tuya_0000_ffde", "DataType": "20" , "ActionList": [ "check_store_value"]} } },
@@ -13,7 +18,7 @@
             "e001": "",
             "000a": "",
             "0019": "",
-            "Type": "Plug/Power/Meter/Voltage"
+            "Type": "Switch/Power/Meter/Voltage"
         },
         "f2": {
             "0000": "",
