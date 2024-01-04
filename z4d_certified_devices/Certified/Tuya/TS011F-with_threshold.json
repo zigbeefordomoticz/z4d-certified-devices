@@ -53,6 +53,16 @@
     "Param": {
         "PowerOnAfterOffOn": 2,
         "TuyaBackLight": 1,
-        "PowerPollingFreq": 300
+        "PowerPollingFreq": 300,
+        "TS011F_overTemperatureThreshold": 50,
+        "TS011F_overTemperatureBreaker": 0,
+        "TS011F_overPowerThreshold": 1,
+        "TS011F_overPowerBreaker": 0,
+        "TS011F_overCurrentThreshold": 1,
+        "TS011F_overCurrentBreaker": 0,
+        "TS011F_overVoltageThreshold": 235,
+        "TS011F_overVoltageBreaker": 0,
+        "TS011F_underVoltageThreshold": 215,
+        "TS011F_underVoltageBreaker": 0
     }
 }
