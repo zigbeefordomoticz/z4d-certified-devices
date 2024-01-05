@@ -1,0 +1,43 @@
+{
+    "_comment": "Tuya Zigbee-Détecteur de Présence Humaine Intelligent",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0400": "",
+            "0500": "",
+            "e000": "",
+            "e002": "",
+            "ee00": "",
+            "ef00": "",
+            "0019": "",
+            "Type": "Motion/Lux"
+        }
+    },
+    "Type": "",
+    "MotionViaIASAlarm1": true,
+    "ClusterToBind": [ "0400" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe" ],
+        "0400": [ "0000", "0001", "0002"],
+        "0500": [ "0000", "0001", "0002", "0010", "0011"],
+        "ef00": []
+    },
+    "TS0601_DP": {
+        "01": { "store_tuya_attribute": "motion", "EvalExp": "int(value == 0)", "DomoDeviceFormat": "str"},
+        "02": { "store_tuya_attribute": "LargeMotionDetectionSensitivity" },
+        "04": { "store_tuya_attribute": "LargeMotionDetectionDistance" },
+        "65": { "store_tuya_attribute": "MotionState" },
+        "66": { "store_tuya_attribute": "FadingTime" },
+        "68": { "store_tuya_attribute": "MediumMotionDetectionDistance" },
+        "69": { "store_tuya_attribute": "MediumMotionDetectionSensitivity" },
+        "6a": { "store_tuya_attribute": "Illuminance" },
+        "6b": { "store_tuya_attribute": "Indicator" },
+        "6c": { "store_tuya_attribute": "SmallDetectionDistance" },
+        "6d": { "store_tuya_attribute": "SmallDetectionSensitivity" }
+    },
+
+    "Param": {
+    }
+}
