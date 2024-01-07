@@ -35,6 +35,9 @@
     },
     "TUYA_REGISTRATION": 19,
     "RELY_ON_EVAL_EXP": true,
+    "TWO_COMPLEMENT_VAL": "0x100000000",
+    "TWO_COMPLEMENT_TST": "0x80000000",
+    "DoNotOverWriteOptions": true,
     "TS0601_DP": {
 
         "84": { "store_tuya_attribute": "AC_Frequency", "EvalExp": "(value)"},
