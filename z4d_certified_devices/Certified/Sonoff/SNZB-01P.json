@@ -1,0 +1,39 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/44",
+    "_comment": "Sonoff remote switch",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0020": "",
+            "0006": "",
+            "fc57": "",
+            "0019": "",
+            "Type": "Button_3"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "REMOTE_SCENE_MAPPING": {
+        "0006": { 
+            ("02", "02"): 1,
+            ("01", "02"): 2,
+            ("00", "02"): 3
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001", "0006" ],
+    "ConfigureReporting": {
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0004", "0005", "0006", "0007" ],
+        "0001": [ "0020", "0021" ],
+        "0006": [ "0000" ]
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2
+}
