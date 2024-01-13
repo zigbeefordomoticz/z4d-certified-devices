@@ -1,9 +1,9 @@
 {
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/45",
-     "Identifier": [
-         [ "TS0201", "_TZ3000_ywagc4rj"],
-         [ "TS0201", "_TZ3210_ncw88jfq"]
-     ],
+    "Identifier": [
+        [ "TS0201", "_TZ3000_ywagc4rj"],
+        [ "TS0201", "_TZ3210_ncw88jfq"]
+    ],
     "Ep": {
         "01": {
             "0000": "",
