@@ -6,13 +6,15 @@
     ],
     "Ep": {
         "01": {
-            "0000": { "Attributes": { "ffde": { "Enabled": true, "Name": "Tuya_0000_ffde", "DataType": "20" , "ActionList": [ "check_store_value"]} } },
+            "0000": { "Attributes": { 
+                "ffde": { "Enabled": true, "Name": "Tuya_0000_ffde", "DataType": "20" , "ActionList": [ "check_store_value"]} } },
             "0004": "",
             "0005": "",
             "0006": "",
             "0702": "",
             "0b04": "",
-            "e000": "",
+            "e000": { "Attributes": { 
+                "d003": { "Enabled": true, "Name": "Tuya_e000_d003", "DataType": "42" , "ActionList": [ "check_store_value"]} } },
             "e001": "",
             "000a": "",
             "0019": "",
