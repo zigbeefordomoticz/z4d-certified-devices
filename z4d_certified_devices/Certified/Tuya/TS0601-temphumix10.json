@@ -1,16 +1,10 @@
 {
     "_comment": "Tuya Temp/Humi sensor",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_ZG227C.html",
+    "_shopping": "https://nl.aliexpress.com/item/1005004594112721.html?spm=a2g0o.order_list.order_list_main.79.7d0179d2GQg1tV&gatewayAdapt=glo2nld",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/45",
     "Identifier": [
-        [ "TS0601", "_TZE200_qyflbnbj"],
-        [ "TS0601", "_TZE200_bjawzodf"],
-        [ "TS0601", "_TZE200_bq5c8xfe"],
-        [ "TS0601", "_TZE200_whkgqxse"],
-        [ "TS0601", "_TZE200_zl1kmjqx"],
-        [ "TS0601", "_TZE200_yjjdcqsq"],
-        [ "TS0601", "_TZE200_9yapgbuv" ], 
-        [ "TS0601", "_TZE204_upagmta9" ], 
-        [ "TS0601", "_TZE200_upagmta9" ]
+        [ "TS0601", "_TZE200_cirvgep4" ]
     ],
 
     "Ep": {
@@ -28,6 +22,12 @@
     },
     "TUYA_REGISTRATION": 19,
     "TY_DATA_QUERY": true,
+    "TS0601_DP": {
+        "01": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)" },
+        "02": { "sensor_type": "humidity", "EvalExp": "int(value*10)" },
+        "03": { "sensor_type": "battery", "EvalExp": "0 if value == 0 else (50 if value == 1 else (80 if value == 2 else None))"},
+        "09": { "store_tuya_attribute": "temperature_unit" }
+    },
     "ReadAttributes": {
         "0000": [ "0004", "0005", "0000", "0001", "0007", "ffe2", "ffe4", "ffdf", "fffe" ],
         "0019": [],
