@@ -24,7 +24,7 @@
     "TY_DATA_QUERY": true,
     "TS0601_DP": {
         "01": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)" },
-        "02": { "sensor_type": "humidity", "EvalExp": "int(value*10)" },
+        "02": { "sensor_type": "humidity", "EvalExp": "int(value)" },
         "03": { "sensor_type": "battery", "EvalExp": "0 if value == 0 else (50 if value == 1 else (80 if value == 2 else None))"},
         "09": { "store_tuya_attribute": "temperature_unit" }
     },

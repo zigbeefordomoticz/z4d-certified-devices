@@ -12,7 +12,7 @@
             "0402": { "Attributes": { 
                 "003e": {"Enabled": true, "Name": "Tuya_0402_003e", "DataType": "18", "ActionList": [ "check_store_value"] }}},
             "0405": { "Attributes": {
-                "0000": {"Enabled": true, "Name": "Humidity", "EvalExp": "int(value*10)", "ActionList": [ "check_store_value", "upd_domo_device"] }}},
+                "0000": {"Enabled": true, "Name": "Humidity", "EvalExp": "int(value/10)", "ActionList": [ "check_store_value", "upd_domo_device"] }}},
             "e002": { "Attributes": { 
                 "d00d": {"Enabled": true, "Name": "Tuya_e002_d00d", "DataType": "29", "ActionList": [ "check_store_value"] },
                 "e00b": {"Enabled": true, "Name": "Tuya_e002_e00b", "DataType": "30", "ActionList": [ "check_store_value"] }}},
