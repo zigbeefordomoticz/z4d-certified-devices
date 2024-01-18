@@ -1,6 +1,5 @@
 {
-    "_comment": "lumi.ctrl_86plug.aq1",
-    "_version": "0.1",
+    "_description": "Aqara T1 door & window contact sensor",
     "Ep": {
         "01": {
             "0000": { 
@@ -10,36 +9,21 @@
                     "ff02": { "Enabled": true, "Name": "Aqara_0000_ff02", "DataType": "4c" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}  
                 }
             },
-            "0002":"",
-            "000a":"",
-            "0006":"",
-            "0010":"",
-            "0003":"",
-            "0005":"",
-            "0004":"",
-            "0001":"",
-            "Type":"Voltage/Plug"
-        },
-        "02": {
-            "000c":"",
-            "0004":"",
-            "Type":"Power/meter"
-        },
-        "03": {
-            "000c":"",
-            "Type":""
+            "0001": "",
+            "0500": "",
+            "0003": "",
+            "0019": "",
+            "Type": "Door"
         }
     },
-    "Type":"",
-    "ClusterToBind": [],
+    "Type": "",
+    "ClusterToBind": [ "0001", "0500"],
     "ConfigureReporting": {},
     "ReadAttributes": {
-        "0000": [ "0001", "0002", "0003", "0004", "0005", "0006", "0007", "ff01" ],
-        "0001": [ "0000" ],
-        "0006": [ "0000", "f000" ],
-        "000c": []
-    },
-    "Param": {
-        "AqaraOpple_switch_power_outage_memory": 1
+        "0000": [ "0004", "0005", "0000", "0001", "0002", "0003", "0006", "0007", "0008", "0009", "000a", "000b", "000d" ],
+        "0003": [],
+        "0001": [ "0020", "0034", "0036", "0031", "0033", "0035" ],
+        "0500": [ "0000", "0001", "0002", "0010" ],
+        "0019": []
     }
 }
