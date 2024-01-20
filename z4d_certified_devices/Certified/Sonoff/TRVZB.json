@@ -15,18 +15,22 @@
             "fc57": "",
             "fc11": { "Attributes": {
                 "0000": { "Enabled": true, "Name": "ChildLock", "DataType": "10", "ActionList": [ "check_store_value"] },
+                "0010": { "Enabled": true, "Name": "FaultCode", "DataType": "23", "ActionList": [ "check_store_value"] },
                 "6000": { "Enabled": true, "Name": "OpenWindow", "DataType": "10", "ActionList": [ "check_store_value"] },
-                "6002": { "Enabled": true, "Name": "FrostProtection", "DataType": "29", "ActionList": [ "check_store_value"] },
-                "6003": { "Enabled": true, "Name": "IdleSteps", "DataType": "21", "ActionList": [ "check_store_value"] },
-                "6004": { "Enabled": true, "Name": "ClosingSteps", "DataType": "21", "ActionList": [ "check_store_value"] },
+                "6001": { "Enabled": true, "Name": "RapidHeatingTemp", "DataType": "10", "ActionList": [ "check_store_value"] },
+                "6002": { "Enabled": true, "Name": "froostProfTemp", "DataType": "29", "ActionList": [ "check_store_value"] },
+                "6003": { "Enabled": true, "Name": "NumberIdleSteps", "DataType": "21", "ActionList": [ "check_store_value"] },
+                "6004": { "Enabled": true, "Name": "NumberClosingSteps", "DataType": "21", "ActionList": [ "check_store_value"] },
                 "6005": { "Enabled": true, "Name": "ValveOpeningMinVoltage", "DataType": "21", "ActionList": [ "check_store_value"] },
                 "6006": { "Enabled": true, "Name": "ValveClosingMinVoltage", "DataType": "21", "ActionList": [ "check_store_value"] },
                 "6007": { "Enabled": true, "Name": "ValveRunningVoltage", "DataType": "21", "ActionList": [ "check_store_value"] },
-                "6009": { "Enabled": true, "Name": "Unknow_6009", "DataType": "29", "ActionList": [ "check_store_value"] } }},
+                "6008": { "Enabled": true, "Name": "WeeklyProgramState", "DataType": "21", "ActionList": [ "check_store_value"] },
+                "6009": { "Enabled": true, "Name": "ManualModeTemp", "DataType": "29", "ActionList": [ "check_store_value"] },
+                "600A": { "Enabled": true, "Name": "AutoModeTemp", "DataType": "29", "ActionList": [ "check_store_value"] } }},
             "000a": "",
             "0019": "",
             "0402": "",
-            "Type": "Voltage/Temp/ThermoSetpoint/ThermoMode/Valve/Temp"
+            "Type": "Voltage/Temp/ThermoSetpoint/ThermoMode/Temp/HeatingStatus"
         }
     },
     "Type": "",
@@ -47,6 +51,8 @@
     },
     "BatteryDevice": 1,
     "Param": {
-        "Calibration": 0
+        "Calibration": 0,
+        "SonOffTRVChildLock": 0,
+        "SonOffTRVWindowDectection": 1
     }
 }
