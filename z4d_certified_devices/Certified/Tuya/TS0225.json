@@ -26,18 +26,18 @@
     },
     "TS0601_DP": {
         "01": { "store_tuya_attribute": "motion", "EvalExp": "int(value == 0)", "DomoDeviceFormat": "str"},
-        "02": { "store_tuya_attribute": "LargeMotionDetectionSensitivity" },
-        "04": { "store_tuya_attribute": "LargeMotionDetectionDistance" },
         "65": { "store_tuya_attribute": "MotionState" },
-        "66": { "store_tuya_attribute": "FadingTime" },
-        "68": { "store_tuya_attribute": "MediumMotionDetectionDistance" },
-        "69": { "store_tuya_attribute": "MediumMotionDetectionSensitivity" },
         "6a": { "store_tuya_attribute": "Illuminance" },
         "6b": { "store_tuya_attribute": "Indicator" },
+        "66": { "store_tuya_attribute": "fading_time", "action_type": "TuyaFadingTime" },
+        "02": { "store_tuya_attribute": "LargeMotionDetectionSensitivity" },
+        "04": { "store_tuya_attribute": "LargeMotionDetectionDistance" },
+        "68": { "store_tuya_attribute": "MediumMotionDetectionDistance" },
+        "69": { "store_tuya_attribute": "MediumMotionDetectionSensitivity" },
         "6c": { "store_tuya_attribute": "SmallDetectionDistance" },
         "6d": { "store_tuya_attribute": "SmallDetectionSensitivity" }
     },
-
     "Param": {
+        "TuyaFadingTime": 60
     }
 }
