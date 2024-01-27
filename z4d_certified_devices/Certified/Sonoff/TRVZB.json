@@ -30,7 +30,7 @@
             "000a": "",
             "0019": "",
             "0402": "",
-            "Type": "Voltage/Temp/ThermoSetpoint/ThermoMode/Temp/HeatingStatus"
+            "Type": "Temp/ThermoSetpoint/ThermoMode/Temp/HeatingStatus"
         }
     },
     "Type": "",
@@ -41,7 +41,7 @@
         "0201": { "Attributes": { 
             "0000": { "DataType": "29", "MinInterval": "012C", "MaxInterval": "0258", "TimeOut": "0000", "Change": "0001" },
             "0012": { "DataType": "29", "MinInterval": "0005", "MaxInterval": "0258", "TimeOut": "0000", "Change": "0001" },
-	    "0029": { "DataType": "19", "MinInterval": "0005", "MaxInterval": "0258", "TimeOut": "0000", "Change": "0001" }}
+        "0029": { "DataType": "19", "MinInterval": "0005", "MaxInterval": "0258", "TimeOut": "0000", "Change": "0001" }}
         }
     },
     "ReadAttributes": {
