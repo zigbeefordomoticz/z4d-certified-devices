@@ -1,0 +1,37 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/47",
+    "_blakadder": "",
+    "_description": "IKEA PARASOLL door/windows sensor E2013",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0020": "",
+            "0b05": "",
+            "1000": "",
+            "fc7c": "",
+            "fc81": "",
+            "0004": "",
+            "0006": "",
+            "0019": "",
+            "Type": ""
+        },
+        "02": {
+            "0000": "",
+            "0003": "",
+            "0500": "",
+            "Type": "Door"
+        }
+    },
+    "BatteryDevice": true,
+    "Type": "",
+    "ClusterToBind": [ "0001", "0500"],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007", "000a", "4000" ],
+        "0001": [ "0021" ],
+        "0500": [ "0000", "0001", "0002", "0010" ],
+        "0019": []
+    }
+}
