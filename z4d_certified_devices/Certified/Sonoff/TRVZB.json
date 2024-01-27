@@ -30,7 +30,7 @@
             "000a": "",
             "0019": "",
             "0402": "",
-            "Type": "Temp/ThermoSetpoint/ThermoMode/Temp/HeatingStatus"
+            "Type": "ThermoSetpoint/ThermoMode/Temp/HeatingStatus"
         }
     },
     "Type": "",
