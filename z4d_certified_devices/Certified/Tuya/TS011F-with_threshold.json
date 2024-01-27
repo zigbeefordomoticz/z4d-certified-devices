@@ -61,9 +61,9 @@
         "TS011F_overPowerBreaker": 1,
         "TS011F_overCurrentThreshold": 65,
         "TS011F_overCurrentBreaker": 1,
-        "TS011F_overVoltageThreshold": 250,
+        "TS011F_overVoltageThreshold": 244,
         "TS011F_overVoltageBreaker": 1,
-        "TS011F_underVoltageThreshold": 200,
+        "TS011F_underVoltageThreshold": 207,
         "TS011F_underVoltageBreaker": 1
     }
 }
