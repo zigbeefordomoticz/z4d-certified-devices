@@ -29,6 +29,7 @@
         "0008": [],
         "0019": []
     },
+    "BatteryPoweredDevice": true,
     "Param": {
         "resetSwitchSelectorPushButton": 30
     }
