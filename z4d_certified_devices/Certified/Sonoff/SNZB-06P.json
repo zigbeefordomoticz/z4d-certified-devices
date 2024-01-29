@@ -1,0 +1,26 @@
+{
+    "_comment": "Zigbee occupancy sensor",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13871",
+    "_version": "1.0",
+    "Ep": {
+        "01": { 
+            "0000": "", 
+            "0003": "", 
+            "0406": "",
+            "fc57": "",
+            "fc11": { "Attributes": { "2001": { "Enabled": true, "Name": "Illumination", "DataType": "20" , "ActionList": [ "check_store_value"]} } },
+            "0500": "", 
+            "Type": "Motion" 
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005" ],
+        "0001": [ "0020", "0021" ],
+        "0406": [ "0000", "0001", "0002", "0020", "0022"],
+        "0500": [ "0000", "0001", "0002", "0010" ]
+    },
+    "BatteryDevice": 1
+}
