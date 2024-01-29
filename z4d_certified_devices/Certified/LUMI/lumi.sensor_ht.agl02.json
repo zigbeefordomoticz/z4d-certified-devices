@@ -1,0 +1,34 @@
+{
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13839",
+    "Ep": {
+        "01": {
+            "0000": { 
+                "Attributes": {
+                    "fff0": { "Enabled": true, "Name": "Aqara_0000_fff0", "DataType": "42" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "ff01": { "Enabled": true, "Name": "Aqara_0000_ff01", "DataType": "42" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "ff02": { "Enabled": true, "Name": "Aqara_0000_ff02", "DataType": "4c" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}  
+                }
+            },
+            "0001": "",
+            "0402": "",
+            "0403": "",
+            "0405": "",
+            "Type": "Temp/Humi/Baro"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001", "0402", "0403", "0405" ],
+    "ConfigureReporting": {
+        "0402": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "000a", "MaxInterval": "012C", "TimeOut": "0000", "Change": "0001" } } },
+        "0405": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "003c", "MaxInterval": "0384", "TimeOut": "0000", "Change": "0001" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007", "0008", "0009", "000a", "000b", "4000" ],
+        "0001": [ "0020", "0031", "0033", "0034", "0035", "0036", "003e" ],
+        "0402": [ "0000", "0001", "0002" ],
+        "0403": [ "0000", "0001", "0002" ],
+        "0405": [ "0000", "0001", "0002" ],
+        "0019": []
+    },
+    "BatteryDevice": 1
+}
