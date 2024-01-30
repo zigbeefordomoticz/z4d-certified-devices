@@ -1,5 +1,8 @@
 {
     "_comment": "Tuya Zigbee-Détecteur de Présence Humaine Intelligent",
+    "Identifier": [
+        [ "TS0225", "_TZE200_2aaelwxk" ]
+    ],
     "Ep": {
         "01": {
             "0000": "",
@@ -25,19 +28,25 @@
         "ef00": []
     },
     "TS0601_DP": {
-        "01": { "store_tuya_attribute": "motion", "EvalExp": "int(value == 0)", "DomoDeviceFormat": "str"},
-        "65": { "store_tuya_attribute": "MotionState" },
-        "6a": { "store_tuya_attribute": "Illuminance" },
-        "6b": { "store_tuya_attribute": "Indicator" },
-        "66": { "store_tuya_attribute": "fading_time", "action_type": "TuyaFadingTime" },
-        "02": { "store_tuya_attribute": "LargeMotionDetectionSensitivity" },
-        "04": { "store_tuya_attribute": "LargeMotionDetectionDistance" },
-        "68": { "store_tuya_attribute": "MediumMotionDetectionDistance" },
-        "69": { "store_tuya_attribute": "MediumMotionDetectionSensitivity" },
-        "6c": { "store_tuya_attribute": "SmallDetectionDistance" },
-        "6d": { "store_tuya_attribute": "SmallDetectionSensitivity" }
+        "01": { "store_tuya_value": "motion", "EvalExp": "int(value == 0)", "DomoDeviceFormat": "str"},
+        "65": { "store_tuya_value": "MotionState" },
+        "6a": { "store_tuya_value": "Illuminance" },
+        "6b": { "store_tuya_value": "Indicator" },
+        "66": { "store_tuya_value": "fading_time", "action_type": "TuyaFadingTime" },
+        "02": { "store_tuya_value": "LargeMotionDetectionSensitivity", "action_type": "LargeMotionDetectionSensitivity" },
+        "04": { "store_tuya_value": "LargeMotionDetectionDistance", "action_type": "LargeMotionDetectionDistance" },
+        "68": { "store_tuya_value": "MediumMotionDetectionDistance", "action_type": "MediumMotionDetectionDistance"},
+        "69": { "store_tuya_value": "MediumMotionDetectionSensitivity", "action_type": "MediumMotionDetectionSensitivity" },
+        "6c": { "store_tuya_value": "SmallDetectionDistance", "action_type": "SmallDetectionDistance" },
+        "6d": { "store_tuya_value": "SmallDetectionSensitivity", "action_type": "SmallDetectionSensitivity" }
     },
     "Param": {
-        "TuyaFadingTime": 60
+        "TuyaFadingTime": 2,
+        "SmallDetectionSensitivity": 1,
+        "MediumMotionDetectionSensitivity": 1,
+        "LargeMotionDetectionSensitivity": 1,
+        "SmallDetectionDistance": 0,
+        "MediumMotionDetectionDistance": 8,
+        "LargeMotionDetectionDistance": 1
     }
 }

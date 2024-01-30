@@ -32,11 +32,11 @@
         "66": { "store_tuya_attribute": "Unknow_66_02"},
         "68": { "sensor_type": "illuminance"},
         "69": { "sensor_type": "presence_state"},
-        "6a": { "store_tuya_attribute": "Sensitivity","action_type": "TuyaRadarSensitivity"},
-        "6b": { "store_tuya_attribute": "max_range", "action_type": "TuyaRadarMaxRange"},
-        "6d": { "store_tuya_attribute": "target_distance"},
-        "6e": { "store_tuya_attribute": "fading_time", "action_type": "TuyaFadingTime" },
-        "6f": { "store_tuya_attribute": "presence_sensitivity", "action_type": "TuyaPresenceSensitivity"},
+        "6a": { "store_tuya_value": "Sensitivity", "action_type": "TuyaRadarSensitivity"},
+        "6b": { "store_tuya_value": "max_range", "action_type": "TuyaRadarMaxRange"},
+        "6d": { "store_tuya_value": "target_distance"},
+        "6e": { "store_tuya_value": "fading_time", "action_type": "TuyaFadingTime" },
+        "6f": { "store_tuya_value": "presence_sensitivity", "action_type": "TuyaPresenceSensitivity"},
         "70": { "sensor_type": "motion", "EvalExp": "int(value != 0)", "DomoDeviceFormat": "str"}
     },
     "Param": {
