@@ -22,5 +22,9 @@
         "0406": [ "0000", "0001", "0002", "0020", "0022"],
         "0500": [ "0000", "0001", "0002", "0010" ]
     },
-    "BatteryDevice": 1
+    "BatteryDevice": 1,
+    "Param": {
+        "UltrasonicOccupiedToUnoccupiedDelay": 60,
+        "UltrasonicOccupancySensibility": 2
+    }
 }
