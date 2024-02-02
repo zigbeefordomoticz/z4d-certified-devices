@@ -25,7 +25,6 @@
     "BatteryDevice": 1,
     "Param": {
         "UltrasonicOccupiedToUnoccupiedDelay": 60,
-        "UltrasonicOccupancySensibility": 2,
-        "SonOffUltrasonicIllumination": 1
+        "UltrasonicOccupancySensibility": 2
     }
 }
