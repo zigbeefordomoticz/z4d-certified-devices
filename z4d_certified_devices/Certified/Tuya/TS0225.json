@@ -41,12 +41,6 @@
         "6d": { "store_tuya_value": "SmallDetectionSensitivity", "action_type": "SmallDetectionSensitivity" }
     },
     "Param": {
-        "TuyaFadingTime": 2,
-        "SmallDetectionSensitivity": 1,
-        "MediumMotionDetectionSensitivity": 1,
-        "LargeMotionDetectionSensitivity": 1,
-        "SmallDetectionDistance": 0,
-        "MediumMotionDetectionDistance": 8,
-        "LargeMotionDetectionDistance": 1
+        "TuyaFadingTime": 60
     }
 }
