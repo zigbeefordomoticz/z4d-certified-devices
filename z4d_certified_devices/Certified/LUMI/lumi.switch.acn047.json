@@ -18,17 +18,17 @@
             "0b04": { "Attributes": { "050b": { "Enabled": true, "Name": "ActivePower", "EvalFunc": "compute_electrical_measurement_conso", "ActionList": [ "check_store_value", "upd_domo_device" ] }}},
             "0012": "",
             "0019": "",
-            "ffc0": {
+            "fcc0": {
                 "Attributes": {
-                    "000a": { "Enabled": true, "Name": "Aqara_ffc0_0004", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "02d0": { "Enabled": true, "Name": "Aqara_ffc0_00f0", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "0203": { "Enabled": true, "Name": "Aqara_ffc0_00f0", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "0517": { "Enabled": true, "Name": "Aqara_ffc0_00f0", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "000a": { "Enabled": true, "Name": "Aqara_ffc0_000a", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "02d0": { "Enabled": true, "Name": "Aqara_ffc0_02d0", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "0203": { "Enabled": true, "Name": "Aqara_ffc0_0203", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "0517": { "Enabled": true, "Name": "Aqara_ffc0_0517", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
                     "0200": { "Enabled": true, "Name": "Aqara_ffc0_0200", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "0289": { "Enabled": true, "Name": "Aqara_ffc0_0200", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "00e5": { "Enabled": true, "Name": "Aqara_ffc0_0200", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "00eb": { "Enabled": true, "Name": "Aqara_ffc0_0200", "DataType": "21" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "00df": { "Enabled": true, "Name": "Aqara_ffc0_0200", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
+                    "0289": { "Enabled": true, "Name": "Aqara_ffc0_0289", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00e5": { "Enabled": true, "Name": "Aqara_ffc0_00e5", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00eb": { "Enabled": true, "Name": "Aqara_ffc0_00eb", "DataType": "21" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00df": { "Enabled": true, "Name": "Aqara_ffc0_00df", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
                 }
             },
             "Type": "Switch/Ampere"

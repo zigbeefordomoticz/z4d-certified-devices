@@ -20,14 +20,14 @@
             "0009": "",
             "000a": "",
             "0019": "",
-            "ffc0": {
+            "fcc0": {
                 "Attributes": {
                     "0004": { "Enabled": true, "Name": "Aqara_ffc0_0004", "DataType": "21" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "00df": { "Enabled": true, "Name": "Aqara_ffc0_00f0", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00df": { "Enabled": true, "Name": "Aqara_ffc0_00df", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
                     "00f0": { "Enabled": true, "Name": "Aqara_ffc0_00f0", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "00fc": { "Enabled": true, "Name": "Aqara_ffc0_00f0", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00fc": { "Enabled": true, "Name": "Aqara_ffc0_00fc", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
                     "0200": { "Enabled": true, "Name": "Aqara_ffc0_0200", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "0201": { "Enabled": true, "Name": "Aqara_ffc0_0200", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
+                    "0201": { "Enabled": true, "Name": "Aqara_ffc0_0201", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
                 }
             },
             "Type": "Switch"
@@ -35,14 +35,14 @@
         "02": {
             "0000": "",
             "0006": "",
-            "ffc0": {
+            "fcc0": {
                 "Attributes": {
                     "0004": { "Enabled": true, "Name": "Aqara_ffc0_0004", "DataType": "21" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "00df": { "Enabled": true, "Name": "Aqara_ffc0_00f0", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00df": { "Enabled": true, "Name": "Aqara_ffc0_00df", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
                     "00f0": { "Enabled": true, "Name": "Aqara_ffc0_00f0", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "00fc": { "Enabled": true, "Name": "Aqara_ffc0_00f0", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00fc": { "Enabled": true, "Name": "Aqara_ffc0_00fc", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
                     "0200": { "Enabled": true, "Name": "Aqara_ffc0_0200", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
-                    "0201": { "Enabled": true, "Name": "Aqara_ffc0_0200", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
+                    "0201": { "Enabled": true, "Name": "Aqara_ffc0_0201", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
                 }
             },
             "Type": "Switch"
