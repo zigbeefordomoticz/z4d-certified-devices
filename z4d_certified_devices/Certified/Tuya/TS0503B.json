@@ -1,0 +1,50 @@
+{
+    "_comment": "LED Strip Controller DC5-24v RGB",
+    "_version": "1.0",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_TS0503B.html",
+    "_source": "Pipiche",
+    "Ep": {
+        "01": {
+            "1000": "",
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0008": "",
+            "0300": { "Attributes": {
+                "e100": {"Enabled": true, "Name": "Color_e100", "DataType": "25" , "ActionList": [ "check_store_value"]},
+                "f000": {"Enabled": true, "Name": "Color_f000", "DataType": "20" , "ActionList": [ "check_store_value"]},
+                "f008": {"Enabled": true, "Name": "Color_f000", "DataType": "48" , "ActionList": [ "check_store_value"]},
+                "f007": {"Enabled": true, "Name": "Color_f000", "DataType": "48" , "ActionList": [ "check_store_value"]},
+                "f00d": {"Enabled": true, "Name": "Color_f000", "DataType": "10" , "ActionList": [ "check_store_value"]},
+                "f00c": {"Enabled": true, "Name": "Color_f000", "DataType": "48" , "ActionList": [ "check_store_value"]},
+                "f003": {"Enabled": true, "Name": "Color_f003", "DataType": "48" , "ActionList": [ "check_store_value"]},
+                "f00e": {"Enabled": true, "Name": "Color_f00e", "DataType": "48" , "ActionList": [ "check_store_value"]},
+                "f102": {"Enabled": true, "Name": "Color_f102", "DataType": "48" , "ActionList": [ "check_store_value"]}
+            } },
+            "ef00": "",
+            "0019": "",
+            "000a": "",
+            "Type": "ColorControlRGB"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0004", "0003", "0006" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "ffe2", "ffe4", "0004", "0005", "0000", "0001", "0007", "fffe", "ffdf" ],
+        "0006": [ "f000", "0000", "fffd" ],
+        "0019": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "fffd" ],
+        "0008": [ "0000" ],
+        "0300": [ "0000", "0001", "0002", "0003", "0004", "0008", "000f", "4000", "4001", "400a", "fffd" ]
+    },
+    "Param": {
+        "TuyaColorGradiantOnTime": 10,
+        "TuyaColorGradiantOffTime": 10
+    }
+}
