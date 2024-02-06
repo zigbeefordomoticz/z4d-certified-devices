@@ -24,7 +24,5 @@
     },
     "BatteryDevice": 1,
     "Param": {
-        "UltrasonicOccupiedToUnoccupiedDelay": 60,
-        "UltrasonicOccupancySensibility": 2
     }
 }
