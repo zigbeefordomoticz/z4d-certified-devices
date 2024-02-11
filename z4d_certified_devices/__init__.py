@@ -1,66 +1,89 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# Implementation of Zigbee for Domoticz plugin.
+#
+# This file is part of Zigbee for Domoticz plugin. https://github.com/zigbeefordomoticz/Domoticz-Zigbee
+# (C) 2015-2024
+#
+# Initial authors: zaraki673 & pipiche38
+#
+# SPDX-License-Identifier:    GPL-3.0 license
+
 import json
 import os.path
 from pathlib import Path
-from os import listdir
-from os.path import isdir, isfile, join
 
 from .version import __version__
 
 
 def z4d_import_device_configuration(self, path_name):
 
-    # Read DeviceConf for backward compatibility 
     model_certified = Path(path_name) / "Certified"
-    plugin_version = self.pluginParameters["PluginVersion"]
+    plugin_version = self.pluginParameters.get("PluginVersion")
 
-    if os.path.isdir(model_certified):
-        model_brand_list = [f for f in listdir(model_certified) if isdir(join(model_certified, f))]
+    if not os.path.isdir(model_certified):
+        self.log.logging("z4dCertifiedDevices", "Status", f"none existing Z4D Certified Db at {model_certified} !!!")
+        return
+    
+    for device_brand in os.listdir(model_certified):
+        if device_brand in ("README.md", ".PRECIOUS"):
+            continue
 
-        for brand in model_brand_list:
-            if brand in ("README.md", ".PRECIOUS"):
+        model_directory = model_certified / device_brand
+
+        for model_device_file in os.listdir(model_directory):
+            if model_device_file in ("README.md", ".PRECIOUS"):
                 continue
 
-            model_directory = model_certified / brand
+            filename = model_directory / model_device_file
+            try:
+                with open(filename, "rt", encoding='utf-8') as file_handle:
+                    model_definition = json.load(file_handle)
 
-            model_list = [f for f in listdir(model_directory) if isfile(join(model_directory, f))]
+            except ValueError as error:
+                self.log.logging("z4dCertifiedDevices", "Error", f"JSON ConfFile: {filename} load failed with error: {error}, skiping this config file.")
+                continue
 
-            for model_device in model_list:
-                if model_device in ("README.md", ".PRECIOUS"):
-                    continue
+            except Exception as error:
+                self.log.logging("z4dCertifiedDevices", "Error", f"JSON ConfFile: {filename} load general error: {error}, skiping this config file.")
+                continue
 
-                filename = model_directory / model_device
-                with open(filename, "rt", encoding='utf-8') as handle:
-                    try:
-                        model_definition = json.load(handle)
-                    except ValueError as e:
-                        self.log.logging("z4dCertifiedDevices", "Error", "--> JSON ConfFile: %s load failed with error: %s" % (filename, str(e)))
-                        continue
-                    except Exception as e:
-                        self.log.logging("z4dCertifiedDevices", "Error", "--> JSON ConfFile: %s load general error: %s" % (filename, str(e)))
-                        continue
+            device_model_name = _get_model_name(model_device_file )
+            if device_model_name in self.DeviceConf:
+                self.log.logging("z4dCertifiedDevices", "Debug", f"Config for {device_brand}/{device_model_name} not loaded as already defined")
+                continue
 
-                try:
-                    device_model_name = model_device.rsplit(".", 1)[0]
-                    if device_model_name in self.DeviceConf:
-                        self.log.logging( "z4dCertifiedDevices", "Debug", "--> Config for %s/%s not loaded as already defined" % (str(brand), str(device_model_name)),)
-                        continue
+            self.log.logging("z4dCertifiedDevices", "Debug", f"processing certified {device_brand}/{device_model_name}")
 
-                    self.log.logging( "z4dCertifiedDevices", "Debug", "--> Config for %s/%s" % (str(brand), str(device_model_name)))
-                    if "MinPluginVersion" in model_definition and plugin_version < model_definition["MinPluginVersion"]:
-                        self.log.logging( "z4dCertifiedDevices", "Log", "Certified Devices load skip this Certified device %s-%s requires Plugin version %s" % (
-                            str(brand), str(device_model_name), model_definition["MinPluginVersion"] ),)
-                        continue
+            if not _is_model_requirement_match_plugin_version(self, model_definition, plugin_version):
+                self.log.logging( "z4dCertifiedDevices", "Error", f"Certified Devices load skip this Certified device %{device_brand}-{device_model_name} requires Plugin version {model_definition['MinPluginVersion']}")
+                continue
 
-                    self.DeviceConf[device_model_name] = dict(model_definition)
-                    if "Identifier" in model_definition:
-                        self.log.logging( "z4dCertifiedDevices", "Debug", "--> Identifier found %s" % (str(model_definition["Identifier"])) )
-                        for x in model_definition["Identifier"]:
-                            self.log.logging( "z4dCertifiedDevices", "Debug", "-->     %s" %x)
-                            self.ModelManufMapping[ (x[0], x[1] )] = device_model_name
+            _process_device_config_file(self, device_model_name, model_definition)
 
-                except Exception:
-                    self.log.logging("z4dCertifiedDevices", "Error", "--> Unexpected error when loading a configuration file")
+    self.log.logging("z4dCertifiedDevices", "Debug", f"Config loaded: {self.DeviceConf.keys()}")
+    self.log.logging("z4dCertifiedDevices", "Debug", f"Certified Devices ModelManufMapping loaded - {self.ModelManufMapping.keys()}")
+    
+    self.log.logging("z4dCertifiedDevices", "Status", f"{len(self.DeviceConf)} Certified devices loaded from z4d repository.")
 
-    self.log.logging("z4dCertifiedDevices", "Debug", "--> Config loaded: %s" % self.DeviceConf.keys())
-    self.log.logging("z4dCertifiedDevices", "Debug", "Certified Devices ModelManufMapping loaded - %s" %self.ModelManufMapping.keys())
-    self.log.logging("z4dCertifiedDevices", "Status", "Certified Devices loaded - %s confs loaded" %len(self.DeviceConf))
+def _get_model_name(model_device_file ):
+    """ Purpose is to remove .json from filename to get the Device Model"""
+    basename = os.path.basename(model_device_file)
+    device_model_name = os.path.splitext(basename)[0]
+    return device_model_name
+
+
+def _is_model_requirement_match_plugin_version(self, model_definition, plugin_version):
+    """ is the config file working with this version of the plugin """
+    return not ("MinPluginVersion" in model_definition and plugin_version < model_definition["MinPluginVersion"])
+
+    
+def _process_device_config_file(self, device_model_name, model_definition):
+    """ let's load the config into DeviceConf , and if needed (Tuya) lets also load into the model name mapping"""
+    self.DeviceConf[device_model_name] = dict(model_definition)
+    if "Identifier" not in model_definition:
+        return
+    for identifier_tuple in model_definition["Identifier"]:
+        self.ModelManufMapping[ tuple(identifier_tuple) ] = device_model_name
+
