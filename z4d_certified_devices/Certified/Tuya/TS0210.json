@@ -1,0 +1,29 @@
+{
+    "_comment": "Vibration Sensor",
+    "_version": "1.0",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_TS0210.html",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?p=119824#p119824",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0500": "",
+            "0001": "",
+            "0019": "",
+            "000a": "",
+            "Type": "Door/Tamper"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "ffe2", "ffe4", "0004", "0000", "0001", "0005", "0007", "fffe", "ffdf" ],
+        "0500": [ "0013" ],
+        "0001": [ "0021", "0020" ],
+        "0019": []
+    },
+    "MotionViaIASAlarm1": true,
+    "Param": {
+        "resetMotiondelay": 30
+    }
+}
