@@ -18,12 +18,13 @@
     "ConfigureReporting": {},
     "ReadAttributes": {
         "0000": [ "ffe2", "ffe4", "0004", "0000", "0001", "0005", "0007", "fffe", "ffdf" ],
-        "0500": [ "0013" ],
+        "0500": [ "0000", "0001", "0002", "0010", "0012", "0012", "0013" ],
         "0001": [ "0021", "0020" ],
         "0019": []
     },
     "MotionViaIASAlarm1": true,
     "Param": {
-        "resetMotiondelay": 30
+        "resetMotiondelay": 30,
+        "CurrentZoneSensitivityLevel": 0
     }
 }
