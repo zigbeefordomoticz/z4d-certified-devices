@@ -10,7 +10,7 @@
             "0001": "",
             "0019": "",
             "000a": "",
-            "Type": "Door/Tamper"
+            "Type": "Motion/Tamper"
         }
     },
     "Type": "",
