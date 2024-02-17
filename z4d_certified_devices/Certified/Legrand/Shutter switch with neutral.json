@@ -8,6 +8,7 @@
             "0004": "",
             "0005": "",
             "0102": { "Attributes": { 
+                "f000":  { "Enabled": true, "Name": "Legrand Shutter f000", "ActionList": [ "check_store_value"] },
                 "f001": { "Enabled": true, "Name": "Legrand Shutter f001", "ActionList": [ "check_store_value"] },
                 "f002": { "Enabled": true, "Name": "Legrand Shutter f002", "ActionList": [ "check_store_value"] },
                 "f003": { "Enabled": true, "Name": "Legrand Shutter f003", "ActionList": [ "check_store_value"] },
