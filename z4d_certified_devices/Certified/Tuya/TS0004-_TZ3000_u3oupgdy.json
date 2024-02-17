@@ -22,6 +22,6 @@
     "Param": {
         "SmartSwitchBackLight": 1,
         "SmartSwitchIndicateLight": 1,
-        "PowerOnAfterOffOn": "0"
+        "PowerOnAfterOffOn": 0
     }
 }
