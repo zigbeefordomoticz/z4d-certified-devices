@@ -10,18 +10,39 @@
                     "ff02": { "Enabled": true, "Name": "Aqara_0000_ff02", "DataType": "4c" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}  
                 }
             },
-
             "0002": "",
             "0003": "",
             "0004": "",
             "0005": "",
-            "0006": "",
+            "0006": { "Attributes": { "00f5": { "Enabled": true, "Name": "Unknw_0006_00f5", "ActionList": [ "check_store_value" ] }}},
             "000a": "",
             "0019": "",
             "0702": "",
-            "0b04": "",
-            "fcc0": "",
-            "Type": "Plug/Power/Meter"
+            "0b04": { "Attributes": { "050b": { "Enabled": true, "Name": "ActivePower", "EvalFunc": "compute_electrical_measurement_conso", "ActionList": [ "check_store_value", "upd_domo_device" ] }}},
+            "fcc0": {
+                "Attributes": {
+                    "000a": { "Enabled": true, "Name": "Lumi_000a", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00e5": { "Enabled": true, "Name": "Lumi_00e5", "DataType": "41" , "ActionList": [ "check_store_value"]},
+                    "00eb": { "Enabled": true, "Name": "Lumi_00eb", "DataType": "21" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00df": { "Enabled": true, "Name": "Lumi_00df", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00f7": { "Enabled": true, "Name": "Lumi_00f7", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "02d0": { "Enabled": true, "Name": "Lumi_02d0", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "0203": { "Enabled": true, "Name": "Lumi_0203", "DataType": "10" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "0517": { "Enabled": true, "Name": "Lumi_0517", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "0200": { "Enabled": true, "Name": "Lumi_0200", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
+                    "00dc": { "Enabled": true, "Name": "Lumi_00dc", "DataType": "41" , "ActionList": [ "check_store_value"]},
+                    "0207": { "Enabled": true, "Name": "Lumi_0200", "DataType": "10" , "ActionList": [ "check_store_value"]},
+                    "0289": { "Enabled": true, "Name": "Lumi_0289", "DataType": "20" , "ActionList": [ "check_store_value"]},
+                    "029e": { "Enabled": true, "Name": "Lumi_029e", "DataType": "39" , "ActionList": [ "check_store_value"]} }},
+            "Type": "Plug/Voltage/Ampere/Meter/Power"
+        },
+        "15": {
+            "000c": "",
+            "Type": ""
+        },
+        "1f": {
+            "000c": "",
+            "Type": ""
         },
         "f2": {
             "0021": "",
@@ -29,19 +50,26 @@
         }
     },
     "Type": "",
-    "ClusterToBind": [ "0006", "0b04", "0702" ],
+    "ClusterToBind": [ "0006", "0b04", "0702", "000c" ],
     "ConfigureReporting": {
-        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0FFF", "Change": "01" } } },
-        "0702": { "Attributes": { "0000": { "Change": "0000000000000001", "DataType": "25", "MaxInterval": "0001", "MinInterval": "0258", "TimeOut": "0000" } } }
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0000", "MaxInterval": "ffff", "TimeOut": "0FFF", "Change": "01" } } },
+        "0702": { "Attributes": { "0000": { "Change": "0000000000000001", "DataType": "25", "MaxInterval": "ffff", "MinInterval": "0000", "TimeOut": "0000" } } }
     },
     "ReadAttributes": {
         "0000": [ "0001", "0002", "0003", "0004", "0005", "0006", "0007" ],
         "0006": [ "0000" ],
         "0702": [ "0000", "0200", "0301", "0302", "0303", "0306" ],
-        "0b04": [ "0000", "050b" ]
+        "0b04": [ "0000", "050b" ],
+        "000c": [ "0055" ],
+        "fcc0": [ "00f7" ]
     },
+    "XIAOMI_METER_EP": "01",
+    "XIAOMI_POWER_EP": "01",
+    "SummationMeteringMultiplier": 1000,
+    "SummationMeteringDivisor":1,
     "ActivePowerDivisor": 10,
+    "RMSVoltageDivisor": 10,
+    "RMSCurrentDivisor": 1000,
     "Param": {
-        "PowerPollingFreq": 300
     }
 }
