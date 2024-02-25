@@ -23,6 +23,7 @@
         "0500": [ "0000", "0001", "0002", "0010" ]
     },
     "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
     "Param": {
     }
 }
