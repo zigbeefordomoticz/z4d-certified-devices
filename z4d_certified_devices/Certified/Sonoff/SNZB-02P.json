@@ -1,0 +1,37 @@
+{
+    "_comment": "Temperature And Humidity Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-02P.html",
+    "_source": "Pipiche",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0020": "",
+            "0402": "",
+            "0405": "",
+            "fc57": "",
+            "fc11": "",
+            "0019": "",
+            "Type": "Temp+Hum/Voltage/Temp/Humi"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001", "0402", "0405"],
+    "ConfigureReporting": {
+        "0402": { "0000": { "Change": "0001", "DataType": "29", "MaxInterval": "012c", "MinInterval": "000a", "TimeOut": "0000" }},
+        "0405": { "0000": { "Change": "0001", "DataType": "21", "MaxInterval": "0384", "MinInterval": "003c", "TimeOut": "0000" }}
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0000", "0001", "0003", "0006", "0007", "0011", "4000", "fffd" ],
+        "0402": [ "0000", "0001", "0002", "fffd" ],
+        "0001": [ "0021", "fffd" ],
+        "0019": [],
+        "0405": [ "0000", "0001", "0002", "fffd" ]
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
+    "Param": {},
+    "GroupMembership": {}
+}

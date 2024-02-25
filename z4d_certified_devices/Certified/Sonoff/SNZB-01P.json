@@ -1,6 +1,7 @@
 {
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/44",
     "_comment": "Sonoff remote switch",
+    "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-01P.html",
     "_version": "1.0",
     "Ep": {
         "01": {
