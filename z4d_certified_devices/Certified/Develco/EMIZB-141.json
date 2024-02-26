@@ -1,0 +1,37 @@
+{
+    "_comment": "Electricity Meter Interface ",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/52",
+    "_blakadder": "",
+    "Ep": {
+        "01": {
+            "0005": "",
+            "0006": "",
+            "Type": ""
+        },
+        "02": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0020": "",
+            "0702": "",
+            "0b01": "",
+            "0b05": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Power/Meter"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0702", "0001" ],
+    "ConfigureReporting": {
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0004", "0005", "0006", "0007" ],
+        "0001": [ "0021" ],
+        "0003": [],
+        "0702": [ "0000", "0200", "0301", "0302", "0303", "0304", "0306", "0308", "0100", "0102", "0400" ]
+    },
+    "Param": {
+        "ReadAttributeChunk": 5
+    }
+}
