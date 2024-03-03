@@ -1,0 +1,47 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/32",
+    "_blakadder": "https://zigbee.blakadder.com/iAlarm_SR01.html",
+    "_description": "Sound and Flash Siren",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0300": "",
+            "0500": "",
+            "0502": "",
+            "0019": "",
+            "000a": "",
+            "Type": "Switch/AlarmWD"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe", "0002", "0003", "0006", "ffe2", "ffe4", "ffdf" ],
+        "0001": [ ],
+        "0006": [ "0000" ],
+        "0300": [],
+        "0500": [ "0000", "0001", "0002", "0003", "0010", "0011", "e000", "f000" ],
+        "0502": [ "0000", "0001", "0002", "0004", "0005", "0006", "e000" ],
+        "0019": []
+    },
+    "TUYA_REGISTRATION": 19,
+    "Param": {
+        "ForceIASRegistrationEp": "01",
+        "ias_maximum_duration": 60,
+        "TuyaTS0224AlarmVolume": 0,
+        "alarmSirenCode": 1,
+        "sirenLevel": 1,
+        "alarmDuration": 1,
+        "strobeLevel": 1
+    }
+}
