@@ -34,6 +34,5 @@
     "BatteryDevice": 1,
     "BatteryPercentageConverter": 2,
     "Param": {
-    },
-    "GroupMembership": {}
+    }
 }

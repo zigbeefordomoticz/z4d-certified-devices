@@ -35,5 +35,5 @@
     "Param": {
         "resetMotiondelay": 0,
         "UltrasonicOccupiedToUnoccupiedDelay": 30
-    },
+    }
 }
