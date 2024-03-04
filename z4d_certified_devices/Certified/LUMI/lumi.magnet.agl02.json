@@ -13,6 +13,7 @@
             "0500": "",
             "0003": "",
             "0019": "",
+            "fcc0": { "Attributes": { "00df": { "Enabled": true, "Name": "Aqara_fcc0_00df", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]} }},
             "Type": "Door"
         }
     },
