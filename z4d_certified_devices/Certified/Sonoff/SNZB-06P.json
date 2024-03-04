@@ -25,6 +25,7 @@
     "BatteryDevice": 1,
     "BatteryPercentageConverter": 2,
     "Param": {
+        "resetMotiondelay": 0,
         "UltrasonicUnoccupiedToOccupiedThreshold": 2,
         "UltrasonicOccupiedToUnoccupiedDelay": 60
     }

@@ -14,12 +14,13 @@
             "fc57": "",
             "0019": "",
             "fc11": "",
-            "Type": "Voltage/Motion/Door"
+            "Type": "Voltage/Motion"
         }
     },
     "Type": "",
-    "ClusterToBind": [ "0406", "0001" ],
+    "ClusterToBind": [ "0020", "0406", "0001" ],
     "ConfigureReporting": {
+        "0001": { "0021": { "Change": "02", "DataType": "20", "MaxInterval": "06cc", "MinInterval": "0654", "TimeOut": "0000" } },
         "0406": { "0000": { "Change": "01", "DataType": "18", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" } }
     },
     "ReadAttributes": {
@@ -31,6 +32,8 @@
     },
     "BatteryDevice": 1,
     "BatteryPercentageConverter": 2,
-    "Param": {},
-        "GroupMembership": {}
+    "Param": {
+        "resetMotiondelay": 0,
+        "UltrasonicOccupiedToUnoccupiedDelay": 30
+    },
 }
