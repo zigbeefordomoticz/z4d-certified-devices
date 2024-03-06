@@ -3,6 +3,10 @@
     "_version": "1.0",
     "_blakadder": "https://zigbee.blakadder.com/Heiman_HS2DB.html",
     "_source": "",
+    "Identifier": [
+        [ "DoorBell-EM", "HEIMAN" ],
+        [ "DoorBell-EF-3.0", "HEIMAN" ]
+    ],
     "Ep": {
         "01": {
             "0000": "",
@@ -22,8 +26,10 @@
         "0000": [ "0004", "0005", "0000", "0001", "0002", "0003", "0006", "0007", "fffd" ],
         "0001": [ "0020", "0021", "fffd" ],
         "0019": [],
-        "0500": [ "0010", "0000", "0001", "0002" ],
+        "0500": [ "0010", "0000", "0001", "0002", "0011" ],
         "0b05": [ "011d" ]
     },
-    "HeimanDoorBellBuuton": true
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
+    "HeimanDoorBellButton": true
 }
