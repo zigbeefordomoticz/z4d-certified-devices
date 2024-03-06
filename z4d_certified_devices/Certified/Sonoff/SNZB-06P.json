@@ -26,7 +26,7 @@
     "BatteryPercentageConverter": 2,
     "Param": {
         "resetMotiondelay": 0,
-        "UltrasonicUnoccupiedToOccupiedThreshold": 2,
+        "UltrasonicOccupancySensibility": 1,
         "UltrasonicOccupiedToUnoccupiedDelay": 60
     }
 }
