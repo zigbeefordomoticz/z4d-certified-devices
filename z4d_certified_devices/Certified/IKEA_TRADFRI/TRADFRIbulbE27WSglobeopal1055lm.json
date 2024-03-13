@@ -36,12 +36,11 @@
         "0008": [ "0000" ],
         "0300": [ "0002", "0008", "0003", "0004", "0007", "4001", "400a", "400b", "400c" ]
     },
+    "WSRangeForTradfri": true,
     "Param": {
         "PowerOnAfterOffOn": 255,
         "fadingOff": 0, 
-        "moveToHueSatu": 0,
         "moveToColourTemp": 0,
-        "moveToColourRGB": 0,
         "moveToLevel": 0
     }
 }

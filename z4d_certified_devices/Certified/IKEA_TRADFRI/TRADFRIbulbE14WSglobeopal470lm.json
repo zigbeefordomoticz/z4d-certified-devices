@@ -30,10 +30,10 @@
         "0300": [ "0002", "0003", "0004", "0007", "0008" ],
         "0019": []
     },
+    "WSRangeForTradfri": true,
     "Param": {
         "PowerOnAfterOffOn": 255,
         "fadingOff": 0,  
-        "moveToHueSatu": 0,
         "moveToColourTemp": 0,
         "moveToLevel": 0
     }
