@@ -1,0 +1,40 @@
+{
+    "_comment": "Tradfri LED bulb E14 250 lumen WW clear , dimmable",
+    "_version": "1.0",
+    "_blakadder": "https://zigbee.blakadder.com/Ikea_LED1935C3.html",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/58",
+    "Ep": {
+        "01": {
+            "1000": "",
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0008": "",
+            "fc57": "",
+            "0019": "",
+            "Type": "LvlControl"
+        },
+        "f2": {
+            "0021": "",
+            "Type": {}
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0008" ],
+    "ConfigureReporting": {
+        "0006": { "0000": { "Change": {}, "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" } },
+        "0008": { "0000": { "Change": "05", "DataType": "20", "MaxInterval": "012c", "MinInterval": "0005", "TimeOut": "0000" } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007", "000a", "4000" ],
+        "0006": [ "0000", "4000", "4001", "4002", "4003" ],
+        "0008": [ "0000" ]
+    },
+    "Param": {
+        "PowerOnAfterOffOn": 255,
+        "fadingOff": 0,
+        "moveToLevel": 0
+    }
+}
