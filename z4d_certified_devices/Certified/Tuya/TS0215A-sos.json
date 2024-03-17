@@ -22,7 +22,7 @@
             "0501": "",
             "000a": "",
             "0019": "",
-            "Type": "Button"
+            "Type": "SOS"
         },
         "f2": { 
             "0021": "",
@@ -30,8 +30,14 @@
         }
     },
     "Type": "",
-    "ClusterToBind": [ "0000", "0001", "000a", "0500", "0501" ],
+    "ClusterToBind": [ "0001", "000a", "0000", "0501", "0500" ],
     "ConfigureReporting": {
+	"0001": {
+            "Attributes": {
+                "0020": { "DataType": "20", "MinInterval": "012C", "MaxInterval": "A8C0", "TimeOut": "0000", "Change": "01" },
+                "0021": { "DataType": "21", "MinInterval": "0E10", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "01"}
+            }
+        }
     },
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007" ],
