@@ -1,0 +1,36 @@
+{
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_IH-K009.html",
+    "_description": "Temperature & humidity sensor",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/61",
+    "Identifier": [
+        [ "TS0201", "_TZ3000_dowj6gyi"],
+        [ "TS0201", "_TZ3000_8ybe88nf"],
+        [ "_TZ3000_zl1kmjqx", ""]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0402": { "Attributes": { 
+                "003e": {"Enabled": true, "Name": "Tuya_0402_003e", "DataType": "18", "ActionList": [ "check_store_value"] }}},
+            "0405": "",
+            "e002": { "Attributes": { 
+                "d008": {"Enabled": true, "Name": "Tuya_e002_d008", "DataType": "29", "ActionList": [ "check_store_value"] },
+                "d00d": {"Enabled": true, "Name": "Tuya_e002_d00d", "DataType": "29", "ActionList": [ "check_store_value"] },
+                "e00b": {"Enabled": true, "Name": "Tuya_e002_e00b", "DataType": "30", "ActionList": [ "check_store_value"] }}},
+            "Type": "Temp/Humi"
+        }
+    },    
+    "Type": "",
+    "ClusterToBind": [ "0405", "0402", "0001" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0000", "0001", "0007", "fffe", "ffe2", "ffe4", "ffdf" ],
+        "0001": [ "0020", "0021" ],
+        "0402": [ "0000" ],
+        "0405": [ "0000" ]
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2
+}
