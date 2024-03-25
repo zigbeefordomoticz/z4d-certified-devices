@@ -6,7 +6,13 @@
         },
         "02": {
             "0000": "",
-            "0002": "",
+            "0002": { "Attributes": {
+                "0000": {
+                    "Enabled": true,
+                    "Name": "CurrentTemperature",
+                    "DomoClusterType": "Temp",
+                    "UpdDomoDeviceWithCluster": "0402",
+                    "ActionList": [ "check_store_value", "upd_domo_device"] }}},
             "0003": "",
             "0004": "",
             "0005": "",
@@ -15,7 +21,12 @@
             "000a": "",
             "0019": "",
             "0b04": "",
-            "0702": "",
+            "0702": { "Attributes": {
+                "0400": {
+                    "Enabled": true,
+                    "Name": "InstantaneousDemand",
+                    "EvalFunc": "compute_metering_conso",
+                    "ActionList": [ "check_store_value", "upd_domo_device" ] }}},
             "0406": "",
             "Type": "Plug/Power/Meter/Voltage/Alarm/Temp/Ampere"
         }
