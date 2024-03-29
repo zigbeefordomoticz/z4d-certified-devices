@@ -2,10 +2,12 @@
     "_blakadder": "https://zigbee.blakadder.com/Tuya_IH-K009.html",
     "_description": "Temperature & humidity sensor",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/61",
+    "_source2": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/62",
     "Identifier": [
         [ "TS0201", "_TZ3000_dowj6gyi"],
         [ "TS0201", "_TZ3000_8ybe88nf"],
-        [ "", "_TZ3000_zl1kmjqx"]
+        [ "", "_TZ3000_zl1kmjqx"],
+        [ "TY0201", "_TZ3000_zl1kmjqx" ]
     ],
     "Ep": {
         "01": {
