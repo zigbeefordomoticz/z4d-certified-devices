@@ -2,7 +2,8 @@
     "_comment": "Tuya Soil sensor",
     "_blakadder": "",
     "Identifier": [
-        [ "TS0601", "_TZE200_myd45weu"]
+        [ "TS0601", "_TZE200_myd45weu"],
+        [ "TS0601", "_TZE200_ga1maeof"]
     ],
 
     "Ep": {
