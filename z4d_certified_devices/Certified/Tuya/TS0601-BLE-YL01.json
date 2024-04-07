@@ -1,0 +1,51 @@
+{
+    "_comment": "Smart WiFi Zigbee chlorine meter",
+    "_blakadder": "",
+    "Identifier": [
+        [ "TS0601", "_TZE200_v1jqz5cy"]
+    ],
+
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "0019": "",
+            "Type": "Temp"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000"],
+    "ConfigureReporting": {
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0000", "0001", "0007", "ffe2", "ffe4", "ffdf", "fffe" ],
+        "0019": [],
+        "ef00": []
+    },
+    "TS0601_DP": { 
+        "01": { "store_tuya_attribute": "tds"},
+        "02": { "sensor_type": "temperature"},
+        "07": { "sensor_type": "battery"},
+
+        "0a": { "store_tuya_attribute": "ph"},
+        "0b": { "store_tuya_attribute": "ec"},
+
+        "65": { "store_tuya_attribute": "orp"},
+        "66": { "store_tuya_attribute": "free_chlorine"},
+        "6a": { "store_tuya_attribute": "ph_max"},
+        "6b": { "store_tuya_attribute": "ph_min"},
+        "6c": { "store_tuya_attribute": "ec_max"},
+        "6d": { "store_tuya_attribute": "ec_min"},
+        "6e": { "store_tuya_attribute": "orp_max"},
+        "6f": { "store_tuya_attribute": "orp_min"},
+        "70": { "store_tuya_attribute": "free_chlorine_max"},
+        "71": { "store_tuya_attribute": "free_chlorine_min"},
+        "75": { "store_tuya_attribute": "salinity"}
+    },
+    "BatteryDevice": 1,
+    "TUYA_RESET_CMD": true,
+    "TUYA_DATA_REQUEST_POLLING": 600,
+    "Param": {
+    }
+}
