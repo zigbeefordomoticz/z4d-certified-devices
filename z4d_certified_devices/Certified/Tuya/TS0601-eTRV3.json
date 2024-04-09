@@ -1,34 +1,33 @@
 {
-	"_comment": "Tuya TRV: Moes HY368 / HY369",
-	"_version": "0.10",
-	"Ep": {
-		"01": {
-			"0000": "",
-			"0004": "",
-			"ef00": "",
-			"000a": "",
-			"0019": "",
-			"Type": "Temp/ThermoSetpoint/ThermoOnOff"
-		}
-	},
-	"Type": "",
-	"ClusterToBind": [
-		"0019",
-		"ef00"
-	],
-	"ConfigureReporting": {},
-	"ReadAttributes": {
-		"0000": [
-			"0000",
-			"0001",
-			"0002",
-			"0003",
-			"0004",
-			"0005",
-			"0007"
-		]
-	},
-	"Param": {
-		"Calibration": 0
-	}
+    "_comment": "Tuya TRV: Moes HY368 / HY369",
+    "_version": "0.10",
+    "Identifier": [
+        [ "TS0601", "_TZE200_c88teujp"],
+        [ "TS0601", "_TYST11_KGbxAXL2"],
+        [ "TS0601", "_TYST11_zuhszj9s"],
+        [ "TS0601", "_TZE200_azqp6ssj"],
+        [ "TS0601", "_TZE200_yw7cahqs"],
+        [ "TS0601", "_TZE200_9gvruqf5"],
+        [ "TS0601", "_TZE200_zuhszj9s"],
+        [ "TS0601", "_TZE200_2ekuz3dz"]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Temp/ThermoSetpoint/ThermoOnOff"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0019", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
+    },
+    "Param": {
+        "Calibration": 0
+    }
 }

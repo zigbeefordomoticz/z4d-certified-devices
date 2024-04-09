@@ -1,35 +1,42 @@
 {
-	"_comment": "Tuya TRV: Moes HY368 / HY369",
-	"_version": "0.10",
-	"Ep": {
-		"01": {
-			"0000": "",
-			"0004": "",
-			"ef00": "",
-			"000a": "",
-			"0019": "",
-			"Type": "Temp/ThermoSetpoint/ThermoMode_2/Valve/Door"
-		}
-	},
-	"Type": "",
-	"ClusterToBind": [
-		"0019",
-		"ef00"
-	],
-	"ConfigureReporting": {},
-	"ReadAttributes": {
-		"0000": [
-			"0000",
-			"0001",
-			"0002",
-			"0003",
-			"0004",
-			"0005",
-			"0007"
-		]
-	},
-	"Param": {
-		"Calibration": 0,
-		"Valve": 1
-	}
+    "_comment": "Tuya TRV: Moes HY368 / HY369",
+    "_version": "0.10",
+    "Identifier": [
+        [ "TS0601", "_TZE200_ckud7u2l"],
+        [ "TS0601", "_TYST11_ckud7u2l"],
+        [ "TS0601", "_TZE200_ckud7u2l"],
+        [ "TS0601", "_TZE200_ywdxldoj"],
+        [ "TS0601", "_TZE200_do5qy8zo"],
+        [ "TS0601", "_TZE200_cwnjrr72"],
+        [ "TS0601", "_TZE200_pvvbommb"],
+        [ "TS0601", "_TZE200_9sfg7gm0"], 
+        [ "TS0601", "_TZE200_2atgpdho"], 
+        [ "TS0601", "_TZE200_cpmgn2cf"],
+        [ "TS0601", "_TZE200_8thwkzxl"],
+        [ "TS0601", "_TZE200_4eeyebrt"],
+        [ "TS0601", "_TZE200_8whxpsiw"],
+        [ "TS0601", "_TZE200_xby0s3ta"], 
+        [ "TS0601", "_TZE200_7fqkphoq"],
+        [ "TS0601", "_TZE200_gd4rvykv"]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Temp/ThermoSetpoint/ThermoMode_2/Valve/Door"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0019", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
+    },
+    "Param": {
+        "Calibration": 0,
+        "Valve": 1
+    }
 }
