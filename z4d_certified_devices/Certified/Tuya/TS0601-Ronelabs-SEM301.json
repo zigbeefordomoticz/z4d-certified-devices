@@ -1,0 +1,65 @@
+{
+    "_comment": "Tuya Zigbee Ronelabs - SEM 301",
+    "_source": "Ronelabs",
+    "_blakadder": "",
+    "_version": "1",
+    "MinPluginVersion": "7.1.004",
+    "Identifier": [
+        [ "TS0601", "_TZE204_byvdo0ka" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Switch/Power/Ampere/ConsoMeter/ProdPower/ProdMeter"
+        },
+        "f1": {
+            "Type": "Power/Ampere/Meter/Voltage"
+        },
+        "f2": {
+            "Type": "Power/Ampere/Meter/Voltage"
+        },
+        "f3": {
+            "Type": "Power/Ampere/Meter/Voltage"
+        }
+    },
+    "FakeEp": [ "f1", "f2", "f3" ],
+    "Type": "",
+    "ClusterToBind": [ "0019", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
+    },
+    "TUYA_REGISTRATION": 19,
+    "TWO_COMPLEMENT_VAL": "0x01000000",
+    "TWO_COMPLEMENT_TST": "0x00800000",
+    "TS0601_DP": {
+        "01": { "store_tuya_attribute": "Energy A+B+C", "EvalExp": "(value * 10)", "sensor_type": "cons_metering", "domo_round": 3},
+        "02": { "store_tuya_attribute": "ProducedEnergy", "sensor_type": "prod_metering", "EvalExp": "value * 10", "domo_round": 3},
+        "03": { "store_tuya_attribute": "Unknow_dp_03_dt_00" },
+        "04": { "store_tuya_attribute": "Unknow_dp_03_dt_00" },
+        "06": [
+            { "store_tuya_attribute": "Voltage", "EvalExp": "((value & 0xFFFF000000000000) >> 48)/10", "sensor_type": "voltage", "domo_round": 2, "domo_ep": "f1"},
+            { "store_tuya_attribute": "Current", "EvalExp": "((value & 0x0000FFFFFF000000) >> 24)/1000", "sensor_type": "current", "domo_round": 2, "domo_ep": "f1" },
+            { "store_tuya_attribute": "Power", "EvalExp": "(value & 0x0000000000FFFFFF)", "sensor_type": "power", "domo_round": 2, "domo_ep": "f1" }
+        ],
+        "07": [
+            { "store_tuya_attribute": "Voltage", "EvalExp": "((value & 0xFFFF000000000000) >> 48)/10", "sensor_type": "voltage", "domo_round": 2, "domo_ep":"f2"},
+            { "store_tuya_attribute": "Current", "EvalExp": "((value & 0x0000FFFFFF000000) >> 24)/1000", "sensor_type": "current", "domo_round": 2, "domo_ep":"f2" },
+            { "store_tuya_attribute": "Power", "EvalExp": "(value & 0x0000000000FFFFFF)", "sensor_type": "power", "domo_round": 2, "domo_ep":"f2" }
+        ],
+        "08": [
+            { "store_tuya_attribute": "Voltage", "EvalExp": "((value & 0xFFFF000000000000) >> 48)/10", "sensor_type": "voltage", "domo_round": 2, "domo_ep":"f3"},
+            { "store_tuya_attribute": "Current", "EvalExp": "((value & 0x0000FFFFFF000000) >> 24)/1000", "sensor_type": "current", "domo_round": 2, "domo_ep":"f3" },
+            { "store_tuya_attribute": "Power", "EvalExp": "(value & 0x0000000000FFFFFF)", "sensor_type": "power", "domo_round": 2, "domo_ep":"f3" }
+        ],
+        "09": { "store_tuya_attribute": "Power A+B+C", "EvalExp": "(((value - 0x19999999) * (value > 0x10000000)) + (value * (value <= 0x10000000)))", "sensor_type": "power", "domo_round": 2 },
+        "10": { "store_tuya_attribute": "State", "sensor_type": "switch", "action_type": "switch" },
+        "12": { "store_tuya_attribute": "MeterId", "EvalExp": "bytes.fromhex('%x' %value )" }
+    },
+    "Param": {
+    }
+}
