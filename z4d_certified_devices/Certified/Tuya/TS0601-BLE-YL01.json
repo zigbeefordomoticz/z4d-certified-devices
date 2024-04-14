@@ -11,7 +11,7 @@
             "0004": "",
             "0005": "",
             "0019": "",
-            "Type": "Temp"
+            "Type": "Temp/phMeter/ec/orp/freeChlorine/salinity"
         }
     },
     "Type": "",
@@ -28,11 +28,11 @@
         "02": { "sensor_type": "temperature"},
         "07": { "sensor_type": "battery"},
 
-        "0a": { "store_tuya_attribute": "ph"},
-        "0b": { "store_tuya_attribute": "ec"},
+        "0a": { "sensor_type": "phMeter"},
+        "0b": { "sensor_type": "ec"},
 
-        "65": { "store_tuya_attribute": "orp"},
-        "66": { "store_tuya_attribute": "free_chlorine"},
+        "65": { "sensor_type": "orp"},
+        "66": { "sensor_type": "freeChlorine"},
         "6a": { "store_tuya_attribute": "ph_max"},
         "6b": { "store_tuya_attribute": "ph_min"},
         "6c": { "store_tuya_attribute": "ec_max"},
