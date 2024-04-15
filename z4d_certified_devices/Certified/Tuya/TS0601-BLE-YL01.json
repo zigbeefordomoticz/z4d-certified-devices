@@ -44,6 +44,8 @@
         "75": { "store_tuya_attribute": "salinity"}
     },
     "BatteryDevice": 1,
+    "PollingEnabled": true,
+    "TUYA_REGISTRATION": 19,
     "TUYA_RESET_CMD": true,
     "TUYA_DATA_REQUEST_POLLING": 600,
     "Param": {
