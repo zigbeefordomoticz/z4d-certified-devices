@@ -2,10 +2,12 @@
     "_description": "Tuya Garage door opener",
     "_blakadder": "",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/56",
+    "_source2": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/63",
     "_version": "1.0",
     "Identifier": [
-        ["TS0601", "_TZE200_nklqjk62" ],
-        ["TS0601", "_TZE204_nklqjk62"]
+        ["TS0601", "_TZE200_nklqjk62"],
+        ["TS0601", "_TZE204_nklqjk62"],
+        ["TS0601", "_TZE200_wfxuhoea"]
     ],
     "Ep": {
         "01": {
