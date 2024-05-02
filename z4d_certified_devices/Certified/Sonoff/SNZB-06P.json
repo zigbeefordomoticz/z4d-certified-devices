@@ -6,7 +6,7 @@
         "01": { 
             "0000": "", 
             "0003": "", 
-            "0406": "",
+            "0406": { "Attributes": { "0022": { "Enabled": true, "Name": "UltrasonicUnoccupiedToOccupiedDelay", "ActionList": [ "check_store_value"]} } },
             "fc57": "",
             "fc11": { "Attributes": { "2001": { "Enabled": true, "Name": "Illumination", "DataType": "20" , "ActionList": [ "check_store_value"]} } },
             "0500": "", 
