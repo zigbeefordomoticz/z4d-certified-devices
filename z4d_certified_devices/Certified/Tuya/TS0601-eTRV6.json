@@ -32,9 +32,9 @@
         "04": { "store_tuya_attribute": "SetPoint", "sensor_type": "setpoint", "EvalExp": "int((value//10)*10)", "domo_divisor": 10, "domo_round": 2, "action_type": "setpoint", "action_Exp": "int(( ( value / 10) // 10 ) * 10)"},
         "05": { "store_tuya_attribute": "Temperature", "sensor_type": "temperature" , "EvalExp": "int((value//10)*10)", "domo_divisor": 10, "domo_round": 2},
         "07": { "store_tuya_attribute": "ChildLock"},
-        "35": { "store_tuya_attribute": "ErrorStatus"},
-        "39": { "store_tuya_attribute": "FrostProtection"},
-        "47": { "store_tuya_attribute": "Calibration", "action_type": "calibration"}
+        "23": { "store_tuya_attribute": "ErrorStatus"},
+        "27": { "store_tuya_attribute": "FrostProtection"},
+        "2f": { "store_tuya_attribute": "Calibration", "action_type": "calibration"}
     },
     "PollingEnabled": 1,
     "Param": {
