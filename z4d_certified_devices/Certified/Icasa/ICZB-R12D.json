@@ -1,0 +1,42 @@
+{
+    "_blakadder": "https://zigbee.blakadder.com/iCasa_ICZB-R12D.html",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/66",
+    "_comment": "Dimmer + Rotary Dimmer",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0006": "",
+            "0008": "",
+            "0702": "",
+            "0b04": "",
+            "0b05": "",
+            "0019": "",
+            "Type": "LvlControl/Voltage/Power/Meter/Ampere"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0008", "0b04", "0702" ],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0005", "MaxInterval": "0e10", "TimeOut": "0FFF", "Change": "01" } } },
+        "0008": {"Attributes": { "0000": {"DataType": "20", "MinInterval":"0005", "MaxInterval":"012C", "TimeOut":"0000","Change":"05"}}},
+        "0b04": {
+            "Attributes": {
+                "0505": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "0096" },
+                "0508": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "0064" },
+                "050b": { "DataType": "29", "MinInterval": "0005", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "000a" }
+            }
+        }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0003", "0004", "0005", "0006", "0007" ],
+        "0019": [],
+        "0006": [ "0000", "4000", "4001", "4002", "4003"],
+        "0008": [ "0000" ],
+        "0702": [ "0000", "0200", "0300", "0301", "0302", "0303", "0306" ],
+        "0b04": [ "0000", "050B", "0505", "0508", "0600", "0601", "0602", "0603", "0604", "0605"]
+    },
+    "Param": {
+    }
+}
