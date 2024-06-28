@@ -1,5 +1,5 @@
 {
-	"_comment": "Profalux Volet & BSO",
+	"_comment": "Profalux Zoe remote",
 	"_version": "0.1",
 	"Ep": {
 		"01": {
@@ -12,26 +12,13 @@
 			"0100": "",
 			"fc20": "",
 			"fc21": "",
-			"Type": "BlindInverted"
+			"Type": ""
 		}
 	},
+	"CreateWidgetDomoticz": false,
 	"Type": "",
-	"ClusterToBind": [
-		"0008"
-	],
-	"ConfigureReporting": {
-		"0008": {
-			"Attributes": {
-				"0000": {
-					"DataType": "20",
-					"MinInterval": "0005",
-					"MaxInterval": "012C",
-					"TimeOut": "0000",
-					"Change": "05"
-				}
-			}
-		}
-	},
+	"ClusterToBind": [],
+	"ConfigureReporting": {	},
 	"ReadAttributes": {
 		"0000": [
 			"0000",
@@ -46,5 +33,8 @@
 			"0000",
 			"0011"
 		]
-	}
+	},    
+	"Param": {
+        	"Disabled": 1
+   	}
 }
