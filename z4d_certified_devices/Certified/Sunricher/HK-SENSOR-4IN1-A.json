@@ -1,0 +1,62 @@
+{
+    "_comment": "Sunricher HK-SENSOR-4IN1-A",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=14085",
+    "_description": "For in One Sensor",
+    "_blakadder": "",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+                "0000": "",
+                "0019": "",
+                "0001": "",
+                "0003": "",
+                "0009": "",
+                "0406": "",
+                "Type": "Motion"
+            },
+            "02": {
+                "0000": "",
+                "0003": "",
+                "0500": "",
+                "Type": ""
+            },
+            "03": {
+                "0000": "",
+                "0003": "",
+                "0402": "",
+                "Type": "Temp"
+            },
+            "04": {
+                "0000": "",
+                "0003": "",
+                "0405": "",
+                "Type": "Humi"
+            },
+            "05": {
+                "0000": "",
+                "0003": "",
+                "0400": "",
+                "Type": "Lux"
+            }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000", "0001", "0400", "0402", "0405", "0406", "0500" ],
+    "ConfigureReporting": {
+        "0400": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "012C", "TimeOut": "0FFF", "Change": "07D0" }}},
+        "0402": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "000A", "MaxInterval": "012C", "TimeOut": "0FFF", "Change": "0014" }}},
+        "0406": { "Attributes": { "0000": { "DataType": "18", "MinInterval": "0001", "MaxInterval": "1C20", "TimeOut": "0FFF", "Change": "01" }}},
+        "0405": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "001E", "MaxInterval": "0258", "TimeOut": "0000", "Change": "012C" }}}
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007", "000a", "4000"],
+        "0019": [],
+        "0406": ["0010","0000","fffd"],
+        "0001": ["0020","0021"],
+        "0500": ["0000", "0001", "0002", "0010"],
+        "0402": ["0000"],
+        "0405": ["0000"],
+        "0400": ["0000"]  
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2
+}
