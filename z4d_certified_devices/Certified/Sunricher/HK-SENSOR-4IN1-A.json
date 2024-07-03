@@ -12,12 +12,8 @@
         "05": { "0003": "", "0400": "", "Type": "Lux" }
     },
     "Type": "",
-    "ClusterToBind": [ "0000", "0001", "0400", "0402", "0405", "0406", "0500" ],
+    "ClusterToBind": [ ],
     "ConfigureReporting": {
-        "0400": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "012C", "TimeOut": "0FFF", "Change": "07D0" }}},
-        "0402": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "000A", "MaxInterval": "012C", "TimeOut": "0FFF", "Change": "0014" }}},
-        "0406": { "Attributes": { "0000": { "DataType": "18", "MinInterval": "0001", "MaxInterval": "1C20", "TimeOut": "0FFF", "Change": "01" }}},
-        "0405": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "001E", "MaxInterval": "0258", "TimeOut": "0000", "Change": "012C" }}}
     },
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007", "000a", "4000"],
