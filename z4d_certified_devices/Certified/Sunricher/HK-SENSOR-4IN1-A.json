@@ -1,0 +1,54 @@
+{
+    "_comment": "Sunricher HK-SENSOR-4IN1-A",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=14085",
+    "_description": "Four in One Sensor",
+    "_blakadder": "",
+    "_version": "1.0",
+    "Ep": {
+        "01": { 
+            "0000": "", 
+            "0019": "", 
+            "0001": "", 
+            "0003": "", 
+            "0009": "", 
+            "0406": { "Attributes": { 
+                "1000": { "Enabled": true, "Name": "Sunricher_PIR_sensor_sensitivity", "ActionList": [ "check_store_value"]},
+                "1001": { "Enabled": true, "Name": "Sunricher_Motion_detection_blind_time", "ActionList": [ "check_store_value"]},
+                "1002": { "Enabled": true, "Name": "Sunricher_Motion_detection_pulse_counter", "ActionList": [ "check_store_value"]},
+                "1003": { "Enabled": true, "Name": "Sunricher_PIR_sensor_trigger_time_interval", "ActionList": [ "check_store_value"]}}},
+            "Type": "Motion" 
+        },
+        "02": { "0000": "", "0003": "", "0500": "", "Type": "" },
+        "03": { "0000": "", "0003": "", "0402": "", "Type": "Temp" },
+        "04": { "0000": "", "0003": "", "0405": "", "Type": "Humi" },
+        "05": { "0000": "", "0003": "", "0400": "", "Type": "Lux" }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001", "0400", "0402", "0405", "0406", "0500" ],
+    "ConfigureReporting": {
+        "0001": { "Attributes": { "0021": { "DataType": "21", "MinInterval": "0001", "MaxInterval": "7080", "TimeOut": "0000", "Change": "0005" }}},
+        "0400": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0708", "TimeOut": "0000", "Change": "0005" }}},
+        "0402": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "000A", "MaxInterval": "0708", "TimeOut": "0000", "Change": "0001" }}},
+        "0405": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "003C", "MaxInterval": "0708", "TimeOut": "0000", "Change": "0001" }}},
+        "0406": { "Attributes": { "0000": { "DataType": "18", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0000", "Change": "01" }}}
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007", "000a", "4000"],
+        "0001": ["0020","0021", "0035", "003e"],
+        "0019": [],
+        "0400": ["0000", "0001", "0002"],
+        "0402": ["0000", "0001", "0002"],
+        "0405": ["0000", "0001", "0002"],
+        "0406": [ "0000", "0001", "0002", "0010", "1000", "1001", "1002", "1003"],
+        "0500": ["0000", "0001", "0002", "0010", "0011"]
+    },
+    "Param": {
+        "PIROccupiedToUnoccupiedDelay": 30,
+        "Sunricher_PIR_SENSITIVITY": 15,
+        "Sunricher_MOTION_BLIND_TIME": 15,
+        "Sunricher_Temperature_Compensation": 0,
+        "Sunricher_Humidity_Compensation": 0
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2
+}
