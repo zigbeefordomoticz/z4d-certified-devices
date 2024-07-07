@@ -1,0 +1,31 @@
+{
+    "_comment": "Temp + Humidity WL-TH02 manufactured by Tuya ",
+    "_version": "1.0",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_WL-TH02.html",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=14094",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0402": "",
+            "0405": "",
+            "0019": "",
+            "e002": "",
+            "Type": "Voltage/Temp/Humi"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007" ],
+        "0001": [ "0000", "0020", "0021", "003a", "fffd" ],
+        "0019": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "fffd" ],
+        "0402": [ "0000" ],
+        "0405": [ "0000" ]
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
+    "Param": {}
+}
