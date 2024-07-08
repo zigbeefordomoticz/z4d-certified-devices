@@ -19,8 +19,18 @@
             "Type": "Motion" 
         },
         "02": { "0000": "", "0003": "", "0500": "", "Type": "" },
-        "03": { "0000": "", "0003": "", "0402": "", "Type": "Temp" },
-        "04": { "0000": "", "0003": "", "0405": "", "Type": "Humi" },
+        "03": { 
+            "0000": "", 
+            "0003": "", 
+            "0402": { "Attributes": { 
+                "1000": { "Enabled": true, "Name": "Sunricher_PIR_temp_compensation", "ActionList": [ "check_store_value"]}}},
+            "Type": "Temp" },
+        "04": { 
+            "0000": "", 
+            "0003": "", 
+            "0405": { "Attributes": { 
+                "1000": { "Enabled": true, "Name": "Sunricher_PIR_humidity_compensation", "ActionList": [ "check_store_value"]}}},
+            "Type": "Humi" },
         "05": { "0000": "", "0003": "", "0400": "", "Type": "Lux" }
     },
     "Type": "",
