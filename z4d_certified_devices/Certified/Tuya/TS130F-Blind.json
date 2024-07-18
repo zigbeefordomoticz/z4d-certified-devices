@@ -7,7 +7,8 @@
         ["TS130F", "_TZ3000_lnovi113"],
         ["TS130F", "_TZ3000_l13erpv4"],
         ["TS130F", "_TZ3210_ol1uhvza"],
-        ["TS130F", "_TZ3000_qqdbccb3"]
+        ["TS130F", "_TZ3000_qqdbccb3"],
+        ["TS130F", "_TZ3000_dbpmpco1"]
     ],
     "Ep": {
         "01": {
@@ -17,7 +18,9 @@
             "0006": "",
             "0102": {
                 "Attributes": {
+                    "8000": { "Enabled": true, "Name": "Tuya_0102_8000", "DataType": "30" , "ActionList": [ "check_store_value"]},
                     "f000": { "Enabled": true, "Name": "Tuya_0102_f000", "DataType": "30" , "ActionList": [ "check_store_value"]},
+                    "f001": { "Enabled": true, "Name": "Tuya_0102_f001", "DataType": "30" , "ActionList": [ "check_store_value"]},
                     "f002": { "Enabled": true, "Name": "Tuya_0102_f002", "DataType": "20" , "ActionList": [ "check_store_value"]},
                     "f003": { "Enabled": true, "Name": "Tuya_0102_f002", "DataType": "21" , "ActionList": [ "check_store_value"]}
                 }
