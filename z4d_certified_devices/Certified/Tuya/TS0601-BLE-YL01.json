@@ -17,7 +17,7 @@
         }
     },
     "Type": "",
-    "ClusterToBind": [ "0000"],
+    "ClusterToBind": [ ],
     "ConfigureReporting": {
     },
     "ReadAttributes": {
@@ -51,6 +51,7 @@
     },
     "BatteryDevice": 1,
     "PollingEnabled": true,
+    "TUYA_MAGIC_READ_ATTRIBUTES": true,
     "TUYA_REGISTRATION": 19,
     "TUYA_RESET_CMD": true,
     "TUYA_DATA_REQUEST_POLLING": 60,
