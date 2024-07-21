@@ -29,7 +29,7 @@
         "01": { "sensor_type": "tds"},
         "02": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)"},
         "07": { "sensor_type": "battery"},
-        "0a": { "sensor_type": "phMeter", "EvalExp": "round(value/10,1)"},
+        "0a": { "sensor_type": "phMeter", "EvalExp": "round(value/100,1)"},
         "0b": { "sensor_type": "ec"},
         "65": { "sensor_type": "orp"},
         "66": { "sensor_type": "freeChlorine", "EvalExp": "round(value/10,1)"},
