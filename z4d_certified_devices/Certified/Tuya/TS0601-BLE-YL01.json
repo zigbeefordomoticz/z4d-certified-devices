@@ -56,5 +56,9 @@
     "TUYA_RESET_CMD": true,
     "TUYA_DATA_REQUEST_POLLING": 300,
     "Param": {
+        "tempCompensation": 0,
+        "ph7Compensation": 0,
+        "ecCompensation": 0,
+        "orpCompensation": 0
     }
 }
