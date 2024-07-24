@@ -1,8 +1,11 @@
 {
     "_comment": "Smart WiFi Zigbee chlorine meter",
+    "_product": "https://www.amazon.com/YINMIK-Chlorine-Swimming-Salinity-Inground/dp/B0C2T8YLYW",
+    "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/pull/1758",
     "_blakadder": "",
     "Identifier": [
-        [ "TS0601", "_TZE200_v1jqz5cy"]
+        [ "TS0601", "_TZE200_v1jqz5cy"],
+        [ "TS0601", "_TZE200_d9mzkhoq"]
     ],
 
     "Ep": {
@@ -54,7 +57,7 @@
     "TUYA_MAGIC_READ_ATTRIBUTES": true,
     "TUYA_REGISTRATION": 19,
     "TUYA_RESET_CMD": true,
-    "TUYA_DATA_REQUEST_POLLING": 300,
+    "TUYA_DATA_REQUEST": 300,
     "Param": {
         "tempCompensation": 0,
         "ph7Compensation": 0,
