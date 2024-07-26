@@ -32,7 +32,7 @@
         "01": { "sensor_type": "tds"},
         "02": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)", "domo_round": 1},
         "07": { "sensor_type": "battery"},
-        "0a": { "sensor_type": "phMeter", "EvalExp": "round(value/10,1)", "domo_round": 1},
+        "0a": { "sensor_type": "phMeter", "EvalExp": "round(value / 100, 1) if value >= 100 else round(value / 10, 1)", "domo_round": 1},
         "0b": { "sensor_type": "ec"},
         "65": { "sensor_type": "orp"},
         "66": { "sensor_type": "freeChlorine", "EvalExp": "round(value/10,1)", "domo_round": 1},
@@ -57,7 +57,8 @@
     "TUYA_MAGIC_READ_ATTRIBUTES": true,
     "TUYA_REGISTRATION": 19,
     "TUYA_RESET_CMD": true,
-    "TUYA_DATA_REQUEST": 300,
+    "TUYA_DATA_REQUEST_POLLING": 600,
+    "TUYA_DATA_REQUEST": 600,
     "Param": {
         "tempCompensation": 0,
         "ph7Compensation": 0,
