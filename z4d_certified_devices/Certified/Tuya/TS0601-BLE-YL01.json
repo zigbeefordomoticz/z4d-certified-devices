@@ -57,7 +57,8 @@
     "TUYA_MAGIC_READ_ATTRIBUTES": true,
     "TUYA_REGISTRATION": 19,
     "TUYA_RESET_CMD": true,
-    "TUYA_DATA_REQUEST_POLLING": 600,
+    "TUYA_DATA_REQUEST": 3600,
+    "TUYA_DATA_REQUEST_POLLING": 300,
     "Param": {
         "tempCompensation": 0,
         "ph7Compensation": 0,
