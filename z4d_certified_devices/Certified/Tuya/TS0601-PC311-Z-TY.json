@@ -27,6 +27,7 @@
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
     },
+    "RELY_ON_EVAL_EXP": true,
     "TUYA_REGISTRATION": 19,
     "TWO_COMPLEMENT_VAL": "0x100000000",
     "TWO_COMPLEMENT_TST": "0x80000000",
