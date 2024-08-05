@@ -50,14 +50,14 @@
         "72": { "sensor_type": "phCalibration2"},
         "73": { "sensor_type": "ecCalibration"},
         "74": { "sensor_type": "orpCalibration"},
-        "75": { "sensor_type": "salinity", "EvalExp": "(value)"}
+        "75": { "sensor_type": "salinity", "EvalExp": "(value)"},
+        "78": { "store_tuya_attribute": "ORP_Calibration" }
     },
     "BatteryDevice": 1,
     "PollingEnabled": true,
     "TUYA_MAGIC_READ_ATTRIBUTES": true,
     "TUYA_REGISTRATION": 19,
     "TUYA_RESET_CMD": true,
-    "TUYA_DATA_REQUEST": 3600,
     "TUYA_DATA_REQUEST_POLLING": 300,
     "Param": {
         "tempCompensation": 0,
