@@ -16,7 +16,7 @@
             "000a": "",
             "0019": "",
             "ef00": "",
-            "Type": "Temp/phMeter/ec/orp/freeChlorine/salinity/tds"
+            "Type": "BatteryPercentage/Temp/phMeter/ec/orp/freeChlorine/salinity/tds"
         }
     },
     "Type": "",
@@ -59,6 +59,7 @@
     "TUYA_REGISTRATION": 19,
     "TUYA_RESET_CMD": true,
     "TUYA_DATA_REQUEST_POLLING": 300,
+    "TY_DEFAULT_RESPONSE": true,
     "Param": {
         "tempCompensation": 0,
         "ph7Compensation": 0,
