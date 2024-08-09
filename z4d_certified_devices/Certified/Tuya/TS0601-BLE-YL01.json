@@ -16,7 +16,7 @@
             "000a": "",
             "0019": "",
             "ef00": "",
-            "Type": "BatteryPercentage/Temp/phMeter/ec/orp/freeChlorine/salinity/tds"
+            "Type": "PollingControl/BatteryPercentage/Temp/phMeter/ec/orp/freeChlorine/salinity/tds"
         }
     },
     "Type": "",
