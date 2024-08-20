@@ -15,7 +15,7 @@
             "ef00": "",
             "0019": "",
             "000a": "",
-            "Type": "Curtain"
+            "Type": "SwitchCalibration/Curtain"
         }
     },
     "Type": "",
@@ -39,7 +39,6 @@
         "ef00": []
     },
     "Param": {
-        "CurtainCalibration": 200,
         "CurtainMotorSteering": 0
     },
     "BatteryDevice": 1
