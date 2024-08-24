@@ -28,10 +28,9 @@
     "TS0601_DP": {
         "01": { "sensor_type": "curtain_state", "action_type": "CurtainState"},
         "02": { "sensor_type": "curtain_level", "EvalExp": "int(value)", "action_type": "CurtainLevel" },
-        "03": { "sensor_type": "curtain_calibration", "action_type": "CurtainCalibration"},
+        "07": { "sensor_type": "curtain_calibration", "action_type": "CurtainCalibration"},
         "08": { "sensor_type": "curtain_motor_steering", "action_type": "CurtainMotorSteering" },
-        "07": { "store_tuya_attribute": "dp_07_01"},
-        "0e": { "store_tuya_attribute": "dp_0e_04"}
+        "0e": { "store_tuya_attribute": "calibration_value"}
     },
     "ReadAttributes": {
         "0000": [ "0004", "0005", "0000", "0001", "0007", "ffe2", "ffe4", "ffdf", "fffe" ],
