@@ -38,7 +38,8 @@
         "ef00": []
     },
     "Param": {
-        "CurtainMotorSteering": 0
+        "CurtainMotorSteering": 0,
+        "CurtainQuickCalibration": 0
     },
     "BatteryDevice": 1
 }
