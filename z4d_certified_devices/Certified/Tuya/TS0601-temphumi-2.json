@@ -35,5 +35,6 @@
     },
     "Param": {
     },
+    "BatteryPercentageConverter": 2,
     "BatteryDevice": 1
 }
