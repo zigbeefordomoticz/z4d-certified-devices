@@ -54,8 +54,8 @@
         "0204": [ "0001" ]
     },
     "BatteryDevice": 1,
-    "MaxBatteryVoltage": 3,
-    "MinBatteryVoltage": 2,
+    "MaxBatteryVoltage": 30,
+    "MinBatteryVoltage": 20,
     "PollingEnabled": 1,
     "Param": {
         "Calibration": 0
