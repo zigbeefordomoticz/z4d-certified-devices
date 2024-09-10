@@ -1,0 +1,35 @@
+{
+    "_comment": "Tuya Rain Sensor and Light detector",
+    "_version": "1.0",
+    "Identifier": [
+        [ "TS0207", "_TZ3210_tgvtvdoc" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "000a": "",
+            "0019": "",
+            "0500": "",
+            "Type": "Lux/Water/RainIntensity/SwitchCleaning"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ],
+        "0001": [ "0020", "0021" ],
+        "0500": [ "0000", "0002", "0010" ]
+    },
+    "TS0601_DP": {
+        "04": { "sensor_type": "battery"},
+        "65": { "sensor_type": "illuminance" },
+        "66": { "store_tuya_attribute": "illuminance_20min_average"},
+        "67": { "store_tuya_attribute": "illuminance_today_max"},
+        "68": { "sensor_type": "cleaning_reminder"},
+        "69": { "sensor_type": "rain_intensity"}
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2
+}
