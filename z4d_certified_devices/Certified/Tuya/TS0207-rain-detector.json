@@ -11,7 +11,7 @@
             "000a": "",
             "0019": "",
             "0500": "",
-            "Type": "Lux/Water/RainIntensity/SwitchCleaning"
+            "Type": "Lux/Lux20MinAverage/Water/RainIntensity/SwitchCleaning"
         }
     },
     "Type": "",
@@ -25,7 +25,7 @@
     "TS0601_DP": {
         "04": { "sensor_type": "battery"},
         "65": { "sensor_type": "illuminance" },
-        "66": { "store_tuya_attribute": "illuminance_20min_average"},
+        "66": { "sensor_type": "illuminance_20min_average" },
         "67": { "store_tuya_attribute": "illuminance_today_max"},
         "68": { "sensor_type": "cleaning_reminder"},
         "69": { "sensor_type": "rain_intensity"}
