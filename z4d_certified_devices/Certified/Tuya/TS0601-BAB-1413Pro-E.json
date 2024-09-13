@@ -37,6 +37,7 @@
         "2f": { "store_tuya_attribute": "Calibration", "action_type": "calibration"},
         "31": { "store_tuya_attribute": "31_04"}
     },
+    "TUYA_REGISTRATION": 19,
     "PollingEnabled": 1,
     "Param": {
     }
