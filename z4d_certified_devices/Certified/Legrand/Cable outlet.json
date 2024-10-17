@@ -9,7 +9,7 @@
             "0005": "",
             "0006": "",
             "fc01": "",
-            "0b04": "",
+            "0b04": { "Attributes": { "050f": { "Enabled": true, "Name": "bidouille", "ActionList": [ "check_store_value"] }}},
             "0019": "",
             "Type": "Plug/Power/Meter/LegranCableMode/FIP"
         }
