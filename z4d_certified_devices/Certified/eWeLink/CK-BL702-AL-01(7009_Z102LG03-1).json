@@ -1,0 +1,33 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/77",
+    "_blakkader": "https://zigbee.blakadder.com/eWeLink_SWITCH-ZR02.html",
+    "_comment": "RGB+CT MR16 12V Bulb eWeLink",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0008": "",
+            "0300": "",
+            "fc11": "",
+            "fc57": "",
+            "0019": "",
+            "Type": "ColorControlRGBWW"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0008", "0300" ],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0000", "Change": "01" } } },
+        "0008": { "Attributes": { "0000": { "DataType": "20", "MinInterval": "0005", "MaxInterval": "012C", "TimeOut": "0000", "Change": "05" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "4000" ],
+        "0006": [ "0000", "4000", "4001", "4002", "4003" ],
+        "0008": [ "0000" ],
+        "0300": [ "0001", "0001", "0002", "0003", "0004", "0007", "0008", "4002", "4003", "4004", "000f", "4000", "4001", "400b", "400c", "4005", "4006", "400a" ]
+    }
+}
