@@ -1,0 +1,39 @@
+{
+    "_description": "Tuya Luminance door sensor",
+    "_blakadder": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/74",
+    "_version": "1.0",
+    "Identifier": [
+        ["TS0601", "_TZE200_pay2byax"],
+        ["TS0601", "_TZE200_ijey4q29"]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0400": "",
+            "0500": "",
+            "Type": "Lux/Door"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001", "0400"],
+    "ConfigureReporting": {},
+    "ReadAttributesEp": [ "01" ],
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0000", "0001", "0007", "fffe" ],
+        "0400": [ "0000", "0001", "0002" ],
+        "0500": [ "0000", "0001", "0002" ]
+    },
+    "TS0601_DP": { 
+        "01": { "store_tuya_attribute": "Contact"},
+        "02": { "store_tuya_attribute": "Battery"},
+        "65": { "store_tuya_attribute": "illuminance"},
+        "66": { "store_tuya_attribute": "illuminance_interval"}
+    },
+    "Param": {
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2
+}
