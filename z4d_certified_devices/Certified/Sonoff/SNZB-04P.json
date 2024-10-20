@@ -13,7 +13,7 @@
             "fc57": "",
             "fc11": { 
                 "Attributes": { 
-                    "2000": { "Enabled": true, "Name": "Tamper", "DataType": "20" , "UpdDomoDeviceWithCluster": "0009", "ActionList": [ "check_store_value", "upd_domo_device"]} } },
+                    "2000": { "Enabled": true, "Name": "Tamper", "DataType": "20" , "UpdDomoDeviceWithCluster": "0009", "DomoDeviceFormat": "str_2digits", "ActionList": [ "check_store_value", "upd_domo_device"]} } },
             "Type": "Door/Tamper"
         }
     },
