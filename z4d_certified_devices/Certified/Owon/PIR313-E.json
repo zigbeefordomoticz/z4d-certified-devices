@@ -1,0 +1,44 @@
+{
+    "_source": "@erwan",
+    "_description": "Owon Motion Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/OWON_PIR313.html",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0500": "",
+            "Type": "Motion"
+        },
+        "03": {
+            "0400": "",
+            "Type": "Lux"
+        },
+        "02": {
+            "0402": "",
+            "0405": "",
+            "Type": "Temp/Humi"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001", "0400", "0402", "0405" ],
+    "ConfigureReporting": {
+        "0400": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "012C", "TimeOut": "0000", "Change": "000f" } } },
+        "0402": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "000a", "MaxInterval": "012C", "TimeOut": "0000", "Change": "0001" } } },
+        "0405": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "003c", "MaxInterval": "012C", "TimeOut": "0000", "Change": "0001" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007" ],
+        "0001": [ "0021" ],
+        "0003": [],
+        "0400": [ "0000", "0001", "0002" ],
+        "0402": [ "0000", "0001", "0002" ],
+        "0405": [ "0000", "0001", "0002" ],
+        "0500": [ "0000", "0001", "0002", "0010", "0012" ]
+    },
+    "MotionViaIASAlarm1": true,
+    "DisableTamper": true,
+    "VoltageConverter": 10,
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
+    "Param": {}
+}
