@@ -31,7 +31,12 @@
             "0405": { "Attributes": { 
                 "1000": { "Enabled": true, "Name": "Sunricher_PIR_humidity_compensation", "ActionList": [ "check_store_value"]}}},
             "Type": "Humi" },
-        "05": { "0000": "", "0003": "", "0400": "", "Type": "Lux" }
+        "05": { 
+		"0000": "", 
+		"0003": "", 
+		"0400":  { "Attributes": {
+                	"1000": { "Enabled": true, "Name": "Sunricher_PIR_humidity_compensation", "ActionList": [ "check_store_value"]}}},
+		"Type": "Lux" }
     },
     "Type": "",
     "ClusterToBind": [ "0001", "0400", "0402", "0405", "0406", "0500" ],
@@ -53,9 +58,6 @@
         "0500": ["0000", "0001", "0002", "0010", "0011"]
     },
     "Param": {
-        "PIROccupiedToUnoccupiedDelay": 30,
-        "Sunricher_PIR_SENSITIVITY": 15,
-        "Sunricher_MOTION_BLIND_TIME": 15,
         "Sunricher_Temperature_Compensation": 0,
         "Sunricher_Humidity_Compensation": 0
     },
