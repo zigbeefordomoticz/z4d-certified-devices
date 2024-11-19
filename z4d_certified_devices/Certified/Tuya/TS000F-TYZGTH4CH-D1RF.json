@@ -1,0 +1,38 @@
+{
+    "_comment": "TYZGTH4CH-D1RF - Mumubiz",
+    "_version": "1.0",
+    "Identifier": [
+        [ "TS000F", "_TZ3218_ya5d6wth"]
+    ],
+    "Ep": {
+        "01": { 
+            "0000": "", 
+            "0004": "", 
+            "0005": "", 
+            "0006": "", 
+            "0019": "", 
+            "e000": { "Attributes": {
+                "d003": { "Enabled": true, "Name": "Tuya_e000_d003", "DataType": "42" , "ActionList": [ "check_store_value"]} } },
+            "e001": "", 
+            "Type": "Switch" },
+        "02": { "0006": "", "e001": "", "Type": "Switch" },
+        "03": { "0006": "", "e001": "", "Type": "Switch" },
+        "04": { "0006": "", "e001": "", "Type": "Switch" },
+        "f2": { "Type": {} }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006"  ],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0258", "Change": "01" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0004","0000","0001","0005","0007","fffe","ffe4","ffdf"],
+        "0006": [ "0000", "4001", "4002" ],
+        "e001": [ "d010" ],
+        "e000": [ "d002" ]
+    },
+    "PowerOnOffStateAttribute8002": true,
+    "Param": {
+        "PowerOnAfterOffOn": 2
+    }
+}
