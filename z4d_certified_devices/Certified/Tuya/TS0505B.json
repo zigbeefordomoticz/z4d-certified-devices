@@ -13,8 +13,17 @@
             "0300": { 
                 "Attributes": { 
                     "f000": {"Enabled": true, "Name": "Tuya0300_f000", "DataType": "20", "ActionList": [ "check_store_value"] },
-                    "e100": {"Enabled": true, "Name": "Tuya0300_e100", "DataType": "25", "ActionList": [ "check_store_value"] },
-                    "f003": {"Enabled": true, "Name": "Tuya0300_f003", "DataType": "48", "ActionList": [ "check_store_value"] }
+                    "f003": {"Enabled": true, "Name": "Tuya0300_f003", "DataType": "48", "ActionList": [ "check_store_value"] },
+                    "f007": {"Enabled": true, "Name": "Tuya0300_f007", "DataType": "48", "ActionList": [ "check_store_value"] },
+                    "f008": {"Enabled": true, "Name": "Tuya0300_f008", "DataType": "48", "ActionList": [ "check_store_value"] },
+                    "f009": {"Enabled": true, "Name": "Tuya0300_f009", "DataType": "48", "ActionList": [ "check_store_value"] },
+                    "f00a": {"Enabled": true, "Name": "Tuya0300_f00a", "DataType": "48", "ActionList": [ "check_store_value"] },
+                    "f00b": {"Enabled": true, "Name": "Tuya0300_f00b", "DataType": "48", "ActionList": [ "check_store_value"] },
+                    "f00c": {"Enabled": true, "Name": "Tuya0300_f00c", "DataType": "48", "ActionList": [ "check_store_value"] },
+                    "f00d": {"Enabled": true, "Name": "Tuya0300_f00d", "DataType": "10", "ActionList": [ "check_store_value"] },
+                    "f00e": {"Enabled": true, "Name": "Tuya0300_f00e", "DataType": "48", "ActionList": [ "check_store_value"] },
+                    "e000": {"Enabled": true, "Name": "Tuya0300_e000", "DataType": "21", "ActionList": [ "check_store_value"] },
+                    "e100": {"Enabled": true, "Name": "Tuya0300_e100", "DataType": "25", "ActionList": [ "check_store_value"] }
                 }
             },
             "000a": "",
