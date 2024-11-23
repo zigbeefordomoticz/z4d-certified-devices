@@ -12,9 +12,11 @@
             "0006": "", 
             "0019": "", 
             "e000": { "Attributes": {
-                "d003": { "Enabled": true, "Name": "Tuya_e000_d003", "DataType": "42" , "ActionList": [ "check_store_value"]} } },
+                "d002": { "Enabled": true, "Name": "Tuya_e000_d002", "DataType": "42" , "ActionList": [ "check_store_value"]},
+                "d003": { "Enabled": true, "Name": "Tuya_e000_d003", "DataType": "42" , "ActionList": [ "check_store_value"]},
+                "d010": { "Enabled": true, "Name": "Tuya_e000_d010", "DataType": "42" , "ActionList": [ "check_store_value"]}}},
             "e001": "", 
-            "Type": "Switch" },
+            "Type": "Switch/Temp/Humi" },
         "02": { "0006": "", "e001": "", "Type": "Switch" },
         "03": { "0006": "", "e001": "", "Type": "Switch" },
         "04": { "0006": "", "e001": "", "Type": "Switch" },
@@ -30,6 +32,15 @@
         "0006": [ "0000", "4001", "4002" ],
         "e001": [ "d010" ],
         "e000": [ "d002" ]
+    },
+    "TS0601_DP": {
+        "66": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)" },
+        "67": { "sensor_type": "humidity" },
+        "6c": { "store_tuya_attribute": "Unknow_6c_02" },
+        "6d": { "store_tuya_attribute": "Unknow_6d_02" },
+        "73": { "store_tuya_attribute": "Unknow_73_04" },
+        "7b": { "store_tuya_attribute": "Unknow_7b_01" }
+        
     },
     "PowerOnOffStateAttribute8002": true,
     "Param": {
