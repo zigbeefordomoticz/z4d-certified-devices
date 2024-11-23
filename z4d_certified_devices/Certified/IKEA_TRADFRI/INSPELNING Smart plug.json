@@ -1,0 +1,93 @@
+{
+    "_comment": "INSPELNING Smart Plug",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/84",
+    "Ep": {
+        "01": {
+            "1000": "",
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0008": "",
+            "0702": "",
+            "0b04": "",
+            "fc7c": "",
+            "fc85": "",
+            "0019": "",
+            "Type": "Plug/Power/Meter/Ampere"
+        },
+        "f2": {
+            "0021": "",
+            "Type": {}
+        }
+    },
+    "Type": "",
+    "ClusterToBind": ["fc7c", "0004", "0000", "0005", "1000", "0006", "0008", "fc85", "0b04", "0003", "0702"],
+    "ConfigureReporting": {
+        "0006": {
+            "0000": {
+                "Change": {},
+                "DataType": "10",
+                "MaxInterval": "012c",
+                "MinInterval": "0001",
+                "TimeOut": "0000"
+            }
+        },
+        "0008": {
+            "0000": {
+                "Change": "05",
+                "DataType": "20",
+                "MaxInterval": "012c",
+                "MinInterval": "0005",
+                "TimeOut": "0000"
+            }
+        },
+        "0b04": {
+            "0505": {
+                "Change": "0001",
+                "DataType": "21",
+                "MaxInterval": "012c",
+                "MinInterval": "0001",
+                "TimeOut": "0000"
+            },
+            "0508": {
+                "Change": "0001",
+                "DataType": "21",
+                "MaxInterval": "012c",
+                "MinInterval": "0001",
+                "TimeOut": "0000"
+            },
+            "050b": {
+                "Change": "0001",
+                "DataType": "29",
+                "MaxInterval": "012c",
+                "MinInterval": "0005",
+                "TimeOut": "0000"
+            }
+        },
+        "0702": {
+            "0400": {
+                "Change": {},
+                "DataType": {},
+                "MaxInterval": {},
+                "MinInterval": {},
+                "TimeOut": "0000"
+            }
+        }
+    },
+    "ReadAttributes": {
+        "0019": [],
+        "0702": ["0300", "0302", "0301", "0000", "0200", "0303", "0306", "fffd"],
+        "0006": ["4000", "4001", "4002", "4003", "fffd", "0000"],
+        "0008": ["0000"],
+        "0000": ["0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "000a", "000b", "4000", "fffd"],
+        "0b04": ["0505", "0508", "050b", "0600", "0601", "0602", "0603", "0604", "0605", "fffd", "0000"]
+    },
+    "Param": {
+        "PowerOnAfterOffOn": 255
+    },
+    "GroupMembership": {}
+}
