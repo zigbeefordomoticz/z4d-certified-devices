@@ -33,6 +33,7 @@
         "e001": [ "d010" ],
         "e000": [ "d002" ]
     },
+    "StandardZigbeeCommand": true,
     "TS0601_DP": {
         "66": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)" },
         "67": { "sensor_type": "humidity" },
