@@ -1,0 +1,55 @@
+{
+    "_comment": "INSPELNING Smart Plug",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/84",
+    "Ep": {
+        "01": {
+            "1000": "",
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0008": "",
+            "0702": "",
+            "0b04": "",
+            "fc7c": "",
+            "fc85": "",
+            "0019": "",
+            "Type": "Plug/Power/Meter/Ampere/Voltage"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0702", "0b04"],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { 
+            "0000": { "Change": "01", "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" }}
+        },
+        "0702": { "Attributes": {
+            "0000": { "Change": "0000000000000001", "DataType": "25", "MaxInterval": "0E10", "MinInterval": "001E", "TimeOut": "0000" }}
+        },
+        "0b04": { "Attributes": {
+            "050b": { "Change": "0001", "DataType": "29", "MaxInterval": "0E10", "MinInterval": "0005", "TimeOut": "0000" },
+            "0505": { "Change": "0001", "DataType": "21", "MaxInterval": "0E10", "MinInterval": "0005", "TimeOut": "0000" },
+            "0508": { "Change": "0001", "DataType": "21", "MaxInterval": "0E10", "MinInterval": "0005", "TimeOut": "0000" },
+            "0605": { "Change": "0001", "DataType": "21", "MaxInterval": "FDE8", "MinInterval": "000A", "TimeOut": "0000" }}
+        }
+    },
+    "ReadAttributes": {
+        "0000": ["0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "000a", "000b", "4000", "fffd"],
+        "0006": ["4000", "4001", "4002", "4003", "fffd", "0000"],
+        "0008": ["0000"],
+        "0702": ["0300", "0302", "0301", "0000", "0200", "0303", "0306", "fffd"],
+        "0b04": ["0600", "0601", "0602", "0603", "0604", "0605", "0505", "0508", "050b", "fffd", "0000"],
+        "0019": []
+    },
+    "RMSVoltageDivisor": 1,
+    "Param": {
+        "PowerOnAfterOffOn": 255
+    }
+}
