@@ -17,17 +17,17 @@
             "000a": "",
             "0006": "",
             "fcc0": "",
-            "Type": "DButton_3"
+            "Type": "Button_3"
         },
         "02":{
             "0012":"",
             "0006":"",
-            "Type":""
+            "Type": "Button_3"
         },
         "03":{
             "0012":"",
             "0006":"",
-            "Type":""
+            "Type": "Button_3"
         }
     },
     "Type": "",
@@ -40,9 +40,9 @@
         "fcc0": [ ]
     },
     "BatteryDevice": 1,
+    "Aqara_Buton_3": true,
     "Param": {
         "BindingTableRequest": 0,
-        "AqaraOppleMode": 1,
         "AqaraMultiClick": 2
     }
 }
