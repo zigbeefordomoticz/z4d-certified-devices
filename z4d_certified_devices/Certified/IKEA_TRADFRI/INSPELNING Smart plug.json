@@ -37,6 +37,11 @@
             "050b": { "Change": "0001", "DataType": "29", "MaxInterval": "0E10", "MinInterval": "0005", "TimeOut": "0000" },
             "0505": { "Change": "0001", "DataType": "21", "MaxInterval": "0E10", "MinInterval": "0005", "TimeOut": "0000" },
             "0508": { "Change": "0001", "DataType": "21", "MaxInterval": "0E10", "MinInterval": "0005", "TimeOut": "0000" },
+            "0600": { "Change": "0001", "DataType": "21", "MaxInterval": "FDE8", "MinInterval": "000A", "TimeOut": "0000" },
+            "0601": { "Change": "0001", "DataType": "21", "MaxInterval": "FDE8", "MinInterval": "000A", "TimeOut": "0000" },
+            "0602": { "Change": "0001", "DataType": "21", "MaxInterval": "FDE8", "MinInterval": "000A", "TimeOut": "0000" },
+            "0603": { "Change": "0001", "DataType": "21", "MaxInterval": "FDE8", "MinInterval": "000A", "TimeOut": "0000" },
+            "0604": { "Change": "0001", "DataType": "21", "MaxInterval": "FDE8", "MinInterval": "000A", "TimeOut": "0000" },
             "0605": { "Change": "0001", "DataType": "21", "MaxInterval": "FDE8", "MinInterval": "000A", "TimeOut": "0000" }}
         }
     },
