@@ -1,0 +1,44 @@
+{
+    "_blakadder": "",
+    "_description": "mmWave radar 5.8GHz",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/88",
+    "Identifier": [
+        [ "TS0601", "_TZE204_ex3rcdha" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Motion/Lux"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe" ],
+        "0001": [],
+        "0019": [],
+        "ef00": []
+    },
+    "TS0601_DP": {
+        "0c": { "sensor_type": "illuminance"},
+        "65": { "sensor_type": "motion", "EvalExp": "int(value != 0)", "DomoDeviceFormat": "str"},
+        "68": { "store_tuya_attribute": "Sensitivity","action_type": "TuyaRadarSensitivity" },
+        "69": { "store_tuya_attribute": "fading_time", "action_type": "TuyaFadingTime" },
+        "6d": { "store_tuya_attribute": "max_range", "action_type": "TuyaRadarMaxRange"},
+        "6e": { "store_tuya_attribute": "min_range", "action_type": "TuyaRadarMinRange"},
+        "6b": { "store_tuya_attribute": "breath_sensitivity"},
+        "6f": { "store_tuya_attribute": "breath_maximum_range"},
+        "70": { "store_tuya_attribute": "breath_minimum_range"}
+        
+    },
+    "TUYA_REGISTRATION": 13,
+    "Param": {
+        "TuyaFadingTime": 60
+    }
+}
