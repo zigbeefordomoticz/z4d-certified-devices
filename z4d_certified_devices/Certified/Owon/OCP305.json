@@ -1,0 +1,31 @@
+{
+    "_description": "OWON Radar",
+    "_source": "Erwan",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0406": { "Attributes": { 
+                "0000": {
+                    "Name": "Occupancy",
+                    "DataType": "18" ,
+                    "DomoClusterType": "Motion",
+                    "EvalExp": "value",
+                    "ActionList": [ "check_store_value", "upd_domo_device"],
+                    "DomoDeviceFormat": "str"
+                }}},
+            "Type": "Motion"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0406" ],
+    "ConfigureReporting": {
+        "0406": { "Attributes": { "0000": { "DataType": "18", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0FFF", "Change": "00" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0006", "0007" ],
+        "0003": [],
+        "0406": [ "0000" ]
+    },
+    "Param": {}
+}
