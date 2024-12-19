@@ -10,7 +10,7 @@
                     "Name": "Occupancy",
                     "DataType": "18" ,
                     "DomoClusterType": "Motion",
-                    "EvalExp": "value",
+                    "EvalExp": "1 if value != 0 else 0",
                     "ActionList": [ "check_store_value", "upd_domo_device"],
                     "DomoDeviceFormat": "str"
                 }}},
@@ -27,5 +27,7 @@
         "0003": [],
         "0406": [ "0000" ]
     },
-    "Param": {}
+    "Param": {
+        "resetMotiondelay":0
+    }
 }
