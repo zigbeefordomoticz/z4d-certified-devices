@@ -1,0 +1,23 @@
+{
+    "_description": "Bitron Motion sensor",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/89",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0500": "",
+            "Type": "Motion"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0500" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0003", "0004", "0005", "0006", "0007", "0010" ],
+        "0001": [ "0020" ],
+        "0500": [ "0000", "0001", "0002", "0010", "0011" ]
+    },
+    "Param": {
+        "MotionViaIASAlarm1": 1
+    }
+}
