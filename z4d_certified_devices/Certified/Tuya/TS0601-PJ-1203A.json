@@ -5,7 +5,8 @@
     "_version": "1",
     "MinPluginVersion": "7.1.004",
     "Identifier": [
-        [ "TS0601", "_TZE204_81yrt3lo" ]
+        [ "TS0601", "_TZE204_81yrt3lo" ],
+        [ "TS0601", "_TZE284_81yrt3lo" ]
     ],
     "Ep": {
         "01": {
