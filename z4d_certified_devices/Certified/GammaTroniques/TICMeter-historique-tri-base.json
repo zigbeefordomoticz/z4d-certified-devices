@@ -1,5 +1,5 @@
 {
-    "_comment": "GammaTroniques TIC for Linky Historique Mono",
+    "_comment": "GammaTroniques TIC for Linky Historique Tri",
     "_source": "",
     "Ep": {
         "01": {
@@ -8,13 +8,20 @@
             "0702": { 
                 "Attributes": {
                     "0000": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Total", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                    "0100": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Base", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute" ] }
+                    "0100": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Base", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
                 }
             },
             "0b04": {
                 "Attributes": {
-                    "0508": { "Name": "RMSCurrent", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "050f": { "Name": "Apparent Power", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
+                    "0508": { "Name": "IINST1", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0908": { "Name": "IINST2", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0A08": { "Name": "IINST3", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "050a": { "Name": "IntensiteMax1", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "090a": { "Name": "IntensiteMax2", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0A0a": { "Name": "IntensiteMax3", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "050d": { "Name": "PMAX", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "050f": { "Name": "PAPP", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+
                 }
             },
             "0b05": "",
@@ -29,7 +36,7 @@
                 "0006": { "Name": "ADIR2", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"] },
                 "0007": { "Name": "ADIR3", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"] },
                 "0008": { "Name": "PPOT", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute"] },
-                "0009": { "Name": "HHPHC", "DataType": "41", "ActionList": [ "check_store_value", "store_specif_attribute"] } ,
+                "0009": { "Name": "HHPHC", "DataType": "41", "ActionList": [ "check_store_value", "store_specif_attribute"] },
                 "000a": { "Name": "MOTDETAT", "DataType": "41", "ActionList": [ "check_store_value", "store_specif_attribute"] },
                 "002b": { "Name": "PREF", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"] },
                 "0039": { "Name": "PTEC", "DataType": "42", "ActionList": [ "check_store_value", "store_specif_attribute"] },
@@ -39,22 +46,28 @@
         }
     },
     "Type": "",
-    "ClusterToBind": [ "0702", "0b04", "ff42"],
+    "ClusterToBind": [ "0702", "0b04", "ff42" ],
     "ConfigureReporting": {
         "0702": {
             "Attributes": {
-                "0100": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" }
+                "0100": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" },
+                "0102": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" },
             }
         },
         "0b04": {
             "Attributes": {
                 "0508": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
+                "0908": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
+                "0a08": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
                 "050f": { "DataType": "21", "MinInterval": "000E", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" }
             }
         },
         "ff42":{
             "Attributes": {
                 "0004": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
+                "0005": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
+                "0006": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
+                "0007": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
                 "0009": { "DataType": "41", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
                 "0039": { "DataType": "42", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" }
             }
