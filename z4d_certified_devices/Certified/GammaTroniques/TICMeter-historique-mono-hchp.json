@@ -34,10 +34,12 @@
                 "000a": { "Name": "MOTDETAT", "DataType": "41", "ActionList": [ "check_store_value", "store_specif_attribute"] },
                 "002b": { "Name": "PREF", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"] },
                 "0039": { "Name": "PTEC", "DataType": "42", "ActionList": [ "check_store_value", "store_specif_attribute"] },
-                "003A": { "Name": "PTEC", "DataType": "41", "ActionList": [ "check_store_value", "store_specif_attribute"] }
+                "003A": { "Name": "PTEC", "DataType": "41", "ActionList": [ "check_store_value", "store_specif_attribute"] },
+                "002c": { "Name": "MODE_TIC", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute"] }
+                }
             },
+            "Type": "Meter/Power/P1Meter/Ampere/Alarm_ZL3"
 
-            "Type": "Meter/Power/P1Meter/Ampere"
         }
     },
     "Type": "",
@@ -67,7 +69,7 @@
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006" ],
         "0702": [ "0300", "0301", "0302", "0308", "0020", "0100", "0000" ],
         "0b04": [ "0600", "0601", "0602", "0603", "0604", "0605", "0508", "0908", "0A08", "0508", "050F"],
-        "ff42": [ "0000","0001","0003","0004","0005","0006","0007","0008","0009","000a","002b","0039","003A"],
+        "ff42": [ "0000","0001","0003","0004","0005","0006","0007","0008","0009","000a", "002c", "002b","0039","003A"],
         "0019": []
     },
     "PollingEnabled": 1,

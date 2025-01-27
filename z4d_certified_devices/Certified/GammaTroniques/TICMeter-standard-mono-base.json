@@ -1,18 +1,13 @@
 {
-    "_comment": "GammaTroniques TIC for Linky Historique Mono TEMPO",
+    "_comment": "GammaTroniques TIC for Linky Standard Mono ",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?p=121632",
     "Ep": {
         "01": {
             "0000": "",
             "0003": "",
-            "0702": { 
-                "Attributes": {
-                    "0000": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Total", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                    "0100": { "SpecifStoragelvl1": "GammaTroniques", "Name": "BBRHCJB", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0102": { "SpecifStoragelvl1": "GammaTroniques", "Name": "BBRHPJB", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0104": { "SpecifStoragelvl1": "GammaTroniques", "Name": "BBRHCJW", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0106": { "SpecifStoragelvl1": "GammaTroniques", "Name": "BBRHPJW", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0108": { "SpecifStoragelvl1": "GammaTroniques", "Name": "BBRHCJR", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "010a": { "SpecifStoragelvl1": "GammaTroniques", "Name": "BBRHPJR", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
+            "0702": { "Attributes": {
+                "0000": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Total", "DataType": "25", "EvalFunc": "compute_metering_conso",  "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                 "0100": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Base", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
                 }
             },
             "0b04": {
