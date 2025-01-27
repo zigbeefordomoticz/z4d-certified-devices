@@ -2,9 +2,10 @@
     "_comment": "Tuya Zigbee Tuya Clamp Meter",
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13142",
     "_blakadder": "",
-    "_version": "1",
+    "_version": "2",
     "Identifier": [
-        [ "TS0601", "_TZE204_cjbofhxw" ]
+        [ "TS0601", "_TZE204_cjbofhxw" ],
+        [ "TS0601", "_TZE284_cjbofhxw" ]
     ],
     "Ep": {
         "01": {
