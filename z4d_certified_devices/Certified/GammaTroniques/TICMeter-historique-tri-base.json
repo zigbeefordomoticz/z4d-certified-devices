@@ -20,7 +20,7 @@
                     "090a": { "Name": "IntensiteMax2", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0A0a": { "Name": "IntensiteMax3", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "050d": { "Name": "PMAX", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "050f": { "Name": "PAPP", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "050f": { "Name": "PAPP", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
 
                 }
             },
@@ -53,7 +53,7 @@
         "0702": {
             "Attributes": {
                 "0100": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" },
-                "0102": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" },
+                "0102": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" }
             }
         },
         "0b04": {
