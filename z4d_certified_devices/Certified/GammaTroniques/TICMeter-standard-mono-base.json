@@ -6,8 +6,8 @@
             "0000": "",
             "0003": "",
             "0702": { "Attributes": {
-                "0000": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Total", "DataType": "25", "EvalFunc": "compute_metering_conso",  "ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                 "0100": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Base", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
+                "0000": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Total", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "0100": { "SpecifStoragelvl1": "GammaTroniques", "Name": "Base", "DataType": "25", "EvalFunc": "compute_metering_conso", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
                 }
             },
             "0b04": {
@@ -60,7 +60,7 @@
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006" ],
         "0702": [ "0300", "0301", "0302", "0308", "0020", "0100", "0102", "0308", "030f", "0400" ],
         "0b04": [ "0600", "0601", "0602", "0603", "0604", "0605", "0508", "050f" ],
-    "ff42": [ "0000", "002b", "0001", "0039", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "000A"],
+        "ff42": [ "0000","0001","0003","0004","0005","0006","0007","0008","0009","000a","002b","002c","0039","003A"],
         "0019": []
     },
     "PollingEnabled": 1,
