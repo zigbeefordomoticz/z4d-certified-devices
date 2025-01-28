@@ -1,0 +1,72 @@
+{
+    "_comment": "IO-module (4 inputs + 2 NO/NC dry contact outputs)",
+    "_version": "1.0",
+    "_blakadder": "https://zigbee.blakadder.com/Develco_IOMZB-110.html",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?p=123683#p123683",
+    "Ep": {
+        "70": { 
+            "0000": "", "0003": "", "0b05": "", "000a": "", "0019": "", 
+            "000f": { "Attributes": {
+                "0055": { 
+                    "Enabled": true, 
+                    "Name": "PresentValue", 
+                    "DataType": "10", 
+                    "UpdDomoDeviceWithCluster": "0006", "UpdDomoDeviceWithAttribute": "0000",
+                    "ActionList": [ "check_store_value","upd_domo_device"],"DomoDeviceFormat": "str" }}
+                },
+            "Type": "Switch" },
+        "71": { 
+            "000f": { "Attributes": {
+                "0055": { 
+                    "Enabled": true, 
+                    "Name": "PresentValue", 
+                    "DataType": "10", 
+                    "UpdDomoDeviceWithCluster": "0006", "UpdDomoDeviceWithAttribute": "0000",
+                    "ActionList": [ "check_store_value","upd_domo_device"],"DomoDeviceFormat": "str" }}
+                },
+
+            "Type": "Switch" },
+        "72": { 
+            "000f": { "Attributes": {
+                "0055": { 
+                    "Enabled": true, 
+                    "Name": "PresentValue", 
+                    "DataType": "10", 
+                    "UpdDomoDeviceWithCluster": "0006", "UpdDomoDeviceWithAttribute": "0000",
+                    "ActionList": [ "check_store_value","upd_domo_device"],"DomoDeviceFormat": "str" }}
+                },
+
+            "Type": "Switch" },
+        "73": { 
+            "000f": { "Attributes": {
+                "0055": { 
+                    "Enabled": true, 
+                    "Name": "PresentValue", 
+                    "DataType": "10", 
+                    "UpdDomoDeviceWithCluster": "0006", "UpdDomoDeviceWithAttribute": "0000",
+                    "ActionList": [ "check_store_value","upd_domo_device"],"DomoDeviceFormat": "str" }}
+                },
+            "Type": "Switch" },
+        "74": { 
+            "0006": "", 
+            "000f": "", 
+            "Type": "Switch" },
+        "75": { 
+            "0006": "", "Type": "Switch" },
+        "f2": { 
+            "0021": "", "Type": "" }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "000f" ],
+    "ConfigureReporting": {
+        "0006": { "0000": { "Change": "01", "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" }},
+        "000f": { "0055": { "Change": "01", "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" }}
+    },
+    "ReadAttributes": {
+        "0000": [],
+        "000f": [ "0055", "006f" ],
+        "0006": [ "0000", "4001", "4002"]
+    },
+    "Param": {},
+    "GroupMembership": {}
+}
