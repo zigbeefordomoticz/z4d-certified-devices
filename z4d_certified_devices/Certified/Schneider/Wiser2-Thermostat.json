@@ -1,6 +1,6 @@
 {
     "_comment": "Schneider Wiser Thermostat (CCTFR6400)",
-    "_version": "0.1",
+    "_version": "1.0",
     "Identifier": [
         [ "Thermostat", "Schneider Electric"]
     ],
@@ -30,7 +30,7 @@
         }
     },
     "Type": "",
-    "ClusterToBind": [],
+    "ClusterToBind": [ "0001", "0201", "0402", "0405"],
     "ConfigureReporting": {},
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0003", "0004", "0005", "0007", "e007", "e009", "4000" ],
