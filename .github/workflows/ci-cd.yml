@@ -33,3 +33,9 @@ jobs:
       uses: pypa/gh-action-pypi-publish@v1.12.4
       with:
         password: ${{ secrets.PYPI_API_TOKEN }}
+    - name: Yank old versions
+      run: |
+        python yank_old_versions.py
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
