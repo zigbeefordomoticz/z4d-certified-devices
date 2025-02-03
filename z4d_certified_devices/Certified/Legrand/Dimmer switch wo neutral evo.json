@@ -17,7 +17,7 @@
         }
     },
     "Type": "",
-    "ClusterToBind": [ "0006", "0008", "000f", "0003" ],
+    "ClusterToBind": [ "0301", "0006", "0008", "000f", "0003" ],
     "ConfigureReporting": {
         "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0000", "Change": "01" } } },
         "0008": { "Attributes": { "0000": { "DataType": "20", "MinInterval": "0005", "MaxInterval": "012C", "TimeOut": "0000", "Change": "01" } } }
@@ -28,8 +28,10 @@
         "0006": [ "0000", "4000", "4001", "4002", "4003" ],
         "0008": [ "0000" ],
         "0301": [ "0010", "0011" ],
-        "fc01": [ "0000", "0001", "0002" ]
+        "fc01": [ "0000", "0001", "0002" ],
+        "0019": [ ]
     },
+    "FC01_FUNCTIONALITIES": "DIMMER",
     "Param": {
         "netatmoEnableDimmer": 1,
         "PowerOnAfterOffOn": 255,
