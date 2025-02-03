@@ -31,3 +31,5 @@ jobs:
       uses: pypa/gh-action-pypi-publish@v1
       with:
         password: ${{ secrets.PYPI_API_TOKEN }}
+        print-hash: true
+        verbose: true
