@@ -38,13 +38,7 @@
         "BallastMinLevel": 1
     },
     "GroupMembership": [
-        [
-            "01",
-            "fff6"
-        ],
-        [
-            "01",
-            "fff4"
-        ]
+        [ "01", "fff6" ],
+        [ "01", "fff4" ]
     ]
 }
