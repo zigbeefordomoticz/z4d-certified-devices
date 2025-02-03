@@ -3,6 +3,7 @@ on:
     branches: [ main ]
     paths:
       - 'z4d_certified_devices/version.py'
+      - '.github/workflows/ci-cd.yml'  # trigger on changes to ci-cd.yml
 
 jobs:
   pypi-publish:
