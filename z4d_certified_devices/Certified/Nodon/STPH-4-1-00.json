@@ -1,0 +1,31 @@
+{ 
+    "_description": "Temperature & Humidity sensor",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "Sample provided by Nodon",
+    "Ep": {
+            
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0010": "",
+            "0402": "",
+            "0405": "",
+            "0019": "",
+            "Type": "Voltage/Temp/Humi"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001", "0402", "0405" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0005" ],
+        "0001": [ "0020", "0021" ],
+        "0402": [ "0000"],
+        "0405": [ "0000"],
+        "0019": []
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2
+}
