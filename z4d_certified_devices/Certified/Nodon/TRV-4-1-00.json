@@ -1,0 +1,75 @@
+{ 
+    "_description": "TRV-4-1-00 – Thermostatic Radiator Valve",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "Sample provided by Nodon",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0201": { "Attribute": {
+                "4000": {
+                    "Enabled": true, 
+                    "Name": "Set TRV in Valve Position Mode",
+                    "ActionList": [ "check_store_value"]
+                },
+                "4001": {
+                    "Enabled": true, 
+                    "Name": "Valve position",
+                    "ActionList": [ "check_store_value"]
+                },
+                "4002": {
+                    "Enabled": true, 
+                    "Name": "Valve error",
+                    "ActionList": [ "check_store_value"]
+                },
+                "4003": {
+                    "Enabled": true, 
+                    "Name": "TRV Setpoint",
+                    "EvalExp": "(value/100)", 
+                    "UpdDomoDeviceWithCluster": "0201", 
+                    "UpdDomoDeviceWithAttribute": "0012", 
+                    "ActionList": [ "check_store_value", "upd_domo_device" ]
+                }
+            }},
+            "000a": "",
+            "0019": "",
+            "Type": "Temp/ThermoSetpoint/Door/Valve"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001", "0201" ],
+    "ConfigureReporting": {
+        "0001": { "Attributes": {
+            "0020": { "DataType": "20", "MinInterval": "003c", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "01" },
+            "0021": { "DataType": "20", "MinInterval": "003c", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "0a"}}
+        },
+        "0201": { 
+            "Attributes": { 
+                "0000": { "DataType": "29", "MinInterval": "0001", "MaxInterval": "012c", "TimeOut": "0001", "Change": "0030" },
+                "0008": { "DataType": "20", "MinInterval": "0001", "MaxInterval": "012c", "TimeOut": "0001", "Change": "01" },
+                "0012": { "DataType": "29", "MinInterval": "0001", "MaxInterval": "012c", "TimeOut": "0001", "Change": "000a" }
+            } 
+        }
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0005" ],
+        "0001": [ "0021", "0031", "0033"],
+        "0201": [ "0000", "0008", "0010", "0012", "0014", "0015", "0016", "001b", "001c"],
+        "0019": [],
+        "000a": []
+    },
+    "ManufacturerCode": "128b",
+    "ManufacturerReadAttributes": {
+        "0201": [ "4000", "4001", "4002", "4003", "4008" ]
+    },
+    "Param": {
+        "Calibration": 0,
+        "MaxHeatingSetpoint": 2800,
+        "MinHeatingSetpoint": 750
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
+    "PollingEnabled": 1
+}
