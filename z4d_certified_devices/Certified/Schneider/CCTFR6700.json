@@ -1,0 +1,57 @@
+{
+    "_comment": "Schneider CCTFR6700 - Heating thermostat",
+    "_version": "1",
+    "Identifier": [
+        [ "Heating thermostat", "Schneider Electric"]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0201": "",
+            "0b05": "",
+            "ff16": "",
+            "ff23": "",
+            "000a": "",
+            "0019": "",
+            "0406": "",
+            "Type": "HeatingSwitch/ThermoSetpoint/HACTMODE"
+        },
+        "02": {
+            "0702": "",
+            "Type": "Power/Meter"
+        },
+        "03": {
+            "0402": "",
+            "Type": "Temp"
+        },
+        "f2": { "Type": ""}
+    },
+    "Type": "",
+    "ClusterToBind": [ "0201", "0702", "0402", "0b05" ],
+    "ConfigureReporting": {
+        "0201": { "Attributes": { 
+            "0012": { "DataType": "29", "MinInterval": "003c", "MaxInterval": "003c", "TimeOut": "0000", "Change": "0000" },
+            "e211": { "DataType": "30", "MinInterval": "0001", "MaxInterval": "012c", "TimeOut": "0000", "Change": "0000" }}
+        },
+        "0402": { "Attributes": { 
+            "0000": { "DataType": "29", "MinInterval": "0001", "MaxInterval": "003c", "TimeOut": "0000", "Change": "0000" } } 
+        },
+        "0702": {
+            "Attributes": {
+                "0000": { "Change": "000000000000", "DataType": "25", "MaxInterval": "003c", "MinInterval": "003c", "TimeOut": "0000" },
+                "0400": { "Change": "000000", "DataType": "2a", "MaxInterval": "003c", "MinInterval": "003c", "TimeOut": "0000" } }
+        },
+        "0b05": {
+            "Attributes": {
+                "011c": { "Change": "00", "DataType": "20", "MaxInterval": "0258", "MinInterval": "0258", "TimeOut": "0000" },
+                "011d": { "Change": "00", "DataType": "20", "MaxInterval": "0258", "MinInterval": "0258", "TimeOut": "0000" }}
+        }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0002", "0004", "0005", "0007", "0010", "0013", "fffd" ],
+        "0201": [ "0000", "0007", "0008", "0011", "0012", "0014", "0015", "0016", "001b", "001c"],
+        "0702": [ "0000", "0400", "0200", "0300", "0301", "0302", "0303", "0304", "0306" ]
+    }
+}
