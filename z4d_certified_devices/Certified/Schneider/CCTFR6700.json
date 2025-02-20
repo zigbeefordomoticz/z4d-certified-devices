@@ -6,11 +6,19 @@
     ],
     "Ep": {
         "01": {
-            "0000": "",
+            "0000": { "Attributes": {
+                "e000": { "Enabled": true, "Name": "Wiser_0000_e000", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "e001": { "Enabled": true, "Name": "Wiser_0000_e001", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "e002": { "Enabled": true, "Name": "Wiser_0000_e002", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "e007": { "Enabled": true, "Name": "Wiser_0000_e007", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "e009": { "Enabled": true, "Name": "Wiser_0000_e009", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "e004": { "Enabled": true, "Name": "Wiser_0000_e004", "DataType": "42", "ActionList": [ "check_store_value" ] }}
+            },
             "0003": "",
             "0004": "",
             "0201": "",
-            "0b05": "",
+            "0b05": { "Attributes": {
+                "e001": { "Enabled": true, "Name": "Wiser_0b05_e001", "DataType": "21", "ActionList": [ "check_store_value" ] }}},
             "ff16": "",
             "ff23": "",
             "000a": "",
@@ -33,7 +41,7 @@
     "ConfigureReporting": {
         "0201": { "Attributes": { 
             "0012": { "DataType": "29", "MinInterval": "003c", "MaxInterval": "003c", "TimeOut": "0000", "Change": "0000" },
-            "e211": { "DataType": "30", "MinInterval": "0001", "MaxInterval": "012c", "TimeOut": "0000", "Change": "0000" }}
+            "e211": { "ManufSpecific": "105e", "DataType": "30", "MinInterval": "0001", "MaxInterval": "012c", "TimeOut": "0000", "Change": "0000" }}
         },
         "0402": { "Attributes": { 
             "0000": { "DataType": "29", "MinInterval": "0001", "MaxInterval": "003c", "TimeOut": "0000", "Change": "0000" } } 
@@ -52,7 +60,9 @@
     "ReadAttributes": {
         "0000": [ "0000", "0002", "0004", "0005", "0007", "0010", "0013", "fffd" ],
         "0201": [ "0000", "0007", "0008", "0011", "0012", "0014", "0015", "0016", "001b", "001c"],
-        "0702": [ "0000", "0400", "0200", "0300", "0301", "0302", "0303", "0304", "0306" ]
+        "0702": [ "0000", "0400", "0200", "0300", "0301", "0302", "0303", "0304", "0306" ],
+        "0402": [ "0000", "e020" ],
+        "ff23": [ "0021", "0020"]
     },
     "Param": {
         "KeybadLockout": 0
