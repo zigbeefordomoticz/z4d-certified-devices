@@ -6,8 +6,7 @@
         "01": {
             "0000": "",
             "0003": "",
-            "0702": "",
-             "0702": { "Attributes": {
+            "0702": { "Attributes": {
                 "0017": { "Name": "InletTemp", "DataType": "2a", "EvalExp": "(value/10)", "UpdDomoDeviceWithCluster": "0402", "ActionList": [ "check_store_value", "upd_domo_device"  ] }
             }},
             "000a": "",
