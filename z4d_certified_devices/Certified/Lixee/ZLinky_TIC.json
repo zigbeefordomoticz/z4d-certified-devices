@@ -58,6 +58,7 @@
     "Param": {
         "PollingCusterff66": 3600,
         "ConfigurationReportChunk": 1,
-        "ZLinkyPollingGlobal": 86400
+        "ZLinkyPollingGlobal": 86400,
+        "ZLinkyPollingLinkyMode": 120
     }
 }

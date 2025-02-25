@@ -67,6 +67,7 @@
         "ReadAttributesChunk": 2,
         "PollingCusterff66": 86400,
         "ZLinkyPollingGlobal": 86400,
-        "ZLinkyPollingPTEC": 900
+        "ZLinkyPollingPTEC": 900,
+        "ZLinkyPollingLinkyMode": 0
     }
 }
