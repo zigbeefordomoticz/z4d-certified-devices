@@ -1,0 +1,46 @@
+{
+    "_comment": "https://www.airzonecontrol.com/ib/es/soluciones-de-control/aidoo/zigbee/",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "Erwan",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0006": "",
+            "0201": "",
+            "0202": "",
+            "0019": "",
+            "0402": "",
+            "Type": "Switch/Temp/ThermoSetpoint/ThermoMode/Valve/FanControl"
+        },
+        "f2": {
+            "0021": "",
+            "Type": {}
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0201", "0006", "0202" ],
+    "ConfigureReporting": {
+        "0006": { "Attributes": {
+            "0000": { "Change": {}, "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" }}
+        },
+        "0201": { "Attributes": {
+            "0000": { "DataType": "29", "MinInterval": "000a", "MaxInterval": "0258", "TimeOut": "0000", "Change": "0010" },
+            "0011": { "DataType": "29", "MinInterval": "0003", "MaxInterval": "005a", "TimeOut": "0000", "Change": "0001" },
+            "0012": { "DataType": "29", "MinInterval": "0003", "MaxInterval": "005a", "TimeOut": "0000", "Change": "0001" }}
+        },
+        "0202": { "Attributes": {
+            "0000": { "DataType": "30", "MinInterval": "0003", "MaxInterval": "005a", "TimeOut": "0000", "Change": "00" }}
+        }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0014"],
+        "0019": [],
+        "0006": [ "0000"],
+        "0201": [ "0000", "0011", "0012", "001b", "001c", "0024", "0041", "0045" ],
+        "0492": [ "0000"]
+    },
+    "Param": {}
+}
