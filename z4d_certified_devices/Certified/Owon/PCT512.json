@@ -1,0 +1,36 @@
+{
+    "_comment": "",
+    "_version": "",
+    "_blakadder": "",
+    "_source": "",
+    "Ep": {
+        "01": {
+            "0006": "",
+            "0201": "",
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0204": "",
+            "0405": "",
+            "000a": "",
+            "0402": "",
+            "Type": "Switch/Temp/ThermoSetpoint/ThermoMode/Valve/Humi"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0005", "0204", "0201", "0004", "0000", "000a", "0003" ],
+    "ConfigureReporting": {
+        "0400": { "Attributes": { "0000": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "012C", "TimeOut": "0000", "Change": "000f" } } },
+        "0006": { "Attributes": {"0000": { "Change": {}, "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" } }},
+        "0201": { "Attributes": {
+            "0000": { "Change": "0001", "DataType": "29", "MaxInterval": "012c", "MinInterval": "012c", "TimeOut": "0000" },
+            "0012": { "Change": "0001", "DataType": "29", "MaxInterval": "0e10", "MinInterval": "012c", "TimeOut": "0000" },
+            "0014": { "Change": "0001", "DataType": "29", "MaxInterval": "0e10", "MinInterval": "012c", "TimeOut": "0000" }}
+        },
+        "0405": { "Attributes": { "0000": { "Change": "0001", "DataType": "21", "MaxInterval": "0384", "MinInterval": "003c", "TimeOut": "0000" } }}
+    },
+    "ReadAttributes": {},
+    "Param": {},
+    "GroupMembership": {}
+}
