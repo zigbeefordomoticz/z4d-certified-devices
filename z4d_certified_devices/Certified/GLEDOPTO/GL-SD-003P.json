@@ -1,0 +1,39 @@
+{
+    "_comment": "Zigbee DIN Rail triac AC dimmer",
+    "_version": "1.0",
+    "_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-SD-003P.html",
+    "_source": "erwan",
+    "Ep": {
+        "0b": {
+            "1000": "",
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0008": "",
+            "0300": "",
+            "0019": "",
+            "Type": "LvlControl"
+        },
+        "f2": {
+            "0021": "",
+            "Type": {}
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [],
+        "0019": [],
+        "0006": [ "0000" ],
+        "0008": [ "0000" ],
+        "0300": []
+    },
+    "Param": {
+        "fadingOff": 0,
+        "moveToLevel": 0
+    },
+    "GroupMembership": {}
+}
