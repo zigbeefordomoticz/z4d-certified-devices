@@ -1,0 +1,51 @@
+{
+    "_comment": "Tuya TRV / ME168 - Brand : AVATTO // By Deennoo",
+    "_version": "0.10",
+    "_dp source": "DP Source : https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/src/devices/avatto.ts",
+    "Identifier": [
+        [ "TS0601", "_TZE200_4aijvczq" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Temp/ThermoSetpoint/ThermoMode_2/HeatingStatus/Door/KeypadLockout"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe" ]
+    },
+    "TS0601_DP": { 
+        "02": { "store_tuya_attribute": "SystemMode", "sensor_type": "TRV7SystemMode", "action_type": "TRV7SystemMode"},
+        "03": { "store_tuya_attribute": "HeatingMode", "sensor_type": "heatingstatus", "EvalExp": "int(not value)"},
+        "04": { "store_tuya_attribute": "SetPoint", "sensor_type": "setpoint", "EvalExp": "round((value // 10) * 10, 2)", "domo_divisor": 10, "domo_round": 2, "action_type": "setpoint", "action_Exp": "round((value // 100) * 10, 2)"},
+        "05": { "store_tuya_attribute": "Temperature", "sensor_type": "temperature" , "EvalExp": "int((value//10)*10)", "domo_divisor": 10, "domo_round": 2},
+        "06": { "sensor_type": "battery"},
+        "07": { "sensor_type": "KeypadLockout", "action_type": "KeypadLockout"},
+        "0e": { "store_tuya_attribute": "WindowOpen", "action_type": "TRV7WindowDetection"},
+        "0f": { "store_tuya_attribute": "WindowDetection", "sensor_type": "windowsopened", "EvalExp": "int(not value)", "DomoDeviceFormat": "str_2digits"},        
+        "35": { "store_tuya_attribute": "ErrorStatus"},
+        "36": { "store_tuya_attribute": "FrostProtection", "action_type": "TuyaAntifrost"},
+        "39": { "store_tuya_attribute": "ScaleProtection", "action_type": "TuyaAntiscale"},
+        "2f": { "store_tuya_attribute": "Calibration", "action_type": "Calibration"}
+
+    },
+    "READ_ATTRIBUTE_AFTER_COMMAND": false,
+    "TUYA_REGISTRATION": 19,
+    "TUYA_DATA_REQUEST": 1,
+    "TUYA_DATA_REQUEST_POLLING": 0,
+    "PollingEnabled": 1,
+    "Param": {
+        "Calibration": 0,
+        "TRV7WindowDetection": 1,
+        "TuyaAntifrost": 1,
+        "TuyaAntiscale": 1
+    }
+}
