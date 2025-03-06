@@ -42,7 +42,7 @@
             "Attributes": { 
                 "0505": { "Change": "0001", "DataType": "21", "MaxInterval": "012C", "MinInterval": "0005", "TimeOut": "0000" },
                 "0508": { "Change": "0001", "DataType": "21", "MaxInterval": "012C", "MinInterval": "0005", "TimeOut": "0000" },
-                "050b": { "Change": "0001", "DataType": "29", "MaxInterval": "012C", "MinInterval": "0005", "TimeOut": "0000" } } },
+                "050b": { "Change": "0001", "DataType": "29", "MaxInterval": "012C", "MinInterval": "0005", "TimeOut": "0000" } } }
     },
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "000b", "000a", "4000" ],
