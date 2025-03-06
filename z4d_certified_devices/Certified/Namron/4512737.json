@@ -1,0 +1,60 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/97",
+    "_blakadder": "https://zigbee.blakadder.com/Namron_4512737.html",
+    "_comment": "Touch thermostat",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0009": "",
+            "000a": "",
+            "0201": "",
+            "0204": "",
+            "0402": "",
+            "0406": "",
+            "0702": "",
+            "0b04": "",
+            "0b05": "",
+            "Type": "Alarm/Temp/ThermoSetpoin…wer/Meter/Ampere/Motion"
+        },
+        "02": {
+            "0000": "",
+            "Type": ""
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0201", "0204", "0402", "0406", "0702", "0b04" ],
+    "ConfigureReporting": {
+        "0201": { 
+            "Attributes": { 
+                "0000": { "DataType": "29", "MinInterval": "012c", "MaxInterval": "012c", "TimeOut": "0000", "Change": "0001" },
+                "0012": { "DataType": "29", "MinInterval": "012c", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "0001" },
+                "0014": { "DataType": "29", "MinInterval": "012c", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "0001" } } },
+        "0702": { "Attributes": { "0000": { "Change": "000000000000000a", "DataType": "25", "MaxInterval": "012C", "MinInterval": "0005", "TimeOut": "0000" } } },
+        "0b04": { 
+            "Attributes": { 
+                "0505": { "Change": "0001", "DataType": "21", "MaxInterval": "012C", "MinInterval": "0005", "TimeOut": "0000" },
+                "0508": { "Change": "0001", "DataType": "21", "MaxInterval": "012C", "MinInterval": "0005", "TimeOut": "0000" },
+                "050b": { "Change": "0001", "DataType": "29", "MaxInterval": "012C", "MinInterval": "0005", "TimeOut": "0000" } } },
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "000b", "000a", "4000" ],
+        "0201": [ "0000", "0001", "0002", "0010", "0011", "0012", "0014", "0015", "0016", "001b", "001c", "001f", "1000", "1001", "1002", "1003", "1004", "1005", "1006", "1007", "1008", "1009", "100a", "100b"],
+        "0204": [ "0000", "0001"],
+        "0402": [ ],
+        "0702": [ "0000", "0200", "0300", "0301", "0302", "0303", "0306"],
+        "0b04": [ "0505", "0508", "050b", "0802", "0602", "0603", "0604", "0605" ],
+        "0b05": [],
+        "0019": []
+    },
+    "Param": {
+        "Calibration": 0
+    }
+}
