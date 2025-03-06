@@ -1,8 +1,8 @@
 {
-    "_comment": "",
-    "_version": "",
+    "_comment": "Sonoff Zigbee smart water valve",
+    "_version": "1.0",
     "_blakadder": "",
-    "_source": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/96",
     "Ep": {
         "01": {
             "0000": "",
