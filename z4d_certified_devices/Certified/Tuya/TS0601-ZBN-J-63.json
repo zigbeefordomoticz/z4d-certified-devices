@@ -24,7 +24,8 @@
         "0000": [ "0004", "0000", "0001", "0003", "0005", "0007", "fffe" ]
     },
     "TUYA_REGISTRATION": 19,
-    "TS0601_DP": { 
+    "TS0601_DP": {
+        "01": { "store_tuya_attribute": "Meter", "EvalExp": "(value*10)", "sensor_type": "cons_metering", "domo_round": 3 },
         "10": { "store_tuya_attribute": "State", "sensor_type": "switch", "action_type": "switch" },
         "06": [
             { "store_tuya_attribute": "Voltage", "EvalExp": "((value & 0xFFFF000000000000) >> 48)/10", "sensor_type": "voltage", "domo_round": 2},
@@ -39,9 +40,9 @@
     },
     "Param": {
         "PowerOnAfterOffOn": 2,
-        "ReclosingAllowedTimes": 5,
-        "ReclosingEnabled": 1,
-        "RecloseRecover": 10,
+        "ReclosingAllowedTimes": 1,
+        "ReclosingEnabled": 0,
+        "RecloseRecover": 5,
         "PoweronDelay": 1
     }
 }
