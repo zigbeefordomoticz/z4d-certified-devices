@@ -1,0 +1,47 @@
+{
+    "_comment": "Zigbee Over-Under Voltage Protector Energery Meter",
+    "_source": "",
+    "_blakadder": "",
+    "_version": "1",
+    "MinPluginVersion": "7.1.002",
+    "Identifier": [
+        [ "TS0601", "_TZE204_jcwbwckh" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Switch/Voltage/Ampere/Power/Meter"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0003", "0005", "0007", "fffe" ]
+    },
+    "TUYA_REGISTRATION": 19,
+    "TS0601_DP": { 
+        "10": { "store_tuya_attribute": "State", "sensor_type": "switch", "action_type": "switch" },
+        "06": [
+            { "store_tuya_attribute": "Voltage", "EvalExp": "((value & 0xFFFF000000000000) >> 48)/10", "sensor_type": "voltage", "domo_round": 2},
+            { "store_tuya_attribute": "Current", "EvalExp": "((value & 0x0000FFFFFF000000) >> 24)/1000", "sensor_type": "current", "domo_round": 2},
+            { "store_tuya_attribute": "Power", "EvalExp": "(value & 0x0000000000FFFFFF)", "sensor_type": "power", "domo_round": 2 }
+        ],
+        "86": { "store_tuya_value": "PowerOnAfterOffOn", "action_type": "PowerOnAfterOffOn" },
+        "68": { "store_tuya_value": "ReclosingEnabled", "action_type": "ReclosingEnabled" },
+        "6b": { "store_tuya_value": "RecloseRecover", "action_type": "RecloseRecover" },
+        "66": { "store_tuya_value": "ReclosingAllowedTimes", "action_type": "ReclosingAllowedTimes" },
+        "77": { "store_tuya_value": "PoweronDelay", "action_type": "PoweronDelay" }
+    },
+    "Param": {
+        "PowerOnAfterOffOn": 2,
+        "ReclosingAllowedTimes": 5,
+        "ReclosingEnabled": 1,
+        "RecloseRecover": 10,
+        "PoweronDelay": 1
+    }
+}
