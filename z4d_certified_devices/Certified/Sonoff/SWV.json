@@ -13,7 +13,16 @@
             "0404": "",
             "0b05": "",
             "fc57": "",
-            "fc11": "",
+            "fc11": { "Attributes": {
+                "5006": { "SpecifStoragelvl1": "Sonoff", "Name": "5006", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute"] },
+                "5007": { "SpecifStoragelvl1": "Sonoff", "Name": "5007", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "500c": { "SpecifStoragelvl1": "Sonoff", "Name": "CurrentDeviceStatus", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "500d": { "SpecifStoragelvl1": "Sonoff", "Name": "500d", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "500e": { "SpecifStoragelvl1": "Sonoff", "Name": "500e", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "500f": { "SpecifStoragelvl1": "Sonoff", "Name": "500f", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "5010": { "SpecifStoragelvl1": "Sonoff", "Name": "5010", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "5011": { "SpecifStoragelvl1": "Sonoff", "Name": "WaterCloseValveTimeout", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] }}
+            },
             "000a": "",
             "0019": "",
             "Type": "Flow/Switch"
@@ -30,7 +39,8 @@
         "0404": [ "0000", "0001", "0002", "0003"],
         "0019": [],
         "0006": [ "0000", "fffd" ],
-        "fc57": [ "500c", "5011" ]
+        "fc11": [ "500c", "5011", "5006", "5007", "500d", "500e"],
+        "fc57": [ ]
     },
     "Param": {
     }
