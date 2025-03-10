@@ -14,7 +14,7 @@
             "0008": "",
             "0300": "",
             "0019": "",
-            "Type": "LvlControl"
+            "Type": "Switch/LvlControl"
         },
         "f2": {
             "0021": "",
@@ -22,18 +22,28 @@
         }
     },
     "Type": "",
-    "ClusterToBind": [],
-    "ConfigureReporting": {},
+    "ClusterToBind": ["0000", "0006", "0008", "0300"],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "Change": "01", "DataType": "10", "MaxInterval": "00aa", "MinInterval": "0000", "TimeOut": "0000" }}},
+        "0008": { "Attributes": { "0000": { "Change": "01", "DataType": "20", "MaxInterval": "00aa", "MinInterval": "0000", "TimeOut": "0000" }}},
+        "0300": {
+            "Attributes": {
+                "0000": { "Change": "01", "DataType": "20", "MaxInterval": "00aa", "MinInterval": "0000", "TimeOut": "0000" },
+                "0001": { "Change": "01", "DataType": "20", "MaxInterval": "00aa", "MinInterval": "0000", "TimeOut": "0000" }
+            } 
+        }
+    },
     "ReadAttributes": {
-        "0000": [],
+        "0000": [ "0004", "0005"],
         "0019": [],
         "0006": [ "0000" ],
         "0008": [ "0000" ],
-        "0300": []
+        "0300": [ "0000", "0001", "0007"]
     },
+    "AllowSwitchLvlControl": true,
+    "MoveWithOnOff": false,
     "Param": {
-        "fadingOff": 0,
-        "moveToLevel": 0
+        "MinDimmerPercentage": 1
     },
     "GroupMembership": {}
 }
