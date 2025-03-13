@@ -40,9 +40,11 @@
         "0008": [ "0000" ],
         "0300": [ "0000", "0001", "0007"]
     },
+    "TUYA_MAGIC_READ_ATTRIBUTES": false,
     "AllowSwitchLvlControl": true,
     "MoveWithOnOff": false,
     "Param": {
+        "ReadAttributeChunk": 2,
         "MinDimmerPercentage": 1
     },
     "GroupMembership": {}
