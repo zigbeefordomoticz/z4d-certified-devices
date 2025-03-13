@@ -45,7 +45,8 @@
     "MoveWithOnOff": false,
     "Param": {
         "ReadAttributeChunk": 2,
-        "MinDimmerPercentage": 1
+        "MinDimmerPercentage": 1,
+        "PowerOnAfterOffOn": 255
     },
     "GroupMembership": {}
 }
