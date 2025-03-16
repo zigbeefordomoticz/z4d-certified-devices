@@ -10,7 +10,7 @@
             "0003": "",
             "0006": "",
             "0020": "",
-            "0404": "",
+            "0404": { "Attributes": { "0000": { "Enabled": true, "Name": "Flow Meansurement", "EvalExp": "((value*1000)/60)", "ActionList": [ "check_store_value", "upd_domo_device" ] }}},
             "0b05": "",
             "fc57": "",
             "fc11": { "Attributes": {
