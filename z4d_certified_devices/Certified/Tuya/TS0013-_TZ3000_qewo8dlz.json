@@ -45,12 +45,12 @@
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ],
 		"0001": [],
-        "0006": [ "0000", "8001" ]
+        "0006": [ "0000", "8001", "8002" ]
 
 	    },
     "PowerOnOffStateAttribute8002": true,
     "Param": {
         "PowerOnAfterOffOn": 2,
-        "TuyaBackLight": 1
+        "TuyaBackLight": 2
     }
 }
