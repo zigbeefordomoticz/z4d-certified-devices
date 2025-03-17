@@ -43,6 +43,7 @@
     "TUYA_MAGIC_READ_ATTRIBUTES": false,
     "AllowSwitchLvlControl": true,
     "MoveWithOnOff": false,
+    "ForceSwitchOnWithLevel": true,
     "Param": {
         "ReadAttributeChunk": 2,
         "MinDimmerPercentage": 1,
