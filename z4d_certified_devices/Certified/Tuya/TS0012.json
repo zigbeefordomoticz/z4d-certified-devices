@@ -1,15 +1,6 @@
 {
     "_comment": "Tuya two gangs Line only",
     "_version": "1.0",
-    "Identifier": [
-        [ "TS0012", "_TZ3000_18ejxno0" ],
-        [ "TS0012", "_TZ3000_biakwrag" ],
-        [ "TS0012", "_TZ3000_jl7qyupf" ],
-        [ "TS0012", "_TZ3000_nPGIPl5D" ],
-        [ "TS0012", "_TZ3000_kpatq5pq" ],
-        [ "TS0012", "_TZ3000_ljhbw1c9" ],
-        [ "TS0012", "_TZ3000_4zf0crgo" ]
-    ],
     "Ep": {
         "01": {
             "0000": "",
