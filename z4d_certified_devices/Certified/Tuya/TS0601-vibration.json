@@ -1,0 +1,40 @@
+{
+    "_comment": "Tuya Vibration Sensor",
+    "Identifier": [
+        [ "TS0601", "_TZE200_iba1ckek" ],
+        [ "TS0601", "_TZE200_hggxgsjj" ],
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "0500": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Motion/Lux"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [  "0004", "0000", "0001", "0005", "0007", "fffe" ],
+        "0001": [],
+        "0019": [],
+        "0500": [  "0000", "0001", "0002", "0010", "0011"],
+        "ef00": []
+    },
+    "TS0601_DP": {
+        "01": { "sensor_type": "motion", "EvalExp": "int(value == 0)", "DomoDeviceFormat": "str"},
+        "07": { "sensor_type": "tamper"},
+        "65": { "store_tuya_attribute": "coord_x"},
+        "66": { "store_tuya_attribute": "coord_y"},
+        "67": { "store_tuya_attribute": "coord_z"},
+        "68": { "store_tuya_attribute": "VibrationSensitivity", "action_type": "VibrationSensitivity"},
+        "69": { "sensor": "battery"}
+    },
+    "Param": {
+    },
+    "BatteryDevice": 1
+}
