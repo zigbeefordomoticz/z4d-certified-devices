@@ -2,7 +2,7 @@
     "_comment": "Tuya Vibration Sensor",
     "Identifier": [
         [ "TS0601", "_TZE200_iba1ckek" ],
-        [ "TS0601", "_TZE200_hggxgsjj" ],
+        [ "TS0601", "_TZE200_hggxgsjj" ]
     ],
     "Ep": {
         "01": {
@@ -12,7 +12,7 @@
             "0500": "",
             "000a": "",
             "0019": "",
-            "Type": "Motion/Lux"
+            "Type": "Motion/Tamper"
         }
     },
     "Type": "",
