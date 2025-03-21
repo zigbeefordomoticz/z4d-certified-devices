@@ -1,6 +1,7 @@
 {
     "_comment": "Schneider Wiser Thermostat (CCTFR6400)",
     "_version": "1.0",
+    "MinPluginVersion": "7.1.021",
     "Identifier": [
         [ "Thermostat", "Schneider Electric"]
     ],
@@ -10,6 +11,8 @@
                 "e000": { "Enabled": true, "Name": "Wiser_0000_e000", "DataType": "42", "ActionList": [ "check_store_value" ] },
                 "e001": { "Enabled": true, "Name": "Wiser_0000_e001", "DataType": "42", "ActionList": [ "check_store_value" ] },
                 "e002": { "Enabled": true, "Name": "Wiser_0000_e002", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "e007": { "Enabled": true, "Name": "Wiser_0000_e007", "DataType": "42", "ActionList": [ "check_store_value" ] },
+                "e009": { "Enabled": true, "Name": "Wiser_0000_e009", "DataType": "42", "ActionList": [ "check_store_value" ] },
                 "e004": { "Enabled": true, "Name": "Wiser_0000_e004", "DataType": "42", "ActionList": [ "check_store_value" ] }}
             },
             "0001": { "Attributes": { "0100": { "Enabled": true, "Name": "Wiser_0001_0100", "DataType": "20", "ActionList": [ "check_store_value" ] }  }  },
@@ -18,7 +21,7 @@
             "0204": "",
             "0402": "",
             "0405": "",
-            "fe03": { "Attributes": { "0020": { "Enabled": true, "Name": "Wiser_fe03_e001", "DataType": "42", "ActionList": [ "check_store_value" ] } }},
+            "fe03": { "ManufSpecificCluster": "schneider_touch_screen_cluster" },
             "0019": "",
             "0201": "",
             "0b05": { 
@@ -37,13 +40,18 @@
         "0003": [],
         "0001": ["0020","0021"],
         "0019": ["0002"],
-        "0201": ["0012", "001c", "001b", "0008", "e110"],
+        "0201": ["0012", "001c", "001b", "0008"],
         "0204": ["0000","0001"],
         "0402": ["0000"],
         "0405": ["0000"]
     },
+    "ManufacturerCode": "105e",
+    "ManufacturerAttributes": {
+        "0000": [ "e009", "e007" ],
+        "0402": [ "e020", "e021" ]
+    },
     "Param": {
-        "WiserLockThermostat": 0,
+        "KeybadLockout": 0,
         "WiserRoomNumber": 1
     }
 }
