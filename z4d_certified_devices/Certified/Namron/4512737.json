@@ -18,7 +18,7 @@
             "0702": "",
             "0b04": "",
             "0b05": "",
-            "Type": "Alarm/Temp/ThermoSetpoint/ThermoMode/Meter/Ampere/Motion"
+            "Type": "Alarm/Temp/ThermoSetpoint/ThermoMode/Meter/Ampere/Voltage/Power/OutDoorTemperature/UnoccupiedHeatingSetpoint/OccupiedCollingSetpoint/OccupancySensing"
         },
         "02": {
             "0000": "",
@@ -54,6 +54,7 @@
         "0b05": [],
         "0019": []
     },
+    "RMSVoltageDivisor": 10,
     "Param": {
         "Calibration": 0
     }
