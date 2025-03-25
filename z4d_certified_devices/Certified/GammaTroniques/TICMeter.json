@@ -7,52 +7,51 @@
             "0003": "",
             "0702": { 
                 "Attributes": {
-                    "0000": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "HCHC", "Name": "HCHC", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0000", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0100": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "HCHC", "Name": "HCHC", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0102": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "HCHP", "Name": "HCHP", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0102", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0104": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "HCHC", "Name": "HCHC", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0104", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0106": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "HCHP", "Name": "HCHP", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0106", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0108": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "HCHC", "Name": "HCHC", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0108", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "010a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "HCHP", "Name": "HCHP", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "010a", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
+                    "0000": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "Total", "Name": "Total", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0000", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0100": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BASE/HCHC/EJPHN/BBRHCJB", "Name": "BASE/HCHC/EJPHN/BBRHCJB", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0102": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "HCHP/EJPHPM/BBRHPJB", "Name": "HCHP/EJPHPM/BBRHPJB", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0102", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0104": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHCJW", "Name": "BBRHCJW", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "UpdDomoDeviceWithEp": "f1", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0106": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHPJW", "Name": "BBRHPJW", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0102", "UpdDomoDeviceWithEp": "f1", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0108": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHCJR", "Name": "BBRHCJR", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "010a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHPJR", "Name": "BBRHPJR", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0102", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
                 }
             },
             "0b04": {
+                "Attributes": {
+                    "090b": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "CCASN-1", "Name": "CCASN-1", "DataType": "29",  "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                    "050a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IMAX", "Name": "IMAX", "DataType": "21", "ActionList": [ "check_store_value","store_specif_attribute" ] }
+                }
             },
             "0b05": "",
             "070d": "",
             "0019": "",
             "ff42": {
+                "0039": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "PTEC", "Name": "PTEC", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "0039", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                "0002": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "NowRefresh", "Name": "NowRefresh", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "002a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeTIC", "Name": "ModeTIC", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                "002c": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeElec", "Name": "ModeElec", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                "002d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UpTime", "Name": "UpTime", "DataType": "25", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
+ 
             },
-            "Type": "Meter/Power/P1Meter/P1Meter_1/P1Meter_2/P1Meter_3/Ampere"
+            "Type": "Voltage/Meter/Power/P1Meter/P1Meter_HPHC/LinkyTarif"
+        },
+        "f2": {
+            "Type": "P1Meter_HPHC"
+        },
+        "f3": {
+            "Type": "P1Meter_HPHC"
         }
     },
     "Type": "",
+    "FakeEp": [ "f2", "f3" ],
     "ClusterToBind": [ "0702", "0b04", "ff42"],
     "ConfigureReporting": {
-        "0702": {
-            "Attributes": {
-                "0100": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" }
-            }
-        },
-        "0b04": {
-            "Attributes": {
-                "0508": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
-                "050f": { "DataType": "21", "MinInterval": "000E", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" }
-            }
-        },
-        "ff42":{
-            "Attributes": {
-                "0004": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
-                "0009": { "DataType": "41", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
-                "0039": { "DataType": "42", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" }
-            }
-        }
     },
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006" ],
         "0702": [ "0300", "0301", "0302", "0308", "0020", "0100", "0000" ],
         "0b04": [ "0600", "0601", "0602", "0603", "0604", "0605", "0508", "0908", "0A08", "0508", "050F"],
-        "ff42": [ "0000","0001","0003","0004","0005","0006","0007","0008","0009","000a","002b","002c","0039","003A"],
+        "ff42": [ "0000","0001","0003","0004","0005","0006","0007","0008","0009","000a","002b","002c", "002a", "002d", "0039","003A"],
         "0019": []
     },
     "Param": {
