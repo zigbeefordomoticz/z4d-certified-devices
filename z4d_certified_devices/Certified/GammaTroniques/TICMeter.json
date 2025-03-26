@@ -27,6 +27,11 @@
             },
             "0b04": {
                 "Attributes": {
+                    "0508": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IINST", "Name": "IINST", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0908": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IINST2", "Name": "IINST2", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0908","ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                    "0a08": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IINST3", "Name": "IINST3", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0a08","ActionList": [ "check_store_value", "store_specif_attribute" ] },
+
+                    "050f": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "PAPP", "Name": "PAPP", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "090b": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "CCASN-1", "Name": "CCASN-1", "DataType": "29",  "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                     "050a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IMAX", "Name": "IMAX", "DataType": "21", "ActionList": [ "check_store_value","store_specif_attribute" ] }
                 }
