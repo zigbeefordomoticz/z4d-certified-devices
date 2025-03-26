@@ -1,0 +1,36 @@
+{
+    "_comment": "Zigbee USB repeater plug",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0006": "",
+            "fc57": "",
+            "fc11": "",
+            "0019": "",
+            "Type": "Switch"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type":"",
+    "ClusterToBind": [ "0006"],
+    "ConfigureReporting": {
+        "0006": { "0000": { "Change": "01", "DataType": "10", "MaxInterval": "0708", "MinInterval": "0001", "TimeOut": "0000" } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0005"],
+        "0019": [],
+        "0006": [ "0000"],
+        "fc11": [ "0012"]
+    },
+    "Param": {
+        "SONOFF_ZBMICRO_RADIO_POWER_TURBO_MODE": "Turbo"
+    }
+}
