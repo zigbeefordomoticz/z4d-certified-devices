@@ -13,7 +13,9 @@
                     "0104": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHCJW", "Name": "BBRHCJW", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "UpdDomoDeviceWithEp": "f1", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0106": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHPJW", "Name": "BBRHPJW", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0102", "UpdDomoDeviceWithEp": "f1", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0108": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHCJR", "Name": "BBRHCJR", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "010a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHPJR", "Name": "BBRHPJR", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0102", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
+                    "010a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHPJR", "Name": "BBRHPJR", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0102", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0308": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "Identifiant", "Name": "Identifiant", "DataType": "41", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0000", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
+
                 }
             },
             "0b01": {
