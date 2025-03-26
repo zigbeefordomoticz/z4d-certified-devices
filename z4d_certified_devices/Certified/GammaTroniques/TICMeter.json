@@ -26,14 +26,17 @@
             "070d": "",
             "0019": "",
             "ff42": {
-                "0039": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "PTEC", "Name": "PTEC", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "0039", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                "0002": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "NowRefresh", "Name": "NowRefresh", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                "002a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeTIC", "Name": "ModeTIC", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                "002c": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeElec", "Name": "ModeElec", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                "002d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UpTime", "Name": "UpTime", "DataType": "25", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
- 
+                "Attributes": {
+                    "0039": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "PTEC", "Name": "PTEC", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "0039", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "003a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "Aujourdhui", "Name": "Aujourdhui", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "003a", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0003": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "Demain", "Name": "Demain", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "0003", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0002": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "NowRefresh", "Name": "NowRefresh", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                    "002a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeTIC", "Name": "ModeTIC", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "002c": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeElec", "Name": "ModeElec", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "002d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UpTime", "Name": "UpTime", "DataType": "25", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
+                }
             },
-            "Type": "Voltage/Meter/Power/P1Meter/P1Meter_HPHC/LinkyTarif"
+            "Type": "Voltage/Meter/Power/P1Meter/P1Meter_HPHC/LinkyCurrentTarif/LinkyCurrentDayColor/LinkyNextDayColor"
         },
         "f2": {
             "Type": "P1Meter_HPHC"
@@ -51,9 +54,13 @@
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006" ],
         "0702": [ "0300", "0301", "0302", "0308", "0020", "0100", "0000" ],
         "0b04": [ "0600", "0601", "0602", "0603", "0604", "0605", "0508", "0908", "0A08", "0508", "050F"],
-        "ff42": [ "0000","0001","0003","0004","0005","0006","0007","0008","0009","000a","002b","002c", "002a", "002d", "0039","003A"],
+        "ff42": [ "002b", "0008", "000A", "002e", "000B", "0000", "002B", "002F", "0030", "0031", "0032", "0012", "0013", "0014", "0015", "0033", "0034", "0035", "0036", "0017", "0018", "0037", "0038", "0019", "001a", "000A", "001c", "001d", "001e", "001f", "0020", "0021", "0022", "0023", "0024", "0025", "0026", "0027", "0028", "0029", "0002", "002c", "002a", "002d"],
         "0019": []
     },
+    "PollingEnabled": 1,
     "Param": {
+        "TICMeter_force_refresh": 0,
+        "TICMeter_Tarif_Polling": 300,
+        "TICMeter_tic_specific": 3600
     }
 }
