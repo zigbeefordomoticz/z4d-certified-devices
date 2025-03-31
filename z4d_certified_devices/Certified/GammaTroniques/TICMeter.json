@@ -103,6 +103,7 @@
     "InstantPowerCluster": "0b04",
     "InstantPowerAttribute": "050f",
     "Param": {
+        "TICMeterRefresh": 60,
         "TICMeter_force_refresh": 0,
         "TICMeter_Tarif_Polling": 300,
         "TICMeter_tic_specific": 3600
