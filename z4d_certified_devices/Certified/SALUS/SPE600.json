@@ -47,17 +47,17 @@
 			"Attributes": {
 				"0000": {
 					"DataType": "25",
-					"MinInterval": "0005",
+					"MinInterval": "003c",
 					"MaxInterval": "012C",
 					"TimeOut": "0FFF",
-					"Change": "000000000000000a"
+					"Change": "0000000000000001"
 				},
 				"0400": {
 					"DataType": "2a",
 					"MinInterval": "0005",
 					"MaxInterval": "012C",
 					"TimeOut": "0FFF",
-					"Change": "00000190"
+					"Change": "0000000a"
 				}
 			}
 		}
