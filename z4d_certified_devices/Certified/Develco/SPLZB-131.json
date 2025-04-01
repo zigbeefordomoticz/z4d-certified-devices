@@ -58,7 +58,7 @@
     },
     "RMSVoltageDivisor": 100,
     "RMSCurrentDivisor": 1000,
-    "ActivePowerDivisor": 1
+    "ActivePowerDivisor": 1,
     "Param": {
         "ReadAttributeChunk": 5
     }
