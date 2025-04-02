@@ -98,7 +98,7 @@
                 "0a0f": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0005" }
 
             }
-        },
+        }
     },
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006" ],
