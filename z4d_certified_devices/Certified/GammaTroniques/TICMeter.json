@@ -87,6 +87,18 @@
     "FakeEp": [ "f2", "f3", "f4", "f5", "f6" ],
     "ClusterToBind": [ "0702", "0b04", "ff42"],
     "ConfigureReporting": {
+        "0b04": {
+            "Attributes": {
+                "0508": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
+                "0908": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
+                "0a08": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
+
+                "050f": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0005" },
+                "090f": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0005" },
+                "0a0f": { "DataType": "21", "MinInterval": "0005", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0005" }
+
+            }
+        },
     },
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006" ],
