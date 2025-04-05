@@ -28,8 +28,8 @@
             "0b04": {
                 "Attributes": {
                     "0508": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IINST", "Name": "IINST", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "0908": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IINST2", "Name": "IINST2", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0908","ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                    "0a08": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IINST3", "Name": "IINST3", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0a08","ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                    "0908": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IINST2", "Name": "IINST2", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0908","ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device"  ] },
+                    "0a08": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IINST3", "Name": "IINST3", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0a08","ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device"  ] },
 
                     "050f": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "PAPP", "Name": "PAPP", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "090f": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "SINSTS2", "Name": "SINSTS2", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "050f", "UpdDomoDeviceWithEp": "f4", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device"  ] },
@@ -43,8 +43,8 @@
                     "0A0a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "IMAX-3", "Name": "IMAX-3", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
 
                     "050d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "PMAX", "Name": "PMAX", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
-                    "090d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "SMAXSN2", "Name": "SMAXSN2", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
-                    "0a0d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "SMAXSN3", "Name": "SMAXSN3", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
+                    "090d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "SMAXSN2", "Name": "SMAXSN2", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
+                    "0a0d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "SMAXSN3", "Name": "SMAXSN3", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
  
                     "0305": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ERQ1", "Name": "ERQ1", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
                     "050e": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ERQ2", "Name": "ERQ2", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
@@ -55,9 +55,9 @@
                     "0905": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "URMS2", "Name": "URMS2", "DataType": "21", "UpdDomoDeviceWithCluster": "0001", "UpdDomoDeviceWithEp": "f5", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0a05": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "URMS3", "Name": "URMS3", "DataType": "21", "UpdDomoDeviceWithCluster": "0001", "UpdDomoDeviceWithEp": "f6", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
 
-                    "0511": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UMOY1", "Name": "UMOY1", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
-                    "0911": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UMOY2", "Name": "UMOY2", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
-                    "0a11": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UMOY3", "Name": "UMOY3", "DataType": "29", "ActionList": [ "check_store_value", "store_specif_attribute"  ] }
+                    "0511": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UMOY1", "Name": "UMOY1", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
+                    "0911": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UMOY2", "Name": "UMOY2", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"  ] },
+                    "0a11": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UMOY3", "Name": "UMOY3", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute"  ] }
 
                 }
             },
