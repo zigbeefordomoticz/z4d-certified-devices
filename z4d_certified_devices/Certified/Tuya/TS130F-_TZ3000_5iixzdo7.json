@@ -18,6 +18,11 @@
             "0019": "", 
             "Type": "Curtain" 
         },
+        "02": {
+            "0102": "",
+            "e001": "",
+            "Type": ""
+        },
         "f2": { 
             "0021": "", 
             "Type": "" }
@@ -33,6 +38,7 @@
     "Param": {
         "TuyaCurtainMode": 0,
         "TuyaMotoReversal": 0,
-        "TuyaCalibrationTime": 600
+        "TuyaCalibrationTime_Ep_01": 290,
+        "TuyaCalibrationTime_Ep_02": 290
     }
 }
