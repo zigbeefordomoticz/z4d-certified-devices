@@ -1,0 +1,48 @@
+{
+    "_blakadder": "",
+    "_comment": "Zigbee 1 channel Dimmer",
+    "_version": "1.0",
+    "Identifier": [
+        [ "TS0601" ,"_TZE204_5cuocqty" ],
+        [ "TS0601" ,"_TZE204_nqqylykc" ],
+        [ "TS0601" ,"_TZE204_tgdnh7pw" ],
+        [ "TS0601" ,"_TZE204_2cyb66xl" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "LvlControl"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007" ],
+        "0019": [ ]
+    },
+    "TUYA_REGISTRATION": 19,
+    "TS0601_DP": {
+        "01": { "sensor_type": "switch", "action_type": "switch" },
+        "02": { "sensor_type": "dimmer", "action_type": "dimmer" },
+        "04": { "store_tuya_attribute": "SwitchType", "action_type": "SwitchType" },
+        "03": { "store_tuya_attribute": "MinBrightness", "action_type": "MinBrightness" },
+        "05": { "store_tuya_attribute": "MaxBrightness", "action_type": "MaxBrightness" },
+        "06": { "store_tuya_attribute": "countdown" },
+        "0e": { "store_tuya_attribute": "PowerOnAfterOffOn", "action_type": "PowerOnAfterOffOn" }
+    },
+    "Param": {
+        "SwitchType": 0,
+        "MinBrightness":  20,
+        "MaxBrightness": 100
+    }
+}
