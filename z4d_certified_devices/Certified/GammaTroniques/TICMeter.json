@@ -1,5 +1,6 @@
 {
-    "_comment": "GammaTroniques TIC for Linky Historique Mono",
+    "_comment": "GammaTroniques TIC for Linky Generic ( Historic, Standard, Mono, Tri, Prod, HPHC, TEMPO",
+    "_version": "1.0",
     "_source": "",
     "Ep": {
         "01": {
@@ -8,6 +9,7 @@
             "0702": { 
                 "Attributes": {
                     "0000": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "Total", "Name": "Total", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0000", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0001": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "EAIT", "Name": "EAIT", "DataType": "25", "UpdDomoDeviceWithAttribute": "0001", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0100": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BASE/HCHC/EJPHN/BBRHCJB", "Name": "BASE/HCHC/EJPHN/BBRHCJB", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0102": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "HCHP/EJPHPM/BBRHPJB", "Name": "HCHP/EJPHPM/BBRHPJB", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0102", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0104": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "BBRHCJW", "Name": "BBRHCJW", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
@@ -66,6 +68,7 @@
             "0019": "",
             "ff42": {
                 "Attributes": {
+                    "0016": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "SINSTI", "Name": "SINSTI", "DataType": "21", "UpdDomoDeviceWithCluster": "0702", "UpdDomoDeviceWithAttribute": "0016", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0039": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "PTEC", "Name": "PTEC", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "0039", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "003a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "Aujourdhui", "Name": "Aujourdhui", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "003a", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0003": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "Demain", "Name": "Demain", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "0003", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
@@ -75,7 +78,7 @@
                     "002d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UpTime", "Name": "UpTime", "DataType": "25", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
                 }
             },
-            "Type": "Ampere/Ampere3/Meter/Power/P1Meter/P1Meter_HPHC/LinkyCurrentTarif/LinkyCurrentDayColor/LinkyNextDayColor"
+            "Type": "Ampere/Ampere3/Meter/Power/P1Meter/P1Meter_HPHC/LinkyCurrentTarif/LinkyCurrentDayColor/LinkyNextDayColor/ProdPower/ProdMeter"
         },
         "f2": { "Type": "P1Meter_HPHC" },
         "f3": { "Type": "P1Meter_HPHC" },
