@@ -23,7 +23,7 @@
             "0102": {
                 "Attributes": { 
                     "f000": { "Enabled": true, "Name": "Tuya_0102_f000", "DataType": "30" , "ActionList": [ "check_store_value"]},
-                    "f002": { "Enabled": true, "Name": "Tuya_0102_f002", "DataType": "20" , "ActionList": [ "check_store_value"]},
+                    "f002": { "Enabled": true, "Name": "MotorReversal", "DataType": "20" , "ActionList": [ "check_store_value"]},
                     "f003": { "Enabled": true, "Name": "Calibration", "DataType": "21" , "ActionList": [ "check_store_value"]}
                 }
             },
