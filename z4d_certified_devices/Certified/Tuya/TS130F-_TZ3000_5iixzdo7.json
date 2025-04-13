@@ -11,24 +11,26 @@
             "000a": "", 
             "0102": {
                 "Attributes": { 
-                    "f000": { "Enabled": true, "Name": "Tuya_0102_f000", "DataType": "30" , "ActionList": [ "check_store_value"]},
-                    "f002": { "Enabled": true, "Name": "MotorReversal", "DataType": "20" , "ActionList": [ "check_store_value"]},
+                    "f000": { "Enabled": true, "Name": "MovingState", "DataType": "30" , "ActionList": [ "check_store_value"]},
+                    "f001": { "Enabled": true, "Name": "CalibrationMode", "DataType": "30" , "UpdDomoDeviceWithAttribute": "f001", "ActionList": [ "check_store_value", "upd_domo_device"]},
+                    "f002": { "Enabled": true, "Name": "MotorReversal", "DataType": "30" , "ActionList": [ "check_store_value"]},
                     "f003": { "Enabled": true, "Name": "Calibration", "DataType": "21" , "ActionList": [ "check_store_value"]}
                 }
             },
             "0019": "", 
-            "Type": "Curtain" 
+            "Type": "Curtain/ShutterCalibration" 
         },
         "02": {
             "0102": {
                 "Attributes": { 
-                    "f000": { "Enabled": true, "Name": "Tuya_0102_f000", "DataType": "30" , "ActionList": [ "check_store_value"]},
-                    "f002": { "Enabled": true, "Name": "MotorReversal", "DataType": "20" , "ActionList": [ "check_store_value"]},
+                    "f000": { "Enabled": true, "Name": "MovingState", "DataType": "30" , "ActionList": [ "check_store_value"]},
+                    "f001": { "Enabled": true, "Name": "CalibrationMode", "DataType": "30" , "UpdDomoDeviceWithAttribute": "f001", "ActionList": [ "check_store_value", "upd_domo_device"]},
+                    "f002": { "Enabled": true, "Name": "MotorReversal", "DataType": "30" , "ActionList": [ "check_store_value"]},
                     "f003": { "Enabled": true, "Name": "Calibration", "DataType": "21" , "ActionList": [ "check_store_value"]}
                 }
             },
             "e001": "",
-            "Type": ""
+            "Type": "ShutterCalibration"
         },
         "f2": { 
             "0021": "", 
@@ -43,7 +45,7 @@
         "0006": [ "8001", "5000" ]
     },
     "Param": {
-        "TuyaCurtainMode": 0,
+        "TuyaMotorMode": 0,
         "TuyaMotoReversal": 0,
         "TuyaCalibrationTime_Ep_01": 290,
         "TuyaCalibrationTime_Ep_02": 290
