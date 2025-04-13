@@ -1,6 +1,6 @@
 {
-    "_comment": "Zigbee Curtain Module QS-Zigbee-CP03",
-    "_sponsorship": "Thanks to pacofrancisco", 
+    "_comment": "LoraTap QCSMART Curtain Switch - SC500ZB-V4",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/99#issuecomment-2799022644",
     "_version": "1.0",
     "Ep": {
         "01": { 
@@ -11,15 +11,22 @@
             "000a": "", 
             "0102": {
                 "Attributes": { 
-                    "f002": { "Enabled": true, "Name": "Tuya_0102_f002", "DataType": "20" , "ActionList": [ "check_store_value"]},
-                    "f003": { "Enabled": true, "Name": "Tuya_0102_f002", "DataType": "21" , "ActionList": [ "check_store_value"]}
+                    "f000": { "Enabled": true, "Name": "Tuya_0102_f000", "DataType": "30" , "ActionList": [ "check_store_value"]},
+                    "f002": { "Enabled": true, "Name": "MotorReversal", "DataType": "20" , "ActionList": [ "check_store_value"]},
+                    "f003": { "Enabled": true, "Name": "Calibration", "DataType": "21" , "ActionList": [ "check_store_value"]}
                 }
             },
             "0019": "", 
             "Type": "Curtain" 
         },
         "02": {
-            "0102": "",
+            "0102": {
+                "Attributes": { 
+                    "f000": { "Enabled": true, "Name": "Tuya_0102_f000", "DataType": "30" , "ActionList": [ "check_store_value"]},
+                    "f002": { "Enabled": true, "Name": "Tuya_0102_f002", "DataType": "20" , "ActionList": [ "check_store_value"]},
+                    "f003": { "Enabled": true, "Name": "Calibration", "DataType": "21" , "ActionList": [ "check_store_value"]}
+                }
+            },
             "e001": "",
             "Type": ""
         },
