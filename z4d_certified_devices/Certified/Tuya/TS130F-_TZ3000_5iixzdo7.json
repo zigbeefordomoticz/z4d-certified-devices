@@ -11,6 +11,7 @@
             "000a": "", 
             "0102": {
                 "Attributes": { 
+                    "8000": { "Enabled": true, "Name": "MotorMode", "DataType": "30" , "ActionList": [ "check_store_value"]},
                     "f000": { "Enabled": true, "Name": "MovingState", "DataType": "30" , "ActionList": [ "check_store_value"]},
                     "f001": { "Enabled": true, "Name": "CalibrationMode", "DataType": "30" , "UpdDomoDeviceWithAttribute": "f001", "ActionList": [ "check_store_value", "upd_domo_device"]},
                     "f002": { "Enabled": true, "Name": "MotorReversal", "DataType": "30" , "ActionList": [ "check_store_value"]},
@@ -23,6 +24,7 @@
         "02": {
             "0102": {
                 "Attributes": { 
+                    "8000": { "Enabled": true, "Name": "MotorMode", "DataType": "30" , "ActionList": [ "check_store_value"]},
                     "f000": { "Enabled": true, "Name": "MovingState", "DataType": "30" , "ActionList": [ "check_store_value"]},
                     "f001": { "Enabled": true, "Name": "CalibrationMode", "DataType": "30" , "UpdDomoDeviceWithAttribute": "f001", "ActionList": [ "check_store_value", "upd_domo_device"]},
                     "f002": { "Enabled": true, "Name": "MotorReversal", "DataType": "30" , "ActionList": [ "check_store_value"]},
