@@ -49,7 +49,7 @@
     "Param": {
         "TuyaMotorMode": 0,
         "TuyaMotoReversal": 0,
-        "TuyaCalibrationTime_Ep_01": 290,
-        "TuyaCalibrationTime_Ep_02": 290
+        "TuyaCalibrationTime_Ep_01": 0,
+        "TuyaCalibrationTime_Ep_02": 0
     }
 }
