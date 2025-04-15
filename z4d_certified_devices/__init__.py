@@ -68,7 +68,7 @@ def z4d_import_device_configuration(self, path_name):
     self.log.logging("z4dCertifiedDevices", "Debug", f"Config loaded: {self.DeviceConf.keys()}")
     self.log.logging("z4dCertifiedDevices", "Debug", f"Certified Devices ModelManufMapping loaded - {self.ModelManufMapping.keys()}")
     
-    self.log.logging("z4dCertifiedDevices", "Status", f"Z4D loads {len(self.DeviceConf)} Certified devices from repository.")
+    self.log.logging("z4dCertifiedDevices", "Status", f"Z4D loads {len(self.DeviceConf)} certified devices from repository version [{__version__}]")
 
 
 def _get_model_name(model_device_file):
