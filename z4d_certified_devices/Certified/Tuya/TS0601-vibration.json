@@ -12,7 +12,7 @@
             "0500": "",
             "000a": "",
             "0019": "",
-            "Type": "Motion/Tamper"
+            "Type": "Vibration/Tilt/Orientation"
         }
     },
     "Type": "",
@@ -26,15 +26,18 @@
         "ef00": []
     },
     "TS0601_DP": {
-        "01": { "sensor_type": "motion", "EvalExp": "int(value == 0)", "DomoDeviceFormat": "str"},
-        "07": { "sensor_type": "tamper"},
-        "65": { "store_tuya_attribute": "coord_x"},
-        "66": { "store_tuya_attribute": "coord_y"},
-        "67": { "store_tuya_attribute": "coord_z"},
+        "01": { "sensor_type": "vibration" },
+        "07": { "sensor_type": "tilt"},
+        "65": { "store_tuya_attribute": "coord_x", "sensor_type": "vibration_tilt_x"},
+        "66": { "store_tuya_attribute": "coord_y", "sensor_type": "vibration_tilt_y"},
+        "67": { "store_tuya_attribute": "coord_z", "sensor_type": "vibration_tilt_z" },
         "68": { "store_tuya_attribute": "VibrationSensitivity", "action_type": "VibrationSensitivity"},
-        "69": { "sensor": "battery"}
+        "69": { "sensor_type": "battery"}
     },
+    "DisableTamper": true,
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
     "Param": {
-    },
-    "BatteryDevice": 1
+        "VibrationSensitivity": 2
+    }
 }
