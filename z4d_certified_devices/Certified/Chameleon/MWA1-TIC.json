@@ -113,6 +113,8 @@
             "0b04": [ "0508", "0304", "0306", "0505" ]
         }
     },
+    "InstantPowerCluster": "0702",
+    "InstantPowerAttribute": "0400",
     "Param": {
         "ReadAttributeChunk": 1
     }
