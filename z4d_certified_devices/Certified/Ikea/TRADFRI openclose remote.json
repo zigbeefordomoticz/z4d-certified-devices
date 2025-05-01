@@ -54,6 +54,7 @@
         "0102": [],
         "0019": []
     },
-            "BatteryDevice": 1,
-     "BatteryPercentageConverter": 2
+    "IKEA_REMOTE_SWITCH": true,
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2
 }

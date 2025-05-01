@@ -19,6 +19,7 @@
     "ReadAttributes": {
         "0000": [ "0004", "0005" ]
     },
+    "IKEA_REMOTE_SWITCH": true,
     "Param": {},
     "GroupMembership": {}
 }
