@@ -1,0 +1,39 @@
+{
+    "_comment": "TRETAKT smart plug",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "https://www.ikea.com/nl/en/p/tretakt-plug-smart-80540349/",
+    "Ep": {
+        "01": {
+            "1000": "",
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0008": "",
+            "fc57": "",
+            "fc7c": "",
+            "fc85": "",
+            "0019": "",
+            "Type": "Plug"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0003"],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0000", "Change": "01" } } }
+    },
+    "ReadAttributes": {
+        "0000": [],
+        "0019": [],
+        "0006": [ "4000", "4001", "4002", "4003", "fffd", "0000" ],
+        "0008": []
+    },
+    "Param": {},
+    "GroupMembership": {}
+}
