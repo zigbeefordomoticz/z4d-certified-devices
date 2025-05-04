@@ -8,7 +8,7 @@
             "0003": "",
             "0004": "",
             "0005": "",
-            "0102": "",
+            "0102": { "Attributes": { "1001": { "Enabled": true, "Name": "Nodon_0102_1001", "DataType": "30", "ActionList": [ "check_store_value" ] }}},
             "fc57": "",
             "0019": "",
             "1000": "",
@@ -34,5 +34,7 @@
         "0001": [ "0000" ],
         "0102": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009"],
         "0019": []
-    }
+    },
+    "WindowsCoverringInverted": true,
+    "WindowsCoverringLevelInverted": true
 }
