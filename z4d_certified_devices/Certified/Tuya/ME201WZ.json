@@ -32,17 +32,14 @@
     "TS0601_DP": {
         "01": { "store_tuya_attribute": "liquid_state", "sensor_type": "liquid_state" },
         "02": { "store_tuya_attribute": "liquid_depth", "sensor_type": "liquid_depth" },
-        "07": { "store_tuya_attribute": "max_set", "sensor_type": "param_liquid_max_set", "action_type": "liquid_max_set" },
-        "08": { "store_tuya_attribute": "mini_set", "sensor_type": "param_liquid_mini_set", "action_type": "liquid_mini_set" },
-        "13": { "store_tuya_attribute": "installation_height", "sensor_type": "liquid_installation_height", "action_type": "liquid_installation_height" },
-        "15": { "store_tuya_attribute": "liquid_depth_max", "sensor_type": "liquid_depth_max", "action_type": "liquid_depth_max" },
-        "16": { "store_tuya_attribute": "liquid_level_percent", "sensor_type": "liquid_level_percent", "action_type": "liquid_level_percent" }
+        "07": { "store_tuya_attribute": "max_set" },
+        "08": { "store_tuya_attribute": "mini_set" },
+        "13": { "store_tuya_attribute": "installation_height", "action_type": "liquid_installation_height" },
+        "15": { "store_tuya_attribute": "liquid_depth_max", "action_type": "liquid_depth_max" },
+        "16": { "store_tuya_attribute": "liquid_level_percent" }
     },
     "Param": {
-        "liquid_max_set": -1,
-        "liquid_mini_set": -1,
-        "liquid_installation_height": -1,
-        "liquid_depth_max": -1,
-        "liquid_level_percent": -1
+        "liquid_installation_height": 95,
+        "liquid_depth_max": 90 
     }
 }
