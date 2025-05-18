@@ -73,8 +73,8 @@
                     "003a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "Aujourdhui", "Name": "Aujourdhui", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "003a", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0003": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "Demain", "Name": "Demain", "DataType": "42", "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "0003", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0002": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "NowRefresh", "Name": "NowRefresh", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                    "002a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeTIC", "Name": "ModeTIC", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
-                    "002c": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeElec", "Name": "ModeElec", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "002a": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeElec", "Name": "ModeElec", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "002c": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "ModeTIC", "Name": "ModeTIC", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "002d": { "SpecifStoragelvl1": "GammaTroniques", "SpecifStoragelvl2": "UpTime", "Name": "UpTime", "DataType": "25", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
                 }
             },
