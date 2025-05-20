@@ -118,7 +118,7 @@
     "InstantPowerCluster": "0b04",
     "InstantPowerAttribute": "050f",
     "Param": {
-        "ReadAttributeChunk": 3,
+        "ReadAttributeChunk": 1,
         "TICMeterRefresh": 60,
         "TICMeter_force_refresh": 0,
         "TICMeter_Tarif_Polling": 300,
