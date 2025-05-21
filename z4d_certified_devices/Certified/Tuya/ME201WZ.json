@@ -9,7 +9,7 @@
     ],
     "Ep": {
         "01": {
-            "0000": "",
+            "0000": { "Attributes": { "ffcf": { "Enabled": true, "Name": "Unknown_ffcf", "DataType": "21" , "ActionList": [ "check_store_value"]}}},
             "0004": "",
             "0005": "",
             "ef00": "",
