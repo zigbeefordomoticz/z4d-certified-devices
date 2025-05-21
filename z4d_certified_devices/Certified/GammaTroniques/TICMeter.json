@@ -117,8 +117,9 @@
     "PowerMeteringMultiplier": 1,
     "InstantPowerCluster": "0b04",
     "InstantPowerAttribute": "050f",
+    "ReceiveOnIdle": true,
     "Param": {
-        "ReadAttributeChunk": 1,
+        "ReadAttributeChunk": 4,
         "TICMeterRefresh": 60,
         "TICMeter_force_refresh": 0,
         "TICMeter_Tarif_Polling": 300,
