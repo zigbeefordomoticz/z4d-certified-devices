@@ -26,10 +26,11 @@
     "ClusterToBind": [ "0000", "ef00" ],
     "ConfigureReporting": {},
     "ReadAttributes": {
-        "0000": [ "0004", "0000", "0001", "0005", "0007" ],
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe", "ffcf" ],
         "0019": [ ]
     },
     "TUYA_REGISTRATION": 19,
+    "TUYA_MAGIC_READ_ATTRIBUTES": true,
     "TS0601_DP": {
         "01": { "store_tuya_attribute": "liquid_state", "sensor_type": "liquid_state" },
         "02": { "store_tuya_attribute": "liquid_depth", "sensor_type": "liquid_depth" },
