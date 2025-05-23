@@ -4,7 +4,7 @@
     "_source": "@erwan",
     "_version": "0.1",
     "Identifier": [
-        [ "TS0601" ,"_TZE284_kyyu8rbj" ]
+        [ "TS0601" ,"_TZE200_lvkk0hdg" ]
     ],
     "Ep": {
         "01": {
@@ -41,7 +41,7 @@
         "15": { "store_tuya_attribute": "liquid_depth_max", "action_type": "liquid_depth_max" }
     },
     "Param": {
-        "liquid_installation_height": 95,
-        "liquid_depth_max": 90 
+        "liquid_installation_height": 1000,
+        "liquid_depth_max": 100 
     }
 }
