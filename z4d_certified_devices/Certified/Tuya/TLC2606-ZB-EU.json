@@ -42,6 +42,6 @@
     },
     "Param": {
         "liquid_installation_height": 1000,
-        "liquid_depth_max": 100 
+        "liquid_depth_max": 900 
     }
 }
