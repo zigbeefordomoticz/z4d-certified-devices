@@ -15,7 +15,7 @@
             "ef00": "",
             "000a": "",
             "0019": "",
-            "Type": "LiquidLevel"
+            "Type": "LiquidLevel/LiquidDepth"
         },
         "f2": {
             "0021": "",
@@ -30,15 +30,16 @@
         "0019": [ ]
     },
     "TUYA_REGISTRATION": 19,
+    "TUYA_RESET_CMD": true,
     "TUYA_MAGIC_READ_ATTRIBUTES": true,
     "TS0601_DP": {
         "01": { "store_tuya_attribute": "liquid_state", "sensor_type": "liquid_state" },
         "02": { "store_tuya_attribute": "liquid_depth", "sensor_type": "liquid_depth" },
+        "16": { "store_tuya_attribute": "liquid_level_percent" },
         "07": { "store_tuya_attribute": "max_set" },
         "08": { "store_tuya_attribute": "mini_set" },
         "13": { "store_tuya_attribute": "installation_height", "action_type": "liquid_installation_height" },
-        "15": { "store_tuya_attribute": "liquid_depth_max", "action_type": "liquid_depth_max" },
-        "16": { "store_tuya_attribute": "liquid_level_percent" }
+        "15": { "store_tuya_attribute": "liquid_depth_max", "action_type": "liquid_depth_max" }
     },
     "Param": {
         "liquid_installation_height": 95,
