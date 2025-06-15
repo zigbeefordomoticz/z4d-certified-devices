@@ -42,5 +42,7 @@
         "0019": [ ]
     },
     "Param": {
+        "fadingOff": 0,
+        "moveToLevel": 0
     }
 }
