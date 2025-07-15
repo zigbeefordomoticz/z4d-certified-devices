@@ -3,7 +3,8 @@
     "_comment": "Tuya Plug",
     "_version": "1.0",
     "Identifier": [
-        [ "TS011F", "_TZ3000_okaz9tjs" ]
+        [ "TS011F", "_TZ3000_okaz9tjs" ],
+        [ "TS011F", "_TZ3000_wzmuk9ai" ]
 
     ],
     "Ep" : {
