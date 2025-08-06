@@ -1,0 +1,39 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/112",
+    "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-02D.html",
+    "_comment": "Waterproof (IP65) sensor with screen and probe temperature detection",
+    "_version": "1.0",
+    "MinPluginVersion": "7.1.022",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0020": "",
+            "0402": "",
+            "fc57": "",
+            "fc11": "",
+            "0019": "",
+            "Type": "Temp"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0402", "0001" ],
+    "ConfigureReporting": {
+        "0402": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "001E", "MaxInterval": "0258", "TimeOut": "0000", "Change": "000A" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0003", "0007", "4000" ],
+        "0001": [ "0021", "0020" ],
+        "0402": [ "0000", "0001", "0002" ],
+        "0405": [ "0000" ],
+        "fc11": [ "0007", "2003"],
+        "0019": []
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
+    "Param": {
+        "SONOFF_TEMP_UNIT": 0,
+        "SONOFF_TEMP_CALIBRATION": 0
+    }
+}
