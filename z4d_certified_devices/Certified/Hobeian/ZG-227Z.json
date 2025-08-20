@@ -1,0 +1,28 @@
+{
+    "_comment": "Temperature & humidity LCD sensor",
+    "_version": "",
+    "_blakadder": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/113",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0402": "",
+            "0405": "",
+            "0001": "",
+            "Type": "Temp+Hum"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0405", "0402", "0001", "0003", "0000" ],
+    "ConfigureReporting": {
+        "0402": { "0000": { "Change": "0001", "DataType": "29", "MaxInterval": "012c", "MinInterval": "000a", "TimeOut": "0000" } },
+        "0405": { "0000": { "Change": "0001", "DataType": "21", "MaxInterval": "0384", "MinInterval": "003c", "TimeOut": "0000" } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0005", "0004", "0000", "0001", "0007" ],
+        "0001": [ "0021", "0020", "fffd" ],
+        "0402": [ "0000", "0001", "0002", "0003", "fffd" ],
+        "0405": [ "0000", "0001", "0002", "0003", "fffd" ]
+    }
+}
