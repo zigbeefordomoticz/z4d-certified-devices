@@ -1,0 +1,30 @@
+{
+    "_description": "Outdoor Smart Plug",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/115",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "", 
+            "0003": "", 
+            "0004": "", 
+            "0005": "", 
+            "0006": "", 
+            "0019": "",
+            "000a": "", 
+            "Type": "Plug/Power/Meter/Voltage/Ampere"
+        },
+        "02": {
+            "1000":"",
+            "Type":""
+        }
+    },
+    "Type":"",
+    "ClusterToBind": [ "0006"],
+    "ConfigureReporting": {
+        "0006": {"Attributes": { "0000": {"DataType": "10", "MinInterval":"0001", "MaxInterval":"012C", "TimeOut":"0FFF","Change":"01"}}}
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005" ],
+        "0006": [ "0000" ]
+    }
+}
