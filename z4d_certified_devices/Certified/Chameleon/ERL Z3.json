@@ -13,7 +13,9 @@
                     "0400": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "SINSTI_SINSTS", "Name": "SINSTI_SINSTS",  "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithCluster": "0b04", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device"  ] },
 
                     "0001": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "EAIT", "Name": "EAIT",  "ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                    "0020": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "NTARF", "Name": "NTARF",  "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                    
+                    "0020": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "NTARF", "Name": "NTARF",  "UpdDomoDeviceWithCluster": "0009", "UpdDomoDeviceWithAttribute": "0020", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    
                     "0100": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "EASF01", "Name": "EASF01",  "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0102": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "EASF02", "Name": "EASF02",  "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0102", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0104": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "EASF03", "Name": "EASF03",  "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0100", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
@@ -126,6 +128,7 @@
     "ConfigureReporting": {
         "0702": {
             "Attributes": {
+                "0020": { "DataType": "30", "MinInterval": "0005", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
                 "0100": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" },
                 "0102": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" },
                 "0104": { "DataType": "25", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "000000000001" },
