@@ -1,0 +1,30 @@
+{
+    "_comment": "",
+    "_version": "",
+    "_blakadder": "",
+    "_source": "",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0500": "",
+            "0001": "",
+            "0400": "",
+            "Type": "Water/Voltage"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001" ],
+    "ConfigureReporting": {
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007" ],
+        "0001": [ "0020", "0021", "fffd" ],
+        "0400": [ "0000", "0001", "0002", "fffd" ],
+        "0500": [ "0000", "0001", "0002", "0010" ]
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
+    "Param": {},
+    "GroupMembership": {}
+}
