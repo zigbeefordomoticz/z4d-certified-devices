@@ -1,0 +1,29 @@
+{
+    "_comment": "Hobeian Zigbee Extender/Router",
+    "_version": "",
+    "_blakadder": "",
+    "_source": "",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "e002": "",
+            "ef00": "",
+            "ee00": "",
+            "e000": "",
+            "000a": "",
+            "0019": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ ],
+    "ConfigureReporting": { },
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007" ]
+    },
+    "CreateWidgetDomoticz": false,
+    "Param": { },
+    "GroupMembership": {
+    }
+}
