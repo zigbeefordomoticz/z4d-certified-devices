@@ -1,0 +1,31 @@
+{
+    "_comment": "Zigbee Extender",
+    "_version": "",
+    "_blakadder": "",
+    "_source": "",
+    "Identifier": [
+        ["TS0001", "_TZ3000_n0lphcok" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0019": "",
+            "e000": "",
+            "e001": "",
+            "Type": "Switch"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006" ],
+    "ConfigureReporting": { },
+    "ReadAttributes": {
+        "0019": [ ],
+        "0006": [ "0000", "4001", "4002" ],
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
+    },
+    "Param": { },
+    "GroupMembership": { }
+}
