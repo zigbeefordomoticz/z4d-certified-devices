@@ -11,8 +11,19 @@
             },
             "0001": "",
             "0402": "",
-            "0403": "",
+            "0403": {
+                "Attributes": {
+                    "0000": { "Enabled": true, "Name": "Aqara MeasuredValue","DataType": "29" , "DomoClusterType": "Baro","ActionList": [ "check_store_value"]},
+                    "0010": { "Enabled": true, "Name": "Aqara ScaledValue", "DataType": "29" , "EvalExp": "round(int(value) / 10, 1)", "ActionList": [ "check_store_value", "upd_domo_device"]},
+                    "0014": { "Enabled": true, "Name": "Aqara Scale", "DataType": "28", "ActionList": [ "check_store_value"] }
+                }
+            },
             "0405": "",
+            "fcc0": {
+                "Attributes": {
+                    "00df": { "Enabled": true, "Name": "Aqara_ffc0_00df", "DataType": "41" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
+                }
+            },
             "Type": "Temp/Humi/Baro"
         }
     },
