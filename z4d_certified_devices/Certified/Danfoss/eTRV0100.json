@@ -45,7 +45,9 @@
     },
     "PollingEnabled": 1,
     "BatteryPercentageConverter": 2,
+    "READ_ATTRIBUTE_AFTER_COMMAND": false,
     "Param": {
+        "ReadAttributeChunk": 15,
         "Calibration": 0,
         "eTRVExerciseDay": 0,
         "eTRVExerciseTime": 720,
