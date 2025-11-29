@@ -12,14 +12,28 @@
         }
     },
     "Type": "",
-    "ClusterToBind": [ "0001" ],
+    "ClusterToBind": [ "0001", "0006", "0008" ],
     "ConfigureReporting": {
         "0001": { "Attributes": { "0021": { "DataType": "20", "MinInterval": "0E10", "MaxInterval": "A8C0", "TimeOut": "0000", "Change": "02" } } }
+    },
+    "REMOTE_SCENE_MAPPING_FORCE_CLUSTER_ID": "0006",
+    "REMOTE_SCENE_MAPPING": {
+        "0006": {
+            "00_02": "00",
+            "01_02": "01"
+        },
+	    "0008": {
+            "01_02": "02",
+            "05_02": "03",
+            "07_02": "04"
+        }
     },
     "ReadAttributes": {
         "0000": [ "0004", "0005" ]
     },
     "IKEA_REMOTE_SWITCH": true,
     "Param": {},
-    "GroupMembership": {}
+    "GroupMembership": [ 
+        [ "01", "0001"]
+    ]
 }
