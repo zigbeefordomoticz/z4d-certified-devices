@@ -1,0 +1,38 @@
+{
+    "_source": "@erick31 on keybase.io",
+    "_comment": "Tuya Temp/Humi sensor version 3",
+    "_blakadder": "",
+    "Identifier": [
+        [ "TS0601", "_TZE200_s1xgth2u"],
+        [ "TS0601", "_TZE284_9ern5sfh"]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "0019": "",
+            "Type": "Temp/Humi"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000"],
+    "ConfigureReporting": {
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0000", "0001", "0007", "ffe2", "ffe4", "ffdf", "fffe" ],
+        "0019": [],
+        "ef00": []
+    },
+    "TS0601_DP": {
+        "01": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)" },
+        "02": { "sensor_type": "humidity" },
+        "04": { "sensor_type": "battery", "EvalExp": "int(value/10)" },
+        "09": { "store_tuya_attribute": "temperature_unit" },
+        "13": { "store_tuya_attribute": "temperature_sensitivity" }
+    },
+    "Param": {
+    },
+    "BatteryPercentageConverter": 2,
+    "BatteryDevice": 1
+}
