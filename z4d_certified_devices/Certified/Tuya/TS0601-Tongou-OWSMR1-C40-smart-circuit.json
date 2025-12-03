@@ -1,0 +1,39 @@
+{
+    "_comment": "Single-phase multifunction RCBO (DIN Module)",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/109#issuecomment-3065602788",
+    "_blakadder": "",
+    "_version": "1",
+    "MinPluginVersion": "7.1.004",
+    "Identifier": [
+        [ "TS0601", "_TZE284_432zhuwe" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Switch/Power/Meter/Voltage/Temp"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0019", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007" ]
+    },
+    "TUYA_REGISTRATION": 19,
+    "TUYA_RESET_CMD": true,
+    "TUYA_DATA_REQUEST": 10,
+    "TUYA_DATA_REQUEST_POLLING": 10,
+
+    "TS0601_DP": { 
+        "10": { "store_tuya_attribute": "State", "sensor_type": "switch", "action_type": "switch" },
+        "06": [ { "store_tuya_attribute": "Voltage", "EvalExp": "((value & 0xffff000000000000) >> 48) / 10", "sensor_type": "voltage", "domo_round": 2 },
+                { "store_tuya_attribute": "Current", "EvalExp": "((value & 0x0000ffffffff0000) >> 24) / 1000 ", "sensor_type": "current", "domo_round": 2 },
+                { "store_tuya_attribute": "Power", "EvalExp": "((value & 0x0000000000000ffff) - 39330) * ((value & 0x0000000000000ffff) > 5000) + (value & 0x0000000000000ffff) * ((value & 0x0000000000000ffff) <= 5000)", "sensor_type": "power", "domo_round": 2} ]
+    },
+    "Param": {
+    }
+}
