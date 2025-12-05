@@ -1,0 +1,47 @@
+{
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=14543&sid=554b2d43673d6543fe9d42a28e5bf08f",
+    "_blakadder": "",
+    "_comment": "PRISE SONOFF IPLUG S60ZBTPF",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0b04": "",
+            "0019": "",
+            "fc57": "",
+            "fc11": { "Attributes": {
+                "7004": { "Enabled": true, "Name": "Current", "EvalExp": "(value/1000)", "UpdDomoDeviceWithCluster": "0b04", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value" ] },
+                "7005": { "Enabled": true, "Name": "Voltage", "EvalExp": "(value/1000)", "UpdDomoDeviceWithCluster": "0001", "ActionList": [ "check_store_value" ] },
+                "7006": { "Enabled": true, "Name": "Power", "EvalExp": "(value/1000)", "UpdDomoDeviceWithCluster": "0702", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value" ] } }
+            },
+            "1000": "",
+            "Type": "Plug/Power/Meter/Ampere/Voltage"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0702", "0b04" ],
+    "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0000", "Change": "01" } } },
+        "0702": { "Attributes": { "0000": { "DataType": "25", "MinInterval": "0005", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "000000000000" } } },
+        "0b04": { "Attributes": {
+            "0505": { "DataType": "21", "MinInterval": "000a", "MaxInterval": "012C", "TimeOut": "0000", "Change": "0001" },
+            "0508": { "DataType": "21", "MinInterval": "0001", "MaxInterval": "012C", "TimeOut": "0000", "Change": "0001" },
+            "050b": { "DataType": "29", "MinInterval": "0005", "MaxInterval": "012C", "TimeOut": "0000", "Change": "0001" }
+            }
+        }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "4000" ],
+        "0006": [ "0000", "4001", "4002", "4003" ],
+        "0b04": "",
+        "0019": []
+    }
+}
