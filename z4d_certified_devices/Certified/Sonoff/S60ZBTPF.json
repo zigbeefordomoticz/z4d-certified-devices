@@ -10,13 +10,17 @@
             "0004": "",
             "0005": "",
             "0006": "",
-            "0b04": "",
+            "0702": "",
+            "0b04": { "Attributes": {
+                "0505": { "Enabled": true, "Name": "Voltag", "EvalExp": "(value/100)", "ActionList": [ "check_store_value"] },
+                "0508": { "Enabled": true, "Name": "Current", "EvalExp": "(value/100)", "ActionList": [ "check_store_value"] },
+                "050f": { "Enabled": true, "Name": "Power", "ActionList": [ "check_store_value"] }}},
             "0019": "",
             "fc57": "",
             "fc11": { "Attributes": {
-                "7004": { "Enabled": true, "Name": "Current", "EvalExp": "(value/1000)", "UpdDomoDeviceWithCluster": "0b04", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value" ] },
-                "7005": { "Enabled": true, "Name": "Voltage", "EvalExp": "(value/1000)", "UpdDomoDeviceWithCluster": "0001", "ActionList": [ "check_store_value" ] },
-                "7006": { "Enabled": true, "Name": "Power", "EvalExp": "(value/1000)", "UpdDomoDeviceWithCluster": "0702", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value" ] } }
+                "7004": { "Enabled": true, "Name": "Current", "EvalExp": "(value/100)", "UpdDomoDeviceWithCluster": "0b04", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                "7005": { "Enabled": true, "Name": "Voltage", "EvalExp": "(value/100)", "UpdDomoDeviceWithCluster": "0001", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                "7006": { "Enabled": true, "Name": "Power", "EvalExp": "(value/100)", "UpdDomoDeviceWithCluster": "0702", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value", "upd_domo_device" ] } }
             },
             "1000": "",
             "Type": "Plug/Power/Meter/Ampere/Voltage"
@@ -44,5 +48,6 @@
         "0b04": "",
         "0019": []
     },
-    "RMSVoltageDivisor": 100
+    "RMSVoltageDivisor": 100,
+    "RMSCurrentDivisor": 100
 }
