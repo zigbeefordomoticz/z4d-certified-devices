@@ -10,7 +10,18 @@
         ["TS130F", "_TZ3000_qqdbccb3"],
         ["TS130F", "_TZ3000_dbpmpco1"],
         ["TS130F", "_TZ3000_rnaovf1x"],
-        ["TS130F", "_TZ3000_cet6ch1r"],
+        ["TS130F", "_TZ3000_5iixzdo7"],
+        ["TS130F", "_TZ3000_vw8pawxa"],
+        ["TS130F", "_TZ3210_xbpt8ewc"],
+        ["TS130F", "_TZ3210_dwytrmda"],
+        ["TS130F", "_TZ3000_74hsp7qy"],
+        ["TS130F", "_TZ3000_jwv3cwak"],
+        ["TS130F", "_TZ3000_yruungrl"],
+        ["TS130F", "_TZ3000_5iixzdo7"],
+        ["TS130F", "_TZ3000_femsaaua"],
+        ["TS130F", "_TZ3000_e3vhyirx"],
+        ["TS130F", "_TZ3000_8h7wgocw"],
+        ["TS130F", "_TZ3000_bs93npae"],
         ["TS130F", "_TZ3000_26gjlugm"]
     ],
     
@@ -48,6 +59,5 @@
     "Param": {
         "TuyaMotoReversal": 0,
         "TuyaBackLight": 1,
-        "moesCalibrationTime": 200
     }
 }
