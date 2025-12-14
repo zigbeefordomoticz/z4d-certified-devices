@@ -1,0 +1,38 @@
+{
+    "_comment": "HOBEIAN ZG-204ZV - Millimeter wave motion detection",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0500": "",
+            "ef00": "",
+            "0402": "",
+            "0405": "",
+            "0001": "",
+            "0400": "",
+            "Type": "Motion/Temp/Humi/Voltage/Lux"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0405", "0402", "0400", "ef00", "0001", "0003", "0000" ],
+    "ConfigureReporting": {
+        "0400": { "0000": { "Change": "000f", "DataType": "21", "MaxInterval": "012c", "MinInterval": "0005", "TimeOut": "0000" } },
+        "0402": { "0000": { "Change": "0001", "DataType": "29", "MaxInterval": "012c", "MinInterval": "000a", "TimeOut": "0000" } },
+        "0405": { "0000": { "Change": "0001", "DataType": "21", "MaxInterval": "0384", "MinInterval": "003c", "TimeOut": "0000" } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007" ],
+        "0500": [ "0000", "0001", "0002", "0010" ],
+        "0400": [ "0000", "0001", "0002", "fffd" ],
+        "0402": [ "0000", "0001", "0002", "0003", "fffd" ],
+        "0405": [ "0000", "0001", "0002", "0003", "fffd" ],
+        "0001": [ "0020", "0021", "fffd" ]
+    },
+    "BatteryPercentageConverter": 2,
+    "BatteryDevice": 1,
+    "Param": {},
+    "GroupMembership": {}
+}
