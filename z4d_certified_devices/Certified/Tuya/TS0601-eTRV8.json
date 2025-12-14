@@ -1,0 +1,44 @@
+{
+    "_comment": "MOES Tuya",
+    "_version": "1.0",
+    "Identifier": [
+        [ "TS0601", "_TZE204_qyr2m29i" ],
+        [ "TS0601", "_TZE204_ltwbm23f" ],
+        [ "TS0601", "_TZE204_qyr2m29i" ]
+    ],
+
+    "Ep": {
+        "01": {
+            "0000": {
+                "Attributes": {
+                    "ffcf": { "Enabled": true, "Name": "ffcf", "DataType": "21" , "ActionList": [ "check_store_value"]}
+                }
+            },
+            "0004": "",
+            "0005": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Temp/ThermoSetpoint/ThermoMode_7/HeatingStatus"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe" ]
+    },
+    "TS0601_DP": {
+        "02": { "store_tuya_attribute": "SystemMode", "sensor_type": "TRV6SystemMode", "action_type": "TRV6SystemMode"},
+        "03": { "store_tuya_attribute": "HeatingMode", "sensor_type": "heatingstatus", "EvalExp": "int(not value)"},
+        "04": { "store_tuya_attribute": "SetPoint", "sensor_type": "setpoint", "domo_divisor": 10, "domo_round": 2, "action_type": "setpoint", "action_Exp": "int( value / 10)"},
+        "05": { "store_tuya_attribute": "Temperature", "sensor_type": "temperature" , "domo_divisor": 10, "domo_round": 2},
+        "07": { "store_tuya_attribute": "ChildLock"},
+        "23": { "store_tuya_attribute": "ErrorStatus"},
+        "27": { "store_tuya_attribute": "FrostProtection"},
+        "2f": { "store_tuya_attribute": "Calibration", "action_type": "calibration"}
+    },
+    "PollingEnabled": 1,
+    "Param": {
+    }
+}
