@@ -31,8 +31,23 @@
         "0405": [ "0000", "0001", "0002", "0003", "fffd" ],
         "0001": [ "0020", "0021", "fffd" ]
     },
+    "TS0601_DP": {
+        "6a": { "sensor_type": "illuminance"},
+        "6c": { "sensor_type": "presence_state"},
+        "66": { "store_tuya_value": "fading_time", "action_type": "TuyaFadingTime", "data_type": "02" },
+        "2": { "store_tuya_value": "presence_sensitivity", "action_type": "TuyaPresenceSensitivity", "data_type": "02"},
+        "1": { "sensor_type": "motion", "EvalExp": "int(value != 0)", "DomoDeviceFormat": "str"},
+        "6b": { "store_tuya_attribute": "illuminance_interval"},
+        "6f": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)" },
+        "6d": { "store_tuya_attribute": "temperature_unit" },
+        "69": { "store_tuya_attribute": "temperature_calibration" , "EvalExp": "int(value/10)"},
+        "68": { "store_tuya_attribute": "humidity_calibration" }
+    },
+    "Param": {
+        "TuyaPresenceSensitivity": 6,
+        "TuyaFadingTime": 60
+    },
     "BatteryPercentageConverter": 2,
     "BatteryDevice": 1,
-    "Param": {},
     "GroupMembership": {}
 }
