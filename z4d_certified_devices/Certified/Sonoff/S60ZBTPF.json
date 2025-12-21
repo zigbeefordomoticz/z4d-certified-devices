@@ -20,7 +20,10 @@
             "fc11": { "Attributes": {
                 "7004": { "Enabled": true, "Name": "Current", "EvalExp": "(value/100)", "UpdDomoDeviceWithCluster": "0b04", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "upd_domo_device" ] },
                 "7005": { "Enabled": true, "Name": "Voltage", "EvalExp": "(value/100)", "UpdDomoDeviceWithCluster": "0001", "ActionList": [ "check_store_value", "upd_domo_device" ] },
-                "7006": { "Enabled": true, "Name": "Power", "EvalExp": "(value/100)", "UpdDomoDeviceWithCluster": "0702", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value", "upd_domo_device" ] } }
+                "7006": { "Enabled": true, "Name": "Power", "EvalExp": "(value/100)", "UpdDomoDeviceWithCluster": "0702", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value", "upd_domo_device" ] } },
+                "7009": { "Enabled": true, "Name": "energyToday", "EvalExp": "(value/100)", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                "700a": { "Enabled": true, "Name": "energyMonth", "EvalExp": "(value/100)", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                "700b": { "Enabled": true, "Name": "energyYesterday", "EvalExp": "(value/100)", "ActionList": [ "check_store_value", "upd_domo_device" ] }
             },
             "1000": "",
             "Type": "Plug/Power/Meter/Ampere/Voltage"
