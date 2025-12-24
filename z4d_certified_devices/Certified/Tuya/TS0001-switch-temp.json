@@ -29,8 +29,8 @@
     "TUYA_REGISTRATION": 19,
     "TY_DATA_QUERY": true,
     "TS0601_DP": {
-        "02": { "store_tuya_attribute": "OnOff" },
-        "1b": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)" },
+        "02": { "sensor_type": "switch", "action_type": "switch" },
+        "1b": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)", "domo_round": 1 },
         "1e": { "store_tuya_attribute": "calibration" },
         "1d": { "store_tuya_attribute": "temp_range" },
         "09": { "store_tuya_attribute": "auto_work" },
