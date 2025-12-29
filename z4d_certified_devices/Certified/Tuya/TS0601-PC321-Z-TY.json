@@ -41,7 +41,7 @@
     "TS0601_DP": {
 
         "84": { "store_tuya_attribute": "AC_Frequency", "EvalExp": "(value)"},
-        "85": { "store_tuya_attribute": "Temperature", "EvalExp": "(value) / 10", "sensor_type": "temperature"},
+        "85": { "store_tuya_attribute": "Temperature", "EvalExp": "(value) / 10", "sensor_type": "temperature", "domo_round": 1},
         "86": { "store_tuya_attribute": "DeviceStatus", "EvalExp": "(value)"},
 
         "01": { "store_tuya_attribute": "Energy A+B+C", "EvalExp": "(value * 10)", "sensor_type": "cons_metering", "domo_round": 3},

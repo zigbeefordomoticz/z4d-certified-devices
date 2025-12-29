@@ -37,7 +37,7 @@
     },
     "StandardZigbeeCommand": true,
     "TS0601_DP": {
-        "66": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)" },
+        "66": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)", "domo_round": 2 },
         "67": { "sensor_type": "humidity" },
         "6c": { "store_tuya_attribute": "Unknow_6c_02" },
         "6d": { "store_tuya_attribute": "Unknow_6d_02" },

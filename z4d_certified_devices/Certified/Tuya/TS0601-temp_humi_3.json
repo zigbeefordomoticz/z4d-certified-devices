@@ -25,7 +25,7 @@
         "ef00": []
     },
     "TS0601_DP": {
-        "01": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)" },
+        "01": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)", "domo_round": 1 },
         "02": { "sensor_type": "humidity", "EvalExp": "round(value/10,1)" },
         "04": { "sensor_type": "battery" },
         "09": { "store_tuya_attribute": "temperature_unit" },

@@ -29,7 +29,7 @@
     },
     "TS0601_DP": { 
         "03": { "store_tuya_attribute": "soil_moisture", "sensor_type": "humidity"},
-        "05": { "sensor_type": "temperature"},
+        "05": { "sensor_type": "temperature", "domo_round": 1},
         "09": { "store_tuya_attribute": "temp_unit"},
         "0e": { "store_tuya_attribute": "battery_state"},
         "0f": { "sensor_type": "battery"}
