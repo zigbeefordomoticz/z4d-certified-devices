@@ -13,7 +13,11 @@
             "0102": "",
             "0b05": "",
             "fc57": "",
-            "fc11": "",
+            "fc11": { "Attributes": {
+                "0010": { "Enabled": true, "Name": "MotorOperatingFlag", "ActionList": [ "check_store_value"] },
+                "0016": { "Enabled": true, "Name": "CalibrationState", "ActionList": [ "check_store_value"] },
+                "5012": { "Enabled": true, "Name": "TravelTimeUPStatus","ActionList": [ "check_store_value"] },
+                "5013": { "Enabled": true, "Name": "TravelTimeDownStatus", "ActionList": [ "check_store_value"] }}},
             "0019": "",
             "0006": "",
             "Type": "WindowCovering"
