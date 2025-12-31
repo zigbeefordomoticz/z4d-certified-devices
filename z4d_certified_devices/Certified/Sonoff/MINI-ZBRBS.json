@@ -37,6 +37,8 @@
         "0019": [],
         "fc11": [ "0010", "0016", "5012", "5013"]
     },
+    "WindowsCoverringInverted": true,
+    "WindowsCoverringLevelInverted": true,
     "Param": {},
     "GroupMembership": {}
 }
