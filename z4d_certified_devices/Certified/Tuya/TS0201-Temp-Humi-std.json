@@ -13,6 +13,8 @@
                 "003e": {"Enabled": true, "Name": "Tuya_0402_003e", "DataType": "18", "ActionList": [ "check_store_value"] }}},
             "0405": "",
             "e002": { "Attributes": { 
+                "d014": {"Enabled": true, "Name": "Tuya_e002_d014", "DataType": "29", "ActionList": [ "check_store_value"] },
+                "d015": {"Enabled": true, "Name": "Tuya_e002_d015", "DataType": "29", "ActionList": [ "check_store_value"] },
                 "d00d": {"Enabled": true, "Name": "Tuya_e002_d00d", "DataType": "29", "ActionList": [ "check_store_value"] },
                 "e00b": {"Enabled": true, "Name": "Tuya_e002_e00b", "DataType": "30", "ActionList": [ "check_store_value"] }}},
             "Type": "Temp/Humi"
