@@ -1,0 +1,30 @@
+{
+    "_comment": "Motion sensor",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/129",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0500": "",
+            "0003": "",
+            "ef00": "",
+            "0001": "",
+            "Type": "Motion/Voltage"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001" ],
+    "ConfigureReporting": {
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007" ],
+        "0001": [ "0021", "0020", "fffd" ],
+        "0500": [ "0000", "0001", "0002", "0010" ]
+    },
+    "Param": {
+        "MotionViaIASAlarm1": 1
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2
+}
