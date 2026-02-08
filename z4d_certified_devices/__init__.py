@@ -8,6 +8,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0
 #
+#
 """
 Module: certified_devices_loader
 ================================
