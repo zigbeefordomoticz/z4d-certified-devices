@@ -2,10 +2,19 @@
     "_comment": "Tuya TRV / Avatto ME167",
     "_version": "0.10",
     "Identifier": [
-        [ "TS0601", "_TZE200_bvu2wnxz" ],
-        [ "TS0601", "_TZE200_6rdj8dzm" ],
+        [ "TS0601", "_TZE200_bvu2wnxz"],
+        [ "TS0601", "_TZE200_6rdj8dzm"],
+        [ "TS0601", "_TZE200_9xfjixap"],
+        [ "TS0601", "_TZE200_jkfbph7l"],
+        [ "TS0601", "_TZE200_4utwoz2"],
+        [ "TS0601", "_TZE200_4utwozi2"],
+        [ "TS0601", "_TZE200_ow09xlxm"],
+        [ "TS0601", "_TZE284_rv6iuyxb"],
+        [ "TS0601", "_TZE200_rv6iuyxb"],
+        [ "TS0601", "_TZE200_suxywabt"],
         [ "TS0601", "_TZE200_gd4rvykv" ],
         [ "TS0601", "_TZE200_p3dbf6qs" ], 
+        [ "TS0601", "_TZE284_o3x45p96" ], 
         [ "TS0601", "_TZE200_rxntag7i" ]
     ],
 
