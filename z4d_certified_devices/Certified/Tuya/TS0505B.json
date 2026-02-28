@@ -23,6 +23,7 @@
                     "f00d": {"Enabled": true, "Name": "Tuya0300_f00d", "DataType": "10", "ActionList": [ "check_store_value"] },
                     "f00e": {"Enabled": true, "Name": "Tuya0300_f00e", "DataType": "48", "ActionList": [ "check_store_value"] },
                     "e000": {"Enabled": true, "Name": "Tuya0300_e000", "DataType": "21", "ActionList": [ "check_store_value"] },
+                    "e001": {"Enabled": true, "Name": "Tuya0300_e000", "DataType": "25", "ActionList": [ "check_store_value"] },
                     "e100": {"Enabled": true, "Name": "Tuya0300_e100", "DataType": "25", "ActionList": [ "check_store_value"] }
                 }
             },
