@@ -1,6 +1,9 @@
 {
-	"Ep": {
-		"01": {
+    "_description": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/133",
+    "_version": "0.1",
+    "Ep": {
+        "01": {
             "0000": { 
                 "Attributes": {
                     "fff0": { "Enabled": true, "Name": "Aqara_0000_fff0", "DataType": "42" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]},
@@ -8,31 +11,41 @@
                     "ff02": { "Enabled": true, "Name": "Aqara_0000_ff02", "DataType": "4c" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}  
                 }
             },
-			"0003": "",
-			"0005": "",
-			"0019": "",
-			"0101": "",
-			"Type": "Vibration/Strength/Orientation"
-		},
-		"02": {
-			"0003": "",
-			"0004": "",
-			"0005": "",
-			"0012": "",
-			"Type": ""
-		}
-	},
-	"Type": "",
-	"ClusterToBind": "",
-	"ConfigureReporting": {},
-	"ReadAttributes": {
-		"0000": [
-			"0004",
-			"0005"
-		],
-		"0101": []
-	},
-	"Param": {
-		"vibrationAqarasensitivity": "medium"
-	}
+            "0003": "",
+            "0005": "",
+            "0019": "",
+            "0101": "",
+            "Type": "Vibration/Strength/Orientation"
+        },
+        "02": {
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0500": {
+                "Attributes": {
+                    "002d": { "Enabled": true, "Name": "Aqara_0500_002d", "DataType": "21" , "ActionList": [ "check_store_value"]}
+                }
+            },
+            "0012": "",
+            "fcc0": {
+                "Attributes": {
+                    "0118": { "Enabled": true, "Name": "Movement detected", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
+                }
+            },
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": "",
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [
+            "0004",
+            "0005"
+        ],
+        "0101": []
+    },
+    "Param": {
+        "vibrationAqarasensitivity": "medium"
+    }
 }
