@@ -1,5 +1,5 @@
 {
-    "_comment": "Temperature & humidity Sensor with external probe",
+    "_comment": "Temperature & humidity Sensor with external probe ",
     "_blakadder": "",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/136",
     "Identifier": [
