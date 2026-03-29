@@ -1,0 +1,36 @@
+{
+    "_comment": "Smoke detector with temperature and humidity sensor",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=14656",
+    "_blakadder": "",
+    "_version": "1",
+    "Identifier": [
+        [ "TS0601", "_TZE284_gyzlwu5q" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Smoke/Temp/Humi"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe" ]
+    },
+    "TS0601_DP": { 
+        "01": { "store_tuya_attribute": "SmokeState", "sensor_type": "smoke_state"},
+        "10": { "store_truya_attribute": "silence_mode" },
+        "17": { "sensor_type": "temperature" },
+        "18": { "sensor_type": "humidity" },
+        "0e": { "store_tuya_attribute": "battery"},
+        "09": { "store_tuya_attribute": "test"},
+        "67": { "store_tuya_attribute": "unknow"}
+    }
+
+}
