@@ -1,0 +1,41 @@
+{
+    "_comment": "Temperature & humidity Sensor with external probe",
+    "_blakadder": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/136",
+    "Identifier": [
+        [ "TS0601", "_TZE284_8se38w3c" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "0019": "",
+            "Type": "Temp/Humi"
+        },
+        "f1": {
+            "Type": "Temp"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000"],
+    "ConfigureReporting": {
+    },
+    "TUYA_REGISTRATION": 19,
+    "TY_DATA_QUERY": true,
+    "FakeEp": [ "f1" ],
+    "TS0601_DP": {
+        "01": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)", "domo_round": 1 },
+        "02": { "sensor_type": "humidity", "EvalExp": "int(value)" },
+        "03": { "sensor_type": "battery", "EvalExp": "0 if value == 0 else (50 if value == 1 else (80 if value == 2 else None))"},
+        "38": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)", "domo_round": 1, "domo_ep": "f1" }
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0000", "0001", "0007", "ffe2", "ffe4", "ffdf", "fffe" ],
+        "0019": [],
+        "ef00": []
+    },
+    "Param": {
+    },
+    "BatteryDevice": 1
+}
