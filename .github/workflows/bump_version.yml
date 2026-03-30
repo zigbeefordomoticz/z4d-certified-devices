@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths-ignore:
-      - 'version.py'       # avoid triggering on the bump commit itself
-      - '.github/**'       # avoid triggering on workflow changes
+      - 'z4d_certified_devices/version.py'  # avoid triggering on the bump commit itself
+      - '.github/**'                         # avoid triggering on workflow changes
 
 jobs:
   bump:
@@ -24,11 +24,13 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Run bump script
         run: python bump_version.py
 
       - name: Push bumped version
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git push
+        run: git push
