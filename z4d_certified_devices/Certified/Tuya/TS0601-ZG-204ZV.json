@@ -1,0 +1,48 @@
+{
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/135",
+    "_description": "Millimeter wave motion detection",
+    "Identifier": [
+        [ "TS0601", "_TZE200_uli8wasj" ],
+        [ "TS0601", "_TZE200_grgol3xp" ],
+        [ "TS0601", "_TZE200_rhgsbacq" ],
+        [ "TS0601", "_TZE200_y8jijhba" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "0500": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Motion/Lux/Temp/Humi"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [  "0004", "0000", "0001", "0005", "0007", "fffe" ],
+        "0001": [],
+        "0019": [],
+        "0500": [  "0000", "0001", "0002", "0010", "0011"],
+        "ef00": []
+    },
+    "TS0601_DP": {
+        "01": { "sensor_type": "presence_state"},
+        "6a": { "sensor_type": "illuminance"},
+        "6f": { "sensor_type": "temperature"},
+        "65": { "sensor_type": "humidity"},
+        "66": { "store_tuya_value": "fading_time", "action_type": "TuyaFadingTime" },
+        "02": { "store_tuya_value": "MotionDetectionSensibiity", "action_type": "TuyaRadarSensitivity", "data_type": "02"},
+        "69": { "store_tuya_attribute": "temperature_calibration"},
+        "68": { "store_tuya_attribute": "humidity_calibration"},
+        "6b": { "store_tuya_attribute": "IlluminanceFrequency", "action_type": "TuyaIlluminanceFrequency", "data_type": "02"},
+        "6c": { "store_tuya_attribute": "LedIndicatorMode"}
+    },
+    "Param": {
+        "TuyaFadingTime": 5,
+        "TuyaRadarSensitivity": 9,
+        "TuyaIlluminanceFrequency": 300
+    }
+}
