@@ -1,0 +1,39 @@
+{
+    "_comment": "Light intensity sensor",
+    "_version": "",
+    "_blakadder": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/138",
+    "Identifier" : [
+        ["ZG-106Z", "HOBEIAN"],
+        ["TS0222", "_TYZB01_4mdqxxnn"],
+        ["TS0222", "_TYZB01_m6ec2pgj"],
+        ["TS0222", "_TZ3000_do6txrcw"],
+        ["TS0222", "_TZ3000_7kscdesh"],
+        ["TS0222", "_TZ3000_hy6ncvmw"],
+        ["TS0222", "_TZ3000_7y90pany"]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "ef00": "",
+            "0400": "",
+            "Type": "Voltage/Lux"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [],
+    "ConfigureReporting": {
+            "0400": { "0000": { "Change": "000f", "DataType": "21", "MaxInterval": "012c", "MinInterval": "0005", "TimeOut": "0000" } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007" ],
+        "0001": [ "0020", "0021", "fffd" ],
+        "0400": [ "0000", "0001", "0002", "fffd" ]
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
+    "Param": {},
+    "GroupMembership": {}
+}
