@@ -22,10 +22,15 @@
         "0000": [ "0004", "0000", "0001", "0005", "0007" ]
     },
     "TS0601_DP": {
-        "01": { "sensor_type": "switch"},
-        "02": { "sensor_type": "dimmer"},
-        "03": { "store_tuya_attribute": "min_brightness"},
-        "04": { "store_tuya_attribute": "light_type"},
-        "15": { "store_tuya_attribute": "indicator_mode"}
+        "15": { "store_tuya_attribute": "indicator_mode"},
+        "01": { "sensor_type": "switch", "action_type": "switch" },
+        "02": { "sensor_type": "dimmer", "action_type": "dimmer" },
+        "04": { "store_tuya_attribute": "SwitchType", "action_type": "SwitchType" },
+        "03": { "store_tuya_attribute": "MinBrightness", "action_type": "MinBrightness" }
+    },
+    "Param": {
+        "SwitchType": 0,
+        "MinBrightness": 20,
+        "MaxBrightness": 100
     }
 }
