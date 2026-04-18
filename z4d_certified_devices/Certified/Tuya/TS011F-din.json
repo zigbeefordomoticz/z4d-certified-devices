@@ -2,7 +2,9 @@
     "_comment": "Tuya DIN",
     "_version": "1.0",
     "Identifier": [
-        [ "TS011F", "_TZ3000_qeuvnohg" ]
+        [ "TS011F", "_TZ3000_qeuvnohg" ],
+        [ "TS011F", "_TZ3000_6l1pjfqe" ],
+        [ "TS011F", "_TZ3000_2iiimqs9" ]
     ],
     "Ep": {
         "01": {
