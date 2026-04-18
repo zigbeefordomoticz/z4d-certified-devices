@@ -22,7 +22,7 @@
         "0000": [ "0004", "0000", "0001", "0005", "0007" ]
     },
     "TS0601_DP": {
-        "15": { "store_tuya_attribute": "indicator_mode"},
+        "15": { "store_tuya_attribute": "indicator_mode", "action_type": "PowerOnAfterOffOn" },
         "01": { "sensor_type": "switch", "action_type": "switch" },
         "02": { "sensor_type": "dimmer", "action_type": "dimmer" },
         "04": { "store_tuya_attribute": "SwitchType", "action_type": "SwitchType" },
@@ -31,6 +31,6 @@
     "Param": {
         "SwitchType": 0,
         "MinBrightness": 20,
-        "MaxBrightness": 100
+        "PowerOnAfterOffOn": 0
     }
 }
