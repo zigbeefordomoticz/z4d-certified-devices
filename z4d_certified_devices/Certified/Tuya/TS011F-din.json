@@ -1,5 +1,5 @@
 {
-    "_comment": "Tuya DIN",
+    "_comment": "Zigbee DIN Smart Switch 16A (energy reporting)",
     "_version": "1.0",
     "Identifier": [
         [ "TS011F", "_TZ3000_qeuvnohg" ],
