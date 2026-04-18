@@ -1,0 +1,31 @@
+{
+    "_blakadder": "https://zigbee.blakadder.com/Eardatek_EDM-1ZBB-EU.html",
+    "_comment": "Tuya Smart Dimmer Switch",
+    "_version": "0.10",
+    "Identifier": [
+        [ "TS0601" ,"_TZE200_p0gzbqct" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "LvlControl"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007" ]
+    },
+    "TS0601_DP": {
+        "01": { "sensor_type": "switch"},
+        "02": { "sensor_type": "dimmer"},
+        "03": { "store_tuya_attribute": "min_brightness"},
+        "04": { "store_tuya_attribute": "light_type"},
+        "15": { "store_tuya_attribute": "indicator_mode"}
+    }
+}
