@@ -28,8 +28,9 @@ the plugin’s internal mappings:
 Key Functions
 -------------
 - `z4d_import_device_configuration(self, path_name)`: Main entry point to load all configurations.
-- `_iter_valid_entries(directory)`: Internal helper to skip unwanted files.
+- `_iter_valid_entries(directory)`: Internal helper to skip unwanted files/dirs.
 - `_load_json_file(self, filename)`: Loads and validates JSON configuration files.
+- `_version_tuple(version_str)`: Converts a version string to a comparable tuple.
 - `_is_plugin_version_compatible(model_def, plugin_version)`: Ensures compatibility with plugin version.
 - `_register_device_config(self, model_name, model_def)`: Registers a certified device configuration.
 
