@@ -99,7 +99,10 @@ def z4d_import_device_configuration(self, path_name):
     device_count_before = len(self.DeviceConf)
 
     for brand_dir in _iter_valid_entries(model_certified):
-        for config_file in _iter_valid_entries(model_certified / brand_dir):
+        brand_path = model_certified / brand_dir
+        if not brand_path.is_dir():
+            continue
+        for config_file in _iter_valid_entries(brand_path):
             filename = model_certified / brand_dir / config_file
             model_def = _load_json_file(self, filename)
             if not model_def:
@@ -137,7 +140,7 @@ def z4d_import_device_configuration(self, path_name):
 
 def _iter_valid_entries(directory: Path):
     """Yield directory entries, skipping README.md and .PRECIOUS."""
-    for entry in os.listdir(directory):
+    for entry in sorted(os.listdir(directory)):
         if entry not in ("README.md", ".PRECIOUS"):
             yield entry
 
@@ -177,10 +180,18 @@ def _load_json_file(self, filename: Path):
     return None
 
 
+def _version_tuple(version_str: str) -> tuple:
+    try:
+        return tuple(int(x) for x in str(version_str).split("."))
+    except (ValueError, AttributeError):
+        return (0,)
+
+
 def _is_plugin_version_compatible(model_def: dict, plugin_version: str) -> bool:
-    """Return True if the model's minimum required plugin version is met."""
     min_version = model_def.get("MinPluginVersion")
-    return not (min_version and plugin_version < min_version)
+    if not min_version:
+        return True
+    return _version_tuple(plugin_version) >= _version_tuple(min_version)
 
 
 def _register_device_config(self, model_name: str, model_def: dict):
