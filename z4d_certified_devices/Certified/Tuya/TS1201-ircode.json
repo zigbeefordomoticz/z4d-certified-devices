@@ -1,0 +1,47 @@
+{
+    "_description": "Universal smart IR remote control",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/137",
+    "_blakadder": "",
+    "_version": "1",
+    "Identifier": [
+        [ "TS1201", "_TZ3290_j37rooaxrcdcqo5n" ],
+        [ "TS1201", "_TZ3290_ot6ewjvmejq5ekhl" ],
+        [ "TS1201", "_TZ3290_xjpbcxn92aaxvmlz" ],
+        [ "TS1201", "_TZ3290_gnl5a6a5xvql7c2a" ],
+        [ "TS1201", "_TZ3290_yyax9ajf" ],
+        [ "TS1201", "_TZ3290_785fbxik" ],
+        [ "TS1201", "_TZ3290_nkpxapoz" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "ed00": "",
+            "e004": "",
+            "000a": "",
+            "0019": "",
+            "Type": "LearningIRCode/IRCodeText/SendIRcode"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0001", "ef00" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe" ],
+        "0001": [ "0020", "0021" ]
+    },
+    "Param": {
+        "IRCode": {
+            "10": "b64 learned IR code in base64",
+            "20": "b64 learned IR code in base64",
+            "30": "b64 learned IR code in base64",
+            "40": "b64 learned IR code in base64",
+            "50": "b64 learned IR code in base64",
+            "60": "b64 learned IR code in base64",
+            "70": "b64 learned IR code in base64",
+            "80": "b64 learned IR code in base64",
+            "90": "b64 learned IR code in base64"
+        }
+    }
+} 
