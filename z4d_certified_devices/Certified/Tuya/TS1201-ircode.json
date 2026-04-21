@@ -3,6 +3,7 @@
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/137",
     "_blakadder": "",
     "_version": "1",
+    "MinPluginVersion": "8.1.003",
     "Identifier": [
         [ "TS1201", "_TZ3290_j37rooaxrcdcqo5n" ],
         [ "TS1201", "_TZ3290_ot6ewjvmejq5ekhl" ],
