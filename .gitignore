@@ -1,6 +1,15 @@
+# Python
+__pycache__/
 *.py[cod]
-*.egg-info/
-.pytest_cache/
+*$py.class
+
+# Build / packaging
 build/
 dist/
-__pycache_/
+*.egg-info/
+.eggs/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
