@@ -1,0 +1,49 @@
+{
+    "_comment": "Excellux temperature & humidity sensor with external probe (Tuya ef00 datapoints).",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/143",
+    "Identifier": [
+        [ "Excellux", "NTCHT01" ],
+        [ "Excellux", "NTCHT02" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "1000": "",
+            "ef00": "",
+            "Type": "Temp/Humi"
+        },
+        "f1": {
+            "Type": "Temp"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0000", "0001", "0007" ]
+    },
+    "TS0601_DP": {
+        "05": { "sensor_type": "temperature", "EvalExp": "round((value - 0x100000000 if value > 0x7fffffff else value) / 100, 2)", "domo_round": 2 },
+        "76": { "sensor_type": "humidity", "EvalExp": "round(value / 100, 1)" },
+        "04": { "sensor_type": "battery" },
+        "01": { "sensor_type": "temperature", "domo_ep": "f1", "EvalExp": "round((value - 0x100000000 if value > 0x7fffffff else value) / 10, 1)", "domo_round": 1 },
+        "65": { "store_tuya_attribute": "sampling_interval" },
+        "6c": { "store_tuya_attribute": "probe_temperature_calibration" },
+        "6d": { "store_tuya_attribute": "probe_temperature_v0_set" },
+        "6e": { "store_tuya_attribute": "probe_temperature_v1_set" },
+        "70": { "store_tuya_attribute": "probe_temperature_warning" },
+        "72": { "store_tuya_attribute": "temperature_calibration" },
+        "73": { "store_tuya_attribute": "temperature_v0_set" },
+        "74": { "store_tuya_attribute": "temperature_v1_set" },
+        "75": { "store_tuya_attribute": "temperature_warning" },
+        "77": { "store_tuya_attribute": "humidity_calibration" },
+        "78": { "store_tuya_attribute": "humidity_v0_set" },
+        "79": { "store_tuya_attribute": "humidity_v1_set" },
+        "7a": { "store_tuya_attribute": "humidity_warning" }
+    },
+    "BatteryDevice": 1,
+    "Param": {}
+}
