@@ -41,6 +41,6 @@ jobs:
             Do not propose code changes. If real analysis is needed, say so and stop.
             - Title: ${{ github.event.issue.title }}
             - Issue #: ${{ github.event.issue.number }}
-        claude_args: |
-          --max-turns 6
-          --model claude-haiku-4-5-20251001
+          claude_args: |
+            --max-turns 6
+            --model claude-haiku-4-5-20251001
