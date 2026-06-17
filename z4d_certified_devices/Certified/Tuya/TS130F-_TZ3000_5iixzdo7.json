@@ -2,6 +2,10 @@
     "_comment": "LoraTap QCSMART Curtain Switch - SC500ZB-V4",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/99#issuecomment-2799022644",
     "_version": "1.0",
+    "Identifier": [
+        [ "TS130F","_TZ3000_5iixzdo7" ],
+        [ "TS130F","_TZ3000_cet6ch1r" ]
+    ],
     "Ep": {
         "01": { 
             "0000": "", 
