@@ -32,15 +32,16 @@ jobs:
             1. From the title/body, extract the device Manufacturer name and Model.
             2. Grep the Certified/ tree for that model to see if a config already exists.
             3. Post ONE concise comment (max ~120 words, markdown) with:
-             - **Type:** new-device-request | pairing-issue | wrong-behaviour | question
-             - **Device:** manufacturer / model (or "not specified")
-             - **Config found:** path to the JSON, or "none found"
-             - **Next step:** the single most useful action, OR the exact missing info
-               to request (e.g. the device's `Model`, `ManufacturerName`, and plugin
-               "certification" log).
+               - **Type:** new-device-request | pairing-issue | wrong-behaviour | question
+               - **Device:** manufacturer / model (or "not specified")
+               - **Config found:** path to the JSON, or "none found"
+               - **Next step:** the single most useful action, OR the exact missing info
+                 to request (e.g. the device's `Model`, `ManufacturerName`, and plugin
+                 "certification" log).
             Do not propose code changes. If real analysis is needed, say so and stop.
             - Title: ${{ github.event.issue.title }}
             - Issue #: ${{ github.event.issue.number }}
+
           claude_args: |
             --max-turns 6
             --model claude-haiku-4-5-20251001
