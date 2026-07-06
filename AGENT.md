@@ -60,6 +60,11 @@ Each file under `Certified/<Manufacturer>/` describes one device model. The
 **filename stem is the model name** used as the `DeviceConf` key, so keep names
 accurate and unique across the whole `Certified/` tree.
 
+- Document the TS0601_DP key format explicitly: keys are two-digit lowercase hex representing the Tuya datapoint (DP) index (e.g., DP 101 → "65", DP 37 → "25"), not the decimal DP number. This tripped me up initially — the irrigation valve file's "65", "66", "6f" keys aren't obvious as DP 101/102/111 without doing the hex conversion, and there's no comment anywhere stating the convention.
+- Document the sub-keys used inside a TS0601_DP entry (store_tuya_attribute, sensor_type, action_type) and roughly what each governs, since the loader/plugin-side meaning isn't visible from this repo alone.
+- Add a note that action_type is a closed vocabulary interpreted by the Domoticz-Zigbee plugin itself (not this repo) — so a new DP mapping should reuse an existing action_type/sensor_type value where the behavior matches, rather than inventing a new one, unless the plugin actually defines a handler for it. I only discovered the existing vocabulary by grepping across all Tuya files; nothing points an agent there.
+- Suggest a pointer to where action_type values are actually implemented (presumably in the Domoticz-Zigbee plugin repo, not here) — right now there's no way to verify from this repo alone whether a chosen action_type string is real or will silently no-op.
+
 Common keys seen in these files:
 
 - `Ep` — endpoint → cluster map (with per-endpoint `Type`).
