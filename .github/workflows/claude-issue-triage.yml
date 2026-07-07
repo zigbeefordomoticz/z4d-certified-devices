@@ -13,34 +13,64 @@ jobs:
   triage:
     if: github.event.label.name == 'ai-triage'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Issue authors usually don't have repo write access.
+          allowed_non_write_users: "*"
+          # track_progress preserves the GitHub context: the triggering issue's
+          # title, body and comments are already available to you — you do NOT
+          # need to fetch them.
           track_progress: true
 
           prompt: |
-            You are triaging a Zigbee device issue for z4d-certified-devices, a repo of
-            per-manufacturer device config files in z4d_certified_devices/Certified/<Manufacturer>/.
+            You are triaging Zigbee device issue #${{ github.event.issue.number }}
+            for z4d-certified-devices, a repo of per-manufacturer device config
+            files in z4d_certified_devices/Certified/<Manufacturer>/. The issue
+            title, body and comments are provided to you as context.
 
-            Budget: at most 3 tool calls (grep/glob/read). Do NOT explore broadly or read Python.
+            First, read the repo conventions so your triage is accurate:
+            1. Read AGENT.md — device JSON format, the TS0601 datapoint (DP) hex
+               key convention, the FakeEp / domo_ep multi-gang pattern, and the
+               "Upstream references" section (zigbee-herdsman-converters and
+               zha-device-handlers) used to identify a device from its Zigbee
+               model / manufacturer id.
+            2. Read CLAUDE.md — the quick-reference reminders.
 
-            Steps:
-            1. From the title/body, extract the device Manufacturer name and Model.
-            2. Grep the Certified/ tree for that model to see if a config already exists.
-            3. Post ONE concise comment (max ~120 words, markdown) with:
-               - **Type:** new-device-request | pairing-issue | wrong-behaviour | question
-               - **Device:** manufacturer / model (or "not specified")
-               - **Config found:** path to the JSON, or "none found"
-               - **Next step:** the single most useful action, OR the exact missing info
-                 to request (e.g. the device's `Model`, `ManufacturerName`, and plugin
-                 "certification" log).
-            Do not propose code changes. If real analysis is needed, say so and stop.
-            - Title: ${{ github.event.issue.title }}
-            - Issue #: ${{ github.event.issue.number }}
+            Then triage:
+            3. From the issue, extract the device Manufacturer name (e.g.
+               `_TZE284_dvosyycn`) and Model (e.g. `TS0601`). If either is
+               missing, note exactly which.
+            4. Grep the Certified/ tree for the model AND the manufacturer id to
+               see whether a config already exists (a manufacturer id may be
+               listed inside another model's `Identifier` array, so search both).
+            5. For a Tuya `TS0601` device, remember the manufacturer id is opaque
+               on its own — the real device type and its datapoints are found by
+               cross-checking the upstream converters (see AGENT.md "Upstream
+               references"); mention this when useful.
+
+            Keep it focused: a handful of Read/Grep/Glob calls is plenty; do not
+            read Python source or explore broadly.
+
+            Post ONE concise comment (max ~150 words, markdown) with:
+            - **Type:** new-device-request | pairing-issue | wrong-behaviour | question
+            - **Device:** manufacturer / model (or "not specified")
+            - **Config found:** path to the JSON, or "none found"
+            - **Next step:** the single most useful action, OR the exact missing
+              info to request (e.g. the device's `Model`, `ManufacturerName`, and
+              the plugin "certification" log), OR — for a new Tuya TS0601 device —
+              a pointer to the matching upstream converter entry if you can
+              identify it.
+
+            Do not propose or make code changes. If real analysis is needed
+            beyond identification, say so and stop.
 
           claude_args: |
-            --max-turns 6
+            --max-turns 25
