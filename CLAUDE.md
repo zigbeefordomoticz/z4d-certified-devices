@@ -25,4 +25,7 @@ build/test/lint commands, and the automated versioning/release flow.
 - CI lints changed JSON files, so keep JSON syntactically valid.
 - Prefer JSON edits over loader changes; if you change the loader, update
   `tests/tests_loader.py`.
+- Multi-gang / DP-based Tuya (TS0601) devices: route each datapoint to its own
+  widget with `domo_ep`, and declare non-physical endpoints in both `Ep` and the
+  top-level `FakeEp`. See the "Multi-gang" note in AGENT.md.
 - Don't open a pull request unless explicitly asked.

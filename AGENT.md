@@ -61,7 +61,7 @@ Each file under `Certified/<Manufacturer>/` describes one device model. The
 accurate and unique across the whole `Certified/` tree.
 
 - Document the TS0601_DP key format explicitly: keys are two-digit lowercase hex representing the Tuya datapoint (DP) index (e.g., DP 101 → "65", DP 37 → "25"), not the decimal DP number. This tripped me up initially — the irrigation valve file's "65", "66", "6f" keys aren't obvious as DP 101/102/111 without doing the hex conversion, and there's no comment anywhere stating the convention.
-- Document the sub-keys used inside a TS0601_DP entry (store_tuya_attribute, sensor_type, action_type) and roughly what each governs, since the loader/plugin-side meaning isn't visible from this repo alone.
+- Document the sub-keys used inside a TS0601_DP entry (store_tuya_attribute, sensor_type, action_type, domo_ep) and roughly what each governs, since the loader/plugin-side meaning isn't visible from this repo alone. `domo_ep` (optional) is the endpoint whose Domoticz widget that datapoint drives; it defaults to the source endpoint (`01`) and is the sub-key that routes one physical device's datapoints to several widgets (see the multi-gang note below).
 - Add a note that action_type is a closed vocabulary interpreted by the Domoticz-Zigbee plugin itself (not this repo) — so a new DP mapping should reuse an existing action_type/sensor_type value where the behavior matches, rather than inventing a new one, unless the plugin actually defines a handler for it. I only discovered the existing vocabulary by grepping across all Tuya files; nothing points an agent there.
 - Suggest a pointer to where action_type values are actually implemented (presumably in the Domoticz-Zigbee plugin repo, not here) — right now there's no way to verify from this repo alone whether a chosen action_type string is real or will silently no-op.
 
@@ -76,6 +76,33 @@ Common keys seen in these files:
   device to this config in `ModelManufMapping`.
 - `MinPluginVersion` (optional) — minimum plugin version required to load this
   config.
+- `FakeEp` (optional) — list of *virtual* endpoints (e.g. `f2`, `f3`) that are
+  declared in `Ep` so they host a widget, but that don't physically exist on the
+  device. The plugin skips binding / reporting / attribute reads on them
+  (`Modules/tools.py:is_fake_ep`). Used to give one physical device several
+  Domoticz widgets.
+
+### Multi-gang / DP-based Tuya (TS0601) switches
+
+Some TS0601 devices expose several sub-devices over the single Tuya `ef00`
+endpoint, each addressed by its own datapoint — e.g. the `TS0601_switch_8`
+8-gang switch (`_TZE284_dvosyycn`), see
+`Certified/Tuya/TS0601-8Gangs-switch.json`. To surface each gang as its own
+Domoticz widget:
+
+- Give each `TS0601_DP` switch entry (`sensor_type`/`action_type` = `"switch"`) a
+  distinct `domo_ep`. That endpoint — not `action_type` — is what
+  disambiguates the gangs.
+- Every `domo_ep` value must be a real key in `Ep` (with a `Type`) so the widget
+  exists. The physical endpoint (`01`) can host the first gang
+  (`domo_ep: "01"`); the remaining gangs use virtual endpoints (`f2`, `f3`, …)
+  that are declared in `Ep` **and** listed in `FakeEp`. A `domo_ep` pointing at
+  an endpoint that appears in neither is a bug — that gang's widget is never
+  updated. See `Certified/LUMI/lumi.switch.acn047.json` for the same pattern.
+- Plugin caveat: independent per-gang *control* requires the Domoticz-Zigbee
+  plugin's `ts0601_actuator` to select the datapoint by the widget endpoint
+  (`domo_ep`), not only by `action_type`; otherwise every gang toggles the first
+  switch datapoint. State reporting works without that change.
 
 When adding or editing a device:
 
