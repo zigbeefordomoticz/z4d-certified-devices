@@ -1,0 +1,60 @@
+{
+    "_comment": "NEO NAS-WV03B Smart sprinkler timer / water valve with flow measurement. Rebrands: Nous L14 (Smart water valve), NEO NAS-WV05B2, NEO NAS-WV05B2-L",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/147",
+    "_dp source": "https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/src/devices/neo.ts",
+    "_version": "0.10",
+    "Identifier": [
+        [ "TS0601", "_TZE204_rzrrjkz2" ],
+        [ "TS0601", "_TZE284_rzrrjkz2" ],
+        [ "TS0601", "_TZE204_uab532m0" ],
+        [ "TS0601", "_TZE284_uab532m0" ],
+        [ "TS0601", "_TZE204_nnhwcvbk" ],
+        [ "TS0601", "_TZE284_nnhwcvbk" ],
+        [ "TS0601", "_TZE204_z7a2jmyy" ],
+        [ "TS0601", "_TZE284_z7a2jmyy" ],
+        [ "TS0601", "_TZE204_4fblxpma" ],
+        [ "TS0601", "_TZE284_4fblxpma" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "ef00": "",
+            "ed00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Switch"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0002", "0004", "0005", "0007", "fffe" ]
+    },
+    "TS0601_DP": {
+        "01": { "store_tuya_attribute": "state", "sensor_type": "switch", "action_type": "switch"},
+        "03": { "store_tuya_attribute": "status"},
+        "05": { "store_tuya_attribute": "countdown"},
+        "06": { "store_tuya_attribute": "countdown_left"},
+        "09": { "store_tuya_attribute": "water_current", "domo_divisor": 1000},
+        "0b": { "sensor_type": "battery"},
+        "0f": { "sensor_type": "water_consumption", "domo_divisor": 1000},
+        "13": { "store_tuya_attribute": "fault"},
+        "25": { "store_tuya_attribute": "weather_delay"},
+        "26": { "store_tuya_attribute": "normal_timer"},
+        "2a": { "store_tuya_attribute": "weather_switch"},
+        "2f": { "store_tuya_attribute": "smart_irrigation"},
+        "65": { "store_tuya_attribute": "water_total_reset"},
+        "66": { "store_tuya_attribute": "quantitative_watering"},
+        "67": { "store_tuya_attribute": "flow_switch"},
+        "68": { "sensor_type": "KeypadLockout", "action_type": "KeypadLockout"},
+        "69": { "store_tuya_attribute": "surplus_flow"},
+        "6a": { "store_tuya_attribute": "single_watering_duration"},
+        "6b": { "store_tuya_attribute": "refresh"},
+        "6c": { "store_tuya_attribute": "single_watering_amount"},
+        "6d": { "store_tuya_attribute": "on_with_countdown"},
+        "6e": { "store_tuya_attribute": "quantitative_water_linkage"}
+    }
+}
