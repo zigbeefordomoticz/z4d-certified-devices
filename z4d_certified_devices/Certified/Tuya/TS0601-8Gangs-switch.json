@@ -1,0 +1,44 @@
+{
+    "_comment": "Tuya/ZYXH 8 Gangs Switch (zigbee-herdsman-converters model TS0601_switch_8). All 8 gangs are on the single Tuya ef00 endpoint, addressed by datapoint: DP1-6 = gang 1-6, DP101 (0x65) = gang 7, DP102 (0x66) = gang 8. Each gang is exposed as its own Domoticz Switch via domo_ep 01..08.",
+    "_source": "https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/src/devices/tuya.ts (model TS0601_switch_8)",
+    "_version": "0.10",
+    "Identifier": [
+        [ "TS0601", "_TZE284_dvosyycn" ],
+        [ "TS0601", "_TZE204_dvosyycn" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "ef00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Switch"
+        },
+        "f2": { "0004": "", "0005": "", "Type": "Switch" },
+        "f3": { "0004": "", "0005": "", "Type": "Switch" },
+        "f4": { "0004": "", "0005": "", "Type": "Switch" },
+        "f5": { "0004": "", "0005": "", "Type": "Switch" },
+        "f6": { "0004": "", "0005": "", "Type": "Switch" },
+        "f7": { "0004": "", "0005": "", "Type": "Switch" },
+        "f8": { "0004": "", "0005": "", "Type": "Switch" }
+    },
+    "FakeEp": [ "f2", "f3", "f4", "f5", "f6", "f7", "f8" ],
+    "Type": "",
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe" ]
+    },
+    "TS0601_DP": {
+        "01": { "store_tuya_attribute": "state_l1", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f1" },
+        "02": { "store_tuya_attribute": "state_l2", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f2" },
+        "03": { "store_tuya_attribute": "state_l3", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f3" },
+        "04": { "store_tuya_attribute": "state_l4", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f4" },
+        "05": { "store_tuya_attribute": "state_l5", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f5" },
+        "06": { "store_tuya_attribute": "state_l6", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f6" },
+        "65": { "store_tuya_attribute": "state_l7", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f7" },
+        "66": { "store_tuya_attribute": "state_l8", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f8" }
+    }
+}
