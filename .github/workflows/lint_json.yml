@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repository (no need for full main branch)
+      # 1️⃣ Checkout repository (full history so super-linter can diff)
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 2   # enough for PR diffs
+          fetch-depth: 0   # super-linter needs full history to detect changed files
 
       # 2️⃣ Get list of changed JSON files
       - name: List changed JSON files
