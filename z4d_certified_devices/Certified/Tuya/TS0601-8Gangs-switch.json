@@ -39,6 +39,8 @@
         "05": { "store_tuya_attribute": "state_l5", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f5" },
         "06": { "store_tuya_attribute": "state_l6", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f6" },
         "65": { "store_tuya_attribute": "state_l7", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f7" },
-        "66": { "store_tuya_attribute": "state_l8", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f8" }
+        "66": { "store_tuya_attribute": "state_l8", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f8" },
+        "c5": { "store_tuya_attribute": "unknown_c5_01" },
+        "bd": { "store_tuya_attribute": "unknown_bd_02" }
     }
 }
