@@ -1,3 +1,4 @@
+
 # AGENT.md
 
 Guidance for AI coding agents (and humans) working in this repository.
@@ -59,6 +60,27 @@ The `self` passed in is the plugin instance; it is expected to provide
 Each file under `Certified/<Manufacturer>/` describes one device model. The
 **filename stem is the model name** used as the `DeviceConf` key, so keep names
 accurate and unique across the whole `Certified/` tree.
+
+### Upstream references for identifying a device
+
+When adding or investigating a device, cross-check it against the two upstream
+open-source integration databases — they are the fastest way to identify what a
+device actually is from its Zigbee model/manufacturer and to discover its
+attributes:
+
+- **zigbee-herdsman-converters** (Zigbee2MQTT) —
+  <https://github.com/Koenkk/zigbee-herdsman-converters>
+- **zha-device-handlers / zha-quirks** (Home Assistant ZHA) —
+  <https://github.com/zigpy/zha-device-handlers>
+
+These are **especially useful for Tuya `TS0601` datapoints (DPs)**: a `TS0601`
+manufacturer id (e.g. `_TZE284_dvosyycn`) is opaque on its own, but grepping the
+converter source for that id reveals the real model, description, and the full
+DP → function map. In zigbee-herdsman-converters the mapping lives in the
+device's `meta.tuyaDatapoints` (`[dp, name, converter]`), e.g. in
+`src/devices/tuya.ts`. Note the **numbering difference**: upstream lists DPs in
+**decimal**, while this repo's `TS0601_DP` keys are **two-digit lowercase hex**
+(DP 101 → `"65"`), so convert when copying a mapping across.
 
 - Document the TS0601_DP key format explicitly: keys are two-digit lowercase hex representing the Tuya datapoint (DP) index (e.g., DP 101 → "65", DP 37 → "25"), not the decimal DP number. This tripped me up initially — the irrigation valve file's "65", "66", "6f" keys aren't obvious as DP 101/102/111 without doing the hex conversion, and there's no comment anywhere stating the convention.
 - Document the sub-keys used inside a TS0601_DP entry (store_tuya_attribute, sensor_type, action_type, domo_ep) and roughly what each governs, since the loader/plugin-side meaning isn't visible from this repo alone. `domo_ep` (optional) is the endpoint whose Domoticz widget that datapoint drives; it defaults to the source endpoint (`01`) and is the sub-key that routes one physical device's datapoints to several widgets (see the multi-gang note below).
