@@ -32,7 +32,7 @@
         "0000": [ "0004", "0000", "0001", "0005", "0007", "fffe" ]
     },
     "TS0601_DP": {
-        "01": { "store_tuya_attribute": "state_l1", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f1" },
+        "01": { "store_tuya_attribute": "state_l1", "sensor_type": "switch", "action_type": "switch", "domo_ep": "01" },
         "02": { "store_tuya_attribute": "state_l2", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f2" },
         "03": { "store_tuya_attribute": "state_l3", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f3" },
         "04": { "store_tuya_attribute": "state_l4", "sensor_type": "switch", "action_type": "switch", "domo_ep": "f4" },
