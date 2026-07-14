@@ -68,6 +68,7 @@
         "PollingCusterff66": 86400,
         "ZLinkyPollingGlobal": 86400,
         "ZLinkyPollingPTEC": 900,
+        "PollingZLinkySTGE": 900,
         "ZLinkyPollingLinkyMode": 0
     }
 }
