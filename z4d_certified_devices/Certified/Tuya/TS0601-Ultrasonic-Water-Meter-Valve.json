@@ -1,0 +1,43 @@
+{
+    "_comment": "Zemismart Ultrasonic Water Meter Valve",
+    "_dp source": "https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/src/devices/tuya.ts (TS0601_water_valve)",
+    "_version": "0.1",
+    "Identifier": [
+        [ "TS0601", "_TZE284_vuwtqx0t" ],
+        [ "TS0601", "_TZE200_vuwtqx0t" ]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "ef00": "",
+            "ed00": "",
+            "000a": "",
+            "0019": "",
+            "Type": "Switch/WaterCounter/Temp"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0004", "0000", "0001", "0002", "0004", "0005", "0007", "fffe" ]
+    },
+    "TS0601_DP": {
+        "01": { "store_tuya_attribute": "water_consumed", "sensor_type": "water_consumption" },
+        "02": { "store_tuya_attribute": "month_consumption" },
+        "03": { "store_tuya_attribute": "daily_consumption" },
+        "04": { "store_tuya_attribute": "report_period" },
+        "05": { "store_tuya_attribute": "faults" },
+        "0d": { "store_tuya_attribute": "state", "sensor_type": "switch", "action_type": "switch" },
+        "0e": { "store_tuya_attribute": "auto_clean" },
+        "10": { "store_tuya_attribute": "meter_id" },
+        "12": { "store_tuya_attribute": "reverse_water_consumed", "EvalExp": "round(value / 1000, 3)" },
+        "15": { "store_tuya_attribute": "flow_rate" },
+        "16": { "store_tuya_attribute": "Temperature", "sensor_type": "temperature", "EvalExp": "round(value / 100, 2)", "domo_round": 2 },
+        "1a": { "store_tuya_attribute": "BatteryVoltage", "EvalExp": "round(value / 100, 2)" }
+    },
+    "Param": {
+    }
+}
