@@ -22,6 +22,10 @@
     "Param": {
         "SmartSwitchBackLight": 1,
         "SmartSwitchIndicateLight": 1,
-        "PowerOnAfterOffOn": 0
+        "TuyaE001PowerOnBehavior01": "previous",
+        "TuyaE001PowerOnBehavior02": "previous",
+        "TuyaE001PowerOnBehavior03": "previous",
+        "TuyaE001PowerOnBehavior04": "previous"
+
     }
 }
