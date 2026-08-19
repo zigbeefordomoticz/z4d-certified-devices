@@ -1,0 +1,39 @@
+{
+    "_comment": "Tuya Temp/Humi sensor with LCD backlit display ( Nous E6 )",
+    "_source": "https://github.com/zigpy/zha-device-handlers/issues/1702, https://github.com/zigpy/zha-device-handlers/issues/3477",
+    "_blakadder": "https://zigbee.blakadder.com/Nous_E6.html",
+    "Identifier": [
+        [ "TS0601", "_TZE284_wtikaxzs"],
+        [ "TS0601", "_TZE200_nnrfa68v"],
+        [ "TS0601", "_TZE200_zppcgbdj"],
+        [ "TS0601", "_TZE200_wtikaxzs"]
+    ],
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0004": "",
+            "0005": "",
+            "0019": "",
+            "Type": "Temp/Humi"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000"],
+    "ConfigureReporting": {
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0000", "0001", "0007", "ffe2", "ffe4", "ffdf", "fffe" ],
+        "0019": [],
+        "ef00": []
+    },
+    "TS0601_DP": {
+        "01": { "sensor_type": "temperature", "EvalExp": "round(value/10,1)", "domo_round": 1 },
+        "02": { "sensor_type": "humidity" },
+        "04": { "sensor_type": "battery" },
+        "09": { "store_tuya_attribute": "temperature_unit" }
+    },
+    "Param": {
+    },
+    "BatteryPercentageConverter": 2,
+    "BatteryDevice": 1
+}
