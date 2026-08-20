@@ -19,6 +19,7 @@
             "Type": "Temp"
         }
     },
+    "FakeEp": [ "f1" ],
     "Type": "",
     "ClusterToBind": [ "0000" ],
     "ConfigureReporting": {},
