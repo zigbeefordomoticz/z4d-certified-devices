@@ -1,5 +1,5 @@
 {
-    "_comment": "Sonoff Zigbee smart water valve (battery, no flow meter)",
+    "_comment": "Sonoff Zigbee smart water valve (battery). No native flow-meter cluster; the Flow widget is fed from the fc11 RealtimeIrrigationVolume attribute (liters dispensed during the current session), not an instantaneous rate.",
     "_version": "1.0",
     "_blakadder": "",
     "_source": "Pipiche",
@@ -15,7 +15,7 @@
             "fc11": { "Attributes": {
                 "0000": { "SpecifStoragelvl1": "Sonoff", "Name": "ChildLock", "DataType": "10", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "5006": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationDuration", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute"] },
-                "5007": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationVolume", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "5007": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationVolume", "DataType": "23", "DomoClusterType": "Flow", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                 "500c": { "SpecifStoragelvl1": "Sonoff", "Name": "ValveAbnormalState", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "5014": { "SpecifStoragelvl1": "Sonoff", "Name": "RainDelayEndDatetime", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "501b": { "SpecifStoragelvl1": "Sonoff", "Name": "HourIrrigationVolume", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
@@ -27,7 +27,7 @@
                 "5021": { "SpecifStoragelvl1": "Sonoff", "Name": "UnitOfWaterFlow", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] }}
             },
             "0019": "",
-            "Type": "Voltage/Switch"
+            "Type": "Flow/Voltage/Switch"
         }
     },
     "Type": "",
