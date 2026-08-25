@@ -1,0 +1,54 @@
+{
+    "_comment": "Sonoff Zigbee smart water valve (battery, no flow meter)",
+    "_version": "1.0",
+    "_blakadder": "",
+    "_source": "Pipiche",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "0006": "",
+            "0020": "",
+            "0500": "",
+            "fc57": "",
+            "fc11": { "Attributes": {
+                "0000": { "SpecifStoragelvl1": "Sonoff", "Name": "ChildLock", "DataType": "10", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "5006": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationDuration", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute"] },
+                "5007": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationVolume", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "500c": { "SpecifStoragelvl1": "Sonoff", "Name": "ValveAbnormalState", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "5014": { "SpecifStoragelvl1": "Sonoff", "Name": "RainDelayEndDatetime", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "501b": { "SpecifStoragelvl1": "Sonoff", "Name": "HourIrrigationVolume", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "501c": { "SpecifStoragelvl1": "Sonoff", "Name": "HourIrrigationDuration", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "501d": { "SpecifStoragelvl1": "Sonoff", "Name": "ManualDefaultSettings", "DataType": "48", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "501e": { "SpecifStoragelvl1": "Sonoff", "Name": "SeasonalWateringAdjustment", "DataType": "48", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "501f": { "SpecifStoragelvl1": "Sonoff", "Name": "IrrigationScheduleStatus", "DataType": "48", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "5020": { "SpecifStoragelvl1": "Sonoff", "Name": "ValveAlarmSettings", "DataType": "48", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "5021": { "SpecifStoragelvl1": "Sonoff", "Name": "UnitOfWaterFlow", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] }}
+            },
+            "0019": "",
+            "Type": "Voltage/Switch"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0001", "0020", "fc11" ],
+    "ConfigureReporting": {
+        "0006": { "0000": { "Change": "01", "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" }},
+        "0001": { "0021": { "Change": "02", "DataType": "20", "MaxInterval": "06cc", "MinInterval": "0654", "TimeOut": "0000" }}
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0003", "0004", "0005", "0006", "0007", "0011", "4000", "fffd" ],
+        "0001": [ "0020", "0021", "fffd" ],
+        "0006": [ "0000", "fffd" ],
+        "0500": [ "0000", "0001", "0002", "0010" ],
+        "0019": [],
+        "fc57": [],
+        "fc11": [ "0000", "500c", "5006", "5007", "5014", "501b", "501c", "501d", "501e", "501f", "5020", "5021" ]
+    },
+    "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
+    "Param": {
+        "SONOFF_REALTIME_IRRIGATION_VOLUME": 0,
+        "SONOFF_REALTIME_IRRIGATION_DURATION": 0
+    }
+}
