@@ -1,0 +1,33 @@
+{
+    "_comment": "NodOn Zigbee 3.0 Compteur Energie Intelligent (Smart Energy Meter)",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=14778",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0702": "",
+            "0b04": "",
+            "0b05": "",
+            "0019": "",
+            "Type": "Power/Meter/Ampere"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0000", "0003", "0702", "0b04", "0b05" ],
+    "ConfigureReporting": {
+        "0b04": {
+            "Attributes": {
+                "0505": { "DataType": "21", "MinInterval": "0001", "MaxInterval": "012c", "TimeOut": "0000", "Change": "0001" },
+                "0508": { "DataType": "21", "MinInterval": "0001", "MaxInterval": "012c", "TimeOut": "0000", "Change": "0001" },
+                "050b": { "DataType": "29", "MinInterval": "0005", "MaxInterval": "012c", "TimeOut": "0000", "Change": "0001" }
+            }
+        }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0007", "0010", "4000", "fffd" ],
+        "0702": [ "0000", "0001", "0200", "0300", "0301", "0302", "0303", "0306", "fffd" ],
+        "0b04": [ "0510", "0505", "0300", "0400", "0401", "0402", "0403", "0508", "050b", "050f", "0600", "0601", "0602", "0603", "0604", "0605", "fffd" ],
+        "0019": []
+    },
+    "Param": {}
+}
