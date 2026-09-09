@@ -14,8 +14,8 @@
             "fc57": "",
             "fc11": { "Attributes": {
                 "0000": { "SpecifStoragelvl1": "Sonoff", "Name": "ChildLock", "DataType": "10", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                "5006": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationDuration", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute"] },
-                "5007": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationVolume", "DataType": "23", "UpdDomoDeviceWithCluster": "0404", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                "5006": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationDuration", "DataType": "23", "EvalExp": "value if Source == '8100' else (((value & 0xFF) << 24) | ((value & 0xFF00) << 8) | (( value >> 8) & 0xFF00) | ((value >> 24) & 0xFF))", "ActionList": [ "check_store_value", "store_specif_attribute"] },
+                "5007": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationVolume", "DataType": "23", "UpdDomoDeviceWithCluster": "WaterCounter", "EvalExp": "value if Source == '8100' else (((value & 0xFF) << 24) | (( value & 0xFF00) << 8) | ((value >> 8) & 0xFF00) | ((value >> 24) & 0xFF))", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                 "500c": { "SpecifStoragelvl1": "Sonoff", "Name": "ValveAbnormalState", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "5014": { "SpecifStoragelvl1": "Sonoff", "Name": "RainDelayEndDatetime", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "501b": { "SpecifStoragelvl1": "Sonoff", "Name": "HourIrrigationVolume", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
@@ -27,7 +27,7 @@
                 "5021": { "SpecifStoragelvl1": "Sonoff", "Name": "UnitOfWaterFlow", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] }}
             },
             "0019": "",
-            "Type": "Flow/Voltage/Switch"
+            "Type": "WaterCounter/Switch"
         }
     },
     "Type": "",
