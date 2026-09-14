@@ -1,5 +1,5 @@
 {
-    "_comment": "Sonoff Zigbee smart water valve (battery). No native flow-meter cluster; the WaterCounter widget is fed from the fc11 RealtimeIrrigationVolume attribute (liters dispensed during the current session). A manual On is a single irrigation session (fc11/501d) that the valve ends by itself after SONOFF_SWV_MANUAL_IRRIGATION_DURATION minutes (device default 2, max 719; set to 5 here). The TextStatus widget and the log show the decoded irrigation status (fc11/501f) on every change and otherwise at most every SONOFF_SWV_STATUS_REPORT_INTERVAL seconds. Optional Params: SONOFF_SWV_MANUAL_IRRIGATION_MODE (duration|capacity|duration_with_interval, the latter with SONOFF_SWV_MANUAL_IRRIGATION_TOTAL_DURATION 1-719 and SONOFF_SWV_MANUAL_IRRIGATION_INTERVAL 1-60 min, burst 3-60 min), SONOFF_SWV_MANUAL_IRRIGATION_AMOUNT (0-10000), SONOFF_SWV_MANUAL_IRRIGATION_AMOUNT_UNIT (liter|us_gallon), SONOFF_SWV_MANUAL_FAIL_SAFE (0-719 min), SONOFF_SWV_ALARM_WATER_SHORTAGE / SONOFF_SWV_ALARM_WATER_LEAK / SONOFF_SWV_WATER_SHORTAGE_AUTO_CLOSE (0|1), SONOFF_SWV_ALARM_WATER_SHORTAGE_DURATION (1-10 min), SONOFF_SWV_ALARM_WATER_LEAK_DURATION (1-3 min), SONOFF_SWV_WATER_FLOW_UNIT (liter|us_gallon|imperial_gallon, firmware >= 1.1.0), SONOFF_CHILD_LOCK (0|1), SONOFF_SWV_IRRIGATION_PLAN (dict or list of plans, irrigation_duration >= 3 min or the valve drops it silently), SONOFF_SWV_IRRIGATION_PLAN_REMOVE (plan index).",
+    "_comment": "Sonoff Zigbee smart water valve (battery). No native flow-meter cluster; the WaterCounter (incremental counter), Flow (L/min), WaterVolume (liters irrigated today) widgets are all computed from the fc11/501f irrigation status reports; fc11/5007 RealtimeIrrigationVolume is a per-session total re-reported on reads, so it is only stored. A manual On is a single irrigation session (fc11/501d) that the valve ends by itself after SONOFF_SWV_MANUAL_IRRIGATION_DURATION minutes (device default 2, max 719; set to 5 here). The TextStatus widget and the log show the decoded irrigation status (fc11/501f) on every change and otherwise at most every SONOFF_SWV_STATUS_REPORT_INTERVAL seconds. The Flow widget (L/min) is computed from the running fc11/501f reports over SONOFF_SWV_FLOW_RATE_INTERVAL seconds (default 60; the amount resolution is 1 L so a shorter window is noisier) and set to 0 when the session ends. The WaterVolume widget (Custom sensor, L) shows the volume irrigated today, computed by the plugin from the fc11/501f reports (sessions ended today plus the running one; the valve's fc11/500f DailyIrrigationVolume is only stored, it was seen not to follow the sessions). Optional Params: SONOFF_SWV_MANUAL_IRRIGATION_MODE (duration|capacity|duration_with_interval, the latter with SONOFF_SWV_MANUAL_IRRIGATION_TOTAL_DURATION 1-719 and SONOFF_SWV_MANUAL_IRRIGATION_INTERVAL 1-60 min, burst 3-60 min), SONOFF_SWV_MANUAL_IRRIGATION_AMOUNT (0-10000), SONOFF_SWV_MANUAL_IRRIGATION_AMOUNT_UNIT (liter|us_gallon), SONOFF_SWV_MANUAL_FAIL_SAFE (0-719 min), SONOFF_SWV_ALARM_WATER_SHORTAGE / SONOFF_SWV_ALARM_WATER_LEAK / SONOFF_SWV_WATER_SHORTAGE_AUTO_CLOSE (0|1), SONOFF_SWV_ALARM_WATER_SHORTAGE_DURATION (1-10 min), SONOFF_SWV_ALARM_WATER_LEAK_DURATION (1-3 min), SONOFF_SWV_WATER_FLOW_UNIT (liter|us_gallon|imperial_gallon, firmware >= 1.1.0), SONOFF_CHILD_LOCK (0|1), SONOFF_SWV_IRRIGATION_PLAN (dict or list of plans, irrigation_duration >= 3 min or the valve drops it silently), SONOFF_SWV_IRRIGATION_PLAN_REMOVE (plan index).",
     "_version": "1.0",
     "_blakadder": "",
     "_source": "Pipiche",
@@ -15,19 +15,20 @@
             "fc11": { "Attributes": {
                 "0000": { "SpecifStoragelvl1": "Sonoff", "Name": "ChildLock", "DataType": "10", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "5006": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationDuration", "DataType": "23", "EvalExp": "value if Source == '8100' else (((value & 0xFF) << 24) | ((value & 0xFF00) << 8) | (( value >> 8) & 0xFF00) | ((value >> 24) & 0xFF))", "ActionList": [ "check_store_value", "store_specif_attribute"] },
-                "5007": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationVolume", "DataType": "23", "UpdDomoDeviceWithCluster": "WaterCounter", "EvalExp": "value if Source == '8100' else (((value & 0xFF) << 24) | (( value & 0xFF00) << 8) | ((value >> 8) & 0xFF00) | ((value >> 24) & 0xFF))", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                "5007": { "SpecifStoragelvl1": "Sonoff", "Name": "RealtimeIrrigationVolume", "DataType": "23", "EvalExp": "value if Source == '8100' else (((value & 0xFF) << 24) | (( value & 0xFF00) << 8) | ((value >> 8) & 0xFF00) | ((value >> 24) & 0xFF))", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
+                "500f": { "SpecifStoragelvl1": "Sonoff", "Name": "DailyIrrigationVolume", "DataType": "23", "EvalExp": "value if Source == '8100' else (((value & 0xFF) << 24) | (( value & 0xFF00) << 8) | ((value >> 8) & 0xFF00) | ((value >> 24) & 0xFF))", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "500c": { "SpecifStoragelvl1": "Sonoff", "Name": "ValveAbnormalState", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "5014": { "SpecifStoragelvl1": "Sonoff", "Name": "RainDelayEndDatetime", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "501b": { "SpecifStoragelvl1": "Sonoff", "Name": "HourIrrigationVolume", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "501c": { "SpecifStoragelvl1": "Sonoff", "Name": "HourIrrigationDuration", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "501d": { "SpecifStoragelvl1": "Sonoff", "Name": "ManualDefaultSettings", "DataType": "48", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "501e": { "SpecifStoragelvl1": "Sonoff", "Name": "SeasonalWateringAdjustment", "DataType": "48", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                "501f": { "SpecifStoragelvl1": "Sonoff", "SpecifStoragelvl2": "IrrigationScheduleStatus", "Name": "IrrigationScheduleStatus", "DataType": "48", "UpdDomoDeviceWithCluster": "TextStatus", "EvalFunc": "sonoff_swv_irrigation_schedule_status", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                "501f": { "SpecifStoragelvl1": "Sonoff", "SpecifStoragelvl2": "IrrigationScheduleStatus", "Name": "IrrigationScheduleStatus", "DataType": "48", "UpdDomoDeviceWithCluster": "TextStatus/Flow/WaterVolume/WaterCounter", "EvalFunc": "sonoff_swv_irrigation_schedule_status", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                 "5020": { "SpecifStoragelvl1": "Sonoff", "Name": "ValveAlarmSettings", "DataType": "48", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                 "5021": { "SpecifStoragelvl1": "Sonoff", "Name": "UnitOfWaterFlow", "DataType": "20", "ActionList": [ "check_store_value", "store_specif_attribute" ] }}
             },
             "0019": "",
-            "Type": "WaterCounter/Switch/TextStatus"
+            "Type": "WaterCounter/Switch/TextStatus/Flow/WaterVolume"
         }
     },
     "Type": "",
@@ -49,6 +50,6 @@
     "BatteryPercentageConverter": 2,
     "Param": {
         "SONOFF_SWV_MANUAL_IRRIGATION_DURATION": 5,
-        "SONOFF_SWV_STATUS_REPORT_INTERVAL": 300
+        "SONOFF_SWV_STATUS_REPORT_INTERVAL": 300, "SONOFF_SWV_FLOW_RATE_INTERVAL": 60
     }
 }
