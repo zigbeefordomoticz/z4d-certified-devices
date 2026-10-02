@@ -3,7 +3,7 @@
     "_source": "https://easydomoticz.com/forum/viewtopic.php?p=127517#p127517",
     "_documentation": "https://docs.bituo-technik.com/device-api/spm-sdm-zigbee-cluster-reference",
     "_z2m": "https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/src/devices/bituo_technik.ts",
-    "_version": "0.1",
+    "_version": "0.2",
     "Ep": {
         "01": {
             "0000": "",
@@ -11,7 +11,14 @@
             "0019": "",
             "0702": {
                 "Attributes": {
-                    "0001": { "Name": "CurrentSummationReceived", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0001", "ActionList": [ "check_store_value", "upd_domo_device" ] }
+                    "0001": { "Name": "CurrentSummationReceived", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0001", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+
+                    "0100": { "Name": "CurrentTier1SummationDelivered", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0000", "UpdDomoDeviceWithEp": "f1", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0101": { "Name": "CurrentTier1SummationReceived", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0001", "UpdDomoDeviceWithEp": "f1", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0102": { "Name": "CurrentTier2SummationDelivered", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0000", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0103": { "Name": "CurrentTier2SummationReceived", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0001", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0104": { "Name": "CurrentTier3SummationDelivered", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0000", "UpdDomoDeviceWithEp": "f3", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0105": { "Name": "CurrentTier3SummationReceived", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0001", "UpdDomoDeviceWithEp": "f3", "ActionList": [ "check_store_value", "upd_domo_device" ] }
                 }
             },
             "0b04": {
@@ -41,9 +48,9 @@
             "0b05": "",
             "Type": "Meter/ProdMeter/Ampere3"
         },
-        "f1": { "Type": "Power/Voltage/PowerFactor" },
-        "f2": { "Type": "Power/Voltage/PowerFactor" },
-        "f3": { "Type": "Power/Voltage/PowerFactor" }
+        "f1": { "Type": "Power/Voltage/PowerFactor/ConsoMeter/ProdMeter" },
+        "f2": { "Type": "Power/Voltage/PowerFactor/ConsoMeter/ProdMeter" },
+        "f3": { "Type": "Power/Voltage/PowerFactor/ConsoMeter/ProdMeter" }
     },
     "FakeEp": [ "f1", "f2", "f3" ],
     "Type": "",
