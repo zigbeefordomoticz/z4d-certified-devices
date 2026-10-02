@@ -1,0 +1,65 @@
+{
+    "_comment": "BITUO TECHNIK SDM01W-U01 / SDM01-TZM-xx-U01, 3P+N energy meter (Zigbee + RS485). Firmware reports power in W while advertising ACPowerDivisor 1000 (see zigbee2mqtt#19705), hence ActivePowerDivisor 1",
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?p=127517#p127517",
+    "_documentation": "https://docs.bituo-technik.com/device-api/spm-sdm-zigbee-cluster-reference",
+    "_z2m": "https://github.com/Koenkk/zigbee-herdsman-converters/blob/master/src/devices/bituo_technik.ts",
+    "_version": "0.1",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0019": "",
+            "0702": {
+                "Attributes": {
+                    "0001": { "Name": "CurrentSummationReceived", "DataType": "25", "EvalFunc": "compute_metering_conso", "UpdDomoDeviceWithAttribute": "0001", "ActionList": [ "check_store_value", "upd_domo_device" ] }
+                }
+            },
+            "0b04": {
+                "Attributes": {
+                    "0304": { "Name": "TotalActivePower", "DataType": "2b", "EvalFunc": "compute_electrical_measurement_conso", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+
+                    "0505": { "Name": "RMSVoltage", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithCluster": "0001", "UpdDomoDeviceWithEp": "f1", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0508": { "Name": "RMSCurrent", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "050b": { "Name": "ActivePower", "DataType": "29", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithEp": "f1", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0510": { "Name": "PowerFactor", "DataType": "28", "UpdDomoDeviceWithCluster": "PWFactor", "UpdDomoDeviceWithEp": "f1", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+
+                    "0905": { "Name": "RMSVoltagePhB", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithCluster": "0001", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0908": { "Name": "RMSCurrentPhB", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0908", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "090b": { "Name": "ActivePowerPhB", "DataType": "29", "EvalExp": "(value)", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "090e": { "Name": "ReactivePowerPhB", "DataType": "29", "ActionList": [ "check_store_value" ] },
+                    "090f": { "Name": "ApparentPowerPhB", "DataType": "21", "ActionList": [ "check_store_value" ] },
+                    "0910": { "Name": "PowerFactorPhB", "DataType": "28", "UpdDomoDeviceWithCluster": "PWFactor", "UpdDomoDeviceWithEp": "f2", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+
+                    "0a05": { "Name": "RMSVoltagePhC", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithCluster": "0001", "UpdDomoDeviceWithEp": "f3", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0a08": { "Name": "RMSCurrentPhC", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0a08", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0a0b": { "Name": "ActivePowerPhC", "DataType": "29", "EvalExp": "(value)", "UpdDomoDeviceWithEp": "f3", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                    "0a0e": { "Name": "ReactivePowerPhC", "DataType": "29", "ActionList": [ "check_store_value" ] },
+                    "0a0f": { "Name": "ApparentPowerPhC", "DataType": "21", "ActionList": [ "check_store_value" ] },
+                    "0a10": { "Name": "PowerFactorPhC", "DataType": "28", "UpdDomoDeviceWithCluster": "PWFactor", "UpdDomoDeviceWithEp": "f3", "ActionList": [ "check_store_value", "upd_domo_device" ] }
+                }
+            },
+            "0b05": "",
+            "Type": "Meter/ProdMeter/Ampere3"
+        },
+        "f1": { "Type": "Power/Voltage/PowerFactor" },
+        "f2": { "Type": "Power/Voltage/PowerFactor" },
+        "f3": { "Type": "Power/Voltage/PowerFactor" }
+    },
+    "FakeEp": [ "f1", "f2", "f3" ],
+    "Type": "",
+    "ClusterToBind": [ "0702", "0b04" ],
+    "ConfigureReporting": {},
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "4000" ],
+        "0702": [ "0301", "0302", "0000", "0001", "0100", "0101", "0102", "0103", "0104", "0105" ],
+        "0b04": [ "0400", "0401", "0600", "0601", "0602", "0603", "0604", "0605", "0300", "0304", "0305", "0306",
+                  "0505", "0508", "050b", "050e", "050f", "0510",
+                  "0905", "0908", "090b", "090e", "090f", "0910",
+                  "0a05", "0a08", "0a0b", "0a0e", "0a0f", "0a10" ]
+    },
+    "Param": {
+        "ActivePowerDivisor": 1,
+        "InstantPowerCluster": "0b04",
+        "InstantPowerAttribute": "0304"
+    }
+}
