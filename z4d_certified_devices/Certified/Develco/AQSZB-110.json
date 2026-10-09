@@ -1,26 +1,34 @@
 {
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1448",
     "_blakadder": "https://zigbee.blakadder.com/Aqara_AAQS-S01.html",
+    "_description": "Develco / frient Air Quality Sensor AQSZB-110 (temperature, humidity, VOC)",
+    "_version": "0.2",
     "Identifier" : [ 
-        ["AQSZB-110", "Develco Products A/S"] 
+        ["AQSZB-110", "Develco Products A/S"],
+        ["AQSZB-110", "frient A/S"]
     ],
     "Ep": {
-        "0000": "",
-        "0001": "",
-        "0003": "",
-        "000a": "",
-        "0019": "",
-        "0020": "",
-        "0402": "",
-        "0405": "",
-        "fc03": { "Attributes": {
-            "0000": {
-                "Name": "VOC",
-                "DataType": "21",
-                "UpdDomoDeviceWithCluster": "000c",
-                "ActionList": [ "check_store_value", "upd_domo_device" ]
-            }}},
-        "Type": "Temp/Humi/Voc"
+        "01": {
+            "Type": ""
+        },
+        "26": {
+            "0000": "",
+            "0001": "",
+            "0003": "",
+            "000a": "",
+            "0019": "",
+            "0020": "",
+            "0402": "",
+            "0405": "",
+            "fc03": { "Attributes": {
+                "0000": {
+                    "Name": "VOC",
+                    "DataType": "21",
+                    "UpdDomoDeviceWithCluster": "000c",
+                    "ActionList": [ "check_store_value", "upd_domo_device" ]
+                }}},
+            "Type": "Temp/Humi/Voc"
+        }
     },
     "Type": "",
     "ClusterToBind": [ "0001", "0402", "0405", "fc03" ],
