@@ -1,7 +1,7 @@
 {
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/150",
-    "_description": "Aqara Single Switch Module T1 (With Neutral) DLKZMK11LM - newer firmware reports lumi.switch.n0acn2 instead of lumi.switch.n0agl1 on otherwise identical hardware",
-    "_version": "0.1",
+    "_description": "Aqara Single Switch Module T1 (With Neutral) DLKZMK11LM - same hardware as lumi.switch.n0agl1 (SSM-U01), newer/CN firmware reports lumi.switch.n0acn2",
+    "_version": "0.2",
     "Ep": {
         "01": {
             "0000": {
@@ -25,29 +25,36 @@
             "0006": "",
             "0009": "",
             "000a": "",
-            "fcc0": "",
-            "Type": "Alarm/Switch/Temp"
+            "0019": "",
+            "fcc0": {
+                "Attributes": {
+                    "00f7": { "Enabled": true, "Name": "Lumi_00f7", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
+                }
+            },
+            "Type": "Switch/Alarm/Temp/Power/Meter"
         },
         "15": {
             "000c": "",
-            "Type": "Power"
+            "Type": ""
         },
         "29": {
-            "0012": "",
             "0000": "",
+            "0012": "",
             "Type": ""
         },
         "1f": {
             "000c": "",
-            "Type": "Meter"
+            "Type": ""
         },
         "f2": {
-            "0021": ""
+            "0021": "",
+            "Type": ""
         }
     },
     "Type": "",
     "ClusterToBind": [ "0006", "0002", "0009", "000c" ],
     "ConfigureReporting": {
+        "0006": { "Attributes": { "0000": { "DataType": "10", "MinInterval": "0000", "MaxInterval": "ffff", "TimeOut": "0fff", "Change": "01" } } },
         "0002": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "0005", "MaxInterval": "012c", "TimeOut": "0000", "Change": "0010" } } }
     },
     "ReadAttributes": {
@@ -55,6 +62,12 @@
         "0002": [ "0000" ],
         "0006": [ "0000" ],
         "0009": [ "0000" ],
-        "000c": [ "0055" ]
+        "000c": [ "0055" ],
+        "fcc0": [ "00f7" ]
+    },
+    "XIAOMI_METER_EP": "01",
+    "XIAOMI_POWER_EP": "01",
+    "Param": {
+        "AqaraOppleMode": 1
     }
 }
