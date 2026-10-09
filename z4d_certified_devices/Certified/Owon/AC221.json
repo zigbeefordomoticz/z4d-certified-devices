@@ -56,14 +56,14 @@
                     "MaxInterval": "005a",
                     "TimeOut": "0000",
                     "Change": "00"
+                },
+                "0001": {
+                    "DataType": "30",
+                    "MinInterval": "0003",
+                    "MaxInterval": "005a",
+                    "TimeOut": "0000",
+                    "Change": "00"
                 }
-            },
-            "0001": {
-                "DataType": "30",
-                "MinInterval": "0003",
-                "MaxInterval": "005a",
-                "TimeOut": "0000",
-                "Change": "00"
             }
         }
     },
