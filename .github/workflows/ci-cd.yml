@@ -32,11 +32,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
 
+      # Only the tests gate the release. Lint runs on every push and pull
+      # request in tests.yml, but a style nit must not be able to block
+      # publishing device configs -- and pytest imports the package, so a real
+      # syntax or name error still fails here.
       - name: Run test suite
         run: pytest
-
-      - name: Lint Python
-        run: flake8 z4d_certified_devices tests
 
   # ─────────────────────────────────────────────
   # JOB 1 — Bump MINOR_VERSION and commit
