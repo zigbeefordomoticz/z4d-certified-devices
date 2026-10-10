@@ -13,3 +13,6 @@ dist/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Tooling state
+.rtk/
