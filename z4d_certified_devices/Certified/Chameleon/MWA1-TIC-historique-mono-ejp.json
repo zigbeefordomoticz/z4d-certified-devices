@@ -49,7 +49,7 @@
         "0b04": {
             "Attributes": {
                 "0508": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
-                "0304": { "DataType": "2b", "MinInterval": "000E", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" }
+                "0304": { "DataType": "2b", "MinInterval": "000E", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "00000001" }
             }
         }
     },

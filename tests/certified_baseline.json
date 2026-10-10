@@ -16,9 +16,6 @@
       "ra-duplicate-attribute ReadAttributes.0702[41]",
       "ra-duplicate-attribute ReadAttributes.0b04[31]"
     ],
-    "Chameleon/MWA1-TIC-historique-mono-ejp.json": [
-      "cr-change-width ConfigureReporting.0b04.Attributes.0304.Change"
-    ],
     "GammaTroniques/TICMeter.json": [
       "ra-attribute-id-case ReadAttributes.0b04[10]",
       "ra-attribute-id-case ReadAttributes.0b04[8]",
@@ -42,9 +39,6 @@
     ],
     "Icasa/ICZB-R12D.json": [
       "ra-attribute-id-case ReadAttributes.0b04[1]"
-    ],
-    "Ikea/STARKVIND Air purifier.json": [
-      "cr-change-width ConfigureReporting.fc7d.Attributes.0000.Change"
     ],
     "Ikea/TRADFRIbulbE14WWclear250lm.json": [
       "cr-change-ignored ConfigureReporting.0006.Attributes.0000.Change"
@@ -113,20 +107,11 @@
     "Tuya/TS0046.json": [
       "ra-duplicate-attribute ReadAttributes.0000[8]"
     ],
-    "Tuya/TS0202-WHD02.json": [
-      "cr-change-width ConfigureReporting.0001.Attributes.0021.Change"
-    ],
     "Tuya/TS0205.json": [
       "ra-duplicate-attribute ReadAttributes.0001[1]"
     ],
     "Tuya/TS0210.json": [
       "ra-duplicate-attribute ReadAttributes.0500[5]"
-    ],
-    "Tuya/TS0215A-sos.json": [
-      "cr-change-width ConfigureReporting.0001.Attributes.0021.Change"
-    ],
-    "Tuya/TS0219.json": [
-      "cr-change-width ConfigureReporting.0001.Attributes.0021.Change"
     ],
     "Tuya/TS0601-Irrigation-Valve.json": [
       "ra-duplicate-attribute ReadAttributes.0000[4]"
