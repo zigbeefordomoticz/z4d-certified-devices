@@ -74,14 +74,8 @@
       "ra-duplicate-attribute ReadAttributes.0702[41]",
       "ra-duplicate-attribute ReadAttributes.0b04[31]"
     ],
-    "Sonoff/CK-BL702-SWP-01(7020).json": [
-      "ra-attributes-not-a-list ReadAttributes.0b04"
-    ],
     "Sonoff/SWV.json": [
       "ra-duplicate-attribute ReadAttributes.fc11[8]"
-    ],
-    "Sunricher/HK-SL-DIM-A.json": [
-      "cr-interval-order ConfigureReporting.0b04.Attributes.0508"
     ],
     "Tuya/TS0002.json": [
       "ra-duplicate-attribute ReadAttributes.0000[5]"
