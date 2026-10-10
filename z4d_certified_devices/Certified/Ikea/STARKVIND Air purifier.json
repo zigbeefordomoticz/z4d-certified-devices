@@ -26,7 +26,7 @@
     "ConfigureReporting": {
         "fc7d": { 
             "Attributes": {
-                "0000": { "ManufSpecific": "117c", "DataType": "23", "MinInterval": "0001", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "01" },
+                "0000": { "ManufSpecific": "117c", "DataType": "23", "MinInterval": "0001", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "00000001" },
                 "0001": { "ManufSpecific": "117c", "DataType": "20", "MinInterval": "0001", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "01" },
                 "0002": { "ManufSpecific": "117c", "DataType": "23", "MinInterval": "0001", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "00000001" },
                 "0003": { "ManufSpecific": "117c", "DataType": "10", "MinInterval": "0001", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "01" },
