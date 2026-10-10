@@ -59,8 +59,8 @@
     "Type": "",
     "ClusterToBind": [ "0006", "000f" ],
     "ConfigureReporting": {
-        "0006": { "0000": { "Change": "01", "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" }},
-        "000f": { "0055": { "Change": "01", "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" }}
+        "0006": { "Attributes": { "0000": { "Change": "01", "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" }} },
+        "000f": { "Attributes": { "0055": { "Change": "01", "DataType": "10", "MaxInterval": "012c", "MinInterval": "0001", "TimeOut": "0000" }} }
     },
     "ReadAttributes": {
         "0000": [],

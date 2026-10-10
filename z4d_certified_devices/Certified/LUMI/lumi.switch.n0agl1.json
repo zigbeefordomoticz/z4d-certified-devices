@@ -1,7 +1,7 @@
 {
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13839",
-    "_description": "Aqara single switch module T1 (with neutral)",
-    "_version": "0.1",
+    "_description": "Aqara single switch module T1 (with neutral) SSM-U01",
+    "_version": "0.2",
     "Ep": {
         "01": {
             "0000": { 
@@ -11,12 +11,23 @@
                     "ff02": { "Enabled": true, "Name": "Aqara_0000_ff02", "DataType": "4c" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}  
                 }
             },
+            "0002": {
+                "Attributes": {
+                    "0000": {
+                        "Enabled": true,
+                        "Name": "CurrentTemperature",
+                        "DomoClusterType": "Temp",
+                        "UpdDomoDeviceWithCluster": "0402",
+                        "ActionList": [ "check_store_value", "upd_domo_device" ] }}},
             "0004": "",
             "0006": "",
-            "0702": "",
-            "0b04": "",
             "0019": "",
-            "Type": "Switch"
+            "fcc0": {
+                "Attributes": {
+                    "00f7": { "Enabled": true, "Name": "Lumi_00f7", "DataType": "20" , "ManufRawData": true, "ManufSpecificFunc": "Lumi_fcc0", "ActionList": [ "check_store_value"]}
+                }
+            },
+            "Type": "Switch/Temp"
         },
         "15": {
             "000c": "",
@@ -32,17 +43,21 @@
             "Type": "Meter"
         },
         "f2": {
-            "0021": ""
+            "0021": "",
+            "Type": ""
         }
     },
     "Type": "",
-    "ClusterToBind": [ "0006", "0702", "0b04" ],
-    "ConfigureReporting": {},
+    "ClusterToBind": [ "0006", "0002", "000c" ],
+    "ConfigureReporting": {
+        "0002": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "0005", "MaxInterval": "012c", "TimeOut": "0000", "Change": "0010" } } }
+    },
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007" ],
+        "0002": [ "0000" ],
         "0006": [ "0000", "4001", "4002" ],
-        "0702": [ "0000", "0200", "0301", "0302", "0303", "0306" ],
-        "0b04": [ "050b" ],
+        "000c": [ "0055" ],
+        "fcc0": [ "00f7" ],
         "0019": []
     }
 }

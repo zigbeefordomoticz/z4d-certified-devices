@@ -23,14 +23,14 @@
     "NickName": "",
     "ClusterToBind": [ "0001", "0402" ],
     "ConfigureReporting": {
-        "0001": { "0021": { "DataType": "20", "MinInterval": "0E10", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "01"} },
+        "0001": { "Attributes": { "0021": { "DataType": "20", "MinInterval": "0E10", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "01"} } },
         "0402": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "000a", "MaxInterval": "012C", "TimeOut": "0000", "Change": "0001" }}}
     },
     "ReadAttributes": {
         "0000": [ "0000", "0001", "0003", "0004", "0005", "0007", "4000" ] ,
         "0001": [ "0020" , "0021", "0041" ],
         "0402": [ "0000", "0001", "0002" ],
-        "0500": [ "0000", "00001", "0002", "0010", "0011" ]
+        "0500": [ "0000", "0001", "0002", "0010", "0011" ]
     },
     "IASAlarmMerge": true,
     "Param": {
