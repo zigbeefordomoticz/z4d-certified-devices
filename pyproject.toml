@@ -5,6 +5,9 @@ build-backend = "setuptools.build_meta"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-v"
+# The suite predates pytest's default test_*.py glob; without this a bare
+# `pytest` collects 0 tests from tests/tests_*.py.
+python_files = ["tests_*.py", "test_*.py"]
 
 [tool.autopub]
 project-name = "z4d-certified-devices"
