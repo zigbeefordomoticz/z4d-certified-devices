@@ -47,7 +47,7 @@
                 "0006": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "fffe", "TimeOut": "0000", "Change": "0001" },
                 "0007": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "fffe", "TimeOut": "0000", "Change": "0001" },
                 "0008": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "fffe", "TimeOut": "0000", "Change": "0001" },
-                "0001": { "DataType": "42", "MinInterval": "0300", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "" }
+                "0001": { "DataType": "42", "MinInterval": "0300", "MaxInterval": "0E10", "TimeOut": "0000" }
             }
         }
     },
