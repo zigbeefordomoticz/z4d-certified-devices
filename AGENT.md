@@ -25,12 +25,18 @@ z4d_certified_devices/
     └── <Manufacturer>/    # one folder per brand (Ikea, Philips, Tuya, ...)
         └── <Model>.json   # one file per device model
 tests/
-└── tests_loader.py        # pytest suite for the loader
+├── conftest.py                 # shared fixtures (parsed database, baseline)
+├── certified_schema.py         # ReadAttributes / ConfigureReporting validator + CLI
+├── certified_baseline.json     # pre-existing violations the suite tolerates
+├── tests_loader.py             # the loader
+├── tests_read_attributes.py    # ReadAttributes rules + the whole database
+├── tests_configure_reporting.py  # ConfigureReporting rules + the whole database
+└── tests_certified_database.py   # layout, model-name uniqueness, baseline hygiene
 bump_version.py            # bumps MINOR_VERSION and commits (used by CI)
 pyproject.toml             # build + pytest config
 setup.cfg                  # package metadata, package_data globs
 .flake8                    # lint config
-.github/workflows/         # CI: PyPI release, JSON lint, issue triage
+.github/workflows/         # CI: tests, PyPI release, JSON lint, issue triage
 ```
 
 ## How the loader works
@@ -180,11 +186,15 @@ When adding or editing a device:
 # Install dev tooling
 pip install -r requirements-dev.txt
 
-# Run the test suite.
-# NOTE: the file is tests/tests_loader.py, which does NOT match pytest's
-# default test_*.py discovery glob, so a bare `pytest` collects 0 tests.
-# Run it by path:
-pytest tests/tests_loader.py
+# Run the whole test suite (loader + structural checks on every device config)
+pytest
+
+# Just one area
+pytest tests/tests_configure_reporting.py
+
+# Review the certified database without running pytest
+python tests/certified_schema.py --report
+python tests/certified_schema.py --report --severity error
 
 # Lint Python (config in .flake8, max-line-length 160, many codes ignored)
 flake8 z4d_certified_devices tests
@@ -195,6 +205,57 @@ python -m build
 
 There is no application to "run" — this package is a library/data set consumed
 by the Domoticz plugin.
+
+### Structural validation of `ReadAttributes` / `ConfigureReporting`
+
+Nothing validates a device config at load time: `z4d_import_device_configuration()`
+only checks that the JSON parses. Everything else is consumed *verbatim* by the
+plugin, so a structural mistake fails far from here — silently disabling a
+feature, or raising deep inside the plugin at pairing time.
+
+`tests/certified_schema.py` encodes how the plugin actually reads those two
+blocks, and each rule names its real consequence. The ones worth knowing before
+hand-writing a config:
+
+- `ConfigureReporting[cluster]` **must** wrap its records in `"Attributes"`.
+  The flat shape parses, lints, and is silently skipped
+  (`if "Attributes" not in ...: continue`).
+- every record needs `DataType`, `MinInterval`, `MaxInterval` and `TimeOut`,
+  plus `Change` when the `DataType` is analog. These are read with no default,
+  so a missing one is a `KeyError` that aborts configure reporting for the
+  **whole device**, not just that attribute.
+- the record fields are concatenated straight into the ZCL frame, so widths are
+  load-bearing: `DataType` 2 hex digits, attribute id and the three intervals 4,
+  and `Change` as many as the data type has bytes (`SIZE_DATA_TYPE`). A short
+  `Change` is byte-swapped, not padded — `"0001"` on a 4-byte type becomes
+  `0x01000000`.
+- cluster keys in **both** blocks must be 4 lowercase hex digits; they are
+  matched against the device's own cluster list, so any other spelling is dead
+  config.
+- `ReadAttributes` attribute ids go through `int(attr, 16)` and are forgiving
+  about width and case — unless the typo changes the value (`"40001"`).
+
+The database predates these checks, so the violations that remain are recorded
+in `tests/certified_baseline.json`. The suite fails on anything *new*: a device
+added or edited from now on has to be clean. After fixing a batch, refresh the
+file:
+
+```bash
+python tests/certified_schema.py --update-baseline
+```
+
+A baselined issue that has been fixed also fails the suite
+(`test_baseline_has_no_stale_entries`), so the list only ever shrinks.
+
+### CI
+
+- `.github/workflows/tests.yml` — the suite on Python 3.9 / 3.11 / 3.13 plus
+  `flake8`, on every push and pull request, and a step summary with the full
+  structural report of the database.
+- `.github/workflows/ci-cd.yml` — the same suite runs as a **release gate**:
+  `bump_version` needs it, so a push to `main` that breaks a device config is
+  neither bumped nor published to PyPI.
+- `.github/workflows/lint_json.yml` — JSON syntax check on changed files.
 
 ## Versioning & releases — IMPORTANT
 
@@ -211,6 +272,9 @@ by the Domoticz plugin.
 - Keep changes minimal and focused; this is a curated device database.
 - Prefer adding/editing JSON over touching the loader. If you change the loader,
   add/adjust tests in `tests/tests_loader.py`.
+- Run `pytest` before committing a device config. If a finding looks wrong,
+  fix the rule in `tests/certified_schema.py` (and its unit test) rather than
+  baselining the device.
 - Match the style of surrounding files (the codebase tolerates loose formatting;
   see `.flake8` for what's intentionally ignored).
 - Do not create pull requests unless explicitly asked.

@@ -11,8 +11,8 @@ build/test/lint commands, and the automated versioning/release flow.
 - **What this is:** a PyPI package of certified Zigbee device config files
   (`Certified/<Manufacturer>/<Model>.json`) for the Zigbee for Domoticz plugin.
   Mostly data, plus a small loader in `z4d_certified_devices/__init__.py`.
-- **Test:** `pytest tests/tests_loader.py` (a bare `pytest` collects 0 — the
-  filename doesn't match the default `test_*.py` glob)
+- **Test:** `pytest` (runs the whole suite: the loader plus the structural
+  checks on every device config). CI gates the PyPI release on it.
 - **Lint:** `flake8 z4d_certified_devices tests`
 - **Build:** `python -m build`
 
@@ -25,6 +25,11 @@ build/test/lint commands, and the automated versioning/release flow.
 - CI lints changed JSON files, so keep JSON syntactically valid.
 - Prefer JSON edits over loader changes; if you change the loader, update
   `tests/tests_loader.py`.
+- `ReadAttributes` / `ConfigureReporting` are validated by
+  `tests/certified_schema.py`. A new device must be clean; pre-existing
+  violations live in `tests/certified_baseline.json`. Run
+  `python tests/certified_schema.py --report` to see where a config stands,
+  and `--update-baseline` after fixing a batch.
 - Multi-gang / DP-based Tuya (TS0601) devices: route each datapoint to its own
   widget with `domo_ep`, and declare non-physical endpoints in both `Ep` and the
   top-level `FakeEp`. See the "Multi-gang" note in AGENT.md.
