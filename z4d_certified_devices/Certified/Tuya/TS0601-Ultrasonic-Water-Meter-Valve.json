@@ -22,7 +22,7 @@
     "ClusterToBind": [],
     "ConfigureReporting": {},
     "ReadAttributes": {
-        "0000": [ "0004", "0000", "0001", "0002", "0004", "0005", "0007", "fffe" ]
+        "0000": [ "0004", "0000", "0001", "0002", "0005", "0007", "fffe" ]
     },
     "TS0601_DP": {
         "01": { "store_tuya_attribute": "water_consumed", "sensor_type": "water_consumption" },

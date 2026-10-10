@@ -42,7 +42,7 @@
             "Attributes": {
                 "0004": { "DataType": "20", "MinInterval": "0708", "MaxInterval": "0708", "TimeOut": "0000", "Change": "01" },
                 "0005": { "DataType": "21", "MinInterval": "000A", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0001" },
-                "0001": { "DataType": "42", "MinInterval": "0300", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "" }
+                "0001": { "DataType": "42", "MinInterval": "0300", "MaxInterval": "0E10", "TimeOut": "0000" }
             }
         }
     },
