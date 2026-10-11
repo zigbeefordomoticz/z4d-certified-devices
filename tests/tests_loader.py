@@ -155,3 +155,69 @@ class TestLoadJsonFile:
         z4d_import_device_configuration(plugin, tmp_path)
         # "Aaa" sorts before "Zzz", so Aaa/Device loads first and wins
         assert plugin.DeviceConf["Device"]["Type"] == "Aaa"
+
+# ---------------------------------------------------------------------------
+# Identifier mappings: Conf/Local-Devices precedence
+# ---------------------------------------------------------------------------
+
+class TestIdentifierPrecedence:
+    """
+    The plugin loads its own Conf/Local-Devices folder before calling
+    z4d_import_device_configuration(), so a (model, manufacturer) mapping that
+    is already present belongs to the user and must survive this import.
+    """
+
+    def _certified(self, tmp_path, brand, model, identifiers):
+        d = tmp_path / "Certified" / brand
+        d.mkdir(parents=True, exist_ok=True)
+        (d / f"{model}.json").write_text(
+            json.dumps({"Ep": {}, "Type": "", "Identifier": identifiers})
+        )
+
+    def test_local_identifier_is_not_overridden(self, tmp_path):
+        self._certified(tmp_path, "Tuya", "TS011F-plug",
+                        [["TS011F", "_TZ3000_cehuw1lw"]])
+        plugin = FakePlugin()
+        plugin.ModelManufMapping[("TS011F", "_TZ3000_cehuw1lw")] = "MyLocalPlug"
+
+        z4d_import_device_configuration(plugin, tmp_path)
+
+        assert plugin.ModelManufMapping[("TS011F", "_TZ3000_cehuw1lw")] == "MyLocalPlug"
+        # the certified config itself is still loaded, only the mapping is kept
+        assert "TS011F-plug" in plugin.DeviceConf
+
+    def test_new_identifiers_are_still_registered(self, tmp_path):
+        self._certified(tmp_path, "Tuya", "TS011F-plug",
+                        [["TS011F", "_TZ3000_cehuw1lw"], ["TS011F", "_TZ3000_other"]])
+        plugin = FakePlugin()
+        plugin.ModelManufMapping[("TS011F", "_TZ3000_cehuw1lw")] = "MyLocalPlug"
+
+        z4d_import_device_configuration(plugin, tmp_path)
+
+        assert plugin.ModelManufMapping[("TS011F", "_TZ3000_cehuw1lw")] == "MyLocalPlug"
+        assert plugin.ModelManufMapping[("TS011F", "_TZ3000_other")] == "TS011F-plug"
+
+    def test_duplicate_inside_certified_db_keeps_last_one_wins(self, tmp_path):
+        """
+        Twelve identifiers are claimed by two different certified files today.
+        Protecting pre-existing keys must not silently flip those to
+        first-one-wins: only the plugin's own mappings are protected.
+        """
+        self._certified(tmp_path, "Aaa", "DeviceOne", [["TS0601", "_TZE200_x"]])
+        self._certified(tmp_path, "Zzz", "DeviceTwo", [["TS0601", "_TZE200_x"]])
+        plugin = FakePlugin()
+
+        z4d_import_device_configuration(plugin, tmp_path)
+
+        # Aaa loads first, Zzz overwrites - unchanged behaviour
+        assert plugin.ModelManufMapping[("TS0601", "_TZE200_x")] == "DeviceTwo"
+
+    def test_register_without_protected_set_overwrites(self, tmp_path):
+        """_register_device_config keeps its old behaviour when called bare."""
+        plugin = FakePlugin()
+        plugin.ModelManufMapping[("M", "N")] = "Previous"
+
+        _register_device_config(plugin, "NewModel",
+                                {"Ep": {}, "Identifier": [["M", "N"]]})
+
+        assert plugin.ModelManufMapping[("M", "N")] == "NewModel"

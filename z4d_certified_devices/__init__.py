@@ -99,6 +99,12 @@ def z4d_import_device_configuration(self, path_name):
     plugin_version = self.pluginParameters.get("PluginVersion")
     device_count_before = len(self.DeviceConf)
 
+    # Identifier mappings that exist before we load anything belong to the
+    # plugin's own Conf/Local-Devices folder, which it loads first. They are
+    # the user's choice and must survive this import, the same way a model
+    # name already in DeviceConf makes us skip the certified file below.
+    local_identifiers = set(self.ModelManufMapping)
+
     for brand_dir in _iter_valid_entries(model_certified):
         brand_path = model_certified / brand_dir
         if not brand_path.is_dir():
@@ -122,7 +128,7 @@ def z4d_import_device_configuration(self, path_name):
                                  f"Skipping {brand_dir}/{model_name}: requires Plugin ≥ {required}")
                 continue
 
-            _register_device_config(self, model_name, model_def)
+            _register_device_config(self, model_name, model_def, local_identifiers)
             self.log.logging("z4dCertifiedDevices", "Debug",
                              f"Loaded certified {brand_dir}/{model_name}")
 
@@ -195,13 +201,31 @@ def _is_plugin_version_compatible(model_def: dict, plugin_version: str) -> bool:
     return _version_tuple(plugin_version) >= _version_tuple(min_version)
 
 
-def _register_device_config(self, model_name: str, model_def: dict):
+def _register_device_config(self, model_name: str, model_def: dict, local_identifiers=frozenset()):
     """
     Register the loaded device configuration.
 
     Adds the device model to `DeviceConf` and updates
     `ModelManufMapping` with all identifiers.
+
+    `local_identifiers` holds the identifier keys that were already mapped
+    before this import started - i.e. the ones coming from the plugin's
+    Conf/Local-Devices folder. Those are left untouched, so a user mapping is
+    not silently replaced by a certified file claiming the same
+    (model, manufacturer) pair under a different model name.
+
+    Identifiers claimed twice *inside* the certified database keep their
+    previous last-one-wins behaviour, which is a data problem to fix in the
+    offending JSON files rather than here.
     """
     self.DeviceConf[model_name] = model_def
     for identifier in model_def.get("Identifier", []):
-        self.ModelManufMapping[tuple(identifier)] = model_name
+        key = tuple(identifier)
+        if key in local_identifiers:
+            self.log.logging(
+                "z4dCertifiedDevices", "Debug",
+                f"Identifier {key} is provided by Local-Devices as "
+                f"{self.ModelManufMapping[key]}, not overriding it with {model_name}."
+            )
+            continue
+        self.ModelManufMapping[key] = model_name
