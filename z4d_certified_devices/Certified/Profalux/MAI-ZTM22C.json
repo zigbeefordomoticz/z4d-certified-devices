@@ -1,0 +1,42 @@
+{
+    "_comment": "Profalux MAI-ZTM22C wall remote with a temperature sensor. EP01 (Shade Controller 0x0201) and EP02 (Window Covering Controller 0x0203) control the blind through their own binding to the motor and must not be bound to the coordinator, neither must Basic. Only Temperature Measurement 0x0402 on EP03 (Temperature Sensor 0x0302) is bound and reported. Only server (input) clusters are declared, so the plugin never acts on the remote's client clusters.",
+    "_version": "1.0",
+    "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/175",
+    "MinPluginVersion": "9.1.008",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "fc02": "",
+            "fc15": "",
+            "fc20": "",
+            "Type": ""
+        },
+        "02": {
+            "0000": "",
+            "0001": { "Attributes": { "0000": { "Name": "MainsVoltage", "DataType": "21", "EvalExp": "round(int(value) / 1000, 1)", "ActionList": [ "check_store_value" ] } } },
+            "0003": "",
+            "0009": "",
+            "0020": "",
+            "fc02": "",
+            "fc15": "",
+            "fc20": "",
+            "Type": ""
+        },
+        "03": {
+            "0000": "",
+            "0003": "",
+            "0402": "",
+            "Type": "Temp"
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0402" ],
+    "ConfigureReporting": {
+        "0402": { "Attributes": { "0000": { "DataType": "29", "MinInterval": "003C", "MaxInterval": "0E10", "TimeOut": "0000", "Change": "0032" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0004", "0005", "0006", "4000" ],
+        "0402": [ "0000" ]
+    }
+}
