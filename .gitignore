@@ -16,3 +16,6 @@ htmlcov/
 
 # Tooling state
 .rtk/
+
+# Local worklog (kept outside the repository)
+worklog/
