@@ -1,6 +1,9 @@
 {
 	"_comment": "QS-Zigbee-S05-LN module",
 	"_version": "1.0",
+	"Identifier": [
+		[ "TS0003", "_TYZB01_ncutbjdi" ]
+	],
 	"Ep":{
 		"01":{ 
 			"0000":"", 

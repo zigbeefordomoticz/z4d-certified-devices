@@ -1,6 +1,9 @@
 {
     "_comment": "Tuya/Lidl multiprise",
     "_version": "1.0",
+    "Identifier": [
+        [ "TS011F", "_TZ3000_vzopcetz" ]
+    ],
     "Ep": {
         "01": {
             "0000": "",
