@@ -1,6 +1,11 @@
 {
 	"_comment": "Tuya Smart Dimmer Switch",
 	"_version": "0.10",
+	"Identifier": [
+		[ "TS0601", "_TZE200_7tdtqgwv" ],
+		[ "TS0601", "_TZE200_oisqyl4o" ],
+		[ "TS0601", "_TZE200_amp6tsvy" ]
+	],
 	"Ep": {
 		"01": {
 			"0000": "",

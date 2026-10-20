@@ -1,6 +1,9 @@
 {
 	"_comment": "Tuya 2 Gangs Switch",
 	"_version": "0.10",
+	"Identifier": [
+		[ "TS0601", "_TZE200_g1ib5ldv" ]
+	],
 	"Ep": {
 		"01": {
 			"0000": "",

@@ -1,6 +1,17 @@
 {
     "_comment": "Tuya TRV / ZONNSMART",
     "_version": "0.10",
+    "Identifier": [
+        [ "TS0601", "_TZE200_7yoranx2" ],
+        [ "TS0601", "_TZE200_e9ba97vf" ],
+        [ "TS0601", "_TZE200_hue3yfsn" ],
+        [ "TS0601", "_TZE200_husqqvux" ],
+        [ "TS0601", "_TZE200_kly8gjlz" ],
+        [ "TS0601", "_TZE200_lnbfnyxd" ],
+        [ "TS0601", "_TZE200_kds0pmmv" ],
+        [ "TS0601", "_TZE200_mudxchsu" ],
+        [ "TS0601", "_TZE200_lllliz3p" ]
+    ],
     "Ep": {
         "01": {
             "0000": "",

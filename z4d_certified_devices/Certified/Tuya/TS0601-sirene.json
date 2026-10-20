@@ -1,6 +1,10 @@
 {
 	"_comment": "Tuya Siren Alarm",
 	"_version": "0.10",
+	"Identifier": [
+		[ "TS0601", "_TZE200_d0yu2xgi" ],
+		[ "TS0601", "_TYST11_d0yu2xgi" ]
+	],
 	"Ep": {
 		"01": {
 			"0000": "",
