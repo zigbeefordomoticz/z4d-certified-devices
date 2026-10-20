@@ -1,6 +1,9 @@
 {
     "_comment": "MOES Smart Curtain Switch Module",
     "_version": "1.0",
+    "Identifier": [
+        [ "TS130F", "_TZ3000_fvhunhxb" ]
+    ],
     "Ep": {
         "01": {
             "0000": "",

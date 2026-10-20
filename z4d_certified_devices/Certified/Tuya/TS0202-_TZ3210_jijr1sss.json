@@ -1,4 +1,7 @@
 {
+    "Identifier": [
+        [ "TS0202", "_TZ3210_jijr1sss" ]
+    ],
     "_Comment": "Tuya ZigBee – multi-capteur 4-in-1 PIR motion temperature",
     "Ep": {
         "01": {

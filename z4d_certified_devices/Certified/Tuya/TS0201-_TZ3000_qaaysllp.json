@@ -1,6 +1,9 @@
 {
 	"_comment": "Tuya Temp/Humi/Lux - Model NAS-TH02B manufactured by Neo ",
 	"_version": "0.10",
+	"Identifier": [
+		[ "TS0201", "_TZ3000_qaaysllp" ]
+	],
 	"Ep": {
 		"01": {
 			"0000": "",

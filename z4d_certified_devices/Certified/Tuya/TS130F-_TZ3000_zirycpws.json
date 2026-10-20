@@ -2,6 +2,9 @@
     "_comment": "Zigbee Curtain Module QS-Zigbee-CP03",
     "_sponsorship": "Thanks to pacofrancisco", 
     "_version": "1.0",
+    "Identifier": [
+        [ "TS130F", "_TZ3000_zirycpws" ]
+    ],
     "Ep": {
         "01": { 
             "0000": "", 
