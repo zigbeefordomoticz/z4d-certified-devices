@@ -3,11 +3,6 @@
     "_blakadder": "https://zigbee.blakadder.com/Tuya_SML-04Z.html",
     "_comment": "Tuya 4 Gangs Inching Relay command",
     "_version": "1.0",
-    "Identifier": [
-        [ "TS0004", "_TZ3000_excgg5kb" ],
-        [ "TS0004", "_TZ3000_u3oupgdy" ],
-        [ "TS0004", "_TZ3000_ltt60asa" ]
-    ],
     "Ep": {
         "01": { "0000": "", "0003": "", "0004": "", "0005": "", "0006": "", "e000": "", "e001": "", "000a": "", "0019": "", "Type": "Switch" },
         "02": { "0000": "", "0004": "", "0005": "", "0006": "", "e001": "", "Type": "Switch" },
