@@ -28,6 +28,7 @@
 			"fffe"
 		]
 	},
+	"TimeServerEpoch": "1970_LOCALTIME",
 	"Param": {
 		"ValveDetection": 1,
 		"SensorMode": 0,
