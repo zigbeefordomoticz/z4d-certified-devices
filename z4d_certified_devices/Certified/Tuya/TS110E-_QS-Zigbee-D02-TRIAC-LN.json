@@ -5,9 +5,7 @@
     "_version": "1.0",
     "Identifier": [
         [ "TS110E", "_TYZB01_qezuin6k" ],
-        [ "TS110E", "_TZ3210_ngqk6jia" ],
-        [ "TS110F", "_TYZB01_qezuin6k" ],
-        [ "TS110F", "_TZ3210_ngqk6jia" ]
+        [ "TS110E", "_TZ3210_ngqk6jia" ]
     ],
     "Ep": {
         "01": { 

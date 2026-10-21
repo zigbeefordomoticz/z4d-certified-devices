@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0
 #
-"""Database-wide tests: layout, model-name uniqueness, baseline hygiene.
+"""Database-wide tests: layout, model-name and Identifier uniqueness, baseline hygiene.
 
 `tests_loader.py` proves the loader *behaves* a certain way on a synthetic
 tree; these tests prove the real `Certified/` tree is one the loader actually
@@ -102,6 +102,71 @@ class TestCertifiedJson:
         # walks model_def["Ep"] to build the widgets.
         missing = sorted(device for device, model_def in certified_devices.items() if not isinstance(model_def.get("Ep"), dict))
         assert not missing, "every config needs an \"Ep\" object: %s" % missing
+
+
+# ---------------------------------------------------------------------------
+# Identifier
+# ---------------------------------------------------------------------------
+
+def _loaded_identifiers(certified_devices):
+    """`[(model_name, (model, manufacturer)), ...]` in the loader's order.
+
+    Mirrors z4d_import_device_configuration(): manufacturer folders, then files,
+    both sorted; a stem already loaded from an earlier folder is skipped, so its
+    Identifier pairs are never registered.
+    """
+    loaded, pairs = set(), []
+    for device in sorted(certified_devices, key=lambda d: tuple(d.split("/", 1))):
+        model_name = device.split("/", 1)[1][:-len(".json")]
+        if model_name in loaded:
+            continue
+        loaded.add(model_name)
+        for identifier in certified_devices[device].get("Identifier", []):
+            pairs.append((model_name, tuple(identifier)))
+    return loaded, pairs
+
+
+class TestCertifiedIdentifiers:
+    def test_every_identifier_is_a_model_manufacturer_pair(self, certified_devices):
+        # The plugin looks up (model, manufacturer); any other shape never matches.
+        wrong = sorted(
+            "%s: %s" % (device, identifier)
+            for device, model_def in certified_devices.items()
+            for identifier in model_def.get("Identifier", [])
+            if not (isinstance(identifier, list) and len(identifier) == 2 and all(isinstance(x, str) for x in identifier))
+        )
+        assert not wrong, "an Identifier entry must be [model, manufacturer]: %s" % wrong
+
+    def test_identifier_pairs_are_not_repeated_in_a_file(self, certified_devices):
+        repeated = {}
+        for device, model_def in certified_devices.items():
+            pairs = [tuple(identifier) for identifier in model_def.get("Identifier", [])]
+            twice = sorted({pair for pair in pairs if pairs.count(pair) > 1})
+            if twice:
+                repeated[device] = twice
+        assert not repeated, "the same pair is listed twice: %s" % repeated
+
+    def test_identifier_pairs_are_claimed_by_one_file(self, certified_devices):
+        _, pairs = _loaded_identifiers(certified_devices)
+        claims = {}
+        for model_name, pair in pairs:
+            claims.setdefault(pair, set()).add(model_name)
+        shared = {pair: sorted(names) for pair, names in claims.items() if len(names) > 1}
+        assert not shared, (
+            "ModelManufMapping keeps the last file loaded, so every other claim is silently ignored: %s" % shared
+        )
+
+    def test_identifier_pairs_are_not_shadowed_by_a_file_name(self, certified_devices):
+        # The plugin tries "<model>-<manufacturer>" and "<model><manufacturer>"
+        # as DeviceConf keys before it looks at Identifier.
+        loaded, pairs = _loaded_identifiers(certified_devices)
+        shadowed = sorted(
+            "%s claims %s, resolved to %s first" % (model_name, pair, name)
+            for model_name, pair in pairs
+            for name in (pair[0] + "-" + pair[1], pair[0] + pair[1])
+            if name in loaded and name != model_name
+        )
+        assert not shadowed, "these Identifier claims never take effect:\n  " + "\n  ".join(shadowed)
 
 
 # ---------------------------------------------------------------------------

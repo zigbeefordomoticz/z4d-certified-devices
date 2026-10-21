@@ -141,7 +141,10 @@ Common keys seen in these files:
 - `ConfigureReporting` — attribute reporting configuration.
 - `ReadAttributes` — attributes to read at pairing.
 - `Identifier` (optional) — list of `[model, manufacturer]` pairs that map a
-  device to this config in `ModelManufMapping`.
+  device to this config in `ModelManufMapping`. A pair may be claimed by one
+  file only: the loader keeps the last file loaded and silently ignores the
+  others. A file named `<model>-<manufacturer>` wins over any `Identifier`, so
+  don't claim its pair elsewhere. `tests_certified_database.py` enforces both.
 - `MinPluginVersion` (optional) — minimum plugin version required to load this
   config.
 - `FakeEp` (optional) — list of *virtual* endpoints (e.g. `f2`, `f3`) that are
