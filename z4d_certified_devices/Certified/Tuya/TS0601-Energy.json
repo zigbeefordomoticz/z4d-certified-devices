@@ -1,6 +1,11 @@
 {
 	"_comment": "Tuya Zigbee Tuya smart energy meter",
 	"_version": "0.10",
+	"Identifier": [
+		[ "TS0601", "_TZE200_fsb6zw01" ],
+		[ "TS0601", "_TZE200_byzdayie" ],
+		[ "TS0601", "_TZE200_ewxhg6o9" ]
+	],
 	"Ep": {
 		"01": {
 			"0000": "",

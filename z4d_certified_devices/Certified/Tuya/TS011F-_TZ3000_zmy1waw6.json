@@ -1,6 +1,9 @@
 {
 	"_comment": "Tuya RR400ZB",
 	"_version": "1.0",
+	"Identifier": [
+		[ "TS011F", "_TZ3000_zmy1waw6" ]
+	],
 	"Ep":{
 		"01":{ 
 			"0000":"", 

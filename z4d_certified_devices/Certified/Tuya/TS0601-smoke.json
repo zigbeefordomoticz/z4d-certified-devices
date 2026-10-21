@@ -1,6 +1,9 @@
 {
     "_comment": "Tuya Smoke Detector",
     "_version": "0.10",
+    "Identifier": [
+        [ "TS0601", "_TZE200_ntcy3xu1" ]
+    ],
     "Ep": {
         "01": {
             "0000": "",

@@ -1,6 +1,9 @@
 {
     "_comment": "Tuya two gangs",
     "_version": "1.0",
+    "Identifier": [
+        [ "TS0003", "_TZ3000_odzoiovu" ]
+    ],
     "Ep":{
         "01":{ 
             "0000": "", 

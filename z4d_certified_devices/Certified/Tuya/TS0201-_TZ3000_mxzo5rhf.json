@@ -1,5 +1,8 @@
 {
 	"_comment": "Danfoss Ally Room Sensor 014G2480",
+	"Identifier": [
+		[ "TS0201", "_TZ3000_mxzo5rhf" ]
+	],
 	"Ep": {
 		"01": {
 			"0000": "",

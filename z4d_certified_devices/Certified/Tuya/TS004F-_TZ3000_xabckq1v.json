@@ -1,6 +1,9 @@
 {
     "_comment": "Tuya 4 switch remote (Single, Double,Long press)",
     "_version": "Initial Version",
+    "Identifier": [
+        [ "TS004F", "_TZ3000_xabckq1v" ]
+    ],
     "Ep": {
         "01": {
             "0000": "",

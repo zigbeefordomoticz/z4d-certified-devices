@@ -1,6 +1,9 @@
 {
 	"_comment": "Tuya TRV - Lidl Valve",
 	"_version": "0.10",
+	"Identifier": [
+		[ "TS0601", "_TZE200_chyvmhay" ]
+	],
 	"Ep": {
 		"01": {
 			"0000": "",

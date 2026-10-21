@@ -1,6 +1,9 @@
 {
 	"_comment": "Tuya TRV: _TZE200_aoclfnxz /TS0601 /Moes /Thermostat BTH-002",
 	"_version": "0.10",
+	"Identifier": [
+		[ "TS0601", "_TZE200_aoclfnxz" ]
+	],
 	"Ep": {
 		"01": {
 			"0000": "",
