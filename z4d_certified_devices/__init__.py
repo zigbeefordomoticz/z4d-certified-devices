@@ -37,7 +37,7 @@ Key Functions
 Logging
 -------
 All operations are logged through `self.log.logging()` under the "z4dCertifiedDevices" category,
-using log levels: `Status`, `Debug`, and `Error`.
+using log levels: `Status`, `Debug`, `Warning` and `Error`.
 
 Example Directory Layout
 ------------------------
@@ -124,7 +124,7 @@ def z4d_import_device_configuration(self, path_name):
 
             if not _is_plugin_version_compatible(model_def, plugin_version):
                 required = model_def.get("MinPluginVersion", "N/A")
-                self.log.logging("z4dCertifiedDevices", "Error",
+                self.log.logging("z4dCertifiedDevices", "Warning",
                                  f"Skipping {brand_dir}/{model_name}: requires Plugin ≥ {required}")
                 continue
 
