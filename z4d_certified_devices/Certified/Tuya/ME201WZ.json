@@ -14,7 +14,7 @@
             "ef00": "",
             "000a": "",
             "0019": "",
-            "Type": "LiquidLevel/LiquidDepth"
+            "Type": "LiquidLevel/LiquidDepth/Voltage"
         },
         "f2": {
             "0021": "",
@@ -34,6 +34,7 @@
     "TS0601_DP": {
         "01": { "store_tuya_attribute": "liquid_state", "sensor_type": "liquid_state" },
         "02": { "store_tuya_attribute": "liquid_depth", "sensor_type": "liquid_depth" },
+        "05": { "store_tuya_attribute": "power_supply_voltage", "sensor_type": "voltage", "EvalExp": "value / 10", "domo_round": 1 },
         "16": { "store_tuya_attribute": "liquid_level_percent", "sensor_type": "liquid_level_percent" },
         "07": { "store_tuya_attribute": "max_set" },
         "08": { "store_tuya_attribute": "mini_set" },
