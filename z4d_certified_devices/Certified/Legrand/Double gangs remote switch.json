@@ -1,5 +1,6 @@
 {
     "_comment": "Legrand Netatmo Remote Double Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_067774.html",
     "_version": "1.0",
     "Ep": {
         "01": {
