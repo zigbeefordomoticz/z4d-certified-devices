@@ -1,4 +1,6 @@
 {
+    "_description": "Linky Meter Data Transmitter",
+    "_blakadder": "https://zigbee.blakadder.com/LiXee_Zlinky_TIC.html",
     "_comment": "Linky module Configuration for Mode: Historique Triphasé",
     "Ep": {
         "01": {
