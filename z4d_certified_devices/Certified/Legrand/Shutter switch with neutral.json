@@ -1,5 +1,6 @@
 {
     "_comment": "Legrand Netatmo Shutter switch with neutral",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_067776.html",
     "_version": "1.0",
     "Ep": {
         "01": {

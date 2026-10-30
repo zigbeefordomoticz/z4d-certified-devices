@@ -1,5 +1,6 @@
 {
     "_comment": "Legrand Netatmo Connected Cable",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_064879.html",
     "_version": "0.1",
     "Ep": {
         "01": {
