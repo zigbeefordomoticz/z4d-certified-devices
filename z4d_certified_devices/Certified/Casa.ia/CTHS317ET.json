@@ -1,4 +1,6 @@
 {
+	"_description": "Temperature Probe",
+	"_blakadder": "https://zigbee.blakadder.com/CASA_IA_CTHS-317-ET.html",
 	"Ep": {
 		"03": {
 			"0000": "",

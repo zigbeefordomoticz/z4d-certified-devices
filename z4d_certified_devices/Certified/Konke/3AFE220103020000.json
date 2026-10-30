@@ -1,4 +1,6 @@
 {
+	"_description": "Temp-Humidity Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Konke_KPFT.html",
 	"_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1351",
 	"Ep": {
 		"01": {

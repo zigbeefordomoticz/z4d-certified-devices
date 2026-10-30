@@ -1,7 +1,7 @@
-{ 
+{
+    "_blakadder": "https://zigbee.blakadder.com/NodOn_STPH-4-1-00.html", 
     "_description": "Temperature & Humidity sensor",
     "_version": "1.0",
-    "_blakadder": "",
     "_source": "Sample provided by Nodon",
     "Ep": {    
         "01": {

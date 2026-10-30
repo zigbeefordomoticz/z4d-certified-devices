@@ -1,4 +1,6 @@
 {
+    "_description": "Signal Repeater Zigbee 3.0",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_TS0207.html",
     "_comment": "Tuya repeater",
     "_version": "1.0",
     "Identifier": [

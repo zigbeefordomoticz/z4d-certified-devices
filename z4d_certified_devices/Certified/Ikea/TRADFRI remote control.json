@@ -1,4 +1,6 @@
 {
+	"_description": "Tradfri Remote Control",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_E1810.html",
 	"Ep": {
 		"01": {
 			"0000": "",

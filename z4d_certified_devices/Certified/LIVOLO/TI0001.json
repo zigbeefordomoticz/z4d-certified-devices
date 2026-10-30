@@ -1,4 +1,6 @@
 {
+    "_description": "Switch 1 or 2 Gang",
+    "_blakadder": "https://zigbee.blakadder.com/Livolo_TI0001.html",
     "Ep": {
         "06": {
             "0000": "",

@@ -1,4 +1,6 @@
 {
+    "_description": "Curtain/Blind Motor Controller Module",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_QS-Zigbee-CP03.html",
     "_comment": "Zigbee Curtain Module QS-Zigbee-CP03",
     "_sponsorship": "Thanks to pacofrancisco", 
     "_version": "1.0",

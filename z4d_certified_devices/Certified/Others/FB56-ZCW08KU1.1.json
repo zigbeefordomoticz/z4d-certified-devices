@@ -1,4 +1,6 @@
 {
+	"_description": "9W RGBW 750lm E27 Bulb",
+	"_blakadder": "https://zigbee.blakadder.com/Jiawen_K2RGBW01.html",
 	"Ep": {
 		"0b": {
 			"0000": "",

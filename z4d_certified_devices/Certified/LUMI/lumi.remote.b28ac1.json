@@ -1,4 +1,6 @@
 {
+	"_description": "H1 Wireless Remote Switch (Double Rocker)",
+	"_blakadder": "https://zigbee.blakadder.com/Aqara_WRS-R02.html",
 	"Ep": {
 		"01": {
             "0000": { 

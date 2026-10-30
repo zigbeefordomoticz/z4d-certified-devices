@@ -1,4 +1,6 @@
 {
+	"_description": "Temperature and Humidity Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Danfoss_014G2480.html",
 	"_comment": "Danfoss Ally Room Sensor 014G2480",
 	"Ep": {
 		"01": {

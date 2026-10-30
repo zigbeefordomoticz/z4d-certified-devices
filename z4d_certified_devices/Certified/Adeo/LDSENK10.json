@@ -1,4 +1,6 @@
 {
+    "_description": "Lexman Indoor Pet-Immune Motion Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/ADEO_LDSENK10.html",
     "_comment": "ADEO LEXMAN motion sensor",
     "_blakkader": "https://zigbee.blakadder.com/ADEO_LDSENK10.html",
     "_version": "1.0",

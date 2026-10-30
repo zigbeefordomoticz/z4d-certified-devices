@@ -1,4 +1,6 @@
 {
+	"_description": "OnOff Controller",
+	"_blakadder": "https://zigbee.blakadder.com/Ksentry_KS-SM001.html",
 	"Ep": {
 		"0b": {
 			"0000": "",

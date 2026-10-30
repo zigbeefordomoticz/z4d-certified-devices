@@ -1,4 +1,5 @@
 {
+    "_description": "Illuminance and Motion Sensor P1",
     "_blakadder": "https://zigbee.blakadder.com/Aqara_RTCGQ14LM.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1541",
     "_Comment": "Aqara Motion Sensor P1 MS-S02",

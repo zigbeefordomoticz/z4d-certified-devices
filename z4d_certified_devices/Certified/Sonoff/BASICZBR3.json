@@ -1,4 +1,6 @@
 {
+	"_description": "Basic ZBR3 Relay",
+	"_blakadder": "https://zigbee.blakadder.com/Sonoff_BASICZBR3.html",
 	"_comment": "Sonoff Basic ZBR3",
 	"_version": "1.0",
 	"Ep": {

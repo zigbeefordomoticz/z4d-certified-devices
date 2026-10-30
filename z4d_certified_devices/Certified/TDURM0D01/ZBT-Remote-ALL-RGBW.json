@@ -1,4 +1,6 @@
 {
+	"_description": "Tint Remote Control",
+	"_blakadder": "https://zigbee.blakadder.com/Muller_Licht_404011.html",
 	"_comment": "Tint Remote Control based on the white model",
 	"_version": "0.1",
 	"Ep": {

@@ -1,4 +1,6 @@
 {
+    "_description": "Human Presence Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-06P.html",
     "_comment": "Zigbee occupancy sensor",
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13871",
     "_version": "1.0",

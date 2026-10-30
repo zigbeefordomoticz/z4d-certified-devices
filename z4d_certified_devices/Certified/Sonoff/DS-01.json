@@ -1,4 +1,6 @@
 {
+	"_description": "Wireless Door/Window Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-04.html",
 	"_comment": "Sonoff Door sensor",
 	"_version": "1.0",
 	"Ep": {

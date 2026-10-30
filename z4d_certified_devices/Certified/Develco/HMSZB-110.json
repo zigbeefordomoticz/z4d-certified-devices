@@ -1,4 +1,6 @@
 {
+	"_description": "frient Temperature and Humidity Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Develco_HMSZB-110.html",
 	"_comment": "https://frient.com/products/smart-humidity-sensor",
 	"Ep": {
 		"01": {

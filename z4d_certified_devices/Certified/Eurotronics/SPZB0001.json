@@ -1,4 +1,6 @@
 {
+	"_description": "Spirit Zigbee Radiator Thermostat",
+	"_blakadder": "https://zigbee.blakadder.com/Eurotronic_SPZB0001.html",
 	"Ep": {
 		"01": {
 			"0000": "",

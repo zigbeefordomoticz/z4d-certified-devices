@@ -1,4 +1,5 @@
 {
+    "_description": "DIN Rail AC Dimmer",
     "_comment": "Zigbee DIN Rail triac AC dimmer",
     "_version": "1.0",
     "_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-SD-003P.html",

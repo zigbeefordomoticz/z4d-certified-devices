@@ -1,7 +1,8 @@
 {
+    "_description": "Bi-directional Energy Monitor",
+    "_blakadder": "https://zigbee.blakadder.com/Zemismart_SPM01-D2TZ.html",
     "_comment": "Tuya Zigbee Smart energy monitor for 1P+N system",
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13439",
-    "_blakadder": "",
     "_version": "1",
     "MinPluginVersion": "7.1.002",
     "Identifier": [

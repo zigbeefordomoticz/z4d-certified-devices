@@ -1,4 +1,6 @@
 {
+	"_description": "Smart Plug EU",
+	"_blakadder": "https://zigbee.blakadder.com/Salus_SPE600.html",
 	"Ep": {
 		"09": {
 			"0000": "",

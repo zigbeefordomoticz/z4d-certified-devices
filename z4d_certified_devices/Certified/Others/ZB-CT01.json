@@ -1,4 +1,6 @@
 {
+	"_description": "CCT Mini LED Controller",
+	"_blakadder": "https://zigbee.blakadder.com/Ysrsai_ZB-CT01.html",
 	"_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1348",
 	"_Comment": "Tuyav Smart Life Zigbee Wifi CCT COB Kit ",
 	"Ep": {

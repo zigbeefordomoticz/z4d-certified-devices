@@ -1,4 +1,6 @@
 {
+	"_description": "Wireless Mini Switch",
+	"_blakadder": "https://zigbee.blakadder.com/Aqara_WXKG11LM.html",
 	"Ep": {
 		"01": {
             "0000": { 

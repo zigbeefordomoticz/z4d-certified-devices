@@ -1,7 +1,8 @@
 {
+    "_description": "Saliteras-Z Ceiling Light",
+    "_blakadder": "https://zigbee.blakadder.com/Eglo_900024.html",
     "_comment": "AwoX LED MARGHERA-Z",
     "_version": "0.1",
-    "_blakadder": "",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/91",
     "Ep": {
         "01": {

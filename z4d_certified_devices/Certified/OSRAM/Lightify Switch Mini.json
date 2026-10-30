@@ -1,4 +1,6 @@
 {
+	"_description": "Smart+ Switch Mini",
+	"_blakadder": "https://zigbee.blakadder.com/OSRAM_AC0251x00NJ.html",
 	"Ep": {
 		"01": {
 			"0001": "",

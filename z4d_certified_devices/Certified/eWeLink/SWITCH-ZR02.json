@@ -1,4 +1,6 @@
 {
+    "_description": "Switch Module AC85-265V 10A",
+    "_blakadder": "https://zigbee.blakadder.com/eWeLink_SWITCH-ZR02.html",
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13647",
     "_blakkader": "https://zigbee.blakadder.com/eWeLink_SWITCH-ZR02.html",
     "_comment": "Zigbee Smart Switch",

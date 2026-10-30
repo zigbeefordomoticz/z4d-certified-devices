@@ -1,4 +1,6 @@
 {
+	"_description": "Emotion Home Base 12/24v",
+	"_blakadder": "https://zigbee.blakadder.com/L_S_7061288.html",
 	"_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1349",
 	"Ep":{
 	       "01":{

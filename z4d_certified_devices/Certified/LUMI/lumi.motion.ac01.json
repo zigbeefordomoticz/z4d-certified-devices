@@ -1,4 +1,6 @@
 {
+    "_description": "Presence Detector FP1",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_RTCZCGQ11LM.html",
     "_Comment": "Aqara presence detector FP1",
     "Ep": {
         "01": {

@@ -1,4 +1,5 @@
 {
+    "_description": "Roller Shade Driver E1",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1607",
     "_blakadder": "https://zigbee.blakadder.com/Aqara_ZNJLBL01LM.html ",
     "Ep": {

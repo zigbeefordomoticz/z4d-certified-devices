@@ -1,4 +1,6 @@
 {
+    "_description": "Plug 10A US",
+    "_blakadder": "https://zigbee.blakadder.com/eWeLink_SWITCH-ZR03.html",
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13647",
     "_blakkader": "https://zigbee.blakadder.com/eWeLink_SWITCH-ZR02.html",
     "_comment": "Zigbee Smart Switch",

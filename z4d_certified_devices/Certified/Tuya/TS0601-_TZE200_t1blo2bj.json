@@ -1,4 +1,6 @@
 {
+    "_description": "Siren with Temperature & Humidity Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Neo_NAS-AB02B2.html",
     "_comment": "Tuya Siren Alarm - without any Temp/humi sensors",
     "_version": "0.10",
     "Identifier" : [

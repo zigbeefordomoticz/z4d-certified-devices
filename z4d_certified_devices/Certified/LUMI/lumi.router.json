@@ -1,4 +1,6 @@
 {
+	"_description": "CC2530 Router",
+	"_blakadder": "https://zigbee.blakadder.com/ptvo.router.html",
 	"_comment": "router ",
 	"Ep": {
 		"08": {

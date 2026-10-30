@@ -1,4 +1,6 @@
 {
+    "_description": "Motion Multi Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/OWON_PIR323.html",
     "Ep": {
         "01": {
             "0000": "",

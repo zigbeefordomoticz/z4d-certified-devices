@@ -1,4 +1,6 @@
 {
+    "_description": "Chain Roller Shades Driver",
+    "_blakadder": "https://zigbee.blakadder.com/Zemismart_AM43.html",
     "_comment": "Tuya Curtain",
     "_version": "0.10",
     "Identifier": [

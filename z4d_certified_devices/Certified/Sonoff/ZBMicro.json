@@ -1,7 +1,8 @@
 {
+    "_description": "Micro USB Plug and Repeater",
+    "_blakadder": "https://zigbee.blakadder.com/Sonoff_ZBMicro.html",
     "_comment": "Zigbee USB repeater plug",
     "_version": "1.0",
-    "_blakadder": "",
     "_source": "",
     "Ep": {
         "01": {

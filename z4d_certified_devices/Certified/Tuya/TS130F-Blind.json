@@ -1,4 +1,5 @@
 {
+    "_description": "Curtain Switch",
     "_comment": "MOES Smart Curtain Switch Module",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/30",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_TS130F.html",

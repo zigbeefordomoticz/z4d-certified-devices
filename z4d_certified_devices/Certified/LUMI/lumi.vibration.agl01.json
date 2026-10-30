@@ -1,5 +1,6 @@
 {
-    "_description": "",
+    "_description": "Vibration Sensor T1",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_DJT12LM.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/133",
     "_version": "0.1",
     "Ep": {

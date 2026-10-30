@@ -1,4 +1,5 @@
 {
+    "_description": "E1 Wall Switch (No Neutral, Double Rocker)",
     "_comment": "E1 Wall Switch (No Neutral, Double Rocker)",
     "_blakadder": "https://zigbee.blakadder.com/Aqara_QBKG39LM.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1576", 

@@ -1,4 +1,5 @@
 {
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_DLKZMK11LM.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/150",
     "_description": "Aqara Single Switch Module T1 (With Neutral) DLKZMK11LM - same hardware as lumi.switch.n0agl1 (SSM-U01), newer/CN firmware reports lumi.switch.n0acn2",
     "_version": "0.2",

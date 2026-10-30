@@ -1,4 +1,5 @@
 {
+    "_description": "Tradfri LED bulb E14 470 lumen, wireless dimmable white spectrum/chandelier opal white",
     "_blakadder": "https://zigbee.blakadder.com/Ikea_LED1949C5.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1416",
     "Ep": {

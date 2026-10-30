@@ -1,4 +1,6 @@
 {
+	"_description": "Hue White and Color Ambiance Play Light Bar",
+	"_blakadder": "https://zigbee.blakadder.com/Philips_LCT024.html",
 	"Ep":{
 		"0b": {
 			"0000": "", 

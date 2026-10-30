@@ -1,5 +1,6 @@
 {
-    "blakadder": "https://zigbee.blakadder.com/Tuya_SMD-02Z.html",
+    "_description": "Dimmer Module 2 Channel",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_SMD-02Z.html",
     "_comment": "Dimmer Module 2 Channel",
     "_source": "https://www.domoticz.com/forum/viewtopic.php?t=40643&sid=c736e17cae2a3a987408282db5bea504",
     "_version": "1.0",

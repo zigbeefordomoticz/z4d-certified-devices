@@ -1,4 +1,5 @@
 {
+    "_description": "Céliane Wireless Switch",
     "_comment": "Legrand Netatmo Remote Single Switch",
     "_blakadder": "https://zigbee.blakadder.com/Legrand_067773.html",
     "_versionn": "1.0",

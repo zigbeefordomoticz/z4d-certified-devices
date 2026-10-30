@@ -1,4 +1,6 @@
 {
+	"_description": "Hue LightStrip Plus",
+	"_blakadder": "https://zigbee.blakadder.com/Philips_LST002.html",
 	"Ep":{
 		"0b": {
 			"0000": "", 

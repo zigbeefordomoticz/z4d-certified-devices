@@ -1,4 +1,6 @@
 {
+	"_description": "Optical Smoke Detector",
+	"_blakadder": "https://zigbee.blakadder.com/SMaBiT_AV2010_24A.html",
 	"_comment": "SMaBiT av2010/29A",
 	"_version": "1.0",
 	"Ep": {

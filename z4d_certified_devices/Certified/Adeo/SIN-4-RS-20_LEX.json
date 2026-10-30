@@ -1,4 +1,6 @@
 {
+    "_description": "Module connecté volets roulants",
+    "_blakadder": "https://zigbee.blakadder.com/Lexman_83424577.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1619",
     "Ep": {
         "01": {

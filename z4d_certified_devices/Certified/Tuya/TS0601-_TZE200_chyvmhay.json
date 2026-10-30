@@ -1,4 +1,6 @@
 {
+	"_description": "Silvercrest Radiator Valve Controller",
+	"_blakadder": "https://zigbee.blakadder.com/Lidl_TVR01.html",
 	"_comment": "Tuya TRV - Lidl Valve",
 	"_version": "0.10",
 	"Ep": {

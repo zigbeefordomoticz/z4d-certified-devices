@@ -1,4 +1,6 @@
 {
+    "_description": "RGB+CT E14 5W Bulb",
+    "_blakadder": "https://zigbee.blakadder.com/eWeLink_EZ-E14.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/77",
     "_blakkader": "https://zigbee.blakadder.com/eWeLink_SWITCH-ZR02.html",
     "_comment": "RGB+CT MR16 12V Bulb eWeLink",

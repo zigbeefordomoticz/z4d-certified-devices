@@ -1,4 +1,6 @@
 {
+	"_description": "Tradfri LED bulb E14 400 lumen, wireless dimmable warm white, chandelier opal",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_LED1649C5-E14.html",
 	"Ep":{
 	       "01":{
 		       "0000":"",

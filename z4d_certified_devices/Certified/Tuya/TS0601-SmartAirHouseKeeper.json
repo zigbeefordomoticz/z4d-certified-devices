@@ -1,4 +1,6 @@
 {
+    "_description": "Smart Air Detector 6 in 1",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_DCR-KQG.html",
     "_comment": "Tuya Smart Air Box X1",
     "_version": "0.10",
     "Identifier": [

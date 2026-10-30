@@ -1,4 +1,6 @@
 {
+	"_description": "Smart Plug 16A EU",
+	"_blakadder": "https://zigbee.blakadder.com/Tuya_TS011F.html",
 	"_comment": "Tuya RR400ZB",
 	"_version": "1.0",
 	"Ep":{

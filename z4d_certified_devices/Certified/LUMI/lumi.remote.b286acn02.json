@@ -1,4 +1,6 @@
 {
+	"_description": "D1 Wireless Remote Switch (Double Rocker)",
+	"_blakadder": "https://zigbee.blakadder.com/Aqara_WXKG07LM.html",
 	"Ep": {
 		"01": {
             "0000": { 

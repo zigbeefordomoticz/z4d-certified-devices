@@ -1,4 +1,6 @@
 {
+    "_description": "frient Intelligent Heat Alarm",
+    "_blakadder": "https://zigbee.blakadder.com/Develco_HESZB-120.html",
     "_comment": "https://frient.com/products/intelligent-smoke-alarm/",
     "Ep": {
         "01": {

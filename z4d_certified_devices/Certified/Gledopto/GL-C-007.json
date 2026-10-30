@@ -1,4 +1,6 @@
 {
+	"_description": "RGBW LED Controller",
+	"_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-C-007.html",
 	"Ep": {
 		"0b": {
 			"0000": "",

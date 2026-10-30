@@ -1,6 +1,7 @@
 {
+    "_description": "Soil Temperature and Humidity Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Yieryi_THE01840.html",
     "_comment": "Tuya Soil sensor",
-    "_blakadder": "",
     "Identifier": [
         [ "TS0601", "_TZE200_myd45weu"],
         [ "TS0601", "_TZE200_ga1maeof"],

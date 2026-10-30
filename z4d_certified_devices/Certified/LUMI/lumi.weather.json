@@ -1,4 +1,6 @@
 {
+    "_description": "Temperature, Humidity and Pressure Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_WSDCGQ11LM.html",
     "Ep": {
         "01": {
             "0000": { 

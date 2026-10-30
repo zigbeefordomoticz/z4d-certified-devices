@@ -1,4 +1,5 @@
 {
+    "_description": "Hue Dimmer Switch v2 (EU)",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1624",
     "_blakadder": "https://zigbee.blakadder.com/Philips_RWL022.html",
     "_comment": "Philips Hue Remote",

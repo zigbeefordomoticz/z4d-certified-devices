@@ -1,4 +1,6 @@
 {
+	"_description": "Hue White Bulb A67 E27 1600lm with Bluetooth",
+	"_blakadder": "https://zigbee.blakadder.com/Philips_LWA009.html",
 	"Ep":{
 		"0b": {
 			"0000": "", 

@@ -1,4 +1,6 @@
 {
+	"_description": "Smart Sticker Switch",
+	"_blakadder": "https://zigbee.blakadder.com/Orvibo_CR11S8UZ.html",
 	"Ep": {
 		"01": {
 			"0000": "",

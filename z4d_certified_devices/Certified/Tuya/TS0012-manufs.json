@@ -1,4 +1,6 @@
 {
+    "_description": "Switch Module 2 Channel No Neutral",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_SML-02Z-L.html",
     "_comment": "Tuya two gangs Line only",
     "_version": "1.0",
     "Identifier": [

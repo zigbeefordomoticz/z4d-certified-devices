@@ -1,4 +1,6 @@
 {
+	"_description": "Temperature and Humidity Sensor with LCD screen",
+	"_blakadder": "https://zigbee.blakadder.com/Neo_NAS-TH02B.html",
 	"_comment": "Tuya Temp/Humi/Lux - Model NAS-TH02B manufactured by Neo ",
 	"_version": "0.10",
 	"Ep": {

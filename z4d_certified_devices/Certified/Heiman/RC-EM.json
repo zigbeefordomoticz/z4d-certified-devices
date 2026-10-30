@@ -1,4 +1,6 @@
 {
+	"_description": "Remote Controller",
+	"_blakadder": "https://zigbee.blakadder.com/Heiman_HS1RC.html",
 	"Ep": {
 		"01": {
 			"0000": "",

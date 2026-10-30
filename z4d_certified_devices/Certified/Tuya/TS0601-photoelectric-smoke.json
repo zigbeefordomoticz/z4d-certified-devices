@@ -1,4 +1,5 @@
 {
+    "_description": "Photoelectric Smoke Detector",
     "_comment": "Photoelectric smoke detector",
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13227&sid=ced00fc3ee586d9d518151f9a3fcbb2f",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_smoke.html",

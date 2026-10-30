@@ -1,4 +1,6 @@
 {
+    "_description": "CCT LED Controller",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_TS0502A.html",
     "Ep": {
         "01": {
             "0000": "",

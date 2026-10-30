@@ -1,4 +1,6 @@
 {
+	"_description": "BAC Series Thermostat",
+	"_blakadder": "https://zigbee.blakadder.com/HKGK_BAC-002-ALZB.html",
 	"_comment": "Tuya ZigBee Air Conditioning Thermostat Fan Coil Unit Digital Temp Conditioner Controller",
 	"_version": "0.10",
 	"Ep": {

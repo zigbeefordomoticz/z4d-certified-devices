@@ -1,4 +1,6 @@
 {
+    "_description": "Lexman E27 CCT Bulb",
+    "_blakadder": "https://zigbee.blakadder.com/ADEO_9CZA-A806ST-Q1Z.html",
     "Ep": {
         "01": {
             "0000": "",

@@ -1,4 +1,6 @@
 {
+	"_description": "Trådfri LED bulb GU10 400 lumen, dimmable",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_LED1837R5.html",
 	"Ep":{
 	       "01":{
 		       "0000":"",

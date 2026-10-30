@@ -1,4 +1,5 @@
 {
+    "_description": "Vibration Sensor",
     "_comment": "Vibration Sensor",
     "_version": "1.0",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_TS0210.html",

@@ -1,4 +1,6 @@
 {
+    "_description": "Wireless Scene Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_TS0041.html",
     "_comment": "1 Gang Wireless Switch",
     "_version": "1.0",
     "Ep": {

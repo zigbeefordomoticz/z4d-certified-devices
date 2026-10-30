@@ -1,4 +1,6 @@
 {
+    "_description": "Wiser L-Relay",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_EER42000.html",
     "_comment": "Schneider Wiser eer42000",
     "_version": "0.3",
     "Ep": {

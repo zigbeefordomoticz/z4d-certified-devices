@@ -1,4 +1,6 @@
 {
+	"_description": "Vibration Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Aqara_DJT11LM.html",
 	"Ep": {
 		"01": {
             "0000": { 

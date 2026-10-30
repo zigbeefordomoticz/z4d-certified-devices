@@ -1,4 +1,5 @@
 {
+    "_description": "IO-module (4 inputs + 2 NO/NC dry contact outputs)",
     "_comment": "IO-module (4 inputs + 2 NO/NC dry contact outputs)",
     "_version": "1.0",
     "_blakadder": "https://zigbee.blakadder.com/Develco_IOMZB-110.html",

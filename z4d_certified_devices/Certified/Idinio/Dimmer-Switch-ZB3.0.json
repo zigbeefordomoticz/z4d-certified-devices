@@ -1,4 +1,6 @@
 {
+	"_description": "LED Rotary Dimmer",
+	"_blakadder": "https://zigbee.blakadder.com/idinio_0140300.html",
 	"_comment": "Dimmer switch",
 	"_version": "1.0",
 	"Ep":{

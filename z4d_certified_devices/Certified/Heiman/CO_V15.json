@@ -1,4 +1,6 @@
 {
+	"_description": "EN50291 Carbon Monoxide Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Heiman_HS1CA.html",
 	"Ep": {
 		"01": {
 			"0000": "",

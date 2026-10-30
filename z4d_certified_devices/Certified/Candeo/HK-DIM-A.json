@@ -1,4 +1,5 @@
 {
+    "_description": "Rotary Dimmer",
     "_blakadder": "https://zigbee.blakadder.com/Candeo_HK-DIM-A.html",
     "_comment": "Zigbee Rotary Dimmer for dimmable LED",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1603",

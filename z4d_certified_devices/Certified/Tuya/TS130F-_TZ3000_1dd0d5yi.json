@@ -1,4 +1,6 @@
 {
+    "_description": "Curtain Switch RF433 Module",
+    "_blakadder": "https://zigbee.blakadder.com/Moes_MS-108ZR.html",
     "_comment": "MOES Smart Curtain Switch Module",
     "_version": "1.0",
     "Ep": {

@@ -1,4 +1,6 @@
 {
+    "_description": "Multi-Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/CASA_IA_CMS-323.html",
     "Ep": {
         "01": {
             "0000": "",

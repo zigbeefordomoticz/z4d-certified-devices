@@ -1,4 +1,6 @@
 {
+	"_description": "Mi Power Plug EU",
+	"_blakadder": "https://zigbee.blakadder.com/Xiaomi_ZNCZ04LM.html",
 	"_comment": "Xiaomi Smart Plug",
 	"_version": "0.1",
 	"Ep": {

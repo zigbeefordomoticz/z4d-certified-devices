@@ -1,4 +1,5 @@
 {
+    "_description": "12W Dual White and Color LED Bulb Plus",
     "_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-B-008ZS.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1426",
     "Ep": {

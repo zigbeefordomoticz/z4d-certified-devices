@@ -1,4 +1,6 @@
 {
+    "_description": "A/C IR Controller",
+    "_blakadder": "https://zigbee.blakadder.com/CASA_IA_CAC-221.html",
     "Ep": {
         "01": {
             "0000": "",

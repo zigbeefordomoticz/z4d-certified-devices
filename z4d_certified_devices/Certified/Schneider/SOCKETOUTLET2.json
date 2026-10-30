@@ -1,4 +1,6 @@
 {
+    "_description": "Elko SmartSocket Double 16A Plus PW",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_EKO09738.html",
     "_comment": "SOCKET-OUTLET ELKO PLUS OUTLET",
     "_version": "1.2",
     "Ep": {

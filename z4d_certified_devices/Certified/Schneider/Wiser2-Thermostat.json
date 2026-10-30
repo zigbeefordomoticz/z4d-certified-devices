@@ -1,4 +1,6 @@
 {
+    "_description": "Wiser Room Thermostat",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_CCTFR6400.html",
     "_comment": "Schneider Wiser Thermostat (CCTFR6400)",
     "_version": "1.0",
     "MinPluginVersion": "7.1.021",

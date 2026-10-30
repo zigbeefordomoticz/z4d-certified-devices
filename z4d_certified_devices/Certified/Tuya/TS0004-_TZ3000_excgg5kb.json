@@ -1,4 +1,6 @@
 {
+    "_description": "4 Channel Relay Board DC 5V/7-32V",
+    "_blakadder": "https://zigbee.blakadder.com/AllbeAI_TY4CH.html",
     "_comment": "Tuya 4 Gangs Inching Relay command",
     "_version": "1.0",
     "Ep": {

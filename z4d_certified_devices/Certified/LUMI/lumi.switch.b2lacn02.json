@@ -1,4 +1,5 @@
 {
+    "_description": "D1 Wall Switch (No Neutral, Double Rocker)",
     "_comment": "D1 Wall Switch (No Neutral, Double Rocker) ( 2 Gang) ",
     "_blakadder": "https://zigbee.blakadder.com/Aqara_QBKG22LM.html",
     "_version": "1.0",

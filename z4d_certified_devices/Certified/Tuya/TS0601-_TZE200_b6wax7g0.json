@@ -1,4 +1,6 @@
 {
+    "_description": "Thermostatic Radiator Valve",
+    "_blakadder": "https://zigbee.blakadder.com/Beca_BRT-100.html",
     "_comment": "Tuya TRV - MOES BRT-100 Radiator Thermostat(TRV)",
     "_version": "0.10",
     "Identifier": [

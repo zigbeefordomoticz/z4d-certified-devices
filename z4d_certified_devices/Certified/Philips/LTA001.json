@@ -1,4 +1,6 @@
 {
+	"_description": "Hue White Ambiance E27 with Bluetooth",
+	"_blakadder": "https://zigbee.blakadder.com/Philips_LTA001.html",
 	"Ep":{
 		"0b": {
 			"0000": "", 

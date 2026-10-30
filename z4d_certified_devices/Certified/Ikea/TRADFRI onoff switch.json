@@ -1,4 +1,6 @@
 {
+    "_description": "Tradfri ON/OFF Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Ikea_E1743.html",
     "Ep": {
         "01": {
             "0000": "",

@@ -1,4 +1,5 @@
 {
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_MCCGQ12LM.html",
     "_description": "Aqara T1 door & window contact sensor",
     "Ep": {
         "01": {

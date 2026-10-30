@@ -1,7 +1,8 @@
 {
+    "_description": "PIR Motion Detector and Light Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_ZG-204ZL.html",
     "_comment": "Luminance motion sensor",
     "_version": "1.0",
-    "_blakadder": "",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/120",
     "Ep": {
         "01": {

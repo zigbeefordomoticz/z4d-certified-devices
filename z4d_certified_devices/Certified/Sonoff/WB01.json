@@ -1,4 +1,6 @@
 {
+	"_description": "Wireless Switch",
+	"_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-01.html",
 	"_comment": "Sonoff Button",
 	"_version": "1.0",
 	"Ep": {

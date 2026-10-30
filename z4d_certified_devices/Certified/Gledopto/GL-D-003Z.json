@@ -1,4 +1,6 @@
 {
+	"_description": "6W Downlight Dual White and Color",
+	"_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-D-003Z.html",
 	"Ep": {
 		"0b": {
 			"0000": "",

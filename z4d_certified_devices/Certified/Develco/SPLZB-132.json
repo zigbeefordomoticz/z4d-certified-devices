@@ -1,4 +1,6 @@
 {
+    "_description": "frient Smart Plug Mini Type E (French)",
+    "_blakadder": "https://zigbee.blakadder.com/Develco_SPLZB-132.html",
     "_comment": "",
     "Ep": {
         "01": {

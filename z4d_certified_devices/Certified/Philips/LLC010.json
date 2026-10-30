@@ -1,4 +1,6 @@
 {
+	"_description": "Hue Iris Table Lamp",
+	"_blakadder": "https://zigbee.blakadder.com/Philips_LLC010.html",
 	"Ep":{
 		"0b": {
 			"0000": "", 

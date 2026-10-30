@@ -1,4 +1,6 @@
 {
+	"_description": "Honeywell Fire Alarm Smoke Detector",
+	"_blakadder": "https://zigbee.blakadder.com/Xiaomi_JTYJ-GD-01LM_BW.html",
 	"Ep": {
 		"01": {
             "0000": { 

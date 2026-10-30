@@ -1,4 +1,6 @@
 {
+	"_description": "Water Leakage Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Heiman_HS3WL.html",
 	"Ep": {
 		"01": {
 			"0000": "",

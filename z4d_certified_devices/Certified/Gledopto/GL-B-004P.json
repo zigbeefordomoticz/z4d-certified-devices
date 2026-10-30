@@ -1,6 +1,7 @@
 {
+    "_description": "7W LED Filament Bulb Pro G95",
+    "_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-B-004P.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1442",
-    "_blakadder": "",
     "Ep": {
         "01": {
             "0000": "",

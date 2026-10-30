@@ -1,4 +1,6 @@
 {
+	"_description": "Sound and Flash Siren",
+	"_blakadder": "https://zigbee.blakadder.com/Tuya_TS0216.html",
 	"Ep": {
 		"01": {
 			"0000": "",

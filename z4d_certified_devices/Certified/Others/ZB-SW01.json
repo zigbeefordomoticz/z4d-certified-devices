@@ -1,4 +1,6 @@
 {
+	"_description": "Light Switch 1 Gang",
+	"_blakadder": "https://zigbee.blakadder.com/eWeLink_ZB-SW01.html",
 	"_Comment": "EJLINK Switch button - Wired without Neutral",
 	"Ep": {
 		"01": {

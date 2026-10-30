@@ -1,4 +1,5 @@
 {
+    "_description": "Motion Sensor",
     "_comment": "Motion Sensor",
     "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-03P.html",
     "_source": "Pipiche",

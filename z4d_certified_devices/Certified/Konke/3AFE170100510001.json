@@ -1,4 +1,6 @@
 {
+    "_description": "Multi-function Button",
+    "_blakadder": "https://zigbee.blakadder.com/Konke_KPKEY.html",
     "Ep":{
         "01":{
             "0000":"",

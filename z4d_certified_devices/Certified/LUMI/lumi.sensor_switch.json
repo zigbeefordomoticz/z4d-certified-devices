@@ -1,4 +1,6 @@
 {
+    "_description": "Mijia Wireless Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Xiaomi_WXKG01LM.html",
     "Ep": {
         "01": {
             "0000": { 

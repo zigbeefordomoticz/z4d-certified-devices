@@ -1,4 +1,6 @@
 {
+    "_description": "Tradfri Wireless Dimmer",
+    "_blakadder": "https://zigbee.blakadder.com/Ikea_ICTC-G-1.html",
     "Ep": {
         "01": {
             "0000": "",

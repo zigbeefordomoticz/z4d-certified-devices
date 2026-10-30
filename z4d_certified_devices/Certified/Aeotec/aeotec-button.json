@@ -1,7 +1,7 @@
 {
+    "_blakadder": "https://zigbee.blakadder.com/SmartThings_IM6001-BTP01.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/12#issuecomment-1765341125",
     "_description": "Aeotec Button single, double, hold, Temperature",
-    "_blakadder": "",
     "Identifier": [
         [ "button", "Samjin" ]
     ],

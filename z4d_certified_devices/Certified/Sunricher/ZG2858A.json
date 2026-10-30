@@ -1,4 +1,6 @@
 {
+    "_description": "3 in 1 Remote Control",
+    "_blakadder": "https://zigbee.blakadder.com/Sunricher_SR-ZG2858A.html",
     "_comment": "Sunricher white remote Control",
     "_version": "0.1",
     "Ep": {

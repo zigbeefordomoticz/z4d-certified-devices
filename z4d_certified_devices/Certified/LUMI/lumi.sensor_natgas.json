@@ -1,4 +1,6 @@
 {
+	"_description": "Honeywell Gas Detector",
+	"_blakadder": "https://zigbee.blakadder.com/Xiaomi_JTQJ-BF-01LM_BW.html",
 	"Ep": {
 		"01": {
             "0000": { 

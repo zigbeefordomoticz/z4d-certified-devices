@@ -1,4 +1,6 @@
 {
+    "_description": "Wall Switch (No Neutral, Single Rocker)",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_QBKG04LM.html",
     "_comment": "Xiaomi Single Gang switch without neutral",
     "_version": "0.1",
     "Ep": {

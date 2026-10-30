@@ -1,4 +1,6 @@
 {
+	"_description": "Hue Smart Button",
+	"_blakadder": "https://zigbee.blakadder.com/Philips_ROM001.html",
 	"_comment": "Philips Hue Smart Button ROM001",
 	"_version": "1.0",
 	"Ep":{

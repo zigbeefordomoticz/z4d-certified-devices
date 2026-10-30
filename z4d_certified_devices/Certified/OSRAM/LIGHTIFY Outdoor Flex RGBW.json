@@ -1,4 +1,6 @@
 {
+	"_description": "Smart+ Outdoor Flex RGBW",
+	"_blakadder": "https://zigbee.blakadder.com/OSRAM_4058075036185.html",
 	"Ep": {
 		"03": {
 			"0000": "",

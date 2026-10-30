@@ -1,4 +1,6 @@
 {
+    "_description": "Aqara 2 Way Control Module Wireless Relay",
+    "_blakadder": "https://zigbee.blakadder.com/Xiaomi_LLKZMK11LM.html",
     "Ep": {
         "01": {
             "0000": { 

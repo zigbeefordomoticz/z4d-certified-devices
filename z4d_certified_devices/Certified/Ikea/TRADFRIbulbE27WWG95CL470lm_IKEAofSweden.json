@@ -1,4 +1,5 @@
 {
+    "_description": "Tradfri LED bulb E27 G96 470 lumen WW clear, dimmable",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/57",
     "_blakadder": "https://zigbee.blakadder.com/Ikea_LED2102G3.html",
     "Ep":{

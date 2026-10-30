@@ -1,4 +1,5 @@
 {
+    "_description": "TVOC Air Quality Monitor",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1448",
     "_blakadder": "https://zigbee.blakadder.com/Aqara_AAQS-S01.html",
     "Ep": {

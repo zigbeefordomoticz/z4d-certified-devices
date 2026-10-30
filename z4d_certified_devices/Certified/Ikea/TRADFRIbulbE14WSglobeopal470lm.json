@@ -1,4 +1,5 @@
 {
+    "_blakadder": "https://zigbee.blakadder.com/Ikea_LED2002G5.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/42",
     "_description": "TRÅDFRI Led-lamp E27 1055 lumen",
     "Ep":{

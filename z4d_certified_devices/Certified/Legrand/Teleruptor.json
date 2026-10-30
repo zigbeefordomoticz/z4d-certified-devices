@@ -1,4 +1,5 @@
 {
+    "_description": "Connected DIN Relay 16A",
     "_comment": "Legrand Teleruptor power consumption module (Not Tested)",
     "_blakadder": "https://zigbee.blakadder.com/Legrand_412170.html",
     "_version": "0.1",

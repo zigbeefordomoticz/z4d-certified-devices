@@ -1,4 +1,5 @@
 {
+    "_description": "ZBMINI Extreme No Neutral Relay Module",
     "_comment": "Sonoff ZBMINI Extreme No Neutral Relay Module",
     "_blakadder": "https://zigbee.blakadder.com/Sonoff_ZBMINIL2.html",
     "_version": "1.0",

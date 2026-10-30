@@ -1,4 +1,6 @@
 {
+	"_description": "12W RGB+Dual White LED Bulb",
+	"_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-B-008Z.html",
 	"Ep": {
 		"0b": {
 			"0000": "",
