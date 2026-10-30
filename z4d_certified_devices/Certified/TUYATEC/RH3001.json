@@ -1,4 +1,6 @@
 {
+    "_description": "Contact Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_SNTZ007.html",
     "Ep": {
         "01": {
             "0000": "",

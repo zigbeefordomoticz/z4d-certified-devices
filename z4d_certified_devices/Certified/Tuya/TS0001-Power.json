@@ -1,4 +1,6 @@
 {
+    "_description": "Mini Smart Switch 10A/16A",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_WHD02.html",
     "_comment": "Tuya Switch with power monitoring",
     "_version": "1.0",
     "Identifier": [

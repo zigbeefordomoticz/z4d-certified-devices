@@ -1,4 +1,6 @@
 {
+	"_description": "USB Mini LED controller RGB+CCT",
+	"_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-MC-001.html",
 	"Ep": {
 		"0b": {
 			"0000": "",

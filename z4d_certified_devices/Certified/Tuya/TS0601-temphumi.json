@@ -1,4 +1,5 @@
 {
+    "_description": "LCD Temperature and Humidity Sensor",
     "_comment": "Tuya Temp/Humi sensor",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_ZG227C.html",
     "Identifier": [

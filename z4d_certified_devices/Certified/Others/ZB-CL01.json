@@ -1,4 +1,6 @@
 {
+    "_description": "Tuya Zigbee 3.0 E27/B22/GU10 Bulb",
+    "_blakadder": "https://zigbee.blakadder.com/Lonsonho_ZB-RGBCW.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1471",
     "_Comment": "KAIYE Tuya Smart Zigbee Ampoule LED E27 10W Smart Life",
     "_blakkader": "https://zigbee.blakadder.com/eWeLight_ZAH-BL01-RGBCW.html",

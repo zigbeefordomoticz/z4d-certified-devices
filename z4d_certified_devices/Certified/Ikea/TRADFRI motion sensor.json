@@ -1,4 +1,6 @@
 {
+    "_description": "Tradfri Motion Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Ikea_E1525.html",
     "Ep": {
         "01": {
             "0000": "",

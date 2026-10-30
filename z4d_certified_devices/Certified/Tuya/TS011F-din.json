@@ -1,4 +1,6 @@
 {
+    "_description": "DIN Rail Circuit Breaker 63A with Power Monitoring",
+    "_blakadder": "https://zigbee.blakadder.com/Tongou_TO-Q-SY1-JZT.html",
     "_comment": "Zigbee DIN Smart Switch 16A (energy reporting)",
     "_version": "1.0",
     "Identifier": [

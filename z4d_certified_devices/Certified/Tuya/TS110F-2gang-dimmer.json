@@ -1,4 +1,6 @@
 {
+    "_description": "Dimmer Switch Module With Neutral 2 Gang",
+    "_blakadder": "https://zigbee.blakadder.com/Lonsonho_QS-Zigbee-D02-TRIAC-2C-LN.html",
     "_comment": "Dimmer Switch Module With Neutral 2 Gang",
     "_version": "1.0",
     "Identifier" : [
