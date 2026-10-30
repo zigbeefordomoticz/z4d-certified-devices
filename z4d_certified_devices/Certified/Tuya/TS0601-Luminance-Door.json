@@ -1,6 +1,6 @@
 {
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_ZG-102ZL.html",
     "_description": "Tuya Luminance door sensor",
-    "_blakadder": "",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/74",
     "_version": "1.0",
     "Identifier": [

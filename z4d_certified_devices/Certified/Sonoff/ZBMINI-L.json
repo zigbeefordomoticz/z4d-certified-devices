@@ -1,4 +1,6 @@
 {
+	"_description": "Mini Relay No Neutral",
+	"_blakadder": "https://zigbee.blakadder.com/Sonoff_ZBMINI-L.html",
 	"_comment": "Sonoff Basic ZBR3",
 	"_version": "1.0",
 	"Ep": {

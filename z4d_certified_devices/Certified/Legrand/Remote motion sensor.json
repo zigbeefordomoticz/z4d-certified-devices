@@ -1,5 +1,7 @@
 {
-    "_comment": "Legrand Netatmo Remoet Motion Sensor",
+    "_description": "140° Infrared Motion Detector IP44",
+    "_comment": "Legrand Netatmo Remote Motion Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_064875.html",
     "_version": "0.1",
     "Ep": {
         "01": {

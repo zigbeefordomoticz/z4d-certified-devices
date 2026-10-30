@@ -1,4 +1,6 @@
 {
+	"_description": "Sound and Flash Siren",
+	"_blakadder": "https://zigbee.blakadder.com/Heiman_HS2WD.html",
 	"Ep": {
 		"01": {
 			"0000": "",

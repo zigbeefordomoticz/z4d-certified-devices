@@ -1,4 +1,6 @@
 {
+	"_description": "Hue White A60 E27",
+	"_blakadder": "https://zigbee.blakadder.com/Philips_LWB006.html",
 	"Ep":{
 		"0b": {
 			"0000": "", 

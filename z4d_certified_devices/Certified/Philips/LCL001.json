@@ -1,4 +1,6 @@
 {
+	"_description": "Hue Lightstrip Plus",
+	"_blakadder": "https://zigbee.blakadder.com/Philips_8718699703424.html",
 	"Ep":{
 		"0b": {
 			"0000": "", 

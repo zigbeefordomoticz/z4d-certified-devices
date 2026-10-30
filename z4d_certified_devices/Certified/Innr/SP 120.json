@@ -1,4 +1,6 @@
 {
+    "_description": "Smart Plug",
+    "_blakadder": "https://zigbee.blakadder.com/Innr_SP_120.html",
     "Ep": {
         "01": {
             "0000": "", 

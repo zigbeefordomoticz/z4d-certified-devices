@@ -1,4 +1,6 @@
 {
+    "_description": "H1 EU Wall Switch (With Neutral, Single Rocker)",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_WS-EUK03.html",
     "_comment": "Xiaomi Aqara H1 1-gang (neutral wire) WS-EUK03",
     "_version": "0.1",
     "Ep": {

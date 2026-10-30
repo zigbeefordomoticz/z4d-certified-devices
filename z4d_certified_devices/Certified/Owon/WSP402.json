@@ -1,4 +1,6 @@
 {
+	"_description": "Smart Plug AU",
+	"_blakadder": "https://zigbee.blakadder.com/OWON_WSP402.html",
 	"Ep": {
 		"01": {
 			"0000": "",

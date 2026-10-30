@@ -1,4 +1,6 @@
 {
+	"_description": "Radiator Valve with Thermostat",
+	"_blakadder": "https://zigbee.blakadder.com/Siterwell_GS361A-H04.html",
 	"_comment": "Tuya TRV: _TYST11_zivfvd7h / ivfvd7h / Siterwell / GS361A-H04 ",
 	"_version": "0.10",
 	"Ep": {

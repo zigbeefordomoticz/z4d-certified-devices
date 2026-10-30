@@ -1,4 +1,6 @@
 {
+	"_description": "Aqara Opple Wireless Scene Switch 4 Button",
+	"_blakadder": "https://zigbee.blakadder.com/Xiaomi_WXCJKG12LM.html",
 	"_comment": "Innovative Wireless Control WXCJKG12LM. 4 Buttons Off/on only",
 	"_version": "Initial Version",
 	"Ep": {

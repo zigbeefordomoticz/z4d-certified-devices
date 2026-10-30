@@ -1,4 +1,5 @@
 {
+    "_description": "frient Entry Sensor Pro",
     "_comment": "frient Entry Sensor Pro",
     "_blakadder": "https://zigbee.blakadder.com/Develco_WISZB-120.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1597",

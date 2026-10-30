@@ -1,4 +1,6 @@
 {
+    "_description": "Vima Smart Lock Cylinder",
+    "_blakadder": "https://zigbee.blakadder.com/Xiaomi_Vima_A6121.html",
     "Ep": {
         "01": {
             "0000": { 

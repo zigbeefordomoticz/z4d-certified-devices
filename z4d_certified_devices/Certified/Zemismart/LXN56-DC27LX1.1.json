@@ -1,4 +1,6 @@
 {
+	"_description": "Smart Light Dimmer",
+	"_blakadder": "https://zigbee.blakadder.com/Moes_MS-107D.html",
 	"_comment": "Build with d2e2n2o. This is a 3A Home Switch / Zemimsart LXZB 02A",
 	"Ep": {
 		"01": {

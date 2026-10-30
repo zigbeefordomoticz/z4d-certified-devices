@@ -1,4 +1,5 @@
 {
+    "_description": "Rodret Wireless Dimmer",
     "_comment": "RODRET wireless dimmer/power switch",
     "_version": "1.0",
     "_blakadder": "https://zigbee.blakadder.com/Ikea_E2201.html",

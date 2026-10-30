@@ -1,4 +1,6 @@
 {
+    "_description": "Hue Dimmer Switch (EU)",
+    "_blakadder": "https://zigbee.blakadder.com/Philips_RWL021.html",
     "_comment": "Philips Hue Remote",
     "_version": "1.0",
     "Ep":{

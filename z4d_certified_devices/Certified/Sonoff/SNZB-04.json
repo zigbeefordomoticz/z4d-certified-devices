@@ -1,4 +1,5 @@
 {
+    "_description": "Wireless Door/Window Sensor",
     "_comment": "Sonoff / eWeLink SNZB-04 contact sensor (ZoneType 0x0015 contact switch, no tamper switch)",
     "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-04.html",
     "_source": "end user device report: Manufacturer eWeLink, Model SNZB-04, ProfileID 0104, ZDeviceID 0402",

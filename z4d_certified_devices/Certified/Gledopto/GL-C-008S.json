@@ -1,4 +1,6 @@
 {
+	"_description": "RGB+CCT LED Controller Plus",
+	"_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-C-008S.html",
 	"Ep": {
 		"0b": {
 			"0000": "",

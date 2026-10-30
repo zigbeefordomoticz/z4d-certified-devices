@@ -1,7 +1,8 @@
 {
+    "_description": "Light Intensity Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_ZXZLD-01.html",
     "_comment": "Light intensity sensor",
     "_version": "",
-    "_blakadder": "",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/138",
     "Identifier" : [
         ["ZG-106Z", "HOBEIAN"],

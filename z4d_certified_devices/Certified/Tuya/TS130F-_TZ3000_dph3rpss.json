@@ -1,4 +1,6 @@
 {
+    "_description": "Curtain Smart Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Zemismart_ZN-EC1E.html",
     "_comment": "MOES Smart Curtain Switch Module",
     "_blakkader": "https://zigbee.blakadder.com/Zemismart_ZN-EC1E.html",
     "_version": "1.0",

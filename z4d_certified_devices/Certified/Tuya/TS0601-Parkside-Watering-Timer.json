@@ -1,4 +1,6 @@
 {
+    "_description": "Parkside Smart Watering Timer",
+    "_blakadder": "https://zigbee.blakadder.com/Lidl_HG08675.html",
     "_comment": "Parkside Smart Watering Timer",
     "_version": "0.10",
     "Identifier": [

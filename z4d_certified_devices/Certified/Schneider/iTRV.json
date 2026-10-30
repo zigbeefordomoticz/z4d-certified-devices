@@ -1,4 +1,6 @@
 {
+    "_description": "Drayton Wiser Radiator Thermostat",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_CCTFR6100.html",
     "_comment": "Schneider Wiser Radiator Thermostat (CCTFR6100)",
     "_version": "0.1",
     "Ep": {

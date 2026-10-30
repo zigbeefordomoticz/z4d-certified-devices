@@ -1,4 +1,6 @@
 {
+	"_description": "S26 Plug DE/FR/UK",
+	"_blakadder": "https://zigbee.blakadder.com/Sonoff_S26R2ZB.html",
 	"_comment": "Sonoff Basic ZBR3",
 	"_version": "1.0",
 	"Ep": {

@@ -1,4 +1,5 @@
 {
+    "_blakadder": "https://zigbee.blakadder.com/SMaBiT_AV2010_22.html",
     "_description": "Bitron Motion sensor",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/89",
     "Ep": {

@@ -1,4 +1,6 @@
 {
+    "_description": "Hue Motion Outdoor Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Philips_SML002.html",
     "_comment": "Philips Hue Motion (SML001 Indoor, SML002 Outdoor) Sensor",
     "_version": "1.0",
     "Ep": {

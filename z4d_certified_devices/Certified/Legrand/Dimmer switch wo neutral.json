@@ -1,5 +1,7 @@
 {
+    "_description": "Céliane Wired Switch No Neutral - white",
     "_comment": "Legrand Netamo Dimmer Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_067721.html",
     "_version": "1.0",
     "Ep": {
         "01": {

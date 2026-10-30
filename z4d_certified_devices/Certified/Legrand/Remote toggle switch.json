@@ -1,4 +1,6 @@
 {
+    "_description": "Wireless Remote Toggle Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_067694.html",
     "_comment": "Legrand Netatmo Remote Single Switch",
     "_versionn": "1.0",
     "Ep": {

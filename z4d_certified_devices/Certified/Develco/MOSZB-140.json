@@ -1,4 +1,6 @@
 {
+    "_description": "frient Motion Sensor Pro",
+    "_blakadder": "https://zigbee.blakadder.com/Develco_MOSZB-140.html",
     "_comment": "https://frient.com/products/motion-sensor-pro/",
     "Ep": {
         "01": {

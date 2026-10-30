@@ -1,4 +1,6 @@
 {
+    "_description": "Outlet",
+    "_blakadder": "https://zigbee.blakadder.com/SmartThings_F-OUT-US-2.html",
     "_comment": "SmartThings outlet",
     "_version": "0.1",
     "Ep": {

@@ -1,4 +1,6 @@
 {
+    "_description": "Motion Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-03.html",
     "_comment": "Sonoff SNZB-03 Motion detector",
     "_version": "1.0",
     "Ep": {

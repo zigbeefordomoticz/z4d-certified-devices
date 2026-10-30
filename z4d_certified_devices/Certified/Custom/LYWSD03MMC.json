@@ -1,4 +1,5 @@
 {
+    "_description": "Temperature And Humidity Sensor with LCD",
     "_comment": "Xiaomi temperature & humidity sensor with custom firmware",
     "_blakadder": "https://zigbee.blakadder.com/Xiaomi_LYWSD03MMC.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/48",

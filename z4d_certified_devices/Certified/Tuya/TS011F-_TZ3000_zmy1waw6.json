@@ -1,4 +1,6 @@
 {
+	"_description": "Switch Module ZigBee+RF 2 Gang",
+	"_blakadder": "https://zigbee.blakadder.com/Moes_MS-104BZ.html",
 	"_comment": "Tuya RR400ZB",
 	"_version": "1.0",
 	"Ep":{

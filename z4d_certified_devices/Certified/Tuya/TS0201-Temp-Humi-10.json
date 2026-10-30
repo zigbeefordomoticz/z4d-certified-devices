@@ -1,4 +1,6 @@
 {
+    "_description": "Temperature and Humidity Sensor with Display",
+    "_blakadder": "https://zigbee.blakadder.com/Moes_ZSS-KB-TH.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/45",
     "Identifier": [
         [ "TS0201", "_TZ3000_ywagc4rj"],

@@ -1,4 +1,6 @@
 {
+    "_description": "DIN Power Consumption Module 230V 63A",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_412015.html",
     "_comment": "Legrand DIN power consumption module (Not Tested)",
     "_version": "0.1",
     "Ep": {

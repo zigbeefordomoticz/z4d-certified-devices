@@ -1,4 +1,6 @@
 {
+    "_description": "Cephei Dimming and Switching Controller",
+    "_blakadder": "https://zigbee.blakadder.com/Paulmann_50044.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1472",
     "Ep":{
         "01":{

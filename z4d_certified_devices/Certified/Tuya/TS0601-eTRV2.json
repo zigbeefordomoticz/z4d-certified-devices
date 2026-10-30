@@ -1,4 +1,6 @@
 {
+    "_description": "Thermostatic Radiator Valve Controller",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_HY366.html",
     "_comment": "Tuya TRV: Moes HY368 / HY369",
     "_version": "0.10",
     "Identifier": [

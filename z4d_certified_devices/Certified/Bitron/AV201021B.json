@@ -1,4 +1,6 @@
 {
+	"_description": "Compact Magnetic Contact Sensor with Wired Contacts",
+	"_blakadder": "https://zigbee.blakadder.com/SMaBiT_AV2010_21B.html",
 	"Ep": {
 		"01": {
 			"0000": "",

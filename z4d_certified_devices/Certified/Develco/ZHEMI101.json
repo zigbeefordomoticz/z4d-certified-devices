@@ -1,4 +1,6 @@
 {
+	"_description": "frient Electricity Meter Interface",
+	"_blakadder": "https://zigbee.blakadder.com/Develco_ZHEMI101.html",
 	"_comment": "",
 	"Ep": {
 		"01": {

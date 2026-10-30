@@ -1,4 +1,6 @@
 {
+	"_description": "tint LED Ambience Light Talpa white+color",
+	"_blakadder": "https://zigbee.blakadder.com/Muller_Licht_404027.html",
 	"_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1350",
 	"Ep":{
 	       "01":{

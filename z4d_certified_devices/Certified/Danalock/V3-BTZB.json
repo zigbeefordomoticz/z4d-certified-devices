@@ -1,4 +1,6 @@
 {
+    "_description": "V3 Smart Lock",
+    "_blakadder": "https://zigbee.blakadder.com/Danalock_V3-BTZB.html",
     "_comment": "Danalock Door lock",
     "_version": "0.1",
     "Ep": {

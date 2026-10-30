@@ -1,4 +1,5 @@
 {
+    "_description": "Dimmer + Rotary Dimmer",
     "_blakadder": "https://zigbee.blakadder.com/iCasa_ICZB-R12D.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/66",
     "_comment": "Dimmer + Rotary Dimmer",

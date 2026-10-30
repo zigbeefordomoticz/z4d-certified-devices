@@ -1,4 +1,6 @@
 {
+    "_description": "DIN Rail Circuit Breaker 63A with Over Current Protection and Power Monitoring",
+    "_blakadder": "https://zigbee.blakadder.com/Tongou_TO-Q-SY2-JZT.html",
     "_comment": "Din rail switch with power monitoring and threshold settings",
     "_version": "1.0",
     "Identifier": [

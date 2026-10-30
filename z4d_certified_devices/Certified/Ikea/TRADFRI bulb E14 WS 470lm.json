@@ -1,4 +1,6 @@
 {
+	"_description": "Tradfri LED bulb E14 470 lumen, warm dimming, chandelier opal white",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_LED1835C6.html",
 	"Ep":{
 	       "01":{
 		       "0000":"",

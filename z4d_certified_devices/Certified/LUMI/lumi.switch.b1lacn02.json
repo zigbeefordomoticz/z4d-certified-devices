@@ -1,4 +1,5 @@
 {
+    "_description": "D1 Wall Switch (No Neutral, Single Rocker)",
     "_comment": "D1 Wall Switch (No Neutral, Single Rocker)",
     "_blakadder": "https://zigbee.blakadder.com/Aqara_QBKG21LM.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1585#issuecomment-1515294766",

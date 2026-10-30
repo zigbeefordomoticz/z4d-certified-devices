@@ -1,4 +1,6 @@
 {
+	"_description": "Floalt LED Light Panel 60x60 cm",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_L1529.html",
 	"Ep": {
 		"01": {
 			"0000": "", 

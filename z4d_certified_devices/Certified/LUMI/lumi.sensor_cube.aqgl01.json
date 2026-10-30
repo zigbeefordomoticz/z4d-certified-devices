@@ -1,4 +1,6 @@
 {
+	"_description": "Cube",
+	"_blakadder": "https://zigbee.blakadder.com/Aqara_MFKZQ01LM.html",
 	"Ep": {
 		"01": {
             "0000": { 

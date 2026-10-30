@@ -1,6 +1,6 @@
 {
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_C02Z.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/51",
-    "_blakadder": "",
     "_description": "Light controller",
     "Ep": {
         "01": {

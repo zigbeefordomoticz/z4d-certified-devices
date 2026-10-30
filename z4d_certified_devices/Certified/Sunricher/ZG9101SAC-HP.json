@@ -1,4 +1,5 @@
 {
+    "_description": "AC Phase-Cut Dimmer",
     "_comment": "AC Phase-Cut Dimmer",
     "_blakadder": "https://zigbee.blakadder.com/Sunricher_SR-ZG9101SAC-HP.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1583",

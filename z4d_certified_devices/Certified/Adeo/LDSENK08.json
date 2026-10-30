@@ -1,4 +1,6 @@
 {
+    "_description": "Lexman Door Window Sensor with Vibration",
+    "_blakadder": "https://zigbee.blakadder.com/ADEO_LDSENK08.html",
     "_comment": "https://zigbee.blakadder.com/ADEO_LDSENK08.html",
     "_blakkader": "https://zigbee.blakadder.com/ADEO_LDSENK10.html",
     "_version": "1.0",

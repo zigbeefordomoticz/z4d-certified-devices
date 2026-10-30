@@ -1,4 +1,6 @@
 {
+    "_description": "10A/16A Smart Plug",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_TS0121.html",
     "_comment": "blitzwolf zigbee plug. Attention TUYA has a similar plug with the same Model Name. Unfortunatly Power/Metering not supported by Tuya",
     "_version": "1.0",
     "Ep": {

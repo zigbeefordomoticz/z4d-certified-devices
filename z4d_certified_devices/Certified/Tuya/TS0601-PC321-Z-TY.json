@@ -1,7 +1,8 @@
 {
+    "_description": "Single/3-phase Clamp Power Meter (80A/120A/200A/300A/500A)",
+    "_blakadder": "https://zigbee.blakadder.com/Owon_PC321-TY.html",
     "_comment": "Tuya Zigbee PC321-Z-TY, 3-phase clamp power meter",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/38",
-    "_blakadder": "",
     "_version": "1",
     "MinPluginVersion": "7.1.004",
     "Identifier": [

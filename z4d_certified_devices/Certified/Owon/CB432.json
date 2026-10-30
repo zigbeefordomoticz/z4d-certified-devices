@@ -1,4 +1,6 @@
 {
+  "_description": "DIN Rail Switch 32A/63A E-Meter",
+  "_blakadder": "https://zigbee.blakadder.com/OWON_CB432.html",
   "_comment": "CB432 Smart Switch 32A",
   "_version": "0.1",
   "Ep": {

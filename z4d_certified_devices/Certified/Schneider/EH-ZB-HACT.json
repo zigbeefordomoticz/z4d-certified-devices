@@ -1,4 +1,6 @@
 {
+    "_description": "Wiser H-Relay",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_EER50000.html",
     "_comment": "Schneider Wiser actioneur",
     "_version": "0.3",
     "Ep": {

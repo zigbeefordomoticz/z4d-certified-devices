@@ -1,5 +1,6 @@
 {
-    "blakadder": "https://zigbee.blakadder.com/Lonsonho_QS-Zigbee-D02-TRIAC-L.html",
+    "_description": "Dimmer Switch Module With Neutral 1 Gang",
+    "_blakadder": "https://zigbee.blakadder.com/Lonsonho_QS-Zigbee-D02-TRIAC-L.html",
     "_comment": "Dimmer Switch Module Without Neutral 1 Gang",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1582",
     "_version": "1.0",

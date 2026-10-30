@@ -1,4 +1,5 @@
 {
+    "_description": "Scene Switch",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1439",
     "_blakadder": "https://zigbee.blakadder.com/Heiman_HS2SS.html",
     "Ep": {

@@ -1,4 +1,6 @@
 {
+    "_description": "ERIA Motion Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/AduroSmart_81823.html",
     "_comment": "https://zigbee.blakadder.com/AduroSmart_81823.html",
     "_version": "1.0",
     "Ep": {

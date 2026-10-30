@@ -1,4 +1,6 @@
 {
+	"_description": "Dry Contact Module",
+	"_blakadder": "https://zigbee.blakadder.com/Orvibo_CM10ZW.html",
 	"_comment": "Orvibo Dry Contact Module CM10ZW ",
 	"_version": "0.1",
 	"Ep": {

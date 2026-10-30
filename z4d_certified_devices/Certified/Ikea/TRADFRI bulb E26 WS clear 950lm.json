@@ -1,4 +1,6 @@
 {
+	"_description": "Tradfri LED bulb E26/E27 950 lumen, dimmable, white spectrum, clear",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_LED1546G12.html",
 	"Ep":{
 	       "01":{
 		       "0000":"",

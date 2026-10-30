@@ -1,5 +1,7 @@
 {
+    "_description": "Valena Life Scene Switch - Wakeup/Sleep",
     "_comment": "Legrand Netatmo Scene Sleep Wake Up",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_752x89.html",
     "_version": "0.1",
     "Ep": {
         "01": {

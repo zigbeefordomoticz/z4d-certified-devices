@@ -1,4 +1,6 @@
 {
+	"_description": "D1 Wireless Remote Switch (Single Rocker)",
+	"_blakadder": "https://zigbee.blakadder.com/Aqara_WXKG06LM.html",
 	"Ep": {
 		"01": {
             "0000": { 

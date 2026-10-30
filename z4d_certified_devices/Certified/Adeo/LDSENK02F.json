@@ -1,4 +1,6 @@
 {
+    "_description": "Smart Plug 16A FR",
+    "_blakadder": "https://zigbee.blakadder.com/ADEO_LDSENK02F.html",
     "_comment": "ADEO LEXMAN Smart Plug 16A",
     "_blakkader": "https://zigbee.blakadder.com/ADEO_LDSENK02F.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1394",

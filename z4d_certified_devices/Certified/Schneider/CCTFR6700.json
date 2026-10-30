@@ -1,4 +1,6 @@
 {
+    "_description": "Wiser 16A Relay for Electric Heater",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_CCTFR6700.html",
     "_comment": "Schneider CCTFR6700 - Heating thermostat",
     "_version": "1",
     "Identifier": [

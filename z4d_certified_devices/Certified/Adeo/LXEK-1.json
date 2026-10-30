@@ -1,4 +1,6 @@
 {
+    "_description": "Lexman Globe 95 E27 RGBW Bulb",
+    "_blakadder": "https://zigbee.blakadder.com/ADEO_9CZA-G1521-Q1A.html",
     "Ep": {
         "01": {
             "0000": "",

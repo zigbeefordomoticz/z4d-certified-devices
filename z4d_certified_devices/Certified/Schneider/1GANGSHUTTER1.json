@@ -1,4 +1,6 @@
 {
+    "_description": "Merten PlusLink Shutter Insert",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_MEG5165-0000.html",
     "_comment": "Schneider Shutter Switch",
     "_version": "0.1",
     "Ep": {

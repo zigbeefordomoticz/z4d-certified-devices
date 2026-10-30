@@ -1,4 +1,5 @@
 {
+    "_description": "LCD Temperature Humidity Sensor (Probe Version)",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/112",
     "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-02D.html",
     "_comment": "Waterproof (IP65) sensor with screen and probe temperature detection",

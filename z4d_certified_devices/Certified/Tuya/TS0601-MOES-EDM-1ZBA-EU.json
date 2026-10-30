@@ -1,4 +1,5 @@
 {
+    "_description": "Rotary Dimmer Switch EU",
     "_blakadder": "https://zigbee.blakadder.com/Eardatek_EDM-1ZBB-EU.html",
     "_comment": "Tuya Smart Dimmer Switch",
     "_version": "0.10",

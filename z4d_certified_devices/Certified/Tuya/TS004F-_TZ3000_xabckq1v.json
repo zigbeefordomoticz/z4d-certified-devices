@@ -1,4 +1,6 @@
 {
+    "_description": "Wireless 12 Scene Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Eardatek_ESW-4ZAA-CN.html",
     "_comment": "Tuya 4 switch remote (Single, Double,Long press)",
     "_version": "Initial Version",
     "Ep": {

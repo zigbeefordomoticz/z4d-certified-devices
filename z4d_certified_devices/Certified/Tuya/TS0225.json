@@ -1,4 +1,6 @@
 {
+    "_description": "Human Presence and Illuminance Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_ZG-205Z-A.html",
     "_comment": "Tuya Zigbee-Détecteur de Présence Humaine Intelligent",
     "Identifier": [
         [ "TS0225", "_TZE200_2aaelwxk" ]

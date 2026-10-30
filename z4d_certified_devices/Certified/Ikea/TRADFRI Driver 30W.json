@@ -1,4 +1,6 @@
 {
+	"_description": "Tradfri LED Driver for Wireless Control 30 W",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_ICPSHC24-30EU-IL-1.html",
 	"Ep": {
 		"01": {
 			"0000": "",

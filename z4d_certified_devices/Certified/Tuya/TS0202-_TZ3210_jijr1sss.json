@@ -1,4 +1,6 @@
 {
+    "_description": "Neo Multi Sensor 4in1",
+    "_blakadder": "https://zigbee.blakadder.com/Immax_07502L.html",
     "_Comment": "Tuya ZigBee – multi-capteur 4-in-1 PIR motion temperature",
     "Ep": {
         "01": {

@@ -1,4 +1,6 @@
 {
+	"_description": "Tradfri Control Outlet",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_E1603.html",
 	"Ep":{
 		"02":{"1000":"","0021":"","Type":""},
 		"01":{"0006":"","fc7c":"","0004":"","0000":"","0003":"","0008":"","0005":"","0019":"","Type":"Plug"}

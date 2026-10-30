@@ -1,4 +1,6 @@
 {
+    "_description": "Wiser Smart Plug FR",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_EER40020.html",
     "_comment": "Schneider Wiser Smart Plug eer4000",
     "_version": "0.1",
     "Ep": {

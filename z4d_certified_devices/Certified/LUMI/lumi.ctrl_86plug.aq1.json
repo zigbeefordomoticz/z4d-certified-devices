@@ -1,4 +1,6 @@
 {
+    "_description": "Wall Outlet",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_QBCZ11LM.html",
     "_comment": "lumi.ctrl_86plug.aq1",
     "_version": "0.1",
     "Ep": {

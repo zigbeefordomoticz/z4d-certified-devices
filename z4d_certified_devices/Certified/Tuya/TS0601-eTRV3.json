@@ -1,4 +1,6 @@
 {
+    "_description": "Smart Radiator Thermostat",
+    "_blakadder": "https://zigbee.blakadder.com/Hama_00176592.html",
     "_comment": "Tuya TRV: Moes HY368 / HY369",
     "_version": "0.10",
     "Identifier": [

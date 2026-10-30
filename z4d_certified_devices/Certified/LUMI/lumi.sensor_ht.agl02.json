@@ -1,4 +1,6 @@
 {
+    "_description": "Temperature and Humidity Sensor T1",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_WSDCGQ12LM.html",
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13839",
     "Ep": {
         "01": {

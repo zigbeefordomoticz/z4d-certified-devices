@@ -1,4 +1,5 @@
 {
+    "_description": "Smart Plug 16A EU",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_TS011F.html",
     "_comment": "Tuya Plug",
     "_version": "1.0",

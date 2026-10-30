@@ -1,4 +1,6 @@
 {
+	"_description": "Thermostatic Radiator Valve Controller",
+	"_blakadder": "https://zigbee.blakadder.com/Hysen_HY369.html",
 	"_comment": "Tuya TRV: _TYST11_ckud7u2l - kud7u2l - TRV HY369",
 	"_version": "0.10",
 	"Ep": {

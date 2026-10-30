@@ -1,4 +1,6 @@
 {
+    "_description": "Curtain Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_TS130F.html",
     "_comment": "MOES Smart Curtain Switch Module",
     "_version": "1.0",
     "Ep": {

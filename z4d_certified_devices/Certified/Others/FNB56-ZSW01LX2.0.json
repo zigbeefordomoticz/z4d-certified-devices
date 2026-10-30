@@ -1,4 +1,5 @@
 {
+    "_description": "Light Switch - 1 Gang DE",
     "_blakadder": "https://zigbee.blakadder.com/3A_HGZB-41-DE.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1423",
     "Ep": {

@@ -1,7 +1,8 @@
 {
+    "_description": "frient Wireless Keypad",
+    "_blakadder": "https://zigbee.blakadder.com/Develco_KEYZB-110.html",
     "_comment": "Frient Smart Keyboard",
     "_version": "1.0",
-    "_blakadder": "",
     "_source": "",
     "Ep": {
         "2c": {

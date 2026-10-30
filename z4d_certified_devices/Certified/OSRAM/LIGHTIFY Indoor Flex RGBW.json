@@ -1,4 +1,6 @@
 {
+	"_description": "Lightify Flex Max RGBW",
+	"_blakadder": "https://zigbee.blakadder.com/OSRAM_4052899926110.html",
 	"Ep": {
 		"03": {
 			"0000": "",

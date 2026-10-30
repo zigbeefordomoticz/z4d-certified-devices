@@ -1,4 +1,5 @@
 {
+    "_description": "Motion Sensor",
     "_comment": "Tuya Motion Sensor IH012-RT01",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_ZM-35ZH-Q.html",
     "Ep":{

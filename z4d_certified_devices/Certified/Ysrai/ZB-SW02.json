@@ -1,4 +1,6 @@
 {
+    "_description": "Light Switch 2 Gang",
+    "_blakadder": "https://zigbee.blakadder.com/eWeLink_ZB-SW02.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1434",
     "_Comment": "2 channels relay ",
     "Ep": {

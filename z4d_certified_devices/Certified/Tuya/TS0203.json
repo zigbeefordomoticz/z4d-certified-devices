@@ -1,4 +1,6 @@
 {
+	"_description": "Contact Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Tuya_TS0203.html",
 	"_comment": "Tuya Door Sensor",
 	"Ep": {
 		"01": { "0000": "", "0001": "", "0500": "", "Type": "Door" }

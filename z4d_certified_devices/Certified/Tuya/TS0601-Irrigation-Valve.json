@@ -1,4 +1,6 @@
 {
+    "_description": "Irrigation Valve",
+    "_blakadder": "https://zigbee.blakadder.com/GiEX_QT06.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1599",
     "_comment": "Parkside Smart Watering Timer",
     "_version": "0.10",

@@ -1,4 +1,6 @@
 {
+    "_description": "Céliane 16A 3680W Wall Outlet - white",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_067725.html",
     "_comment": "Legrand Netatmo Connected Plug",
     "_version": "0.1",
     "Ep": {

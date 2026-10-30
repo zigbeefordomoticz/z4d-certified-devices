@@ -1,4 +1,6 @@
 {
+    "_description": "Single Color 4 Groups ZigBee Key Remote Controller",
+    "_blakadder": "https://zigbee.blakadder.com/Sunricher_SR-ZG9001K12-DIM-Z4.html",
     "_comment": "Single Color 4 Groups ZigBee Key Remote Controller",
     "_version": "0.1",
     "Ep": {

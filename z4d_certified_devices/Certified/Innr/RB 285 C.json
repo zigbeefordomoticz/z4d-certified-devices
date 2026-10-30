@@ -1,4 +1,6 @@
 {
+        "_description": "RGBW Bulb Colour E27",
+        "_blakadder": "https://zigbee.blakadder.com/Innr_RB_285_C.html",
 	"Ep": {
 		"01": {
 			"0000": "",

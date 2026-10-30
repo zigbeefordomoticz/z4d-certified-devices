@@ -1,4 +1,6 @@
 {
+    "_description": "Light Detection Sensor T1",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_GZCGQ11LM.html",
     "Ep": {
         "01": {
             "0000": { 

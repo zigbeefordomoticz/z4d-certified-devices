@@ -1,4 +1,5 @@
 {
+    "_description": "12W RGBW Downlight",
     "_blakadder": "https://zigbee.blakadder.com/Zemismart_ZM-DL-01.html",
     "Ep": {
         "0b": {

@@ -1,4 +1,6 @@
 {
+	"_description": "Wall Switch (With Neutral, Double Rocker)",
+	"_blakadder": "https://zigbee.blakadder.com/Aqara_QBKG12LM.html",
 	"Ep": {
 		"01": {
             "0000": { 

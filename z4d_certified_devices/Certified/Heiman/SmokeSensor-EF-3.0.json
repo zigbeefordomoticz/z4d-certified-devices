@@ -1,4 +1,6 @@
 {
+	"_description": "Smoke Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Heiman_HS1SA.html",
 	"Ep": {
 		"01": {
 			"0000": "",

@@ -1,4 +1,5 @@
 {
+    "_description": "Single Phase 80A DIN Rail Energy Meter",
     "_comment": "Energy Meter DAC2161C ",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/9",
     "_blakadder": "https://zigbee.blakadder.com/DAC2161C.html",

@@ -1,4 +1,6 @@
 {
+    "_description": "Wiser S-Meter",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_EER32000.html",
     "_comment": "Schneider Wiser S Meter",
     "_version": "0.1",
     "Ep": {

@@ -1,4 +1,6 @@
 {
+    "_description": "Switch Module 3 Channel No Neutral",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_SML-03Z-L.html",
     "_comment": "Tuya three gangs Line only",
     "_version": "1.0",
     "Identifier": [

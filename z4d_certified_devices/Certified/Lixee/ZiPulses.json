@@ -1,4 +1,6 @@
 {
+    "_description": "ZiPulses Pulse Meter (water, gas, electricity)",
+    "_blakadder": "https://zigbee.blakadder.com/LiXee_ZiPulses.html",
     "_blakkader": "https://zigbee.blakadder.com/LiXee_ZiPulses.html",
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=13325",
     "_comment": "ZiPulse module configuration",

@@ -1,4 +1,6 @@
 {
+	"_description": "Tradfri LED bulb E27 250 lumen, wireless dimmable warm glow, globe brown clear glass",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_LED1842G3.html",
 	"Ep":{
 	       "01":{
 		       "0000":"",

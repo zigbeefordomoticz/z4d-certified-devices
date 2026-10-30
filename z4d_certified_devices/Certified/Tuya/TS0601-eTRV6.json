@@ -1,4 +1,6 @@
 {
+    "_description": "Thermostatic Radiator Valve Controller",
+    "_blakadder": "https://zigbee.blakadder.com/Avatto_TRV06.html",
     "_comment": "Tuya TRV / Avatto ME167",
     "_version": "0.10",
     "Identifier": [

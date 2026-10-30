@@ -1,4 +1,6 @@
 {
+    "_description": "Motion Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Konke_KPBS.html",
     "Ep": {
         "01": {
             "0000": "",

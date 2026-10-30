@@ -1,4 +1,6 @@
 {
+    "_description": "Hue White Filament Bulb G93 E27 w/ BT",
+    "_blakadder": "https://zigbee.blakadder.com/Philips_LWO001.html",
     "Ep":{
         "0b": {
             "0000": { "Attributes": {

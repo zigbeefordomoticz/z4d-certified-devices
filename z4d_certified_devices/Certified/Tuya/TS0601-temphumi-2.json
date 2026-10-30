@@ -1,4 +1,5 @@
 {
+    "_description": "Temperature and Humidity Sensor with LCD Display",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1561",
     "_comment": "Tuya Temp/Humi sensor with LCD",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_ZG-227ZL.html",

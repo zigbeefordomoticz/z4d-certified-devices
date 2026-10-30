@@ -1,4 +1,6 @@
 {
+    "_description": "Thermostatic Radiator Valve Controller",
+    "_blakadder": "https://zigbee.blakadder.com/Haozee_TRV601.html",
     "_comment": "Tuya TRV / GTZ06",
     "_version": "0.10",
     "Identifier": [

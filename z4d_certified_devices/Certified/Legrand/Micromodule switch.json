@@ -1,5 +1,7 @@
 {
+    "_description": "Micromodule Relay",
     "_comment": "Legrand Netamo Micromodule Switch",
+    "_blakadder": "https://zigbee.blakadder.com/Legrand_064888.html",
     "_version": "1.0",
     "Ep": {
         "01": {

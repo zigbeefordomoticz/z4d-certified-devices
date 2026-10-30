@@ -1,4 +1,5 @@
 {
+    "_description": "Single Switch Module T1 (No Neutral)",
     "_comment": "Single Switch Module T1 (No Neutral)",
     "_blakadder": "https://zigbee.blakadder.com/Aqara_SSM-U02.html",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/14",

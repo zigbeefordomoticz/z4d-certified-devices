@@ -1,4 +1,6 @@
 {
+	"_description": "Tradfri LED bulb E14 600 lumen, dimmable white spectrum opal white",
+	"_blakadder": "https://zigbee.blakadder.com/Ikea_LED1733G7.html",
 	"Ep":{
 		"01":{
 			"0000": "", 

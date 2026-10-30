@@ -1,4 +1,6 @@
 {
+    "_description": "Wiser Thermostat",
+    "_blakadder": "https://zigbee.blakadder.com/Schneider_Electric_EER51000.html",
     "_comment": "Schneider Wiser Thermostat",
     "_version": "0.1",
     "Ep": {

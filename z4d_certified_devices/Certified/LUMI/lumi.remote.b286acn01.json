@@ -1,4 +1,6 @@
 {
+    "_description": "Wireless Remote Switch (Double Rocker) (2018 version)",
+    "_blakadder": "https://zigbee.blakadder.com/Aqara_WXKG02LM_2018.html",
     "Ep": {
         "01": {
             "0000": { 

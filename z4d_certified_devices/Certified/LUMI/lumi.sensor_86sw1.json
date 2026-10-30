@@ -1,4 +1,6 @@
 {
+	"_description": "Wireless Remote Switch (Single Rocker) (2016 version)",
+	"_blakadder": "https://zigbee.blakadder.com/Aqara_WXKG03LM.html",
 	"Ep": {
 		"01": {
             "0000": { 

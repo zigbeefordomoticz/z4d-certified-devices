@@ -1,4 +1,6 @@
 {
+    "_description": "Water Leak Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_WL-898WZ.html",
     "_comment": "Tuya WaterLeak",
     "_version": "1.0",
     "Identifier": [

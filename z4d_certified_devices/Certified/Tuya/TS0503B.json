@@ -1,4 +1,5 @@
 {
+    "_description": "LED Strip Controller DC5-24v RGB",
     "_comment": "LED Strip Controller DC5-24v RGB",
     "_version": "1.0",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_TS0503B.html",

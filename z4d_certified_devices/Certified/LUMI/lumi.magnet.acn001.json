@@ -1,4 +1,6 @@
 {
+	"_description": "E1 Door & Window Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Aqara_MCCGQ14LM.html",
 	"Ep": {
 		"01": {
             "0000": { 

@@ -1,4 +1,6 @@
 {
+    "_description": "Temperature And Humidity Sensor",
+    "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-02.html",
     "_comment": "Sonoff Temp/Humidity",
     "_version": "1.0",
     "Ep": {

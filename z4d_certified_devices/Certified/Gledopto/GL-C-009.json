@@ -1,4 +1,6 @@
 {
+	"_description": "LED Dimmer",
+	"_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-C-009.html",
 	"Ep": {
 		"0b": {
 			"0000": "",

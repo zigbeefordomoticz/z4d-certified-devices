@@ -1,4 +1,6 @@
 {
+	"_description": "Mijia Human Body Sensor",
+	"_blakadder": "https://zigbee.blakadder.com/Xiaomi_RTCGQ01LM.html",
 	"Ep": {
 		"01": {
             "0000": { 

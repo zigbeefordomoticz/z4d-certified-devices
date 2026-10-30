@@ -1,4 +1,6 @@
 {
+	"_description": "10W RGB+CCT Flood Light Plus",
+	"_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-FL-004TZS.html",
 	"Ep": {
 		"0b": {
 			"0000": "",

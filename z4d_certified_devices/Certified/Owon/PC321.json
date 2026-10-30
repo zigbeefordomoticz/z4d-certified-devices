@@ -1,4 +1,5 @@
 {
+    "_description": "Energy Monitor 80A with 3 Clamps",
     "_comment": "PC321 Single/3 phase Power Camp",
     "_blakadder": "https://zigbee.blakadder.com/Owon_PC321.html",
     "_version": "0.1",

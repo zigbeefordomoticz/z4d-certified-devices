@@ -1,4 +1,5 @@
 {
+    "_description": "Livarno Lux E27 6,5W RGB Bulb",
     "_comment": "Tuya RR400ZB require Tuya HueandSaturation",
     "_blakadder": "https://zigbee.blakadder.com/Lidl_HG06104A.html",
     "_version": "1.0",

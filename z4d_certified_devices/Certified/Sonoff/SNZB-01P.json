@@ -1,4 +1,5 @@
 {
+    "_description": "Wireless Switch",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/44",
     "_comment": "Sonoff remote switch",
     "_blakadder": "https://zigbee.blakadder.com/Sonoff_SNZB-01P.html",

@@ -1,4 +1,5 @@
 {
+    "_description": "Switch Module 4 Channel",
     "_source": "https://www.domoticz.com/forum/viewtopic.php?t=39360&view=unread&sid=8408bcbdb10c57ded7fcbb2742b2cd57#unread",
     "_blakadder": "https://zigbee.blakadder.com/Tuya_SML-04Z.html",
     "_comment": "Tuya 4 Gangs Inching Relay command",

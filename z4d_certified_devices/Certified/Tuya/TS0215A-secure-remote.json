@@ -1,5 +1,6 @@
 {
-    "_blakadder": "",
+    "_description": "SOS Button",
+    "_blakadder": "https://zigbee.blakadder.com/Tuya_TS0215A.html",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1575",
     "_comment": "Secure Remote 4 x Buttons",
     "_version": "1.0",

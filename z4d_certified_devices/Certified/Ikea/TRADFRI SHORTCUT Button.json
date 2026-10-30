@@ -1,4 +1,6 @@
 {
+    "_description": "Tradfri Shortcut Button (White)",
+    "_blakadder": "https://zigbee.blakadder.com/Ikea_E1812.html",
     "Ep": {
         "01": {
             "0000": "",

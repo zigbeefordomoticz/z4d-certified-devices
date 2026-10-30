@@ -1,4 +1,6 @@
 {
+	"_description": "6W Dual White And Color LED Bulb",
+	"_blakadder": "https://zigbee.blakadder.com/Gledopto_GL-B-007Z.html",
 	"Ep": {
 		"0b": {
 			"0000": "",

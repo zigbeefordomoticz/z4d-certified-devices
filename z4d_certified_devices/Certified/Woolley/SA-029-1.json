@@ -1,4 +1,5 @@
 {
+    "_description": "Smart Plug 16A Type F EU",
     "_source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1558",
     "_blakadder": "https://zigbee.blakadder.com/Wooley_SA-029.html",
     "_comment": "Wooley Plug Smart Plug",

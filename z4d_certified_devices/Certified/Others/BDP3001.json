@@ -1,4 +1,6 @@
 {
+    "_description": "ERIA Dimmable Outlet",
+    "_blakadder": "https://zigbee.blakadder.com/AduroSmart_81855.html",
     "_ref": "https://zigbee.blakadder.com/AduroSmart_81855.html",
     "Description": "Dimmable Plug",
     "Ep":{

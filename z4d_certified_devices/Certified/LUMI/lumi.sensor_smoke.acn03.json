@@ -1,4 +1,5 @@
 {
+    "_description": "Smart Smoke Detector",
     "_blakadder": "https://zigbee.blakadder.com/Aqara_JY-GZ-01AQ.html",
     "_Source": "https://github.com/zigbeefordomoticz/Domoticz-Zigbee/issues/1422",
     "Ep": {

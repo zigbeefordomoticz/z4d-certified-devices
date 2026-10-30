@@ -1,6 +1,7 @@
 {
+    "_description": "Mini Relay Extreme",
+    "_blakadder": "https://zigbee.blakadder.com/Sonoff_ZBMINIR2.html",
     "_comment": "Sonoff ZBMINI Extreme No Neutral Relay Module",
-    "_blakadder": "",
     "_version": "1.0",
     "_source": "https://easydomoticz.com/forum/viewtopic.php?t=14354",
     "Ep": {
