@@ -2,9 +2,12 @@
 
 This file gives Claude Code guidance for working in this repository.
 
-The full project guidance lives in **[AGENT.md](./AGENT.md)** — read it first.
-It covers the repo layout, how the device loader works, the device JSON format,
-build/test/lint commands, and the automated versioning/release flow.
+The full project guidance lives in **[AGENT.md](./AGENT.md)**. It is imported
+here, so it loads with this file in every session. It covers the repo layout,
+how the device loader works, the device JSON format, build/test/lint commands,
+and the automated versioning/release flow.
+
+@AGENT.md
 
 ## Quick reference
 
