@@ -251,7 +251,8 @@ A baselined issue that has been fixed also fails the suite
 
 - `.github/workflows/tests.yml` — the suite on Python 3.9 / 3.11 / 3.13 plus
   `flake8`, on every push and pull request, and a step summary with the full
-  structural report of the database.
+  structural report of the database. The 3.9 job runs on `ubuntu-24.04`:
+  Ubuntu 26.04 (`ubuntu-latest`) has no Python 3.9.
 - `.github/workflows/ci-cd.yml` — the same suite runs as a **release gate**:
   `bump_version` needs it, so a push to `main` that breaks a device config is
   neither bumped nor published to PyPI.
