@@ -99,39 +99,48 @@ device's `meta.tuyaDatapoints` (`[dp, name, converter]`), e.g. in
   endpoint (`01`) and is the sub-key that routes one physical device's
   datapoints to several widgets (see the multi-gang note below).
 
-### Verifying plugin-side vocabulary (action_type, DomoClusterType, ...)
+### Verifying plugin-side vocabulary (action_type, UpdDomoDeviceWith*, ...)
 
 Several keys used across `Certified/*.json` — `action_type`, `sensor_type`,
-`DomoClusterType`, `UpdDomoDeviceWithCluster`/`Attribute`/`Ep`,
-`DomoDeviceFormat` — are a **closed vocabulary interpreted by the
-Domoticz-Zigbee plugin itself**, not by this repo. This repo alone cannot
-confirm whether a value is real or will silently no-op; grepping across
-existing `Certified/` files only shows what's already been used, not what's
-*valid*.
+`UpdDomoDeviceWithCluster`/`Attribute`/`Ep`, `DomoDeviceFormat`, `ActionList`
+— are a **closed vocabulary interpreted by the Domoticz-Zigbee plugin
+itself**, not by this repo. This repo alone cannot confirm whether a value is
+real or will silently no-op; grepping across existing `Certified/` files only
+shows what's already been used, not what's *valid*.
 
 To verify or add a new value, check the plugin source directly:
 <https://github.com/zigbeefordomoticz/Domoticz-Zigbee> (shallow-clone it to a
 scratch dir and grep).
 
 - `Conf/ZclDefinitions/<clusterId>.json` — the plugin's built-in per-cluster
-  attribute handling, e.g. `0404.json` (Flow Measurement) shows
-  `"DomoClusterType": "Flow"` on `MeasuredValue` with its default `EvalExp`
-  and `ActionList`. This is the canonical list of native cluster→widget
-  mappings.
-- A device JSON in this repo can override or extend that per-device by adding
-  a `DomoClusterType` key directly on an attribute inside a
-  manufacturer-specific cluster's `Attributes` block (e.g. Tuya/Sonoff
-  `0xfc11`), plus `"upd_domo_device"` in its `ActionList` — this routes a
-  custom-cluster attribute to a standard Domoticz widget type without a
-  native ZCL cluster for it. See `Certified/Sonoff/SWV-ZFE.json`'s `5007`
-  attribute for an example (feeds a `Flow` widget from a Sonoff-specific
-  cluster).
-- `Modules/domoMaj.py` has the actual `if ClusterType == X and WidgetType ==
-  X:` dispatch logic that consumes `DomoClusterType` — check it to confirm a
-  value actually does something before using it.
-- Prefer reusing an existing `action_type`/`sensor_type`/`DomoClusterType`
-  value where the behavior matches, rather than inventing a new one, unless
-  the plugin source confirms it defines a handler for it.
+  attribute handling (`EvalExp`/`EvalFunc`, `ActionList`,
+  `UpdDomoDeviceWith*`, ...). A device JSON overrides it per attribute by
+  declaring the attribute in that cluster's `Attributes` block. The override
+  **replaces** the built-in entry instead of merging with it, so give it
+  `Name`, `DataType` and `ActionList` too.
+- The attribute keys the plugin actually reads are the `ATTR_PARAM_*`
+  constants at the top of `Modules/readZclClusters.py`. Any other key is
+  ignored.
+- **`DomoClusterType` is not one of them.** It appears in some
+  `Conf/ZclDefinitions/*.json` files (e.g. `"Flow"` on `0404.json`) and in a
+  few certified files, but no plugin code reads it, so setting it has no
+  effect. Do not use it to pick a widget.
+- **Which widget an attribute updates** is decided by the cluster passed to
+  `MajDomoDevice`: the attribute's own cluster, or `UpdDomoDeviceWithCluster`
+  when set. `TypeFromCluster()` maps it to a widget family through
+  `CLUSTER_TO_TYPE` in `Modules/domoTools.py` (e.g. `0702` → `Power/Meter`,
+  `0b04` → `Power/Meter/Ampere`, `0001` → `Voltage`). `Modules/domoMaj.py`
+  then matches that family, the widget type and `UpdDomoDeviceWithAttribute`
+  (e.g. `Ampere` needs `0508`; `Power`/`Meter` take `""` or `050f`).
+- To route a manufacturer-specific attribute (e.g. Sonoff `0xfc11`) to a
+  standard widget, set `UpdDomoDeviceWithCluster` (and
+  `UpdDomoDeviceWithAttribute` when the dispatch needs one), and put
+  `"upd_domo_device"` in its `ActionList`. See the `fc11` `7004`/`7005`/`7006`
+  attributes in `Certified/Sonoff/S60ZBTPF.json`: current to `0b04`/`0508`,
+  voltage to `0001`, power to `0702`/`050f`.
+- Prefer reusing an existing `action_type`/`sensor_type`/cluster routing
+  where the behavior matches, rather than inventing a new one, unless the
+  plugin source confirms it defines a handler for it.
 
 Common keys seen in these files:
 
