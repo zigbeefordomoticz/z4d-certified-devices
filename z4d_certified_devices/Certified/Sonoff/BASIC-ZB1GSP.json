@@ -1,0 +1,58 @@
+{
+    "_source": "https://easydomoticz.com/forum/viewtopic.php?t=14835",
+    "_blakadder": "",
+    "_comment": "SONOFF BASIC-ZB1GSP smart switch with power monitoring. Measurements come from the eWeLink cluster fc11 (as in zigbee-herdsman-converters), not from 0b04",
+    "_version": "1.0",
+    "Ep": {
+        "01": {
+            "0000": "",
+            "0003": "",
+            "0004": "",
+            "0005": "",
+            "0006": "",
+            "0702": "",
+            "0b04": { "Attributes": {
+                "0505": { "Enabled": true, "Name": "RMSVoltage", "DataType": "21", "ActionList": [ "check_store_value" ] },
+                "0508": { "Enabled": true, "Name": "RMSCurrent", "DataType": "21", "ActionList": [ "check_store_value" ] },
+                "050b": { "Enabled": true, "Name": "ActivePower", "DataType": "29", "ActionList": [ "check_store_value" ] } } },
+            "0b05": "",
+            "fc57": "",
+            "fc11": { "Attributes": {
+                "7004": { "Enabled": true, "Name": "acCurrentCurrentValue", "DataType": "23", "EvalExp": "(value / 1000)", "UpdDomoDeviceWithCluster": "0b04", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                "7005": { "Enabled": true, "Name": "acCurrentVoltageValue", "DataType": "23", "EvalExp": "(value / 1000)", "UpdDomoDeviceWithCluster": "0001", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                "7006": { "Enabled": true, "Name": "acCurrentPowerValue", "DataType": "23", "EvalExp": "((value - 4294967296 if value > 2147483647 else value) / 1000)", "UpdDomoDeviceWithCluster": "0702", "UpdDomoDeviceWithAttribute": "050f", "ActionList": [ "check_store_value", "upd_domo_device" ] },
+                "7009": { "Enabled": true, "Name": "energyToday", "DataType": "23", "ActionList": [ "check_store_value" ] },
+                "700a": { "Enabled": true, "Name": "energyMonth", "DataType": "23", "ActionList": [ "check_store_value" ] },
+                "700b": { "Enabled": true, "Name": "energyYesterday", "DataType": "23", "ActionList": [ "check_store_value" ] },
+                "701e": { "Enabled": true, "Name": "totalEnergyConsumption", "DataType": "23", "ActionList": [ "check_store_value" ] } } },
+            "000a": "",
+            "0019": "",
+            "Type": "Switch/Power/Meter/Ampere/Voltage"
+        },
+        "f2": {
+            "0021": "",
+            "Type": ""
+        }
+    },
+    "Type": "",
+    "ClusterToBind": [ "0006", "0702", "fc11" ],
+    "ConfigureReporting": {
+        "0702": { "Attributes": {
+            "0000": { "DataType": "25", "MinInterval": "003c", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "000000000000" } } },
+        "fc11": { "Attributes": {
+            "7004": { "DataType": "23", "MinInterval": "000a", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "0000000a" },
+            "7005": { "DataType": "23", "MinInterval": "003c", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "000003e8" },
+            "7006": { "DataType": "23", "MinInterval": "000a", "MaxInterval": "0e10", "TimeOut": "0000", "Change": "000003e8" } } }
+    },
+    "ReadAttributes": {
+        "0000": [ "0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "4000" ],
+        "0006": [ "0000", "4003" ],
+        "0702": [ "0000", "0300", "0301", "0302", "0303", "0306" ],
+        "fc11": [ "7004", "7005", "7006", "7009", "700a", "700b", "701e" ]
+    },
+    "InstantPowerCluster": "fc11",
+    "InstantPowerAttribute": "7006",
+    "Param": {
+        "PowerOnAfterOffOn": 255
+    }
+}
