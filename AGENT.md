@@ -121,10 +121,13 @@ scratch dir and grep).
 - The attribute keys the plugin actually reads are the `ATTR_PARAM_*`
   constants at the top of `Modules/readZclClusters.py`. Any other key is
   ignored.
-- **`DomoClusterType` is not one of them.** It appears in some
-  `Conf/ZclDefinitions/*.json` files (e.g. `"Flow"` on `0404.json`) and in a
-  few certified files, but no plugin code reads it, so setting it has no
-  effect. Do not use it to pick a widget.
+- **`DomoClusterType` is not one of them.** It is defined in some
+  `Conf/ZclDefinitions/<cluster>.json` files (e.g. `"Flow"` on `0404.json`)
+  and in several certified files, and is kept there as **documentation
+  only**: a label for the widget family the attribute is meant to feed. No
+  plugin code reads it, so it does not route anything. Leave existing labels
+  in place, keep any new one consistent with the actual routing below, and
+  never rely on it to pick a widget.
 - **Which widget an attribute updates** is decided by the cluster passed to
   `MajDomoDevice`: the attribute's own cluster, or `UpdDomoDeviceWithCluster`
   when set. `TypeFromCluster()` maps it to a widget family through
