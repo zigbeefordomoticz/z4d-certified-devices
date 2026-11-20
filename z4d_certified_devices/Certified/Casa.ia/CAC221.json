@@ -20,6 +20,7 @@
         }
     },
     "Type": "",
+    "ZDeviceID": "0301",
     "ClusterToBind": [
         "0201",
         "0202"
