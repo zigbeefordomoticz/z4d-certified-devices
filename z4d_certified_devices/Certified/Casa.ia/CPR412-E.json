@@ -21,6 +21,7 @@
         }
     },
     "Type": "",
+    "ZDeviceID": "0202",
     "ClusterToBind": [ "0006", "0008" ],
     "ConfigureReporting": {
         "0006": {

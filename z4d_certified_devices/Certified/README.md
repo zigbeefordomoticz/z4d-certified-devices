@@ -9,8 +9,11 @@ One directory per brand/manufacturer
 
 * "Ep" 	List of End Point with list of Cluster for each Ep. Must also contains "Type" with the list of Widget
 * "Type" 	 Compatibility, but always be set to ""
-* "ProfileID" 	ProfileID in Hexa of the device (Optional)
-* "ZDeviceID" 	DeviceID in Hexa of the device (Optional)
+* "ProfileID" 	Profile of the device, 4 lowercase hex digits, e.g. "0104" (Optional). See "ZDeviceID"
+* "ZDeviceID" 	ZCL device identifier the device is to be taken for, 4 lowercase hex digits, e.g. "0202" (Optional).
+  A quirk for a device reporting a private id: the CASAIA CPR412-E reports "c412", its config says "0202" (Window Covering Device).
+  The plugin keeps the reported value and does not act on this key yet; it is meant for the WebUI. Set the value the
+  device should be treated as, since the plugin may give it precedence later.
 * NickName 	(Optional)
 * ClusterToBind 	List of Cluster to bind in the right order (Optional)
 * ReadAttribute 	List Cluster and for each , list of Attributes to read during polling (Optional)
