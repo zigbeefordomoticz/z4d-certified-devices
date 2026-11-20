@@ -12,8 +12,9 @@
 Module: certified_schema
 ========================
 
-Structural validation of the `ReadAttributes` and `ConfigureReporting` blocks of
-a certified device configuration (`Certified/<Manufacturer>/<Model>.json`).
+Structural validation of the `ReadAttributes` and `ConfigureReporting` blocks,
+and of the `ZDeviceID` / `ProfileID` keys, of a certified device configuration
+(`Certified/<Manufacturer>/<Model>.json`).
 
 Why this exists
 ---------------
@@ -63,6 +64,17 @@ map to a real, observable consequence:
       *expected* width — so a 4-digit `Change` on a 4-byte type is not padded,
       it is byte-swapped into a value a million times too large
       (`cr-change-width`).
+
+Device identity — top-level `ZDeviceID` / `ProfileID`
+    The ZCL device identifier (and its profile) the device is to be taken
+    for. It is a quirk: a manufacturer may report a private id — CASAIA's
+    CPR412-E says `0xc412` under profile `0x0104` — and the configuration
+    states what the device really is (`0202`, a Window Covering Device). The
+    plugin keeps the reported value as it is in `ListOfDevices`; the WebUI
+    reads the configured one, and the plugin may give it precedence later.
+    Either way it is compared as a string against the lowercase 4-digit hex
+    the plugin stores, so any other spelling never matches
+    (`id-malformed`).
 
 Usage
 -----
@@ -557,6 +569,38 @@ def _validate_manuf_specific(where, record):
 
 
 # ---------------------------------------------------------------------------
+# Device identity
+# ---------------------------------------------------------------------------
+
+IDENTITY_KEYS = ("ZDeviceID", "ProfileID")
+
+
+def validate_identity(model_def):
+    """Check the top-level `ZDeviceID` / `ProfileID` of a device config.
+
+    Both are optional. When present, each must be exactly 4 lowercase hex
+    digits, the spelling the plugin stores for a device: `0202`, `c05e`.
+
+    Args:
+        model_def (dict): a parsed device config.
+
+    Returns:
+        list[Issue]: one `id-malformed` error per key spelled otherwise.
+    """
+    issues = []
+    for key in IDENTITY_KEYS:
+        if key not in model_def:
+            continue
+        value = model_def[key]
+        if not is_canonical_id(value):
+            issues.append(Issue(
+                "id-malformed", ERROR, key,
+                "%s must be 4 lowercase hex digits (e.g. \"0202\"), got %r" % (key, value),
+            ))
+    return issues
+
+
+# ---------------------------------------------------------------------------
 # Whole-device entry point
 # ---------------------------------------------------------------------------
 
@@ -567,7 +611,7 @@ def validate_device(model_def):
         model_def (dict): a parsed `Certified/<Manufacturer>/<Model>.json`.
 
     Returns:
-        list[Issue]: every finding, `ReadAttributes` first.
+        list[Issue]: every finding: `ReadAttributes`, `ConfigureReporting`, then identity.
     """
     if not isinstance(model_def, dict):
         return [Issue(
@@ -575,7 +619,7 @@ def validate_device(model_def):
             "a device configuration must be a JSON object, got %s" % type(model_def).__name__,
         )]
 
-    return validate_read_attributes(model_def) + validate_configure_reporting(model_def)
+    return validate_read_attributes(model_def) + validate_configure_reporting(model_def) + validate_identity(model_def)
 
 
 def filter_by_severity(issues, severity):
