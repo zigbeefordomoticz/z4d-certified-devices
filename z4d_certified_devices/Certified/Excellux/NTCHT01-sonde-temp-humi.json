@@ -46,6 +46,7 @@
         "7a": { "store_tuya_attribute": "humidity_warning" }
     },
     "BatteryDevice": 1,
+    "BatteryPercentageConverter": 2,
     "Param": {
         "SamplingInterval": 60
     }
