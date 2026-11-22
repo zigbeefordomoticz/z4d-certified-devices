@@ -19,6 +19,7 @@
 		}
 	},
 	"Type": "",
+	"MainPoweredDevice": true,
 	"ClusterToBind": [
 		"0006"
 	],
