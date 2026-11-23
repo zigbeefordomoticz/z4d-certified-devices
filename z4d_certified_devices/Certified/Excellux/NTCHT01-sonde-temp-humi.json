@@ -1,5 +1,5 @@
 {
-    "_comment": "Excellux temperature & humidity sensor with external probe (Tuya ef00 datapoints).",
+    "_comment": "Excellux temperature & humidity sensor with external probe (Tuya ef00 datapoints). The ZCL 0402 MeasuredValue on EP 01 carries the probe temperature (same as DP 01), so it is stored only: EP 01 Temp comes from DP 05 (internal), EP f1 from DP 01 (probe).",
     "_version": "1.0",
     "_blakadder": "",
     "_source": "https://github.com/zigbeefordomoticz/z4d-certified-devices/issues/143",
@@ -13,6 +13,18 @@
             "0003": "",
             "1000": "",
             "ef00": "",
+            "0402": {
+                "Attributes": {
+                    "0000": {
+                        "Name": "MeasuredValue",
+                        "DataType": "29",
+                        "Range": [ "954d", "7fff" ],
+                        "SpecialValues": { "0800": "temperature measurement is unknown" },
+                        "EvalExp": "round(int(value) / 100, 1)",
+                        "ActionList": [ "check_store_value" ]
+                    }
+                }
+            },
             "Type": "Temp/Humi"
         },
         "f1": {
