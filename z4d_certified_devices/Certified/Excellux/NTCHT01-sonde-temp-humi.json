@@ -60,6 +60,6 @@
     "BatteryDevice": 1,
     "BatteryPercentageConverter": 2,
     "Param": {
-        "SamplingInterval": 60
+        "SamplingInterval": 600
     }
 }
