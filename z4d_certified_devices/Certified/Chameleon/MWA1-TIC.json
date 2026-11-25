@@ -7,7 +7,7 @@
             "000a": "",
             "0006": {
                 "Attributes": {
-                    "0000": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "ContactSec", "Name": "IRM", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
+                    "0000": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "ContactSec", "Name": "ContactSec", "DataType": "21", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
                 }
             },
             "0700": "",
@@ -33,7 +33,7 @@
                     "0307": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "PRM", "Name": "PRM", "DataType": "41", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                     "0308": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "ADSC", "Name": "ADSC", "DataType": "41", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                     "030f": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "LTARF", "Name": "LTARF", "DataType": "41", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
-                    "0400": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "SINTS", "Name": "SINTS", "DataType": "2a", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0400": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "SINSTS", "Name": "SINSTS", "DataType": "2a", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     
                     "045d": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "SMAXSN", "Name": "SMAXSN", "DataType": "25", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                     "045e": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "SMAXSN-T", "Name": "SMAXSN1-T", "DataType": "e2", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
@@ -60,7 +60,7 @@
             },
             "0b04": {
                 "Attributes": {
-                    "0508": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "IRM", "Name": "IRM", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
+                    "0508": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "IRMS1", "Name": "IRMS1", "DataType": "21", "EvalFunc": "compute_electrical_measurement_conso", "UpdDomoDeviceWithAttribute": "0508", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] },
                     "0304": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "SINSTS", "Name": "SINSTS", "DataType": "2b", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                     "0306": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "SINSTS", "Name": "SINSTS", "DataType": "23", "ActionList": [ "check_store_value", "store_specif_attribute" ] },
                     "0505": { "SpecifStoragelvl1": "Chameleon", "SpecifStoragelvl2": "URMS1", "Name": "URMS1", "DataType": "21", "UpdDomoDeviceWithCluster": "0001", "ActionList": [ "check_store_value", "store_specif_attribute", "upd_domo_device" ] }
